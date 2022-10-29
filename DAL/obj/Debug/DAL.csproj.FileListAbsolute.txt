@@ -1,9 +1,9 @@
-D:\Tài liệu\PTPM\QuanLyNhanVien\DAL\bin\Debug\DAL1.dll
-D:\Tài liệu\PTPM\QuanLyNhanVien\DAL\bin\Debug\DAL1.pdb
-D:\Tài liệu\PTPM\QuanLyNhanVien\DAL\bin\Debug\DTO1.dll
-D:\Tài liệu\PTPM\QuanLyNhanVien\DAL\bin\Debug\DTO1.pdb
+D:\Tài liệu\PTPM\QuanLyNhanVien\DAL\bin\Debug\DAL.dll
+D:\Tài liệu\PTPM\QuanLyNhanVien\DAL\bin\Debug\DAL.pdb
+D:\Tài liệu\PTPM\QuanLyNhanVien\DAL\bin\Debug\DTO.dll
+D:\Tài liệu\PTPM\QuanLyNhanVien\DAL\bin\Debug\DTO.pdb
 D:\Tài liệu\PTPM\QuanLyNhanVien\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
 D:\Tài liệu\PTPM\QuanLyNhanVien\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\Tài liệu\PTPM\QuanLyNhanVien\DAL\obj\Debug\DAL.csproj.CopyComplete
-D:\Tài liệu\PTPM\QuanLyNhanVien\DAL\obj\Debug\DAL1.dll
-D:\Tài liệu\PTPM\QuanLyNhanVien\DAL\obj\Debug\DAL1.pdb
+D:\Tài liệu\PTPM\QuanLyNhanVien\DAL\obj\Debug\DAL.dll
+D:\Tài liệu\PTPM\QuanLyNhanVien\DAL\obj\Debug\DAL.pdb

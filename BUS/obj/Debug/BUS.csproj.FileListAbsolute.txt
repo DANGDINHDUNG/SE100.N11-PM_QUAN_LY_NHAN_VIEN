@@ -1,9 +1,9 @@
 D:\Tài liệu\PTPM\QuanLyNhanVien\BUS\bin\Debug\BUS.dll
 D:\Tài liệu\PTPM\QuanLyNhanVien\BUS\bin\Debug\BUS.pdb
-D:\Tài liệu\PTPM\QuanLyNhanVien\BUS\bin\Debug\DAL1.dll
-D:\Tài liệu\PTPM\QuanLyNhanVien\BUS\bin\Debug\DTO1.dll
-D:\Tài liệu\PTPM\QuanLyNhanVien\BUS\bin\Debug\DAL1.pdb
-D:\Tài liệu\PTPM\QuanLyNhanVien\BUS\bin\Debug\DTO1.pdb
+D:\Tài liệu\PTPM\QuanLyNhanVien\BUS\bin\Debug\DAL.dll
+D:\Tài liệu\PTPM\QuanLyNhanVien\BUS\bin\Debug\DTO.dll
+D:\Tài liệu\PTPM\QuanLyNhanVien\BUS\bin\Debug\DAL.pdb
+D:\Tài liệu\PTPM\QuanLyNhanVien\BUS\bin\Debug\DTO.pdb
 D:\Tài liệu\PTPM\QuanLyNhanVien\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
 D:\Tài liệu\PTPM\QuanLyNhanVien\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
 D:\Tài liệu\PTPM\QuanLyNhanVien\BUS\obj\Debug\BUS.csproj.CopyComplete

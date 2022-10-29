@@ -11,7 +11,7 @@ namespace DTO
         private int maloaitk;
         private string tenloaitk;
         private string quyenhan;
-
+        
         //Getter-Setter
 
         public int MALOAITK

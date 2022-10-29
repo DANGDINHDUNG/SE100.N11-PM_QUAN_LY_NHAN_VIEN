@@ -1,6 +1,6 @@
-D:\Tài liệu\PTPM\QuanLyNhanVien\DTO\bin\Debug\DTO1.dll
-D:\Tài liệu\PTPM\QuanLyNhanVien\DTO\bin\Debug\DTO1.pdb
+D:\Tài liệu\PTPM\QuanLyNhanVien\DTO\bin\Debug\DTO.dll
+D:\Tài liệu\PTPM\QuanLyNhanVien\DTO\bin\Debug\DTO.pdb
 D:\Tài liệu\PTPM\QuanLyNhanVien\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
 D:\Tài liệu\PTPM\QuanLyNhanVien\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-D:\Tài liệu\PTPM\QuanLyNhanVien\DTO\obj\Debug\DTO1.dll
-D:\Tài liệu\PTPM\QuanLyNhanVien\DTO\obj\Debug\DTO1.pdb
+D:\Tài liệu\PTPM\QuanLyNhanVien\DTO\obj\Debug\DTO.dll
+D:\Tài liệu\PTPM\QuanLyNhanVien\DTO\obj\Debug\DTO.pdb

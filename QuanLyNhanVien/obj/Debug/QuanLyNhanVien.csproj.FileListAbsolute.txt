@@ -135,8 +135,8 @@ D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.pdb
 D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\System.Data.SqlClient.dll
 D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\System.Data.SqlClient.xml
 D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\BUS.dll
-D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DTO1.dll
-D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DAL1.dll
 D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\BUS.pdb
-D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DTO1.pdb
-D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DAL1.pdb
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DTO.dll
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DAL.dll
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DTO.pdb
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DAL.pdb
