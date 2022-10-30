@@ -41,8 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_BANGLUONG.cs" />
+    <Compile Include="DAL_KHENTHUONG.cs" />
+    <Compile Include="DAL_KYLUAT.cs" />
+    <Compile Include="DAL_NVTHOIVIEC.cs" />
     <Compile Include="DAL_PHANLOAITK.cs" />
+    <Compile Include="DAL_SOBH.cs" />
+    <Compile Include="DAL_SOTHAISAN.cs" />
     <Compile Include="DAL_TAIKHOAN.cs" />
+    <Compile Include="DAL_THAYDOIBANGLUONG.cs" />
     <Compile Include="Hash256.cs" />
     <Compile Include="KetNoi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
