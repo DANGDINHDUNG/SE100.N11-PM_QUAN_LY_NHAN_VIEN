@@ -49,6 +49,7 @@
     <Compile Include="BUS_KHENTHUONG.cs" />
     <Compile Include="BUS_KYLUAT.cs" />
     <Compile Include="BUS_LOAINHANVIEN.cs" />
+    <Compile Include="BUS_NHANVIEN.cs" />
     <Compile Include="BUS_NVTHOIVIEC.cs" />
     <Compile Include="BUS_PHANLOAITK.cs" />
     <Compile Include="BUS_PHONGBAN.cs" />
