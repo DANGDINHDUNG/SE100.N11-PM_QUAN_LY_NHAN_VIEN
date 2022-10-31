@@ -11,14 +11,14 @@ namespace DAL
     public class DAL_KHENTHUONG : KetNoi
     {
 
-        public DataTable getSoThaiSan()
+        public DataTable getKhenThuong()
         {
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM KHENTHUONG", connection);
             DataTable dtKHENTHUONG = new DataTable();
             da.Fill(dtKHENTHUONG);
             return dtKHENTHUONG;
         }
-        public bool ThemSoThaiSan(DTO_KHENTHUONG khenThuong)
+        public bool ThemKhenThuong(DTO_KHENTHUONG khenThuong)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
@@ -35,7 +35,7 @@ namespace DAL
 	TIEN MONEY,
 	LYDO NVARCHAR(50)
  */
-        public bool SuaKHENTHUONG(DTO_KHENTHUONG khenThuong)
+        public bool SuaKKhenThuong(DTO_KHENTHUONG khenThuong)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
@@ -49,7 +49,7 @@ namespace DAL
             connection.Close();
         }
 
-        public bool XoaKHENTHUONG(int makt)
+        public bool XoaKhenThuong(int makt)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();

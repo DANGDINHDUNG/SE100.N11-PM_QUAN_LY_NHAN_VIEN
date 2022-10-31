@@ -14,13 +14,14 @@ namespace DTO
         private int songaycong;
         private int songaynghi;
         private int sogiolamthem;
+        private double luongtv;
         private string ghichu;
 
         public DTO_BANGCHAMCONGTHUVIEC()
         {
         }
 
-        public DTO_BANGCHAMCONGTHUVIEC(int manvtv, int thang, int nam, int songaycong, int songaynghi, int sogiolamthem, string ghichu)
+        public DTO_BANGCHAMCONGTHUVIEC(int manvtv, int thang, int nam, int songaycong, int songaynghi, int sogiolamthem, double luongtv, string ghichu)
         {
             this.manvtv = manvtv;
             this.thang = thang;
@@ -29,6 +30,7 @@ namespace DTO
             this.songaynghi = songaynghi;
             this.sogiolamthem = sogiolamthem;
             this.ghichu = ghichu;
+            this.luongtv = luongtv;
         }
 
         public int Manvtv { get => manvtv; set => manvtv = value; }
@@ -38,5 +40,6 @@ namespace DTO
         public int Songaynghi { get => songaynghi; set => songaynghi = value; }
         public int Sogiolamthem { get => sogiolamthem; set => sogiolamthem = value; }
         public string Ghichu { get => ghichu; set => ghichu = value; }
+        public double Luongtv { get => luongtv; set => luongtv = value; }
     }
 }

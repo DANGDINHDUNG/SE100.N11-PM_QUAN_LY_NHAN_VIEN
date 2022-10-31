@@ -11,14 +11,14 @@ namespace DAL
     public class DAL_THAYDOIBANGLUONG : KetNoi
     {
 
-        public DataTable getSoThaiSan()
+        public DataTable getThayDoiBangLuong()
         {
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM THAYDOIBANGLUONG", connection);
             DataTable dtTHAYDOIBANGLUONG = new DataTable();
             da.Fill(dtTHAYDOIBANGLUONG);
             return dtTHAYDOIBANGLUONG;
         }
-        public bool ThemSoThaiSan(DTO_THAYDOIBANGLUONG tdbl)
+        public bool ThemThayDoiBangLuong(DTO_THAYDOIBANGLUONG tdbl)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
@@ -38,7 +38,7 @@ namespace DAL
 	NGAYSUA DATETIME,
 	LYDO NVARCHAR(70)
  */
-        public bool SuaTHAYDOIBANGLUONG(DTO_THAYDOIBANGLUONG tdbl)
+        public bool SuaThayDoiBangLuong(DTO_THAYDOIBANGLUONG tdbl)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
@@ -52,7 +52,7 @@ namespace DAL
             connection.Close();
         }
 
-        public bool XoaTHAYDOIBANGLUONG(int manv,string maluong,string maluongmoi)
+        public bool XoaThayDoiBangLuong(int manv,string maluong,string maluongmoi)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();

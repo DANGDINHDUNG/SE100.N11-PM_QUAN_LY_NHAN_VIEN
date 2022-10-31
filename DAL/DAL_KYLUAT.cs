@@ -11,14 +11,14 @@ namespace DAL
     public class DAL_KYLUAT : KetNoi
     {
 
-        public DataTable getSoThaiSan()
+        public DataTable getKyLuat()
         {
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM KYLUAT", connection);
             DataTable dtKYLUAT = new DataTable();
             da.Fill(dtKYLUAT);
             return dtKYLUAT;
         }
-        public bool ThemSoThaiSan(DTO_KYLUAT kyLuat)
+        public bool ThemKyLuat(DTO_KYLUAT kyLuat)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
@@ -35,7 +35,7 @@ namespace DAL
 	TIEN MONEY,
 	LYDO NVARCHAR(50)
  */
-        public bool SuaKYLUAT(DTO_KYLUAT kyLuat)
+        public bool SuaKyLLuat(DTO_KYLUAT kyLuat)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
@@ -49,7 +49,7 @@ namespace DAL
             connection.Close();
         }
 
-        public bool XoaKYLUAT(int makl)
+        public bool XoaKyLuat(int makl)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();

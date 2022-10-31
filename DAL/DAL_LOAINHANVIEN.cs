@@ -8,22 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 namespace DAL
 {
-    public class DAL_BANGLUONG : KetNoi
+    public class DAL_LOAINHANVIEN : KetNoi
     {
 
-        public DataTable getBangLuong()
+        public DataTable getLoaiNhanVien()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM BANGLUONG", connection);
-            DataTable dtBANGLUONG = new DataTable();
-            da.Fill(dtBANGLUONG);
-            return dtBANGLUONG;
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM LOAINHANVIEN", connection);
+            DataTable dtLOAINHANVIEN = new DataTable();
+            da.Fill(dtLOAINHANVIEN);
+            return dtLOAINHANVIEN;
         }
-        public bool ThemBangLuong(DTO_BANGLUONG bangLuong)
+        public bool ThemLoaiNhanVien(DTO_LOAINHANVIEN loaiNhanVien)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("INSERT INTO BANGLUONG VALUES ('{0}', '{1}','{2}','{3}',N'{4}')"
-                , bangLuong.Maluong, bangLuong.Lcb, bangLuong.Phucapphucvu, bangLuong.Phucapkhac,bangLuong.Ghichu);
+            string sql = string.Format("INSERT INTO LOAINHANVIEN VALUES ('{0}', N'{1}','{2}'"
+                , loaiNhanVien.Maloainv, loaiNhanVien.Tenloainv, loaiNhanVien.Mucluongcoban);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;
@@ -31,19 +31,17 @@ namespace DAL
             connection.Close();
         }
         /*
-    MALUONG VARCHAR(8) PRIMARY KEY,
-	LCB MONEY,
-	PHUCAPCHUCVU MONEY,
-	PHUCAPKHAC MONEY,
-	GHICHU NVARCHAR(80)
+	MALOAINV VARCHAR(10) PRIMARY KEY,
+	TENLOAINV NVARCHAR(30),
+	MUCLUONGCOBAN MONEY,
  */
-        public bool SuaBANGLUONG(DTO_BANGLUONG bangLuong)
+        public bool SuaLoaiNhanVien(DTO_LOAINHANVIEN loaiNhanVien)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("UPDATE BANGLUONG " +
-                "SET LCB='{0}',PHUCAPPHUCVU='{1}',PHUCAPKHAC='{2}',GHICHU=N'{3}'" + "WHERE MALUONG = '{4}'",
-            bangLuong.Lcb, bangLuong.Phucapphucvu, bangLuong.Phucapkhac, bangLuong.Ghichu, bangLuong.Maluong);
+            string sql = string.Format("UPDATE LOAINHANVIEN " +
+                "SET TENLOAINV=N'{0}, MUCLUONGCOBAN='{1}'" + "WHERE MALOAINV = '{2}'",
+            loaiNhanVien.Tenloainv, loaiNhanVien.Mucluongcoban, loaiNhanVien.Maloainv);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;
@@ -51,11 +49,11 @@ namespace DAL
             connection.Close();
         }
 
-        public bool XoaBangLuong(string maluong)
+        public bool XoaLoaiNhanVien(string maloainv)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("DELETE FROM BANGLUONG WHERE MAUONG = '{0}')", maluong);
+            string sql = string.Format("DELETE FROM LOAINHANVIEN WHERE MALOAINV = '{0}')", maloainv);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;

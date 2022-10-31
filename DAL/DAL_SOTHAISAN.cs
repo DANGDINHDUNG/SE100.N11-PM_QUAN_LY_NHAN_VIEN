@@ -39,7 +39,7 @@ namespace DAL
 	TROCAPCTY MONEY,
 	GHICHU NVARCHAR(70)
  */
-        public bool SuaSOTHAISAN(DTO_SOTHAISAN soThaiSan)
+        public bool SuaSoThaiSan(DTO_SOTHAISAN soThaiSan)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
@@ -55,7 +55,7 @@ namespace DAL
             connection.Close();
         }
 
-        public bool XoaSOTHAISAN(int mats)
+        public bool XoaSoThaiSan(int mats)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();

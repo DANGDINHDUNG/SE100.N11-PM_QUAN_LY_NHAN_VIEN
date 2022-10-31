@@ -11,14 +11,14 @@ namespace DAL
     public class DAL_SOBH : KetNoi
     {
 
-        public DataTable getSoThaiSan()
+        public DataTable getSoBH()
         {
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM SOBH", connection);
             DataTable dtSOBH = new DataTable();
             da.Fill(dtSOBH);
             return dtSOBH;
         }
-        public bool ThemSoThaiSan(DTO_SOBH soBH)
+        public bool ThemSoBH(DTO_SOBH soBH)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
@@ -37,7 +37,7 @@ namespace DAL
 	NOICAPSO NVARCHAR(20),
 	GHICHU NVARCHAR(70),
  */
-        public bool SuaSOBH(DTO_SOBH soBH)
+        public bool SuaSoBH(DTO_SOBH soBH)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
@@ -51,7 +51,7 @@ namespace DAL
             connection.Close();
         }
 
-        public bool XoaSOBH(int mabh)
+        public bool XoaSoBH(int mabh)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();

@@ -37,7 +37,7 @@ CMND_CCCD VARCHAR(12),
 NGAYTHOIVIEC DATETIME,
 LYDO NVARCHAR(50)
  */
-        public bool SuaNVTHOIVIEC(DTO_NVTHOIVIEC nvThoiViec)
+        public bool SuaNVThoiViec(DTO_NVTHOIVIEC nvThoiViec)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
@@ -51,7 +51,7 @@ LYDO NVARCHAR(50)
             connection.Close();
         }
 
-        public bool XoaNVTHOIVIEC(int manv)
+        public bool XoaNVthoiViec(int manv)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
