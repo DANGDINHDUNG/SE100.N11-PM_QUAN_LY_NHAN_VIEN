@@ -35,7 +35,7 @@ namespace DAL
 	TIEN MONEY,
 	LYDO NVARCHAR(50)
  */
-        public bool SuaKyLLuat(DTO_KYLUAT kyLuat)
+        public bool SuaKyLuat(DTO_KYLUAT kyLuat)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();

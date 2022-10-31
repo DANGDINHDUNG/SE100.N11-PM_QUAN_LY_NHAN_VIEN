@@ -51,7 +51,7 @@ LYDO NVARCHAR(50)
             connection.Close();
         }
 
-        public bool XoaNVthoiViec(int manv)
+        public bool XoaNVThoiViec(int manv)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();

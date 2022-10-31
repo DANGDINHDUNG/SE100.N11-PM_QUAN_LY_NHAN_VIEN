@@ -37,7 +37,7 @@ namespace DAL
 	PHUCAPKHAC MONEY,
 	GHICHU NVARCHAR(80)
  */
-        public bool SuaBANGLUONG(DTO_BANGLUONG bangLuong)
+        public bool SuaBangLuong(DTO_BANGLUONG bangLuong)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();

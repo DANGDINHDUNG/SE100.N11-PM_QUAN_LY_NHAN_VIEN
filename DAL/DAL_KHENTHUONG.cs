@@ -35,7 +35,7 @@ namespace DAL
 	TIEN MONEY,
 	LYDO NVARCHAR(50)
  */
-        public bool SuaKKhenThuong(DTO_KHENTHUONG khenThuong)
+        public bool SuaKhenThuong(DTO_KHENTHUONG khenThuong)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
