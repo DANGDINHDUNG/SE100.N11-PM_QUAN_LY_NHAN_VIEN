@@ -57,6 +57,7 @@
     <Compile Include="DTO_SOTHAISAN.cs" />
     <Compile Include="DTO_TAIKHOAN.cs" />
     <Compile Include="DTO_THAYDOIBANGLUONG.cs" />
+    <Compile Include="DTO_LSCHINHSUA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

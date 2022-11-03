@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class DTO_NHANVIEN
+    public class DTO_LSCHINHSUA
     {
+        private int macs;
         private int manv;
         private string maphong;
         private string maluong;
@@ -26,12 +27,13 @@ namespace DTO
         private string sdt;
         private string hocvan;
         private string ghichu;
+        private DateTime ngaychinhsua;
 
-        public DTO_NHANVIEN()
+        public DTO_LSCHINHSUA()
         {
         }
 
-        public DTO_NHANVIEN(int thoigian, DateTime ngaydangki, DateTime ngayhethan, string sdt, string hocvan, string ghichu, int manv, string maphong, string maluong, string hoten, DateTime ngaysinh, string gioitinh, string dantoc, string cmnd_cccd, string noicap, string chucvu, string maloainv, string loaihd)
+        public DTO_LSCHINHSUA(int thoigian, DateTime ngaydangki, DateTime ngayhethan, string sdt, string hocvan, string ghichu, int manv, string maphong, string maluong, string hoten, DateTime ngaysinh, string gioitinh, string dantoc, string cmnd_cccd, string noicap, string chucvu, string maloainv, string loaihd, int macs = 0, DateTime ngaychinhsua = default)
         {
             this.thoigian = thoigian;
             this.ngaydangki = ngaydangki;
@@ -51,6 +53,8 @@ namespace DTO
             this.chucvu = chucvu;
             this.maloainv = maloainv;
             this.loaihd = loaihd;
+            this.macs = macs;
+            this.ngaychinhsua = ngaychinhsua;
         }
 
         public int Manv { get => manv; set => manv = value; }
@@ -71,5 +75,7 @@ namespace DTO
         public string Sdt { get => sdt; set => sdt = value; }
         public string Hocvan { get => hocvan; set => hocvan = value; }
         public string Ghichu { get => ghichu; set => ghichu = value; }
+        public DateTime Ngaychinhsua { get => ngaychinhsua; set => ngaychinhsua = value; }
+        public int Macs { get => macs; set => macs = value; }
     }
 }

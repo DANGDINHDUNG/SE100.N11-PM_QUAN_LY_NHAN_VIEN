@@ -49,6 +49,7 @@
     <Compile Include="DAL_KHENTHUONG.cs" />
     <Compile Include="DAL_KYLUAT.cs" />
     <Compile Include="DAL_LOAINHANVIEN.cs" />
+    <Compile Include="DAL_LSCHINHSUA.cs" />
     <Compile Include="DAL_NHANVIEN.cs" />
     <Compile Include="DAL_NVTHOIVIEC.cs" />
     <Compile Include="DAL_PHANLOAITK.cs" />
