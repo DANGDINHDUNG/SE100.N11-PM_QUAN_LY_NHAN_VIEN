@@ -20,3 +20,14 @@ D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần m�
 D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\BUS\obj\Debug\BUS.dll
 D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\BUS\obj\Debug\BUS.pdb
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\BUS\bin\Debug\BUS.dll
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\BUS\bin\Debug\BUS.pdb
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\BUS\bin\Debug\DAL.dll
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\BUS\bin\Debug\DTO.dll
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\BUS\bin\Debug\DAL.pdb
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\BUS\bin\Debug\DTO.pdb
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\BUS\obj\Debug\BUS.dll
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\BUS\obj\Debug\BUS.pdb
