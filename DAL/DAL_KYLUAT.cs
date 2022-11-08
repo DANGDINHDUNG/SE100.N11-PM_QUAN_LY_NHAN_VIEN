@@ -53,7 +53,7 @@ namespace DAL
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("DELETE FROM KYLUAT WHERE MAKL = '{0}')", makl);
+            string sql = string.Format("DELETE FROM KYLUAT WHERE MAKL = '{0}'", makl);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;

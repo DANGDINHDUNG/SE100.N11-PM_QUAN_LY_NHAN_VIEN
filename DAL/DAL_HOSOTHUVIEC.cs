@@ -70,7 +70,7 @@ MANVTV INT IDENTITY(1,1) PRIMARY KEY,
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("DELETE FROM HOSOTHUVIEC WHERE MANVTV = '{0}')", manvtv);
+            string sql = string.Format("DELETE FROM HOSOTHUVIEC WHERE MANVTV = '{0}'", manvtv);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;

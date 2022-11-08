@@ -45,7 +45,7 @@ namespace DAL
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("DELETE FROM PHANLOAITAIKHOAN WHERE MALOAITK = '{0}')", maltk);
+            string sql = string.Format("DELETE FROM PHANLOAITAIKHOAN WHERE MALOAITK = '{0}'", maltk);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;

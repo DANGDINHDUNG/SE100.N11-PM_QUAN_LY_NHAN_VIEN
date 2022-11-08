@@ -1,0 +1,243 @@
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.AssemblyReference.cache
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\TrangChu.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\App.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien_MarkupCompile.cache
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien_MarkupCompile.lref
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe.config
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.pdb
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\TrangChu.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.g.resources
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Properties.Resources.resources
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.GenerateResource.cache
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CoreCompileInputs.cache
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.exe
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.pdb
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\Theme\MenuButtonTheme.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\DangNhap.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\App.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\DangNhap.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\Theme\TextBoxTheme.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HomeView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HomeView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLNhanVienView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLNhanVienView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\NhanVienView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\NhanVienView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.SuggestedBindingRedirects.cache
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\XuatDSNhanVienView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\XuatDSNhanVienView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\BaoHiemNhanVienView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\BaoHiemNhanVienView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\QLThuViecThoiViecView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\QLThuViecThoiViecView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLPhongBanView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLPhongBanView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLChamCongView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLChamCongView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\PhongBanView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\PhongBanView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\Theme\ComboBoxTheme.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\MaterialDesignColors.dll
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\MaterialDesignColors.pdb
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CopyComplete
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\BoPhanView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\BoPhanView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\TraCuuThongTinView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\TraCuuThongTinView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\LuongThuViecView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLBangLuongView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\LuongThuViecView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLBangLuongView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\KhoiDieuHanhView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\KhoiDieuHanhView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\TaiKhoanView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\ThamSoView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLHeThongView.g.cs
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\TaiKhoanView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\ThamSoView.baml
+D:\C#\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLHeThongView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe.config
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.pdb
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\MaterialDesignColors.dll
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\MaterialDesignColors.pdb
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.AssemblyReference.cache
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.SuggestedBindingRedirects.cache
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\Theme\ComboBoxTheme.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\Theme\MenuButtonTheme.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\DangNhap.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\KhoiDieuHanhView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\LuongThuViecView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\TaiKhoanView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\ThamSoView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HomeView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\BoPhanView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\PhongBanView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLBangLuongView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLChamCongView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLHeThongView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLNhanVienView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\BaoHiemNhanVienView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLPhongBanView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\QLThuViecThoiViecView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\XuatDSNhanVienView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\NhanVienView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\TraCuuThongTinView.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\TrangChu.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\App.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien_MarkupCompile.cache
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien_MarkupCompile.lref
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\App.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\DangNhap.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\KhoiDieuHanhView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\LuongThuViecView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\TaiKhoanView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\ThamSoView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HomeView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\BoPhanView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\PhongBanView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLBangLuongView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLChamCongView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLHeThongView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLNhanVienView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\BaoHiemNhanVienView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLPhongBanView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\QLThuViecThoiViecView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\XuatDSNhanVienView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\NhanVienView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\TraCuuThongTinView.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\Theme\TextBoxTheme.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\TrangChu.baml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.g.resources
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Properties.Resources.resources
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.GenerateResource.cache
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CoreCompileInputs.cache
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CopyComplete
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.exe
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.pdb
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\System.Data.SqlClient.dll
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\System.Data.SqlClient.xml
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\BUS.dll
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\BUS.pdb
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DTO.dll
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DAL.dll
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DTO.pdb
+D:\Tài liệu\PTPM\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DAL.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe.config
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\BUS.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DTO.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignColors.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\System.Data.SqlClient.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DAL.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\BUS.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DTO.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignColors.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\System.Data.SqlClient.xml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DAL.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.AssemblyReference.cache
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.SuggestedBindingRedirects.cache
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\Theme\ComboBoxTheme.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\Theme\MenuButtonTheme.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\DangNhap.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\TaiKhoanView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\ThamSoView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HomeView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\BoPhanView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\PhongBanView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLBangLuongView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLChamCongView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLHeThongView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLNhanVienView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\BaoHiemNhanVienView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLPhongBanView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\QLThuViecThoiViecView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\XuatDSNhanVienView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\NhanVienView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\TraCuuThongTinView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\TrangChu.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\App.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien_MarkupCompile.cache
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien_MarkupCompile.lref
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\App.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\DangNhap.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\TaiKhoanView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\ThamSoView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HomeView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\BoPhanView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\PhongBanView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLBangLuongView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLChamCongView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLHeThongView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLNhanVienView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\BaoHiemNhanVienView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLPhongBanView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\QLThuViecThoiViecView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\XuatDSNhanVienView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\NhanVienView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\TraCuuThongTinView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\Theme\TextBoxTheme.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\TrangChu.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.g.resources
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Properties.Resources.resources
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.GenerateResource.cache
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CoreCompileInputs.cache
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CopyComplete
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.exe
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\KhenThuongKyLuatView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\KhenThuongKyLuatView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemNhanVienForm.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemNhanVienForm.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemBaoHiem.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemBaoHiem.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemThaiSan.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemThaiSan.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongThuViecView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongThuViecView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\BangLuongView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\ThayDoiBangLuongView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\BangLuongView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\ThayDoiBangLuongView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoThongKeView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.xml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoThongKeView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLBaoCaoThongKeView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLBaoCaoThongKeView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoNhanSuView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoNhanSuView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\LichSuChinhSuaView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\HoSoThuViec.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\LichSuChinhSuaView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\HoSoThuViec.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChamCong.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChamCong.baml

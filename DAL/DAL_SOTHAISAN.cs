@@ -59,7 +59,7 @@ namespace DAL
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("DELETE FROM SOTHAISAN WHERE MATS = '{0}')", mats);
+            string sql = string.Format("DELETE FROM SOTHAISAN WHERE MATS = '{0}'", mats);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;

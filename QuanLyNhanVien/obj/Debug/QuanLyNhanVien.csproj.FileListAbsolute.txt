@@ -344,3 +344,209 @@ D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần m�
 D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.GenerateResource.cache
 D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CoreCompileInputs.cache
 D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CopyComplete
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe.config
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\BUS.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DTO.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\LiveCharts.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\MaterialDesignColors.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\System.Data.SqlClient.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DAL.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\BUS.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DTO.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\LiveCharts.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\LiveCharts.xml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.xml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\MaterialDesignColors.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\System.Data.SqlClient.xml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DAL.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.AssemblyReference.cache
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.SuggestedBindingRedirects.cache
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\Theme\ComboBoxTheme.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\Theme\MenuButtonTheme.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\DangNhap.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\BangLuongView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\ThayDoiBangLuongView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoNhanSuView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoThongKeView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongThuViecView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\KhenThuongKyLuatView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\LichSuChinhSuaView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\TaiKhoanView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\ThamSoView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HomeView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\BoPhanView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\PhongBanView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLBangLuongView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLBaoCaoThongKeView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLChamCongView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLHeThongView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLNhanVienView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\BaoHiemNhanVienView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLPhongBanView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\QLThuViecThoiViecView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\XuatDSNhanVienView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\NhanVienView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\TraCuuThongTinView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\TrangChu.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\WindowView\ChamCong.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\WindowView\ChamCongThuViec.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\WindowView\HoSoThuViec.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\WindowView\ThemBaoHiem.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\WindowView\ThemNhanVienForm.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\WindowView\ThemThaiSan.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\App.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien_MarkupCompile.cache
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien_MarkupCompile.lref
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\App.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\DangNhap.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\BangLuongView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\ThayDoiBangLuongView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoNhanSuView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoThongKeView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongThuViecView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\KhenThuongKyLuatView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\LichSuChinhSuaView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\TaiKhoanView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\ThamSoView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\HomeView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\BoPhanView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\PhongBanView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLBangLuongView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLBaoCaoThongKeView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLChamCongView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLHeThongView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLNhanVienView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\BaoHiemNhanVienView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\QLPhongBanView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\QLThuViecThoiViecView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\XuatDSNhanVienView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\NhanVienView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\MVVM\View\TraCuuThongTinView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\Theme\TextBoxTheme.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\TrangChu.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\WindowView\ChamCong.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\WindowView\ChamCongThuViec.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\WindowView\HoSoThuViec.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\WindowView\ThemBaoHiem.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\WindowView\ThemNhanVienForm.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\WindowView\ThemThaiSan.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.g.resources
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Properties.Resources.resources
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.GenerateResource.cache
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CoreCompileInputs.cache
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CopyComplete
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.exe
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.pdb
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe.config
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.pdb
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\BUS.dll
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\DTO.dll
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\LiveCharts.dll
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.dll
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\MaterialDesignColors.dll
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\System.Data.SqlClient.dll
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\DAL.dll
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\BUS.pdb
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\DTO.pdb
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\LiveCharts.pdb
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\LiveCharts.xml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.pdb
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.xml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\MaterialDesignColors.pdb
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\System.Data.SqlClient.xml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\bin\Debug\DAL.pdb
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.AssemblyReference.cache
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.SuggestedBindingRedirects.cache
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\Theme\ComboBoxTheme.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\Theme\MenuButtonTheme.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\DangNhap.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\BangLuongView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\ThayDoiBangLuongView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoNhanSuView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoThongKeView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongThuViecView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\KhenThuongKyLuatView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\LichSuChinhSuaView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\TaiKhoanView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\ThamSoView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\HomeView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\BoPhanView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\PhongBanView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\QLBangLuongView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\QLBaoCaoThongKeView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\QLChamCongView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\QLHeThongView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\QLNhanVienView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\BaoHiemNhanVienView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\QLPhongBanView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\QLThuViecThoiViecView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\XuatDSNhanVienView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\NhanVienView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\TraCuuThongTinView.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\TrangChu.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\WindowView\ChamCong.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\WindowView\ChamCongThuViec.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\WindowView\HoSoThuViec.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\WindowView\ThemBaoHiem.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\WindowView\ThemNhanVienForm.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\WindowView\ThemThaiSan.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\App.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\QuanLyNhanVien_MarkupCompile.cache
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\QuanLyNhanVien_MarkupCompile.lref
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\App.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\DangNhap.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\BangLuongView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\ThayDoiBangLuongView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoNhanSuView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoThongKeView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongThuViecView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\KhenThuongKyLuatView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\LichSuChinhSuaView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\TaiKhoanView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\ThamSoView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\HomeView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\BoPhanView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\PhongBanView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\QLBangLuongView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\QLBaoCaoThongKeView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\QLChamCongView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\QLHeThongView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\QLNhanVienView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\BaoHiemNhanVienView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\QLPhongBanView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\QLThuViecThoiViecView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\XuatDSNhanVienView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\NhanVienView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\MVVM\View\TraCuuThongTinView.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\Theme\TextBoxTheme.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\TrangChu.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\WindowView\ChamCong.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\WindowView\ChamCongThuViec.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\WindowView\HoSoThuViec.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\WindowView\ThemBaoHiem.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\WindowView\ThemNhanVienForm.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\WindowView\ThemThaiSan.baml
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.g.resources
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Properties.Resources.resources
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.GenerateResource.cache
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CoreCompileInputs.cache
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CopyComplete
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.exe
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.pdb

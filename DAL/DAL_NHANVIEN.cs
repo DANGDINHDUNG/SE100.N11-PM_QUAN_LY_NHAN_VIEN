@@ -76,7 +76,7 @@ namespace DAL
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("DELETE FROM NHANVIEN WHERE MANV = '{0}')", manv);
+            string sql = string.Format("DELETE FROM NHANVIEN WHERE MANV = '{0}'", manv);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;

@@ -54,7 +54,7 @@ namespace DAL
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("DELETE FROM BOPHAN WHERE MABP = '{0}')", mabp);
+            string sql = string.Format("DELETE FROM BOPHAN WHERE MABP = '{0}'", mabp);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;

@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DTO;
+using BUS;
+using System.Data;
 
 namespace QuanLyNhanVien.MVVM.View.SubView
 {
@@ -20,9 +23,16 @@ namespace QuanLyNhanVien.MVVM.View.SubView
     /// </summary>
     public partial class XuatDSNhanVienView : UserControl
     {
+        public BUS_NHANVIEN busNhanVien = new BUS_NHANVIEN();
+
         public XuatDSNhanVienView()
         {
             InitializeComponent();
+        }
+
+        public void DataGridLoad()
+        {
+            dsNhanVienDtg.DataContext = busNhanVien.getNhanVien();
         }
     }
 }

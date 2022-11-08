@@ -55,7 +55,7 @@ namespace DAL
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("DELETE FROM SOBH WHERE MABH = '{0}')", mabh);
+            string sql = string.Format("DELETE FROM SOBH WHERE MABH = '{0}'", mabh);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;

@@ -76,7 +76,19 @@ namespace DAL
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("DELETE FROM LSCHINHSUA WHERE MACS = '{0}')", macs);
+            string sql = string.Format("DELETE FROM LSCHINHSUA WHERE MACS = '{0}'", macs);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            if (cmd.ExecuteNonQuery() > 0)
+                return true;
+            else return false;
+            connection.Close();
+        }
+
+        public bool XoaLSChinhSuaNhanVien(int macs)
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("DELETE FROM LSCHINHSUA WHERE MANV = '{0}'", macs);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;

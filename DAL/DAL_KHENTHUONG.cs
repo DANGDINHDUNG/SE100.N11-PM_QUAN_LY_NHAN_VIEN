@@ -53,7 +53,7 @@ namespace DAL
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("DELETE FROM KHENTHUONG WHERE MAKT = '{0}')", makt);
+            string sql = string.Format("DELETE FROM KHENTHUONG WHERE MAKT = '{0}'", makt);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;

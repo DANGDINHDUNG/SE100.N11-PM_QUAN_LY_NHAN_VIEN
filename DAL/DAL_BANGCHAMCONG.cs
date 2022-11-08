@@ -66,7 +66,7 @@ namespace DAL
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("DELETE FROM BANGCHAMCONG WHERE MANV = '{0}' AND THANG ='{1}' AND NAM ='{2}' )", manv,thang,nam);
+            string sql = string.Format("DELETE FROM BANGCHAMCONG WHERE MANV = '{0}' AND THANG ='{1}' AND NAM ='{2}'", manv,thang,nam);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;

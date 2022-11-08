@@ -53,7 +53,7 @@ namespace DAL
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("DELETE FROM LOAINHANVIEN WHERE MALOAINV = '{0}')", maloainv);
+            string sql = string.Format("DELETE FROM LOAINHANVIEN WHERE MALOAINV = '{0}'", maloainv);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;

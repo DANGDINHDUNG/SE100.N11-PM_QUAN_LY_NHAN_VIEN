@@ -57,7 +57,9 @@
                     Width="200" Height="40">Làm mới</Button>
         </Grid>
 
-        <DataGrid Grid.Row="2"
+        <DataGrid x:Name="dsNhanVienDtg" Grid.Row="2"
+                  ItemsSource="{Binding Path=DefaultView}" 
+                  IsReadOnly="True"
                   Margin="10,10,10,10">
 
         </DataGrid>

@@ -70,7 +70,7 @@ namespace DAL
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("DELETE FROM TAIKHOAN WHERE MATK = '{0}')", matk);
+            string sql = string.Format("DELETE FROM TAIKHOAN WHERE MATK = '{0}'", matk);
             SqlCommand cmd = new SqlCommand(sql, connection);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read() == true)

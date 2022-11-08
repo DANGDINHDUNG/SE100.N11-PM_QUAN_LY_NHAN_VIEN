@@ -42,8 +42,10 @@
             </Grid>
         </GroupBox>
         
-        <DataGrid Grid.Row="1"
-                  Margin="10,10,10,10">
+        <DataGrid x:Name="dsNhanVienDtg" Grid.Row="1"
+                  ItemsSource="{Binding Path=DefaultView}"
+                  IsReadOnly="True"
+                  Margin="10,10,10,10" SelectionChanged="dsNhanVienDtg_SelectionChanged">
 
         </DataGrid>
         <Grid Grid.Row="2">
@@ -59,9 +61,9 @@
                     Width="150" Height="40"
                     x:Name="btnThemNhanVien"
                     Click="btnThemNhanVien_Click">Thêm nhân sự</Button>
-            <Button Grid.Column="1" 
+            <Button x:Name="xoaBtn" Grid.Column="1" 
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="150" Height="40">Xóa nhân sự</Button>
+                    Width="150" Height="40" Click="xoaBtn_Click">Xóa nhân sự</Button>
             <Button Grid.Column="2"
                     x:Name="btnSuaNhanSu"
                     Click="btnSuaNhanSu_Click"
