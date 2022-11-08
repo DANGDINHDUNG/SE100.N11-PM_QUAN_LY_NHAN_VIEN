@@ -10,15 +10,15 @@ namespace QuanLyNhanVien.MVVM.ViewModel.BangLuongSubViewModel
 {
     class MainQLBangLuongViewModel : ObservableObject
     {
-        public RelayCommand LuongThuViecCommand { get; set; }
-        public RelayCommand KhoiDieuHanhCommand { get; set; }
+        public RelayCommand BangLuongCommand { get; set; }
+        public RelayCommand ThayDoiBangluongCommand { get; set; }
 
         //public RelayCommand SettingRoomStatusesViewCommand { get; set; }
         //public RelayCommand SettingRoomTypesViewCommand { get; set; }
         //public RelayCommand SettingRulesViewCommand { get; set; }
 
-        public LuongThuViecViewModel LuongThuViecVM { get; set; }
-        public KhoiDieuHanhViewModel KhoiDieuHanhVM { get; set; }
+        public BangLuongViewModel BangLuongVM { get; set; }
+        public ThayDoiBangLuongViewModel ThayDoiBangLuongVM { get; set; }
 
         //public SettingRoomStatusesViewModel SettingRoomStatusesVM { get; set; }
         //public SettingRoomTypesViewModel SettingRoomTypesVM { get; set; }
@@ -38,19 +38,19 @@ namespace QuanLyNhanVien.MVVM.ViewModel.BangLuongSubViewModel
 
         public MainQLBangLuongViewModel()
         {
-            LuongThuViecVM = new LuongThuViecViewModel();
-            KhoiDieuHanhVM = new KhoiDieuHanhViewModel();
+            BangLuongVM = new BangLuongViewModel();
+            ThayDoiBangLuongVM = new ThayDoiBangLuongViewModel();
 
-            CurrentView = LuongThuViecVM;
+            CurrentView = BangLuongVM;
 
-            LuongThuViecCommand = new RelayCommand(o =>
+            BangLuongCommand = new RelayCommand(o =>
             {
-                CurrentView = LuongThuViecVM;
+                CurrentView = BangLuongVM;
             });
 
-            KhoiDieuHanhCommand = new RelayCommand(o =>
+            ThayDoiBangluongCommand = new RelayCommand(o =>
             {
-                CurrentView = KhoiDieuHanhVM;
+                CurrentView = ThayDoiBangLuongVM;
             });
 
 

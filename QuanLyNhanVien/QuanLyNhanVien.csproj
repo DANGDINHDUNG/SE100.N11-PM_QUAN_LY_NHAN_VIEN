@@ -37,6 +37,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialDesignColors, Version=2.0.9.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignColors.2.0.9\lib\net462\MaterialDesignColors.dll</HintPath>
     </Reference>
@@ -67,23 +73,82 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MVVM\ViewModel\BangLuongSubViewModel\BangLuongViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\BangLuongSubViewModel\ThayDoiBangLuongViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\BaoCaoThongKeSubViewModel\BaoCaoNhanSuViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\BaoCaoThongKeSubViewModel\MainQLBaoCaoThongKeViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\ChamCongSubViewModel\BangChamCongThuViecViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\HeThongSubViewModel\LichSuChinhSuaViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\QLBaoCaoThongKeViewModel.cs" />
+    <Compile Include="MVVM\View\BangLuongSubView\BangLuongView.xaml.cs">
+      <DependentUpon>BangLuongView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\BangLuongSubView\ThayDoiBangLuongView.xaml.cs">
+      <DependentUpon>ThayDoiBangLuongView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\BaoCaoThongKeSubView\BaoCaoNhanSuView.xaml.cs">
+      <DependentUpon>BaoCaoNhanSuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\ChamCongSubView\BangChamCongThuViecView.xaml.cs">
+      <DependentUpon>BangChamCongThuViecView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\HeThongSubView\LichSuChinhSuaView.xaml.cs">
+      <DependentUpon>LichSuChinhSuaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\QLBaoCaoThongKeView.xaml.cs">
+      <DependentUpon>QLBaoCaoThongKeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowView\ChamCong.xaml.cs">
+      <DependentUpon>ChamCong.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowView\ChamCongThuViec.xaml.cs">
+      <DependentUpon>ChamCongThuViec.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowView\HoSoThuViec.xaml.cs">
+      <DependentUpon>HoSoThuViec.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowView\ThemBaoHiem.xaml.cs">
+      <DependentUpon>ThemBaoHiem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowView\ThemNhanVienForm.xaml.cs">
+      <DependentUpon>ThemNhanVienForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowView\ThemThaiSan.xaml.cs">
+      <DependentUpon>ThemThaiSan.xaml</DependentUpon>
+    </Compile>
     <Page Include="DangNhap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MVVM\View\BangLuongSubView\KhoiDieuHanhView.xaml">
+    <Page Include="MVVM\View\BangLuongSubView\BangLuongView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MVVM\View\BangLuongSubView\LuongThuViecView.xaml">
+    <Page Include="MVVM\View\BangLuongSubView\ThayDoiBangLuongView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MVVM\View\BaoCaoThongKeView.xaml">
+    <Page Include="MVVM\View\BaoCaoThongKeSubView\BaoCaoNhanSuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\BaoCaoThongKeSubView\BaoCaoThongKeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\ChamCongSubView\BangChamCongThuViecView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MVVM\View\ChamCongSubView\BangChamCongView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\ChamCongSubView\KhenThuongKyLuatView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\HeThongSubView\LichSuChinhSuaView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -108,6 +173,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MVVM\View\QLBangLuongView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\QLBaoCaoThongKeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -172,10 +241,10 @@
     <Compile Include="DangNhap.xaml.cs">
       <DependentUpon>DangNhap.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MVVM\ViewModel\BangLuongSubViewModel\KhoiDieuHanhViewModel.cs" />
-    <Compile Include="MVVM\ViewModel\BangLuongSubViewModel\LuongThuViecViewModel.cs" />
     <Compile Include="MVVM\ViewModel\BangLuongSubViewModel\MainQLBangLuongViewModel.cs" />
-    <Compile Include="MVVM\ViewModel\BaoCaoThongKeViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\BaoCaoThongKeSubViewModel\BaoCaoThongKeViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\ChamCongSubViewModel\BangChamCongViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\ChamCongSubViewModel\KhenThuongKyLuatViewModel.cs" />
     <Compile Include="MVVM\ViewModel\ChamCongSubViewModel\MainQLChamCongViewModel.cs" />
     <Compile Include="MVVM\ViewModel\HeThongSubViewModel\MainQLHeThongViewModel.cs" />
     <Compile Include="MVVM\ViewModel\HeThongSubViewModel\TaiKhoanViewModel.cs" />
@@ -196,17 +265,14 @@
     <Compile Include="MVVM\ViewModel\SubViewModel\XuatDSNhanVienViewModel.cs" />
     <Compile Include="MVVM\ViewModel\SubViewModel\NhanVienViewModel.cs" />
     <Compile Include="MVVM\ViewModel\TraCuuThongTinViewModel.cs" />
-    <Compile Include="MVVM\View\BangLuongSubView\KhoiDieuHanhView.xaml.cs">
-      <DependentUpon>KhoiDieuHanhView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MVVM\View\BangLuongSubView\LuongThuViecView.xaml.cs">
-      <DependentUpon>LuongThuViecView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MVVM\View\BaoCaoThongKeView.xaml.cs">
+    <Compile Include="MVVM\View\BaoCaoThongKeSubView\BaoCaoThongKeView.xaml.cs">
       <DependentUpon>BaoCaoThongKeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\ChamCongSubView\BangChamCongView.xaml.cs">
       <DependentUpon>BangChamCongView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\ChamCongSubView\KhenThuongKyLuatView.xaml.cs">
+      <DependentUpon>KhenThuongKyLuatView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\HeThongSubView\TaiKhoanView.xaml.cs">
       <DependentUpon>TaiKhoanView.xaml</DependentUpon>
@@ -258,6 +324,30 @@
       <DependentUpon>TrangChu.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="WindowView\ChamCong.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowView\ChamCongThuViec.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowView\HoSoThuViec.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowView\ThemBaoHiem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowView\ThemNhanVienForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowView\ThemThaiSan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

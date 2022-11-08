@@ -91,7 +91,7 @@
                         <RadioButton Height="40"
                              FontSize="17"
                              Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding BaoCaoThongKeViewCommand}">
+                             Command="{Binding QLBaoCaoThongKeViewCommand}">
                             <TextBlock Margin="20,0,0,0">Báo cáo thống kê</TextBlock>
                         </RadioButton>
 
@@ -118,6 +118,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
                     <RowDefinition/>
+                    <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
 
                 <Border Grid.Column="1"
@@ -150,20 +151,54 @@
 
                 <Border Grid.Column="1" Grid.Row="1"
                     Background="#efefef"
-                    CornerRadius="0,0,20,0">
+                    >
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition/>
-                            <RowDefinition Height="50"/>
                         </Grid.RowDefinitions>
 
-                        <ContentControl Grid.Row="0"
+                        <ContentControl
                             Margin="10"
                             Content="{Binding CurrentView}"/>
+                        
+                    </Grid>
+                </Border>
+                
+                <Border Grid.Row="2"
+                  Background="White"
+                    CornerRadius="0,0,20,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
 
+                        <TextBlock Grid.Column="0" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
+                                   Text="Nhân viên:" TextAlignment="Right" VerticalAlignment="Center"/>
+                        <TextBlock Grid.Column="1" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
+                                   Text="Hiển thị tên nhân viên" TextAlignment="Right" VerticalAlignment="Center"/>
+                        <TextBlock Grid.Column="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
+                                   Text="Quyền hạn:" TextAlignment="Right" VerticalAlignment="Center"/>
+                        <TextBlock Grid.Column="3" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
+                                   Text="Hiển thị loại tài khoản" TextAlignment="Right" VerticalAlignment="Center"/>
+                        
+                        
+                        <TextBlock x:Name="Timer" 
+                                   Grid.Column="5"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               FontSize="14"
+                               Foreground="#424F6B"
+                               Text="16/06/2002 00:00:00"/>
                     </Grid>
                 </Border>
             </Grid>
+
+
         </Grid>
 
     </Border>

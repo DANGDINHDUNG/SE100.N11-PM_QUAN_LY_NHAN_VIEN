@@ -25,9 +25,9 @@
                        BasedOn="{StaticResource SettingOptionsButton}"/>
             </StackPanel.Resources>
 
-            <RadioButton Content="Thử việc" IsChecked="True" 
+            <RadioButton Content="Bảng lương" IsChecked="True" 
                          Command="{Binding LuongThuViecCommand}"/>
-            <RadioButton Content="Khối điều hành"
+            <RadioButton Content="Thay đổi bảng lương"
                          Command="{Binding KhoiDieuHanhCommand}"/>
         </StackPanel>
 

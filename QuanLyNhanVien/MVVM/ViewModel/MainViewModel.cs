@@ -14,7 +14,7 @@ namespace QuanLyNhanVien.MVVM.ViewModel
         public RelayCommand QLPhongBanViewCommand { get; set; }
         public RelayCommand QLChamCongViewCommand { get; set; }
         public RelayCommand TraCuuThongTinViewCommand { get; set; }
-        public RelayCommand BaoCaoThongKeViewCommand { get; set; }
+        public RelayCommand QLBaoCaoThongKeViewCommand { get; set; }
         public RelayCommand QLBangLuongViewCommand { get; set; }
         public RelayCommand QLHeThongViewCommand { get; set; }
         //public RelayCommand DiscoverViewCommand { get; set; }
@@ -26,7 +26,7 @@ namespace QuanLyNhanVien.MVVM.ViewModel
         public QLPhongBanViewModel QLPhongBanVM { get; set; }
         public QLChamCongViewModel QLChamCongVM { get; set; }
         public TraCuuThongTinViewModel TraCuuThongTinVM { get; set; }
-        public BaoCaoThongKeViewModel BaoCaoThongKeVM { get; set; }
+        public QLBaoCaoThongKeViewModel QLBaoCaoThongKeVM { get; set; }
         public QLBangLuongViewModel QLBangLuongVM { get; set; }
         public QLHeThongViewModel QLHeThongVM { get; set; }
         //public DiscoverViewModel DiscoverVM { get; set; }
@@ -52,12 +52,12 @@ namespace QuanLyNhanVien.MVVM.ViewModel
             QLPhongBanVM = new QLPhongBanViewModel();
             QLChamCongVM = new QLChamCongViewModel();
             TraCuuThongTinVM = new TraCuuThongTinViewModel();  
-            BaoCaoThongKeVM = new BaoCaoThongKeViewModel(); 
+            QLBaoCaoThongKeVM = new QLBaoCaoThongKeViewModel(); 
             QLBangLuongVM = new QLBangLuongViewModel(); 
             QLHeThongVM = new QLHeThongViewModel(); 
             //DiscoverVM = new DiscoverViewModel();
 
-            CurrentView = QLNhanVienVM; //Đúng phải là HomeVM
+            CurrentView = HomeVM; //Đúng phải là HomeVM
 
             HomeViewCommand = new RelayCommand(o =>
             {
@@ -84,9 +84,9 @@ namespace QuanLyNhanVien.MVVM.ViewModel
                 CurrentView = TraCuuThongTinVM;
             });
 
-            BaoCaoThongKeViewCommand = new RelayCommand(o =>
+            QLBaoCaoThongKeViewCommand = new RelayCommand(o =>
             {
-                CurrentView = BaoCaoThongKeVM;
+                CurrentView = QLBaoCaoThongKeVM;
             });
             QLBangLuongViewCommand = new RelayCommand(o =>
             {

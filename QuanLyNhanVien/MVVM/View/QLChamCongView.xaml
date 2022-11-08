@@ -25,9 +25,11 @@
             </StackPanel.Resources>
 
             <RadioButton Content="Bảng công" IsChecked="True" 
-                         Command="{Binding NhanVienViewCommand}"/>
+                         Command="{Binding BangChamCongCommand}"/>
+            <RadioButton Content="Bảng công thử việc" 
+                         Command="{Binding BangChamCongThuViecCommand}"/>
             <RadioButton Content="Khen thưởng/Kỷ luật"
-                         Command="{Binding XuatDSNhanVienViewCommand}"/>
+                         Command="{Binding KhenThuongKyLuatCommand}"/>
         </StackPanel>
 
         <ContentControl Grid.Row="1"

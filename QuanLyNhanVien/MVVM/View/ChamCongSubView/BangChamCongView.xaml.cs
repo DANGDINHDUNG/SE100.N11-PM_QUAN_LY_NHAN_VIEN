@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyNhanVien.WindowView;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace QuanLyNhanVien.MVVM.View.ChamCongSubView
         public BangChamCongView()
         {
             InitializeComponent();
+        }
+
+        private void btnThemCong_Click(object sender, RoutedEventArgs e)
+        {
+            ChamCong chamCong = new ChamCong();
+            chamCong.ShowDialog();
         }
     }
 }

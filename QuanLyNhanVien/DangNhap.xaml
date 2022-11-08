@@ -99,7 +99,6 @@
                 </TextBox>
 
                 <PasswordBox x:Name="matKhauPwb" Grid.Row="2"
-                             DataContext="Mật khẩu"
                              FontSize="15"
                              VerticalAlignment="Top"
                              HorizontalAlignment="Center"

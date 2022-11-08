@@ -28,6 +28,9 @@
                          Command="{Binding TaiKhoanCommand}"/>
             <RadioButton Content="Tham số"
                          Command="{Binding ThamSoCommand}"/>
+            <RadioButton Content="Lịch sửa chỉnh sửa"
+                         Command="{Binding LichSuChinhSuaCommand}"/>
+            
         </StackPanel>
 
         <ContentControl Grid.Row="1"

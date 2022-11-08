@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyNhanVien.WindowView;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,18 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         public NhanVienView()
         {
             InitializeComponent();
+        }
+
+        private void btnThemNhanVien_Click(object sender, RoutedEventArgs e)
+        {
+            ThemNhanVienForm themNhanVienForm = new ThemNhanVienForm();
+            themNhanVienForm.ShowDialog();
+        }
+
+        private void btnSuaNhanSu_Click(object sender, RoutedEventArgs e)
+        {
+            ThemNhanVienForm themNhanVienForm = new ThemNhanVienForm();
+            themNhanVienForm.ShowDialog();
         }
     }
 }

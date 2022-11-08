@@ -37,7 +37,7 @@
                     </Grid.RowDefinitions>
 
                     <TextBlock Grid.Row="0" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                        Text="Tên đăng  nhập" TextAlignment="Right" VerticalAlignment="Center"/>
+                        Text="Tên đăng nhập" TextAlignment="Right" VerticalAlignment="Center"/>
                     <TextBlock Grid.Row="1" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
                         Text="Mật khẩu" TextAlignment="Right" VerticalAlignment="Center"/>
                     <TextBlock Grid.Row="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 

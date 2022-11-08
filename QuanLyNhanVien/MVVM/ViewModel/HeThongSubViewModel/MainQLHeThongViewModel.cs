@@ -12,17 +12,11 @@ namespace QuanLyNhanVien.MVVM.ViewModel.HeThongSubViewModel
     {
         public RelayCommand TaiKhoanCommand { get; set; }
         public RelayCommand ThamSoCommand { get; set; }
-
-        //public RelayCommand SettingRoomStatusesViewCommand { get; set; }
-        //public RelayCommand SettingRoomTypesViewCommand { get; set; }
-        //public RelayCommand SettingRulesViewCommand { get; set; }
+        public RelayCommand LichSuChinhSuaCommand { get; set; }
 
         public TaiKhoanViewModel TaiKhoanVM { get; set; }
         public ThamSoViewModel ThamSoVM { get; set; }
-
-        //public SettingRoomStatusesViewModel SettingRoomStatusesVM { get; set; }
-        //public SettingRoomTypesViewModel SettingRoomTypesVM { get; set; }
-        //public SettingRulesViewModel SettingRulesVM { get; set; }
+        public LichSuChinhSuaViewModel LichSuChinhSuaVM { get; set; }
 
         private object _currentView;
 
@@ -40,6 +34,7 @@ namespace QuanLyNhanVien.MVVM.ViewModel.HeThongSubViewModel
         {
             TaiKhoanVM = new TaiKhoanViewModel();
             ThamSoVM = new ThamSoViewModel();
+            LichSuChinhSuaVM = new LichSuChinhSuaViewModel();
 
             CurrentView = TaiKhoanVM;
 
@@ -51,6 +46,11 @@ namespace QuanLyNhanVien.MVVM.ViewModel.HeThongSubViewModel
             ThamSoCommand = new RelayCommand(o =>
             {
                 CurrentView = ThamSoVM;
+            });
+
+            LichSuChinhSuaCommand = new RelayCommand(o =>
+            {
+                CurrentView = LichSuChinhSuaVM;
             });
 
 
