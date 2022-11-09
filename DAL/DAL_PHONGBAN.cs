@@ -62,5 +62,73 @@ namespace DAL
             else return false;
             connection.Close();
         }
+
+        public string TimKiemMaPhongBan(string tenPhong)
+        {
+            string maPhong = string.Empty;
+            CheckConnection();
+            string sql = string.Format("SELECT * FROM PHONGBAN WHERE TENPHONG = N'{0}'", tenPhong);
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                maPhong = sdr["MAPHONG"].ToString();
+            }
+            connection.Close();
+            return maPhong;
+        }
+
+        public string TimKiemTenPhongBanTheoMa(string maPhong)
+        {
+            string tenPhong = string.Empty;
+            CheckConnection();
+            string sql = string.Format("SELECT * FROM PHONGBAN WHERE MAPHONG = N'{0}'", maPhong);
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                tenPhong = sdr["TENPHONG"].ToString();
+            }
+            connection.Close();
+            return tenPhong;
+        }
+
+        public string TimKiemBoPhanTheoPhong(string maPhong)
+        {
+            string tenPhong = string.Empty;
+            CheckConnection();
+            string sql = string.Format("SELECT * FROM PHONGBAN WHERE MAPHONG = N'{0}'", maPhong);
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                tenPhong = sdr["MABP"].ToString();
+            }
+            connection.Close();
+            return tenPhong;
+        }
+
+        public List<string> TongHopPhongBan(string maBP)
+        {
+            List<string> listPhongBan = new List<string>();
+            CheckConnection();
+            string sql;
+            if (maBP == "")
+                sql = string.Format("SELECT TENPHONG FROM PHONGBAN");
+            else
+                sql = string.Format("SELECT TENPHONG FROM PHONGBAN WHERE MABP = N'{0}'", maBP);
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                listPhongBan.Add(sdr[0].ToString());
+            }
+            connection.Close();
+            return listPhongBan;
+        }
     }
 }

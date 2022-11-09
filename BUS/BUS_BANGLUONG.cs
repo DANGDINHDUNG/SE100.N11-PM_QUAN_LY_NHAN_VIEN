@@ -2,6 +2,8 @@
 using DAL;
 using DTO;
 using System.Data;
+using System.Collections.Generic;
+
 namespace BUS
 {
     public class BUS_BANGLUONG
@@ -26,6 +28,11 @@ namespace BUS
         public bool XoaBangLuong(string maluong)
         {
             return bangluong.XoaBangLuong(maluong);
+        }
+
+        public List<string> TongHopMaLuong()
+        {
+            return bangluong.TongHopMaLuong();
         }
 
     }

@@ -6,27 +6,31 @@ namespace BUS
 {
     public class BUS_NHANVIEN
     {
-        DAL_NHANVIEN khenthuong = new DAL_NHANVIEN();
+        DAL_NHANVIEN nhanvien = new DAL_NHANVIEN();
 
         public DataTable getNhanVien()
         {
-            return khenthuong.getNhanVien();
+            return nhanvien.getNhanVien();
         }
 
         public bool ThemNhanVien(DTO_NHANVIEN nv)
         {
-            return khenthuong.ThemNhanVien(nv);
+            return nhanvien.ThemNhanVien(nv);
         }
 
         public bool SuaNhanVien(DTO_NHANVIEN nv)
         {
-            return khenthuong.SuaNhanVien(nv);
+            return nhanvien.SuaNhanVien(nv);
         }
 
         public bool XoaNhanVien(int manv)
         {
-            return khenthuong.XoaNhanVien(manv);
+            return nhanvien.XoaNhanVien(manv);
         }
 
+        public DataTable TongHopNhanVienTheoPhong(string maPhong)
+        {
+            return nhanvien.TongHopNhanVienTheoPhong(maPhong);
+        }
     }
 }

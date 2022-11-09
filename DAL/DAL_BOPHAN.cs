@@ -61,5 +61,54 @@ namespace DAL
             else return false;
             connection.Close();
         }
+
+
+        public string TimKiemTheoTenBoPhan(string tenBP)
+        {
+            string maBP = string.Empty;
+            CheckConnection();
+            string sql = string.Format("SELECT * FROM BOPHAN WHERE TENBOPHAN = N'{0}'", tenBP);
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                maBP = sdr["MABP"].ToString();
+            }
+            connection.Close();
+            return maBP;
+        }
+
+        public string TimKiemTheoMaBoPhan(string maBP)
+        {
+            string tenBP = string.Empty;
+            CheckConnection();
+            string sql = string.Format("SELECT * FROM BOPHAN WHERE MABP = N'{0}'", maBP);
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                tenBP = sdr["TENBOPHAN"].ToString();
+            }
+            connection.Close();
+            return tenBP;
+        }
+
+        public List<string> TongHopTenBoPhan()
+        {
+            List<string> listTenBoPhan = new List<string>();
+            CheckConnection();
+            string sql = string.Format("SELECT TENBOPHAN FROM BOPHAN");
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                listTenBoPhan.Add(sdr[0].ToString());
+            }
+            connection.Close();
+            return listTenBoPhan;
+        }
     }
 }

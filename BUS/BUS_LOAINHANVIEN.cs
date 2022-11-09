@@ -2,6 +2,8 @@
 using DAL;
 using DTO;
 using System.Data;
+using System.Collections.Generic;
+
 namespace BUS
 {
     public class BUS_LOAINHANVIEN
@@ -28,5 +30,19 @@ namespace BUS
             return loainhanvien.XoaLoaiNhanVien(malnv);
         }
 
+        public string TimKiemTheoLoaiNhanVien(string loaiNV)
+        {
+            return loainhanvien.TimKiemTheoLoaiNhanVien(loaiNV);
+        }
+
+        public string TimKiemTheoMaLoaiNhanVien(string maLoaiNV)
+        {
+            return loainhanvien.TimKiemTheoMaLoaiNhanVien(maLoaiNV);
+        }
+
+        public List<string> TongHopLoaiNhanVien()
+        {
+            return loainhanvien.TongHopLoaiNhanVien();
+        }
     }
 }

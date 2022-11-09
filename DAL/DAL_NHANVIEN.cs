@@ -59,10 +59,10 @@ namespace DAL
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("UPDATE NHANVIEN " +
-                "SET MAPHONG='{0}, MALUONG='{1}',HOTEN=N'{2}',NGAYSINH='{3}',GIOITINH=N'{4}',DANTOC='{5}',CMND_CCCD='{6}'" +
-                "NOICAP=N'{7}',CHUCVU=N'{8}',MALOAINV='{9}',LOAIHD=N'{10}',THOIGIAN='{11}','NGAYKY='{12}',NGAYHETHAN='{13}'" +
+                "SET MAPHONG='{0}', MALUONG='{1}',HOTEN=N'{2}',NGAYSINH='{3}',GIOITINH=N'{4}',DANTOC='{5}',CMND_CCCD='{6}', " +
+                "NOICAP=N'{7}',CHUCVU=N'{8}',MALOAINV='{9}',LOAIHD=N'{10}',THOIGIAN='{11}',NGAYKY='{12}',NGAYHETHAN='{13}', " +
                 "SDT='{14}',HOCVAN=N'{15}',GHICHU='{16}'" + "WHERE MANV = '{17}'",
-            nhanVien.Maphong, nhanVien.Maluong, nhanVien.Hoten, nhanVien.Ngaysinh,
+                nhanVien.Maphong, nhanVien.Maluong, nhanVien.Hoten, nhanVien.Ngaysinh,
                 nhanVien.Gioitinh, nhanVien.Dantoc, nhanVien.Cmnd_cccd, nhanVien.Noicap, nhanVien.Chucvu, nhanVien.Maloainv,
                 nhanVien.Loaihd, nhanVien.Thoigian, nhanVien.Ngaydangki, nhanVien.Ngayhethan, nhanVien.Sdt, nhanVien.Hocvan, nhanVien.Ghichu, nhanVien.Manv);
             SqlCommand cmd = new SqlCommand(sql, connection);
@@ -82,6 +82,14 @@ namespace DAL
                 return true;
             else return false;
             connection.Close();
+        }
+
+        public DataTable TongHopNhanVienTheoPhong(string maPhong)
+        {
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE MAPHONG = N'" + maPhong + "'", connection);
+            DataTable dtNHANVIEN = new DataTable();
+            da.Fill(dtNHANVIEN);
+            return dtNHANVIEN;
         }
     }
 }
