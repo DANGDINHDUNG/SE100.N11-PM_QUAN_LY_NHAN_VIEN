@@ -87,6 +87,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
             busNhanVien.XoaNhanVien(dtoNhanVien.Manv);
             MessageBox.Show("Xóa nhân viên thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
             DataGridLoad();
+            tenNVTbx.Text = "";
         }
 
         private void dsNhanVienDtg_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -99,9 +100,9 @@ namespace QuanLyNhanVien.MVVM.View.SubView
                 return;
             }
             dtoNhanVien.Manv = int.Parse(row[0].ToString());
-            phongCbx.Text = row[1].ToString();
+            boPhanCbx.SelectedItem = busBoPhan.TimKiemTheoMaBoPhan(busPhongBan.TimKiemBoPhanTheoPhong(row[1].ToString()));
+            phongCbx.SelectedItem = busPhongBan.TimKiemTenPhongBanTheoMa(row[1].ToString());
             tenNVTbx.Text = row[3].ToString();
-            boPhanCbx.Text = busBoPhan.TimKiemTheoMaBoPhan(busPhongBan.TimKiemBoPhanTheoPhong(row[1].ToString()));
         }
 
         private void lamMoiBtn_Click(object sender, RoutedEventArgs e)
@@ -114,6 +115,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
         private void boPhanCbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            tenNVTbx.Text = "";
             if (boPhanCbx.SelectedItem == null)
             {
                 DataGridLoad();
@@ -128,6 +130,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
         public void ComboBoxes_Loaded()
         {
+            tenNVTbx.Text = "";
             boPhanCbx.Text = "";
             phongCbx.Text = "";
             foreach (var tenPhong in busPhongBan.TongHopPhongBan(""))
@@ -142,6 +145,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
         private void phongCbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            tenNVTbx.Text = "";
             if (phongCbx.Items.Count == 0 || phongCbx.SelectedItem == null)
             {
                 DataGridLoad();
@@ -181,6 +185,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
             themNhanVienForm.suaNhanVien = suaNhanVien;
             themNhanVienForm.ShowDialog();
             DataGridLoad();
+            tenNVTbx.Text = "";
         }
     }
 }
