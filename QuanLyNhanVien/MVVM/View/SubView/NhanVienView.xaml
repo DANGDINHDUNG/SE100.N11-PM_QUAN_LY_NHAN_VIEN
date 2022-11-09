@@ -29,15 +29,15 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Grid.Column="0" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Mã phòng" TextAlignment="Right" VerticalAlignment="Center"/>
+                           Text="Phòng" TextAlignment="Right" VerticalAlignment="Center"/>
                 <TextBlock Grid.Column="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Mã bộ phận" TextAlignment="Right" VerticalAlignment="Center"/>
+                           Text="Bộ phận" TextAlignment="Right" VerticalAlignment="Center"/>
                 <TextBlock Grid.Column="4" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Mã nhân viên" TextAlignment="Right" VerticalAlignment="Center"/>
+                           Text="Tên nhân viên" TextAlignment="Right" VerticalAlignment="Center"/>
 
-                <ComboBox Style="{StaticResource ComboboxStyle}" Grid.Column="1"/>
-                <ComboBox Style="{StaticResource ComboboxStyle}" Grid.Column="3"/>
-                <TextBox Style="{StaticResource InputTextBox}" Grid.Column="5" Grid.Row="0"/>
+                <ComboBox x:Name="phongCbx" Style="{StaticResource ComboboxStyle}" Grid.Column="1" SelectionChanged="phongCbx_SelectionChanged"/>
+                <ComboBox x:Name="boPhanCbx" Style="{StaticResource ComboboxStyle}" Grid.Column="3" SelectionChanged="boPhanCbx_SelectionChanged"/>
+                <TextBox x:Name="tenNVTbx" Style="{StaticResource InputTextBox}" Grid.Column="5" Grid.Row="0"/>
 
             </Grid>
         </GroupBox>
@@ -45,7 +45,8 @@
         <DataGrid x:Name="dsNhanVienDtg" Grid.Row="1"
                   ItemsSource="{Binding Path=DefaultView}"
                   IsReadOnly="True"
-                  Margin="10,10,10,10" SelectionChanged="dsNhanVienDtg_SelectionChanged">
+                  Margin="10,10,10,10" 
+                  SelectionChanged="dsNhanVienDtg_SelectionChanged">
 
         </DataGrid>
         <Grid Grid.Row="2">
@@ -59,22 +60,22 @@
 
             <Button Style="{StaticResource WindowButtonTheme}"
                     Width="150" Height="40"
-                    x:Name="btnThemNhanVien"
-                    Click="btnThemNhanVien_Click">Thêm nhân sự</Button>
+                    x:Name="themBtn"
+                    Click="themBtn_Click">Thêm nhân sự</Button>
             <Button x:Name="xoaBtn" Grid.Column="1" 
                     Style="{StaticResource WindowButtonTheme}"
                     Width="150" Height="40" Click="xoaBtn_Click">Xóa nhân sự</Button>
             <Button Grid.Column="2"
-                    x:Name="btnSuaNhanSu"
-                    Click="btnSuaNhanSu_Click"
+                    x:Name="SuaNhanSuBtn"
+                    Click="suaBtn_Click"
                     Style="{StaticResource WindowButtonTheme}"
                     Width="150" Height="40">Sửa nhân sự</Button>
-            <Button Grid.Column="3"
+            <Button x:Name="chiTietBtn" Grid.Column="3"
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="150" Height="40">Xem chi tiết</Button>
-            <Button Grid.Column="4"
+                    Width="150" Height="40" Click="chiTietBtn_Click">Xem chi tiết</Button>
+            <Button x:Name="lamMoiBtn" Grid.Column="4"
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="150" Height="40">Làm mới</Button>
+                    Width="150" Height="40" Click="lamMoiBtn_Click">Làm mới</Button>
        
             
         </Grid>

@@ -60,5 +60,53 @@ namespace DAL
             else return false;
             connection.Close();
         }
+
+        public string TimKiemTheoLoaiNhanVien(string loaiNV)
+        {
+            string maLoaiNV = string.Empty;
+            CheckConnection();
+            string sql = string.Format("SELECT * FROM LOAINHANVIEN WHERE TENLOAINV = N'{0}'", loaiNV);
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                maLoaiNV = sdr["MALOAINV"].ToString();
+            }
+            connection.Close();
+            return maLoaiNV;
+        }
+
+        public string TimKiemTheoMaLoaiNhanVien(string maLoaiNV)
+        {
+            string loaiNV = string.Empty;
+            CheckConnection();
+            string sql = string.Format("SELECT * FROM LOAINHANVIEN WHERE MALOAINV = N'{0}'", maLoaiNV);
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                loaiNV = sdr["TENLOAINV"].ToString();
+            }
+            connection.Close();
+            return loaiNV;
+        }
+
+        public List<string> TongHopLoaiNhanVien()
+        {
+            List<string> listLoaiNhanVien = new List<string>();
+            CheckConnection();
+            string sql = string.Format("SELECT TENLOAINV FROM LOAINHANVIEN");
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                listLoaiNhanVien.Add(sdr[0].ToString());
+            }
+            connection.Close();
+            return listLoaiNhanVien;
+        }
     }
 }

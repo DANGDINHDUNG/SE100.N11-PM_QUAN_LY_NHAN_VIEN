@@ -16,3 +16,9 @@ C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DTO\obj\Debug\DTO.csproj.AssemblyR
 C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DTO\obj\Debug\DTO.dll
 C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DTO\obj\Debug\DTO.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DTO\bin\Debug\DTO.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DTO\bin\Debug\DTO.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DTO\obj\Debug\DTO.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DTO\obj\Debug\DTO.pdb

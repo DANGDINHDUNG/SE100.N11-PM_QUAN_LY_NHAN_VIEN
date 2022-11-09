@@ -2,6 +2,8 @@
 using DAL;
 using DTO;
 using System.Data;
+using System.Collections.Generic;
+
 namespace BUS
 {
     public class BUS_BOPHAN
@@ -28,5 +30,19 @@ namespace BUS
             return bophan.XoaBoPhan(mabp);
         }
 
+        public string TimKiemTheoTenBoPhan(string tenBP)
+        {
+            return bophan.TimKiemTheoTenBoPhan(tenBP);
+        }
+
+        public List<string> TongHopTenBoPhan()
+        {
+            return bophan.TongHopTenBoPhan();
+        }
+
+        public string TimKiemTheoMaBoPhan(string maBP)
+        {
+            return bophan.TimKiemTheoMaBoPhan(maBP);
+        }
     }
 }
