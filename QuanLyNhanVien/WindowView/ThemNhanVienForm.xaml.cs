@@ -42,11 +42,11 @@ namespace QuanLyNhanVien.WindowView
         }
 
         private void themSuaBtn_Click(object sender, RoutedEventArgs e)
-        {   
-            if (phongCbx.Text == String.Empty || tenTbx.Text == String.Empty || ngaySinhTbx.Text == String.Empty 
-                || gioiTinhTbx.Text == String.Empty || cccdTbx.Text == String.Empty || noiCapTbx.Text == String.Empty 
+        {
+            if (phongCbx.Text == String.Empty || tenTbx.Text == String.Empty || ngaySinhTbx.Text == String.Empty
+                || gioiTinhTbx.Text == String.Empty || cccdTbx.Text == String.Empty || noiCapTbx.Text == String.Empty
                 || maLuongCbx.Text == String.Empty || loaiNVCbx.Text == String.Empty || chucVuTbx.Text == String.Empty
-                || loaiHopDongTbx.Text == String.Empty || thoiGianTbx.Text == String.Empty || ngayKyTbx.Text == String.Empty 
+                || loaiHopDongTbx.Text == String.Empty || thoiGianTbx.Text == String.Empty || ngayKyTbx.Text == String.Empty
                 || ngayHetHanTbx.Text == String.Empty || soDienThoaiTbx.Text == String.Empty || hocVanTbx.Text == String.Empty || danTocCbx.Text == String.Empty)
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -76,7 +76,7 @@ namespace QuanLyNhanVien.WindowView
             {
                 busNhanVien.ThemNhanVien(dtoNhanVien);
                 MessageBox.Show("Thêm nhân viên thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
-            }      
+            }
             else
             {
                 dtoNhanVien.Manv = int.Parse(maNVTbx.Text);
@@ -105,7 +105,7 @@ namespace QuanLyNhanVien.WindowView
             }
 
             string[] listDanToc = new string[] { "Kinh", "Tày", "Thái", "Mường", "Khmer", "Hoa", "Nùng", "H'Mông", "Dao", "Gia Rai",
-                                            "Ê Đê", "Ba Na", "Sán Chay", "Chăm", "Kơ Ho", "Xơ Đăng", "Sán Dìu", "Hrê", "Ra Glai", 
+                                            "Ê Đê", "Ba Na", "Sán Chay", "Chăm", "Kơ Ho", "Xơ Đăng", "Sán Dìu", "Hrê", "Ra Glai",
                                             "Mnông", "Thổ", "Stiêng", "Khơ mú", "Bru - Vân Kiều", "Cơ Tu", "Giáy", "Tà Ôi", "Mạ",
                                             "Giẻ-Triêng", "Co", "Chơ Ro", "Xinh Mun", "Hà Nhì", "Chu Ru", "Lào", "La Chí", "Kháng",
                                             "Phù Lá", "La Hủ", "La Ha", "Pà Thẻn", "Lự", "Ngái", "Chứt", "Lô Lô", "Mảng", "Cơ Lao",

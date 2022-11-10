@@ -9,45 +9,56 @@
              Background="Transparent">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="120"/>
             <RowDefinition/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
         <GroupBox Header="Thông tin cơ bản"
                       BorderThickness="0"
                       FontSize="17"
-                      FontWeight="SemiBold">
+                      FontWeight="SemiBold" Height="120" VerticalAlignment="Top">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="100"/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="100"/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="100"/>
-                    <ColumnDefinition/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="59*"/>
+                    <ColumnDefinition Width="55"/>
+                    <ColumnDefinition Width="59*"/>
+                    <ColumnDefinition Width="58"/>
+                    <ColumnDefinition Width="70*"/>
+                    <ColumnDefinition Width="50"/>
                 </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Column="1" Grid.RowSpan="2" Margin="177,36,10,0" FontWeight="Normal" FontSize="14" 
+                           Text="Phòng" TextAlignment="Right" VerticalAlignment="Top" Height="19" Grid.ColumnSpan="2"/>
+                <TextBlock Grid.Column="0" Grid.RowSpan="2" Margin="0,36,10,0" FontWeight="Normal" FontSize="14" 
+                           Text="Bộ phận" TextAlignment="Right" VerticalAlignment="Top" Height="19"/>
+                <TextBlock Grid.Column="4" Grid.RowSpan="2" Margin="4,36,10,0" FontWeight="Normal" FontSize="14" 
+                           Text="Họ Tên" TextAlignment="Right" VerticalAlignment="Top" Height="19"/>
 
-                <TextBlock Grid.Column="0" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Phòng" TextAlignment="Right" VerticalAlignment="Center"/>
-                <TextBlock Grid.Column="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Bộ phận" TextAlignment="Right" VerticalAlignment="Center"/>
-                <TextBlock Grid.Column="4" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Tên nhân viên" TextAlignment="Right" VerticalAlignment="Center"/>
+                <ComboBox x:Name="phongCbx" Grid.RowSpan="2" Style="{StaticResource ComboboxStyle}" Grid.Column="2" Grid.ColumnSpan="3" Margin="55,0,53,0" IsReadOnly="True"/>
+                <ComboBox x:Name="boPhanCbx" Grid.RowSpan="2" Style="{StaticResource ComboboxStyle}" Grid.Column="1" SelectionChanged="boPhanCbx_SelectionChanged" Margin="0,0,5,0" IsReadOnly="True"/>
+                <TextBox x:Name="tenNVTbx" Grid.RowSpan="2" Style="{StaticResource InputTextBox}" Grid.Column="5" Height="32" Margin="3,29,10,0" VerticalAlignment="Top" KeyDown="tenNVTbx_KeyDown"/>
 
-                <ComboBox x:Name="phongCbx" Style="{StaticResource ComboboxStyle}" Grid.Column="1" SelectionChanged="phongCbx_SelectionChanged"/>
-                <ComboBox x:Name="boPhanCbx" Style="{StaticResource ComboboxStyle}" Grid.Column="3" SelectionChanged="boPhanCbx_SelectionChanged"/>
-                <TextBox x:Name="tenNVTbx" Style="{StaticResource InputTextBox}" Grid.Column="5" Grid.Row="0"/>
+                <Button x:Name="locBtn" Grid.Column="6" Grid.Row="0"
+                    Style="{StaticResource WindowButtonTheme}"
+                    Width="NaN" Height="NaN" Click="locBtn_Click" Margin="5,24,5,26" Grid.RowSpan="2">
+                    <Image Height="20"
+                        Source="/MVVM/View/SubView/icons8-funnel-64.png"/>
+                </Button>
 
+                
             </Grid>
         </GroupBox>
-        
+
         <DataGrid x:Name="dsNhanVienDtg" Grid.Row="1"
                   ItemsSource="{Binding Path=DefaultView}"
                   IsReadOnly="True"
-                  Margin="10,10,10,10" 
+                  Margin="10,0,10,10" 
                   SelectionChanged="dsNhanVienDtg_SelectionChanged">
-
         </DataGrid>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
@@ -72,14 +83,14 @@
                     Width="150" Height="40">Sửa nhân sự</Button>
             <Button x:Name="chiTietBtn" Grid.Column="3"
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="150" Height="40" Click="chiTietBtn_Click">Xem chi tiết</Button>
+                    Width="150" Height="40" Click="chiTietBtn_Click" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Bottom">Xem chi tiết</Button>
             <Button x:Name="lamMoiBtn" Grid.Column="4"
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="150" Height="40" Click="lamMoiBtn_Click">Làm mới</Button>
-       
-            
+                    Width="150" Height="40"
+                    Click="lamMoiBtn_Click" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Bottom">Làm mới</Button>
+
         </Grid>
-        
+
 
     </Grid>
 </UserControl>

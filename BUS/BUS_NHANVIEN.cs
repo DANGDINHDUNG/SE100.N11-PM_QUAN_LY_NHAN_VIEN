@@ -28,9 +28,9 @@ namespace BUS
             return nhanvien.XoaNhanVien(manv);
         }
 
-        public DataTable TongHopNhanVienTheoPhong(string maPhong)
+        public DataTable TongHopNhanVienTheoPhong(string maPhong, string ten)
         {
-            return nhanvien.TongHopNhanVienTheoPhong(maPhong);
+            return nhanvien.TongHopNhanVienTheoPhong(maPhong, ten);
         }
     }
 }
