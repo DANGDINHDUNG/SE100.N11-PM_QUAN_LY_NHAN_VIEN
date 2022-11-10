@@ -1,4 +1,4 @@
-﻿CREATE DATABASE QUANLYNHANVIEN
+CREATE DATABASE QUANLYNHANVIEN
 
 
 CREATE TABLE NHANVIEN
@@ -233,3 +233,45 @@ INSERT INTO TAIKHOAN(MALOAITK,TENCHUTAIKHOAN,TENDANGNHAP,MATKHAU) VALUES (1,'ADM
 
 INSERT INTO NHANVIEN(HOTEN, NGAYSINH, GIOITINH, DANTOC, CMND_CCCD, NOICAP, CHUCVU, LOAIHD, THOIGIAN, NGAYKY, NGAYHETHAN, SDT, HOCVAN, GHICHU) VALUES ('NGB', '05/11/2002', 'NAM', 'King', '1', 'BD', 'Boss', 'Dài hạn', '4', '01/01/2023', '01/01/2027', '0123456789', 'Master', 'GHICHU')
 INSERT INTO NHANVIEN(HOTEN, NGAYSINH, GIOITINH, DANTOC, CMND_CCCD, NOICAP, CHUCVU, LOAIHD, THOIGIAN, NGAYKY, NGAYHETHAN, SDT, HOCVAN, GHICHU) VALUES ('NHGH', '08/11/2002', 'NAM', 'King', '2', 'BD', 'Boss', 'Dài hạn', '4', '01/01/2023', '01/01/2027', '0987654321', 'Master', 'GHICHU')
+
+CREATE FUNCTION [dbo].[fChuyenCoDauThanhKhongDau](@inputVar NVARCHAR(MAX) )
+RETURNS NVARCHAR(MAX)
+AS
+BEGIN    
+    IF (@inputVar IS NULL OR @inputVar = '')  RETURN ''
+   
+    DECLARE @RT NVARCHAR(MAX)
+    DECLARE @SIGN_CHARS NCHAR(256)
+    DECLARE @UNSIGN_CHARS NCHAR (256)
+ 
+    SET @SIGN_CHARS = N'ăâđêôơưàảãạáằẳẵặắầẩẫậấèẻẽẹéềểễệếìỉĩịíòỏõọóồổỗộốờởỡợớùủũụúừửữựứỳỷỹỵýĂÂĐÊÔƠƯÀẢÃẠÁẰẲẴẶẮẦẨẪẬẤÈẺẼẸÉỀỂỄỆẾÌỈĨỊÍÒỎÕỌÓỒỔỖỘỐỜỞỠỢỚÙỦŨỤÚỪỬỮỰỨỲỶỸỴÝ' + NCHAR(272) + NCHAR(208)
+    SET @UNSIGN_CHARS = N'aadeoouaaaaaaaaaaaaaaaeeeeeeeeeeiiiiiooooooooooooooouuuuuuuuuuyyyyyAADEOOUAAAAAAAAAAAAAAAEEEEEEEEEEIIIIIOOOOOOOOOOOOOOOUUUUUUUUUUYYYYYDD'
+ 
+    DECLARE @COUNTER int
+    DECLARE @COUNTER1 int
+   
+    SET @COUNTER = 1
+    WHILE (@COUNTER <= LEN(@inputVar))
+    BEGIN  
+        SET @COUNTER1 = 1
+        WHILE (@COUNTER1 <= LEN(@SIGN_CHARS) + 1)
+        BEGIN
+            IF UNICODE(SUBSTRING(@SIGN_CHARS, @COUNTER1,1)) = UNICODE(SUBSTRING(@inputVar,@COUNTER ,1))
+            BEGIN          
+                IF @COUNTER = 1
+                    SET @inputVar = SUBSTRING(@UNSIGN_CHARS, @COUNTER1,1) + SUBSTRING(@inputVar, @COUNTER+1,LEN(@inputVar)-1)      
+                ELSE
+                    SET @inputVar = SUBSTRING(@inputVar, 1, @COUNTER-1) +SUBSTRING(@UNSIGN_CHARS, @COUNTER1,1) + SUBSTRING(@inputVar, @COUNTER+1,LEN(@inputVar)- @COUNTER)
+                BREAK
+            END
+            SET @COUNTER1 = @COUNTER1 +1
+        END
+        SET @COUNTER = @COUNTER +1
+    END
+    -- SET @inputVar = replace(@inputVar,' ','-')
+    RETURN @inputVar
+END
+
+SELECT dbo.fChuyenCoDauThanhKhongDau(HOTEN) FROM NHANVIEN
+
+SELECT * FROM NHANVIEN WHERE dbo.fChuyenCoDauThanhKhongDau(HOTEN) LIKE N'%bao%'
