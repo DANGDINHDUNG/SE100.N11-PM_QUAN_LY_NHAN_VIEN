@@ -20,6 +20,7 @@ namespace DAL
             da.Fill(dtNHANVIEN);
             return dtNHANVIEN;
         }
+
         public bool ThemNhanVien(DTO_NHANVIEN nhanVien)
         {
             if (connection.State != ConnectionState.Open)

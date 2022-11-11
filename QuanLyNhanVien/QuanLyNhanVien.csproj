@@ -152,8 +152,8 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MVVM\View\HeThongSubView\LichSuChinhSuaView.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MVVM\View\HeThongSubView\TaiKhoanView.xaml">
       <SubType>Designer</SubType>
@@ -414,25 +414,10 @@
     <Resource Include="Images\icons8-available-updates-60.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="MVVM\View\SubView\icons8-funnel-50.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="MVVM\View\SubView\icons8-filter-48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="MVVM\View\SubView\icons8-filter-100.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="MVVM\View\SubView\icons8-funnel-64.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="MVVM\View\SubView\icons8-conversion-50.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="MVVM\View\SubView\XButton.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="MVVM\View\SubView\icons8-funnel-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.6.1\build\MaterialDesignThemes.targets')" />

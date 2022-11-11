@@ -10,6 +10,7 @@ namespace DTO
     {
         private int macs;
         private int manv;
+        private int lancs;
         private string maphong;
         private string maluong;
         private string hoten;
@@ -33,8 +34,9 @@ namespace DTO
         {
         }
 
-        public DTO_LSCHINHSUA(int thoigian, DateTime ngaydangki, DateTime ngayhethan, string sdt, string hocvan, string ghichu, int manv, string maphong, string maluong, string hoten, DateTime ngaysinh, string gioitinh, string dantoc, string cmnd_cccd, string noicap, string chucvu, string maloainv, string loaihd, int macs = 0, DateTime ngaychinhsua = default)
+        public DTO_LSCHINHSUA(int thoigian, int macs, DateTime ngaydangki, DateTime ngayhethan, string sdt, string hocvan, string ghichu, int manv, string maphong, string maluong, string hoten, DateTime ngaysinh, string gioitinh, string dantoc, string cmnd_cccd, string noicap, string chucvu, string maloainv, string loaihd, int lancs = 0, DateTime ngaychinhsua = default)
         {
+            this.macs = macs;
             this.thoigian = thoigian;
             this.ngaydangki = ngaydangki;
             this.ngayhethan = ngayhethan;
@@ -53,11 +55,12 @@ namespace DTO
             this.chucvu = chucvu;
             this.maloainv = maloainv;
             this.loaihd = loaihd;
-            this.macs = macs;
+            this.lancs = lancs;
             this.ngaychinhsua = ngaychinhsua;
         }
 
         public int Manv { get => manv; set => manv = value; }
+        public int Macs { get => macs; set => macs = value; }
         public string Maphong { get => maphong; set => maphong = value; }
         public string Maluong { get => maluong; set => maluong = value; }
         public string Hoten { get => hoten; set => hoten = value; }
@@ -76,6 +79,6 @@ namespace DTO
         public string Hocvan { get => hocvan; set => hocvan = value; }
         public string Ghichu { get => ghichu; set => ghichu = value; }
         public DateTime Ngaychinhsua { get => ngaychinhsua; set => ngaychinhsua = value; }
-        public int Macs { get => macs; set => macs = value; }
+        public int Lancs { get => lancs; set => lancs = value; }
     }
 }

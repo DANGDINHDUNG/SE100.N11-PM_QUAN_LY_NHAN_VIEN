@@ -22,10 +22,10 @@ namespace DAL
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("INSERT INTO LSCHINHSUA VALUES ('{0}','{1}', '{2}',N'{3}'" +
-                ",'{4}',N'{5}',N'{6}','{7}'," +
-                "N'{8}',N'{9}','{10}',N'{11}','{12}','{13}','{14}','{15}',N'{16}',N'{17}','{18}')"
-                ,ls.Manv, ls.Maphong, ls.Maluong, ls.Hoten, ls.Ngaysinh,
+            string sql = string.Format("INSERT INTO LSCHINHSUA VALUES ('{0}','{1}', '{2}', '{3}'" +
+                ", N'{4}', '{5}', N'{6}', N'{7}', " +
+                "'{8}', N'{9}', N'{10}', '{11}', N'{12}', '{13}', '{14}', '{15}', '{16}', N'{17}', N'{18}', '{19}')"
+                , ls.Manv, ls.Lancs, ls.Maphong, ls.Maluong, ls.Hoten, ls.Ngaysinh,
                 ls.Gioitinh, ls.Dantoc, ls.Cmnd_cccd, ls.Noicap, ls.Chucvu, ls.Maloainv,
                 ls.Loaihd, ls.Thoigian, ls.Ngaydangki, ls.Ngayhethan, ls.Sdt, ls.Hocvan, ls.Ghichu,ls.Ngaychinhsua);
             SqlCommand cmd = new SqlCommand(sql, connection);
@@ -54,29 +54,29 @@ namespace DAL
 	HOCVAN NVARCHAR(20),
 	GHICHU NVARCHAR(60)
  */
-        public bool SuaLSChinhSua(DTO_LSCHINHSUA ls)
-        {
-            if (connection.State != ConnectionState.Open)
-                connection.Open();
-            string sql = string.Format("UPDATE LSCHINHSUA " +
-                "SET MAPHONG='{0}, MALUONG='{1}',HOTEN=N'{2}',NGAYSINH='{3}',GIOITINH=N'{4}',DANTOC='{5}',CMND_CCCD='{6}'" +
-                "NOICAP=N'{7}',CHUCVU=N'{8}',MALOAINV='{9}',LOAIHD=N'{10}',THOIGIAN='{11}','NGAYKY='{12}',NGAYHETHAN='{13}'" +
-                "SDT='{14}',HOCVAN=N'{15}',GHICHU='{16}',NGAYCHINHSUA='{17}'" + "WHERE MANV = '{18}' AND MACS='{19}'",
-            ls.Maphong, ls.Maluong, ls.Hoten, ls.Ngaysinh,
-                ls.Gioitinh, ls.Dantoc, ls.Cmnd_cccd, ls.Noicap, ls.Chucvu, ls.Maloainv,
-                ls.Loaihd, ls.Thoigian, ls.Ngaydangki, ls.Ngayhethan, ls.Sdt, ls.Hocvan, ls.Ghichu,ls.Ngaychinhsua, ls.Manv,ls.Macs);
-            SqlCommand cmd = new SqlCommand(sql, connection);
-            if (cmd.ExecuteNonQuery() > 0)
-                return true;
-            else return false;
-            connection.Close();
-        }
+        //public bool SuaLSChinhSua(DTO_LSCHINHSUA ls)
+        //{
+        //    if (connection.State != ConnectionState.Open)
+        //        connection.Open();
+        //    string sql = string.Format("UPDATE LSCHINHSUA " +
+        //        "SET MAPHONG='{0}, MALUONG='{1}',HOTEN=N'{2}',NGAYSINH='{3}',GIOITINH=N'{4}',DANTOC='{5}',CMND_CCCD='{6}'" +
+        //        "NOICAP=N'{7}',CHUCVU=N'{8}',MALOAINV='{9}',LOAIHD=N'{10}',THOIGIAN='{11}','NGAYKY='{12}',NGAYHETHAN='{13}'" +
+        //        "SDT='{14}',HOCVAN=N'{15}',GHICHU='{16}',NGAYCHINHSUA='{17}'" + "WHERE MANV = '{18}' AND MACS='{19}'",
+        //    ls.Maphong, ls.Maluong, ls.Hoten, ls.Ngaysinh,
+        //        ls.Gioitinh, ls.Dantoc, ls.Cmnd_cccd, ls.Noicap, ls.Chucvu, ls.Maloainv,
+        //        ls.Loaihd, ls.Thoigian, ls.Ngaydangki, ls.Ngayhethan, ls.Sdt, ls.Hocvan, ls.Ghichu,ls.Ngaychinhsua, ls.Manv,ls.Macs);
+        //    SqlCommand cmd = new SqlCommand(sql, connection);
+        //    if (cmd.ExecuteNonQuery() > 0)
+        //        return true;
+        //    else return false;
+        //    connection.Close();
+        //}
 
-        public bool XoaLSChinhSua(int macs)
+        public bool XoaLSChinhSua(int maCS)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("DELETE FROM LSCHINHSUA WHERE MACS = '{0}'", macs);
+            string sql = string.Format("DELETE FROM LSCHINHSUA WHERE MACS = '{0}'", maCS);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;
@@ -94,6 +94,47 @@ namespace DAL
                 return true;
             else return false;
             connection.Close();
+        }
+
+        public DataTable TongHopLSChinhSuaNhanVienTheoPhong(string maPhong, string maNV)
+        {
+            DataTable dtNHANVIEN = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter();
+
+            if (maPhong == "")
+            {
+                da = new SqlDataAdapter("SELECT * FROM LSCHINHSUA WHERE MANV = N'" + maNV + "'", connection);
+            }
+
+            if (maNV == "")
+            {
+                da = new SqlDataAdapter("SELECT * FROM LSCHINHSUA WHERE MAPHONG = N'" + maPhong + "'", connection);
+            }
+
+            if (maNV != "" && maPhong != "")
+            {
+                da = new SqlDataAdapter("SELECT * FROM LSCHINHSUA WHERE MAPHONG = N'" + maPhong + "' AND MANV = N'" + maNV + "'", connection);
+
+            }
+
+            da.Fill(dtNHANVIEN);
+            return dtNHANVIEN;
+        }
+
+        public int TimLanChinhSuaGanNhat(string maNV)
+        {
+            int lanCS = 0;
+            CheckConnection();
+            string sql = string.Format("SELECT (CASE WHEN MAX(LANCS) >= 1 THEN MAX(LANCS) ELSE 0 END) 'LANCSGANNHAT' FROM LSCHINHSUA WHERE MANV = '{0}'", maNV);
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                lanCS = int.Parse(sdr["LANCSGANNHAT"].ToString());
+            }
+            connection.Close();
+            return lanCS;
         }
     }
 }

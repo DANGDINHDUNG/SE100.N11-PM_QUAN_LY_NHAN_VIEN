@@ -27,13 +27,16 @@ namespace QuanLyNhanVien.WindowView
         public BUS_PHONGBAN busPhongBan = new BUS_PHONGBAN();
         public BUS_LOAINHANVIEN busLoaiNV = new BUS_LOAINHANVIEN();
         public BUS_BANGLUONG busBangLuong = new BUS_BANGLUONG();
+        public BUS_LSCHINHSUA busLSChinhSua = new BUS_LSCHINHSUA();
         public DTO_NHANVIEN suaNhanVien;
+        public DTO_LSCHINHSUA dtoLSChinhSua = new DTO_LSCHINHSUA();
         public bool checkAdd;
 
         public ThemNhanVienForm()
         {
             InitializeComponent();
             ComboBoxes_Loaded();
+            
         }
 
         private void huyBtn_Click(object sender, RoutedEventArgs e)
@@ -44,7 +47,7 @@ namespace QuanLyNhanVien.WindowView
         private void themSuaBtn_Click(object sender, RoutedEventArgs e)
         {
             if (phongCbx.Text == String.Empty || tenTbx.Text == String.Empty || ngaySinhTbx.Text == String.Empty
-                || gioiTinhTbx.Text == String.Empty || cccdTbx.Text == String.Empty || noiCapTbx.Text == String.Empty
+                || gioiTinhTbx.Text == String.Empty || cccdTbx.Text == String.Empty
                 || maLuongCbx.Text == String.Empty || loaiNVCbx.Text == String.Empty || chucVuTbx.Text == String.Empty
                 || loaiHopDongTbx.Text == String.Empty || thoiGianTbx.Text == String.Empty || ngayKyTbx.Text == String.Empty
                 || ngayHetHanTbx.Text == String.Empty || soDienThoaiTbx.Text == String.Empty || hocVanTbx.Text == String.Empty || danTocCbx.Text == String.Empty)
@@ -82,9 +85,35 @@ namespace QuanLyNhanVien.WindowView
                 dtoNhanVien.Manv = int.Parse(maNVTbx.Text);
                 busNhanVien.SuaNhanVien(dtoNhanVien);
                 MessageBox.Show("Sửa nhân viên thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                dtoLSChinhSua.Ngaychinhsua = DateTime.Now;
+                busLSChinhSua.ThemLSChinhSua(dtoLSChinhSua);
+                
             }
             this.Close();
 
+        }
+
+        public void GetOldData()
+        {
+            dtoLSChinhSua.Manv = int.Parse(maNVTbx.Text);
+            dtoLSChinhSua.Lancs = busLSChinhSua.TimLanChinhSuaGanNhat(maNVTbx.Text) + 1;
+            dtoLSChinhSua.Maphong = busPhongBan.TimKiemMaPhongBan(phongCbx.Text);
+            dtoLSChinhSua.Hoten = tenTbx.Text;
+            dtoLSChinhSua.Ngaysinh = DateTime.Parse(ngaySinhTbx.Text);
+            dtoLSChinhSua.Gioitinh = gioiTinhTbx.Text;
+            dtoLSChinhSua.Cmnd_cccd = cccdTbx.Text;
+            dtoLSChinhSua.Noicap = noiCapTbx.Text;
+            dtoLSChinhSua.Maluong = maLuongCbx.Text;
+            dtoLSChinhSua.Maloainv = busLoaiNV.TimKiemTheoLoaiNhanVien(loaiNVCbx.Text);
+            dtoLSChinhSua.Chucvu = chucVuTbx.Text;
+            dtoLSChinhSua.Loaihd = loaiHopDongTbx.Text;
+            dtoLSChinhSua.Thoigian = int.Parse(thoiGianTbx.Text);
+            dtoLSChinhSua.Ngaydangki = DateTime.Parse(ngayKyTbx.Text);
+            dtoLSChinhSua.Ngayhethan = DateTime.Parse(ngayHetHanTbx.Text);
+            dtoLSChinhSua.Sdt = soDienThoaiTbx.Text;
+            dtoLSChinhSua.Hocvan = hocVanTbx.Text;
+            dtoLSChinhSua.Ghichu = ghiChuTbx.Text;
+            dtoLSChinhSua.Dantoc = danTocCbx.Text;
         }
 
         public void ComboBoxes_Loaded()
@@ -140,6 +169,9 @@ namespace QuanLyNhanVien.WindowView
             loaiNVCbx.SelectedItem = busLoaiNV.TimKiemTheoMaLoaiNhanVien(suaNhanVien.Maloainv.ToString());
             phongCbx.SelectedItem = busPhongBan.TimKiemTenPhongBanTheoMa(suaNhanVien.Maphong.ToString());
             maLuongCbx.SelectedItem = suaNhanVien.Maluong.ToString();
+            GetOldData();
+            //MessageBox.Show(dtoLSChinhSua.Lancs.ToString(), "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+
         }
     }
 }

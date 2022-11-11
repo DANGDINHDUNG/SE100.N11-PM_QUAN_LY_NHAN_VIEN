@@ -34,7 +34,6 @@ namespace QuanLyNhanVien.MVVM.View.SubView
             InitializeComponent();
             DataGridLoad();
             ComboBoxesLoad();
-            tenNVTbx.Text = string.Empty;
         }
 
         private void themBtn_Click(object sender, RoutedEventArgs e)
@@ -44,11 +43,13 @@ namespace QuanLyNhanVien.MVVM.View.SubView
             themNhanVienForm.ShowDialog();
             
             DataGridLoad();
+            ClearBoxes();
         }
 
         private void suaBtn_Click(object sender, RoutedEventArgs e)
         {
             if (dsNhanVienDtg.SelectedItems.Count == 0) return;
+
             DTO_NHANVIEN suaNhanVien = new DTO_NHANVIEN();
             DataRowView row = dsNhanVienDtg.SelectedItem as DataRowView;
             ThemNhanVienForm themNhanVienForm = new ThemNhanVienForm();
@@ -76,24 +77,28 @@ namespace QuanLyNhanVien.MVVM.View.SubView
             themNhanVienForm.suaNhanVien = suaNhanVien;
             themNhanVienForm.ShowDialog();
             DataGridLoad();
+            ClearBoxes();
         }
 
         private void xoaBtn_Click(object sender, RoutedEventArgs e)
         {
             busNhanVien.XoaNhanVien(dtoNhanVien.Manv);
-            MessageBox.Show("Xóa nhân viên thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
             DataGridLoad();
+            MessageBox.Show("Xóa nhân viên thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            ClearBoxes();
         }
 
         private void dsNhanVienDtg_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (dsNhanVienDtg.SelectedItems.Count == 0) return;
             DataRowView row = dsNhanVienDtg.SelectedItem as DataRowView;
+
             if (row == null)
             {
                 ClearBoxes();
                 return;
             }
+
             dtoNhanVien.Manv = int.Parse(row[0].ToString());
             boPhanCbx.SelectedItem = busBoPhan.TimKiemTheoMaBoPhan(busPhongBan.TimKiemBoPhanTheoPhong(row[1].ToString()));
             phongCbx.SelectedItem = busPhongBan.TimKiemTenPhongBanTheoMa(row[1].ToString());
@@ -113,7 +118,9 @@ namespace QuanLyNhanVien.MVVM.View.SubView
                 DataGridLoad();
                 return;
             }
+
             phongCbx.Items.Clear();
+
             foreach (var tenPhong in busPhongBan.TongHopPhongBan(busBoPhan.TimKiemTheoTenBoPhan(boPhanCbx.SelectedItem.ToString())))
             {
                 phongCbx.Items.Add(tenPhong);
@@ -184,6 +191,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
             {
                 phongCbx.Items.Add(tenPhong);
             }
+
             foreach (var tenBoPhan in busBoPhan.TongHopTenBoPhan())
             {
                 boPhanCbx.Items.Add(tenBoPhan);

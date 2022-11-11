@@ -6,27 +6,31 @@ namespace BUS
 {
     public class BUS_LSCHINHSUA
     {
-        DAL_LSCHINHSUA khenthuong = new DAL_LSCHINHSUA();
+        DAL_LSCHINHSUA lsChinhSua = new DAL_LSCHINHSUA();
 
         public DataTable getLSChinhSua()
         {
-            return khenthuong.getLSChinhSua();
+            return lsChinhSua.getLSChinhSua();
         }
 
         public bool ThemLSChinhSua(DTO_LSCHINHSUA nv)
         {
-            return khenthuong.ThemLSChinhSua(nv);
+            return lsChinhSua.ThemLSChinhSua(nv);
         }
 
-        public bool SuaLSChinhSua(DTO_LSCHINHSUA nv)
+        public bool XoaLSChinhSua(int maCS)
         {
-            return khenthuong.SuaLSChinhSua(nv);
+            return lsChinhSua.XoaLSChinhSua(maCS);
         }
 
-        public bool XoaLSChinhSua(int macs)
+        public DataTable TongHopLSChinhSuaNhanVienTheoPhong(string maPhong, string maNV)
         {
-            return khenthuong.XoaLSChinhSua(macs);
+            return lsChinhSua.TongHopLSChinhSuaNhanVienTheoPhong(maPhong, maNV);
         }
 
+        public int TimLanChinhSuaGanNhat(string maNV)
+        {
+            return lsChinhSua.TimLanChinhSuaGanNhat(maNV);
+        }
     }
 }
