@@ -1,0 +1,6 @@
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DTO\bin\Debug\DTO.dll
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DTO\bin\Debug\DTO.pdb
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DTO\obj\Debug\DTO.dll
+C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DTO\obj\Debug\DTO.pdb
