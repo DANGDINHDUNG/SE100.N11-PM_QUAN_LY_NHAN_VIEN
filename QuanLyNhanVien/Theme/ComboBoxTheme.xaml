@@ -3,6 +3,7 @@
     <Style x:Key="ComboboxStyle" TargetType="{x:Type ComboBox}">
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="17"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ComboBox}">
@@ -47,6 +48,7 @@
                                 <Border   
                    x:Name="DropDownBorder"  
                    BorderThickness="1"  
+                                    Background="#efefef"
                    CornerRadius="5"  
                    BorderBrush="Black"/>
                                 <ScrollViewer Margin="4,6,4,6" SnapsToDevicePixels="True">

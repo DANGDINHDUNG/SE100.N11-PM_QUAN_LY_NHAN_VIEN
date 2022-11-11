@@ -3,47 +3,84 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:QuanLyNhanVien.MVVM.View.HeThongSubView"
+             xmlns:local="clr-namespace:QuanLyNhanVien.MVVM.View.SubView"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="Transparent">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="150"/>
+            <RowDefinition Height="120"/>
             <RowDefinition/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
+
         <GroupBox Header="Thông tin lịch sử chỉnh sửa"
                       BorderThickness="0"
                       FontSize="17"
-                      FontWeight="SemiBold">
+                      FontWeight="SemiBold" Height="120" VerticalAlignment="Top">
             <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="173*"/>
+                    <ColumnDefinition Width="59.559"/>
+                    <ColumnDefinition Width="177*"/>
+                    <ColumnDefinition Width="97"/>
+                    <ColumnDefinition Width="171*"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="100"/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="100"/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="0" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" Text="Tháng" TextAlignment="Right" VerticalAlignment="Center"/>
-                <TextBlock Grid.Column="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" Text="Năm" TextAlignment="Right" VerticalAlignment="Center"/>
-                <ComboBox Style="{StaticResource ComboboxStyle}" Grid.Column="1"/>
-                <ComboBox Style="{StaticResource ComboboxStyle}" Grid.Column="3"/>
+                <TextBlock Grid.Column="2" Grid.RowSpan="2" Margin="10,36,10,0" FontWeight="Normal" FontSize="14" 
+                           Text="Phòng" TextAlignment="Right" VerticalAlignment="Top" Height="19"/>
+                <TextBlock Grid.Column="0" Grid.RowSpan="2" Margin="0,36,10,0" FontWeight="Normal" FontSize="14" 
+                           Text="Bộ phận" TextAlignment="Right" VerticalAlignment="Top" Height="19"/>
+                <TextBlock Grid.Column="4" Grid.RowSpan="2" Margin="4,36,10,0" FontWeight="Normal" FontSize="14" 
+                           Text="Mã nhân viên" TextAlignment="Right" VerticalAlignment="Top" Height="19"/>
 
-                <TextBlock Grid.Row="1" Grid.Column="0" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" Text="Mã phòng" TextAlignment="Right" VerticalAlignment="Center"/>
-                <TextBlock Grid.Row="1"  Grid.Column="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" Text="Mã bộ phận" TextAlignment="Right" VerticalAlignment="Center"/>
-                <ComboBox Style="{StaticResource ComboboxStyle}" Grid.Column="1" Grid.Row="1"/>
-                <ComboBox Style="{StaticResource ComboboxStyle}" Grid.Column="3" Grid.Row="1"/>
-                <Button Grid.Column="4" Grid.RowSpan="2"
+                <ComboBox x:Name="phongCbx" Grid.RowSpan="2" Style="{StaticResource ComboboxStyle}" Grid.Column="2" Grid.ColumnSpan="2" Margin="55,0,10,0" IsReadOnly="True"/>
+                <ComboBox x:Name="boPhanCbx" Grid.RowSpan="2" Style="{StaticResource ComboboxStyle}" Grid.Column="1" SelectionChanged="boPhanCbx_SelectionChanged" Margin="0,0,5,0" IsReadOnly="True"/>
+                <TextBox x:Name="maNVTbx" Grid.RowSpan="2" Style="{StaticResource InputTextBox}" Grid.Column="5" Height="32" Margin="3,29,10,0" VerticalAlignment="Top" KeyDown="tenNVTbx_KeyDown"/>
+
+                <Button x:Name="locBtn" Grid.Column="6" Grid.Row="0"
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="170" Height="40">Tìm kiếm</Button>
+                    Width="NaN" Height="NaN" Click="locBtn_Click" Margin="5,24,5,26" Grid.RowSpan="2">
+                    <Image Height="20"
+                        Source="/MVVM/View/SubView/icons8-funnel-64.png"/>
+                </Button>
+
+
             </Grid>
         </GroupBox>
-        <DataGrid Grid.Row="1"
-                  Margin="10,10,10,20">
-            
+
+        <DataGrid x:Name="lsChinhSuaDtg" Grid.Row="1"
+                  ItemsSource="{Binding Path=DefaultView}"
+                  IsReadOnly="True"
+                  Margin="10,0,10,10" 
+                  SelectionChanged="dsNhanVienDtg_SelectionChanged">
         </DataGrid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="xoaBtn" Grid.Column="3"
+                    Style="{StaticResource WindowButtonTheme}"
+                    Width="150" Height="40" Click="xoaBtn_Click" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Bottom">Xóa</Button>
+
+            <Button x:Name="lamMoiBtn" Grid.Column="4"
+                    Style="{StaticResource WindowButtonTheme}"
+                    Width="150" Height="40"
+                    Click="lamMoiBtn_Click" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Bottom">Làm mới</Button>
+
+
+        </Grid>
+
+
     </Grid>
 </UserControl>

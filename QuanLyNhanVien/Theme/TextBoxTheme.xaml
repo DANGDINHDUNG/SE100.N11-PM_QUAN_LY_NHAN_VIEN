@@ -141,6 +141,7 @@
         <Setter Property="FontSize" Value="18"/>
         <Setter Property="Padding" Value="12,3"/>
         <Setter Property="FontWeight" Value="Normal"/>
+        <Setter Property="TextAlignment" Value="Left"/>
         <Setter Property="Margin" Value="0,0,10,0"/>
         <Style.Resources>
             <Style TargetType="Border">
@@ -152,7 +153,7 @@
     <Style x:Key="ComboboxTextBoxStyle" TargetType="{x:Type TextBox}">
         <Setter Property="Margin" Value="0.5,7"/>
         <Setter Property="FontWeight" Value="Normal"/>
-        <Setter Property="TextAlignment" Value="Right"/>
+        <Setter Property="TextAlignment" Value="Left"/>
         <Setter Property="FontSize" Value="17"/>
         <Setter Property="Margin" Value="0,0,10,0"/>
         <Setter Property="Template">

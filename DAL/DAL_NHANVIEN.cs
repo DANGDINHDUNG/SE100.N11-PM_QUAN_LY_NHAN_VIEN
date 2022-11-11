@@ -6,6 +6,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Security.Cryptography;
+
 namespace DAL
 {
     public class DAL_NHANVIEN : KetNoi
@@ -18,6 +20,7 @@ namespace DAL
             da.Fill(dtNHANVIEN);
             return dtNHANVIEN;
         }
+
         public bool ThemNhanVien(DTO_NHANVIEN nhanVien)
         {
             if (connection.State != ConnectionState.Open)
@@ -84,10 +87,27 @@ namespace DAL
             connection.Close();
         }
 
-        public DataTable TongHopNhanVienTheoPhong(string maPhong)
+        public DataTable TongHopNhanVienTheoPhong(string maPhong, string ten)
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE MAPHONG = N'" + maPhong + "'", connection);
             DataTable dtNHANVIEN = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter();
+
+            if (maPhong == "")
+            {
+                da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE dbo.fChuyenCoDauThanhKhongDau(HOTEN) LIKE N'%" + ten + "%'", connection);
+            }
+
+            if (ten == "")
+            {
+                da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE MAPHONG = N'" + maPhong + "'", connection);
+            }
+
+            if (ten != "" && maPhong != "")
+            {
+                da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE MAPHONG = N'" + maPhong + "' and dbo.fChuyenCoDauThanhKhongDau(HOTEN) LIKE N'%" + ten + "%'", connection);
+                
+            }
+
             da.Fill(dtNHANVIEN);
             return dtNHANVIEN;
         }

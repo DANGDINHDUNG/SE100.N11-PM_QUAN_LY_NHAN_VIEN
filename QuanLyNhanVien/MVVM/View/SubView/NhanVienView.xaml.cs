@@ -33,12 +33,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             InitializeComponent();
             DataGridLoad();
-            ComboBoxes_Loaded();
-        }
-
-        public void DataGridLoad()
-        {
-            dsNhanVienDtg.DataContext = busNhanVien.getNhanVien();
+            ComboBoxesLoad();
         }
 
         private void themBtn_Click(object sender, RoutedEventArgs e)
@@ -48,11 +43,13 @@ namespace QuanLyNhanVien.MVVM.View.SubView
             themNhanVienForm.ShowDialog();
             
             DataGridLoad();
+            ClearBoxes();
         }
 
         private void suaBtn_Click(object sender, RoutedEventArgs e)
         {
             if (dsNhanVienDtg.SelectedItems.Count == 0) return;
+
             DTO_NHANVIEN suaNhanVien = new DTO_NHANVIEN();
             DataRowView row = dsNhanVienDtg.SelectedItem as DataRowView;
             ThemNhanVienForm themNhanVienForm = new ThemNhanVienForm();
@@ -80,25 +77,28 @@ namespace QuanLyNhanVien.MVVM.View.SubView
             themNhanVienForm.suaNhanVien = suaNhanVien;
             themNhanVienForm.ShowDialog();
             DataGridLoad();
+            ClearBoxes();
         }
 
         private void xoaBtn_Click(object sender, RoutedEventArgs e)
         {
             busNhanVien.XoaNhanVien(dtoNhanVien.Manv);
-            MessageBox.Show("Xóa nhân viên thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
             DataGridLoad();
-            tenNVTbx.Text = "";
+            MessageBox.Show("Xóa nhân viên thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            ClearBoxes();
         }
 
         private void dsNhanVienDtg_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (dsNhanVienDtg.SelectedItems.Count == 0) return;
             DataRowView row = dsNhanVienDtg.SelectedItem as DataRowView;
+
             if (row == null)
             {
-                //ClearTextBoxes();
+                ClearBoxes();
                 return;
             }
+
             dtoNhanVien.Manv = int.Parse(row[0].ToString());
             boPhanCbx.SelectedItem = busBoPhan.TimKiemTheoMaBoPhan(busPhongBan.TimKiemBoPhanTheoPhong(row[1].ToString()));
             phongCbx.SelectedItem = busPhongBan.TimKiemTenPhongBanTheoMa(row[1].ToString());
@@ -107,85 +107,119 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
         private void lamMoiBtn_Click(object sender, RoutedEventArgs e)
         {
-            phongCbx.Text = "";
-            boPhanCbx.Text = "";
-            tenNVTbx.Text = "";
+            ClearBoxes();
             DataGridLoad();
         }
 
         private void boPhanCbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            tenNVTbx.Text = "";
             if (boPhanCbx.SelectedItem == null)
             {
                 DataGridLoad();
                 return;
             }
+
             phongCbx.Items.Clear();
+
             foreach (var tenPhong in busPhongBan.TongHopPhongBan(busBoPhan.TimKiemTheoTenBoPhan(boPhanCbx.SelectedItem.ToString())))
             {
                 phongCbx.Items.Add(tenPhong);
             }
         }
 
-        public void ComboBoxes_Loaded()
+        private void chiTietBtn_Click(object sender, RoutedEventArgs e)
         {
+            if (dsNhanVienDtg.SelectedItems.Count == 0) return;
+            DTO_NHANVIEN ctNhanVien = new DTO_NHANVIEN();
+            DataRowView row = dsNhanVienDtg.SelectedItem as DataRowView;
+            ChiTietNhanVienForm chiTietNhanVienForm = new ChiTietNhanVienForm();
+
+            ctNhanVien.Manv = int.Parse(row[0].ToString());
+            ctNhanVien.Maphong = row[1].ToString();
+            ctNhanVien.Maluong = row[2].ToString();
+            ctNhanVien.Hoten = row[3].ToString();
+            ctNhanVien.Ngaysinh = DateTime.Parse(row[4].ToString());
+            ctNhanVien.Gioitinh = row[5].ToString();
+            ctNhanVien.Dantoc = row[6].ToString();
+            ctNhanVien.Cmnd_cccd = row[7].ToString();
+            ctNhanVien.Noicap = row[8].ToString();
+            ctNhanVien.Chucvu = row[9].ToString();
+            ctNhanVien.Maloainv = row[10].ToString();
+            ctNhanVien.Loaihd = row[11].ToString();
+            ctNhanVien.Thoigian = int.Parse(row[12].ToString());
+            ctNhanVien.Ngaydangki = DateTime.Parse(row[13].ToString());
+            ctNhanVien.Ngayhethan = DateTime.Parse(row[14].ToString());
+            ctNhanVien.Sdt = row[15].ToString();
+            ctNhanVien.Hocvan = row[16].ToString();
+            ctNhanVien.Ghichu = row[17].ToString();
+
+            chiTietNhanVienForm.ctNhanVien = ctNhanVien;
+            chiTietNhanVienForm.ShowDialog();
+            DataGridLoad();
+        }
+
+        private void locBtn_Click(object sender, RoutedEventArgs e)
+        {
+            LocNhanVien();
+        }
+
+        private void tenNVTbx_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                LocNhanVien();
+            }
+        }
+
+        public void DataGridLoad()
+        {
+            dsNhanVienDtg.DataContext = busNhanVien.getNhanVien();
+        }
+
+        public void ClearBoxes()
+        {
+            phongCbx.Text = "";
+            boPhanCbx.Text = "";
             tenNVTbx.Text = "";
+        }
+
+        public void ComboBoxesLoad()
+        {
             boPhanCbx.Text = "";
             phongCbx.Text = "";
             foreach (var tenPhong in busPhongBan.TongHopPhongBan(""))
             {
                 phongCbx.Items.Add(tenPhong);
             }
+
             foreach (var tenBoPhan in busBoPhan.TongHopTenBoPhan())
             {
                 boPhanCbx.Items.Add(tenBoPhan);
             }
         }
 
-        private void phongCbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        public void LocNhanVien()
         {
-            tenNVTbx.Text = "";
-            if (phongCbx.Items.Count == 0 || phongCbx.SelectedItem == null)
+            if (phongCbx.Text == string.Empty && tenNVTbx.Text == string.Empty)
             {
                 DataGridLoad();
                 return;
             }
-                
-            dsNhanVienDtg.DataContext = busNhanVien.TongHopNhanVienTheoPhong(busPhongBan.TimKiemMaPhongBan(phongCbx.SelectedItem.ToString()));
-        }
 
-        private void chiTietBtn_Click(object sender, RoutedEventArgs e)
-        {
-            if (dsNhanVienDtg.SelectedItems.Count == 0) return;
-            DTO_NHANVIEN suaNhanVien = new DTO_NHANVIEN();
-            DataRowView row = dsNhanVienDtg.SelectedItem as DataRowView;
-            ThemNhanVienForm themNhanVienForm = new ThemNhanVienForm();
-            themNhanVienForm.checkAdd = false;
+            if (phongCbx.Text != string.Empty && tenNVTbx.Text == string.Empty)
+            {
+                dsNhanVienDtg.DataContext = busNhanVien.TongHopNhanVienTheoPhong(busPhongBan.TimKiemMaPhongBan(phongCbx.SelectedItem.ToString()), "");
+            }
 
-            suaNhanVien.Manv = int.Parse(row[0].ToString());
-            suaNhanVien.Maphong = row[1].ToString();
-            suaNhanVien.Maluong = row[2].ToString();
-            suaNhanVien.Hoten = row[3].ToString();
-            suaNhanVien.Ngaysinh = DateTime.Parse(row[4].ToString());
-            suaNhanVien.Gioitinh = row[5].ToString();
-            suaNhanVien.Dantoc = row[6].ToString();
-            suaNhanVien.Cmnd_cccd = row[7].ToString();
-            suaNhanVien.Noicap = row[8].ToString();
-            suaNhanVien.Chucvu = row[9].ToString();
-            suaNhanVien.Maloainv = row[10].ToString();
-            suaNhanVien.Loaihd = row[11].ToString();
-            suaNhanVien.Thoigian = int.Parse(row[12].ToString());
-            suaNhanVien.Ngaydangki = DateTime.Parse(row[13].ToString());
-            suaNhanVien.Ngayhethan = DateTime.Parse(row[14].ToString());
-            suaNhanVien.Sdt = row[15].ToString();
-            suaNhanVien.Hocvan = row[16].ToString();
-            suaNhanVien.Ghichu = row[17].ToString();
+            if (phongCbx.Text == string.Empty && tenNVTbx.Text != string.Empty)
+            {
+                dsNhanVienDtg.DataContext = busNhanVien.TongHopNhanVienTheoPhong("", tenNVTbx.Text);
+            }
 
-            themNhanVienForm.suaNhanVien = suaNhanVien;
-            themNhanVienForm.ShowDialog();
-            DataGridLoad();
-            tenNVTbx.Text = "";
+            if (phongCbx.Text != string.Empty && tenNVTbx.Text != string.Empty)
+            {
+                dsNhanVienDtg.DataContext = busNhanVien.TongHopNhanVienTheoPhong(busPhongBan.TimKiemMaPhongBan(phongCbx.SelectedItem.ToString()), tenNVTbx.Text);
+            }
         }
     }
 }
