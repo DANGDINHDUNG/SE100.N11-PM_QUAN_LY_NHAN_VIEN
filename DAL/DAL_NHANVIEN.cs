@@ -111,5 +111,20 @@ namespace DAL
             da.Fill(dtNHANVIEN);
             return dtNHANVIEN;
         }
+        public List<string> TongHopMaNhanVien()
+        {
+            List<string> listMaNhanVien = new List<string>();
+            CheckConnection();
+            string sql = string.Format("SELECT MANV FROM NHANVIEN");
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                listMaNhanVien.Add(sdr[0].ToString());
+            }
+            connection.Close();
+            return listMaNhanVien;
+        }
     }
 }

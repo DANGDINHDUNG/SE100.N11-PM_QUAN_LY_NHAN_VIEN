@@ -9,3 +9,14 @@ C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\BUS\obj\Debug\BUS.csproj.CoreCompi
 C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\BUS\obj\Debug\BUS.dll
 C:\Code\Github\SE100.N11-PM_QUAN_LY_NHAN_VIEN\BUS\obj\Debug\BUS.pdb
+C:\Users\Acer\Downloads\Compressed\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\BUS.dll
+C:\Users\Acer\Downloads\Compressed\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\BUS.pdb
+C:\Users\Acer\Downloads\Compressed\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DAL.dll
+C:\Users\Acer\Downloads\Compressed\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DTO.dll
+C:\Users\Acer\Downloads\Compressed\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DAL.pdb
+C:\Users\Acer\Downloads\Compressed\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DTO.pdb
+C:\Users\Acer\Downloads\Compressed\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\Acer\Downloads\Compressed\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Downloads\Compressed\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\Acer\Downloads\Compressed\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.dll
+C:\Users\Acer\Downloads\Compressed\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.pdb

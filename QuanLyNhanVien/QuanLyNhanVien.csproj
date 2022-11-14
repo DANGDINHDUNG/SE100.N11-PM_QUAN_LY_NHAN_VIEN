@@ -116,6 +116,9 @@
     <Compile Include="WindowView\ThemNhanVienForm.xaml.cs">
       <DependentUpon>ThemNhanVienForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowView\ChiTietThaiSan.xaml.cs">
+      <DependentUpon>ChiTietThaiSan.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowView\ThemThaiSan.xaml.cs">
       <DependentUpon>ThemThaiSan.xaml</DependentUpon>
     </Compile>
@@ -348,6 +351,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowView\ThemNhanVienForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WindowView\ChiTietThaiSan.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
