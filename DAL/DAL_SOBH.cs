@@ -42,7 +42,7 @@ namespace DAL
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("UPDATE SOBH " +
-                "SET MANV='{0}, NGAYCAPSO='{1}',NOICAPSO='{2}',GHICHU=N'{3}'"  + "WHERE MABH = '{4}'",
+                "SET MANV='{0}', NGAYCAPSO='{1}',NOICAPSO='{2}',GHICHU=N'{3}'"  + "WHERE MABH = '{4}'",
             soBH.Manv, soBH.Ngaycapso, soBH.Noicapso, soBH.Ghichu, soBH.Mabh);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)

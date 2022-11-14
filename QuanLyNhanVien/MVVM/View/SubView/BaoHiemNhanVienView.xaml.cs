@@ -26,16 +26,12 @@ namespace QuanLyNhanVien.MVVM.View.SubView
     {
         public BUS_SOTHAISAN busSoThaiSan = new BUS_SOTHAISAN();
         public DTO_SOTHAISAN dtoSoThaiSan = new DTO_SOTHAISAN();
+        public BUS_SOBH busSoBH = new BUS_SOBH();
+        public DTO_SOBH dtoSoBH = new DTO_SOBH();
         public BaoHiemNhanVienView()
         {
             InitializeComponent();
             DataGridLoad();
-        }
-
-        private void btnThemBaoHiem_Click(object sender, RoutedEventArgs e)
-        {
-            ThemBaoHiem themBaoHiem = new ThemBaoHiem();
-            themBaoHiem.ShowDialog();
         }
 
         private void btnThemThaiSan_Click(object sender, RoutedEventArgs e)
@@ -53,6 +49,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         public void DataGridLoad()
         {
             dsThaiSanDtg.DataContext = busSoThaiSan.getSoThaiSan();
+            dtgBaoHiem.DataContext = busSoBH.getSoBH();
         }
 
         private void btnXoaThaiSan_Click(object sender, RoutedEventArgs e)
@@ -104,6 +101,60 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
             ctThaiSan.ctThaiSan = ctSoThaiSan;
             ctThaiSan.ShowDialog();
+            DataGridLoad();
+        }
+
+        private void bthXoaBaoHiem_Click(object sender, RoutedEventArgs e)
+        {
+            busSoBH.XoaSoBH(dtoSoBH.Mabh);
+            DataGridLoad();
+            MessageBox.Show("Xóa bảo hiểm thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void btnThemBaoHiem_Click(object sender, RoutedEventArgs e)
+        {
+            ThemBaoHiem themBaoHiem = new ThemBaoHiem();
+            themBaoHiem.checkAdd = true;
+            themBaoHiem.ShowDialog();
+            DataGridLoad();
+        }
+        private void btn_SuaBaoHiem_Click(object sender, RoutedEventArgs e)
+        {
+            if (dtgBaoHiem.SelectedItems.Count == 0) return;
+
+            DTO_SOBH suaSoBH = new DTO_SOBH();
+            DataRowView row = dtgBaoHiem.SelectedItem as DataRowView;
+            ThemBaoHiem themBaoHiem = new ThemBaoHiem();
+            themBaoHiem.checkAdd = false;
+
+            suaSoBH.Mabh = int.Parse(row[0].ToString());
+            suaSoBH.Manv = int.Parse(row[1].ToString());
+            suaSoBH.Ngaycapso = DateTime.Parse(row[2].ToString());
+            suaSoBH.Noicapso = row[3].ToString();
+            suaSoBH.Ghichu = row[4].ToString();
+
+            themBaoHiem.suaBaoHiem = suaSoBH;
+            themBaoHiem.ShowDialog();
+            DataGridLoad();
+        }
+
+        private void btn_XemChiTiet_Click(object sender, RoutedEventArgs e)
+        {
+            if (dtgBaoHiem.SelectedItems.Count == 0) return;
+
+            DTO_SOBH ctSoBaoHiem = new DTO_SOBH();
+            DataRowView row = dtgBaoHiem.SelectedItem as DataRowView;
+            ChiTietBaoHiem ctBaoHiem = new ChiTietBaoHiem();
+            ctBaoHiem.checkAdd = false;
+
+            ctSoBaoHiem.Mabh = int.Parse(row[0].ToString());
+            ctSoBaoHiem.Manv = int.Parse(row[1].ToString());
+            ctSoBaoHiem.Ngaycapso = DateTime.Parse(row[2].ToString());
+            ctSoBaoHiem.Noicapso =row[3].ToString();
+            ctSoBaoHiem.Ghichu = row[4].ToString();
+
+            ctBaoHiem.ctBaoHiem = ctSoBaoHiem;
+            ctBaoHiem.ShowDialog();
             DataGridLoad();
         }
     }

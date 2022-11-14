@@ -43,7 +43,6 @@ namespace QuanLyNhanVien.WindowView
               //  return;
             maTSTbx.Text = ctThaiSan.Mats.ToString();
             maNVCbx.Text = ctThaiSan.Manv.ToString();
-
             ngayNghiSinhTbx.Text = ctThaiSan.Ngaynghisinh.ToString();
             ngayVeSomTbx.Text = ctThaiSan.Ngayvesom.ToString();
             ngayLamTLTbx.Text = ctThaiSan.Ngaylamtrolai.ToString();

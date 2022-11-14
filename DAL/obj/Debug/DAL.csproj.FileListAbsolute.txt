@@ -16,3 +16,12 @@ C:\Users\Acer\Downloads\Compressed\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\SE100.N11
 C:\Users\Acer\Downloads\Compressed\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Acer\Downloads\Compressed\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.dll
 C:\Users\Acer\Downloads\Compressed\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.pdb
+C:\Users\Acer\Source\Repos\DANGDINHDUNG\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DAL\bin\Debug\DAL.dll
+C:\Users\Acer\Source\Repos\DANGDINHDUNG\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DAL\bin\Debug\DAL.pdb
+C:\Users\Acer\Source\Repos\DANGDINHDUNG\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DAL\bin\Debug\DTO.dll
+C:\Users\Acer\Source\Repos\DANGDINHDUNG\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DAL\bin\Debug\DTO.pdb
+C:\Users\Acer\Source\Repos\DANGDINHDUNG\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Acer\Source\Repos\DANGDINHDUNG\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Source\Repos\DANGDINHDUNG\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Acer\Source\Repos\DANGDINHDUNG\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DAL\obj\Debug\DAL.dll
+C:\Users\Acer\Source\Repos\DANGDINHDUNG\SE100.N11-PM_QUAN_LY_NHAN_VIEN\DAL\obj\Debug\DAL.pdb
