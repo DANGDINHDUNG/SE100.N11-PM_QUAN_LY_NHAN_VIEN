@@ -2,6 +2,8 @@
 using DAL;
 using DTO;
 using System.Data;
+using System.Collections.Generic;
+
 namespace BUS
 {
     public class BUS_NHANVIEN
@@ -32,5 +34,11 @@ namespace BUS
         {
             return nhanvien.TongHopNhanVienTheoPhong(maPhong, ten);
         }
+
+        public List<string> TongHopMaNhanVien()
+        {
+            return nhanvien.TongHopMaNhanVien();
+        }
+
     }
 }

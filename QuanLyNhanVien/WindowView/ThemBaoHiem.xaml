@@ -48,9 +48,9 @@
                            Text="Ngày cấp số" TextAlignment="Right" VerticalAlignment="Center"/>
 
 
-                <TextBox Style="{StaticResource InputTextBox}" IsEnabled="False"  Grid.Column="1" Grid.Row="0"/>
-                <TextBox Style="{StaticResource InputTextBox}" IsEnabled="False"  Grid.Column="1" Grid.Row="1"/>
-                <TextBox Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="2"/>
+                <TextBox x:Name="maBHTbx" Style="{StaticResource InputTextBox}" IsEnabled="False"  Grid.Column="1" Grid.Row="0" Loaded="maBHTbx_Loaded"/>
+                <ComboBox x:Name="maNVCbx" Style="{StaticResource ComboboxStyle}" ItemsSource="{Binding Path=DefaultView}"  Grid.Column="1" Grid.Row="1"/>
+                <TextBox x:Name="ngayCapTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="2"/>
 
 
                 <TextBlock Grid.Row="0" Grid.Column="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
@@ -58,8 +58,8 @@
                 <TextBlock Grid.Row="1" Grid.Column="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
                            Text="Ghi chú" TextAlignment="Right" VerticalAlignment="Center"/>
                 
-                <TextBox Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="0"/>
-                <TextBox Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="1"/>
+                <TextBox x:Name="noiCapTbx" Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="0"/>
+                <TextBox x:Name="ghiChuTbx" Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="1"/>
                 
             </Grid>
 
@@ -80,10 +80,10 @@
                         Click="btnHuy_Click"
                     Style="{StaticResource WindowButtonTheme}"
                     Width="150" Height="40">Hủy</Button>
-                <Button Grid.Column="3"
+                <Button x:Name="btnThemSua" Grid.Column="3"
                         Grid.ColumnSpan="2"
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="150" Height="40">Thêm/Sửa</Button>
+                    Width="150" Height="40" Click="btnThemSua_Click">Thêm/Sửa</Button>
             </Grid>
         </Grid>
     </Border>

@@ -104,17 +104,26 @@
     <Compile Include="WindowView\ChamCongThuViec.xaml.cs">
       <DependentUpon>ChamCongThuViec.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowView\ChiTietChinhSua.xaml.cs">
+      <DependentUpon>ChiTietChinhSua.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowView\ChiTietNhanVienForm.xaml.cs">
       <DependentUpon>ChiTietNhanVienForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowView\HoSoThuViec.xaml.cs">
       <DependentUpon>HoSoThuViec.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowView\ChiTietBaoHiem.xaml.cs">
+      <DependentUpon>ChiTietBaoHiem.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowView\ThemBaoHiem.xaml.cs">
       <DependentUpon>ThemBaoHiem.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowView\ThemNhanVienForm.xaml.cs">
       <DependentUpon>ThemNhanVienForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowView\ChiTietThaiSan.xaml.cs">
+      <DependentUpon>ChiTietThaiSan.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowView\ThemThaiSan.xaml.cs">
       <DependentUpon>ThemThaiSan.xaml</DependentUpon>
@@ -335,6 +344,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowView\ChiTietChinhSua.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="WindowView\ChiTietNhanVienForm.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -343,11 +356,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowView\ChiTietBaoHiem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="WindowView\ThemBaoHiem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowView\ThemNhanVienForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WindowView\ChiTietThaiSan.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

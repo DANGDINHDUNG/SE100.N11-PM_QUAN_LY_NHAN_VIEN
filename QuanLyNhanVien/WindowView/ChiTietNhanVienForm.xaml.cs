@@ -46,15 +46,15 @@ namespace QuanLyNhanVien.WindowView
             //    return;
             maNVTbk.Text = ctNhanVien.Manv.ToString();
             tenTbk.Text = ctNhanVien.Hoten.ToString();
-            ngaySinhTbk.Text = ctNhanVien.Ngaysinh.ToString();
+            ngaySinhTbk.Text = ctNhanVien.Ngaysinh.ToString("dd/MM/yyyy");
             gioiTinhTbk.Text = ctNhanVien.Gioitinh.ToString();
             cccdTbk.Text = ctNhanVien.Cmnd_cccd.ToString();
             noiCapTbk.Text = ctNhanVien.Noicap.ToString();
             chucVuTbk.Text = ctNhanVien.Chucvu.ToString();
             loaiHopDongTbk.Text = ctNhanVien.Loaihd.ToString();
             thoiGianTbk.Text = ctNhanVien.Thoigian.ToString();
-            ngayKyTbk.Text = ctNhanVien.Ngaydangki.ToString();
-            ngayHetHanTbk.Text = ctNhanVien.Ngayhethan.ToString();
+            ngayKyTbk.Text = ctNhanVien.Ngaydangki.ToString("dd/MM/yyyy");
+            ngayHetHanTbk.Text = ctNhanVien.Ngayhethan.ToString("dd/MM/yyyy");
             soDienThoaiTbk.Text = ctNhanVien.Sdt.ToString();
             hocVanTbk.Text = ctNhanVien.Hocvan.ToString();
             ghiChuTbx.Text = ctNhanVien.Ghichu.ToString();

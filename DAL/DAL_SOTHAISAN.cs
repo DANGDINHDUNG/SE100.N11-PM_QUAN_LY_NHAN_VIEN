@@ -44,7 +44,7 @@ namespace DAL
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("UPDATE SOTHAISAN " +
-                "SET MANV='{0}, NGAYVESOM='{1}',NGAYNGHISINH='{2}',NGAYLAMTROLAI='{3}'" +
+                "SET MANV='{0}', NGAYVESOM='{1}',NGAYNGHISINH='{2}',NGAYLAMTROLAI='{3}'" +
                ",TROCAPCTY='{4}',GHICHU=N'{5}' " +"WHERE MATS = '{6}'", 
                 soThaiSan.Manv, soThaiSan.Ngayvesom, soThaiSan.Ngaynghisinh,
                 soThaiSan.Ngaylamtrolai,soThaiSan.Trocapcty,soThaiSan.Ghichu,soThaiSan.Mats);

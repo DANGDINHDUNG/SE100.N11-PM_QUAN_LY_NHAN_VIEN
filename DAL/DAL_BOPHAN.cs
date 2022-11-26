@@ -13,7 +13,7 @@ namespace DAL
 
         public DataTable getBoPhan()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM BOPHAN", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MABP, TENBOPHAN, FORMAT(NGAYTHANHLAP, 'dd/MM/yyyy') 'NGAYTHANHLAP', GHICHU FROM BOPHAN", connection);
             DataTable dtBOPHAN = new DataTable();
             da.Fill(dtBOPHAN);
             return dtBOPHAN;

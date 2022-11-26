@@ -35,8 +35,7 @@ namespace QuanLyNhanVien.WindowView
         public ThemNhanVienForm()
         {
             InitializeComponent();
-            ComboBoxes_Loaded();
-            
+            ComboBoxes_Loaded();    
         }
 
         private void huyBtn_Click(object sender, RoutedEventArgs e)
@@ -152,15 +151,15 @@ namespace QuanLyNhanVien.WindowView
                 return;
             maNVTbx.Text = suaNhanVien.Manv.ToString();
             tenTbx.Text = suaNhanVien.Hoten.ToString();
-            ngaySinhTbx.Text = suaNhanVien.Ngaysinh.ToString();
+            ngaySinhTbx.Text = suaNhanVien.Ngaysinh.ToString("dd/MM/yyyy");
             gioiTinhTbx.Text = suaNhanVien.Gioitinh.ToString();
             cccdTbx.Text = suaNhanVien.Cmnd_cccd.ToString();
             noiCapTbx.Text = suaNhanVien.Noicap.ToString();
             chucVuTbx.Text = suaNhanVien.Chucvu.ToString();
             loaiHopDongTbx.Text = suaNhanVien.Loaihd.ToString();
             thoiGianTbx.Text = suaNhanVien.Thoigian.ToString();
-            ngayKyTbx.Text = suaNhanVien.Ngaydangki.ToString();
-            ngayHetHanTbx.Text = suaNhanVien.Ngayhethan.ToString();
+            ngayKyTbx.Text = suaNhanVien.Ngaydangki.ToString("dd/MM/yyyy");
+            ngayHetHanTbx.Text = suaNhanVien.Ngayhethan.ToString("dd/MM/yyyy");
             soDienThoaiTbx.Text = suaNhanVien.Sdt.ToString();
             hocVanTbx.Text = suaNhanVien.Hocvan.ToString();
             ghiChuTbx.Text = suaNhanVien.Ghichu.ToString();

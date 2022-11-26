@@ -13,7 +13,7 @@ namespace DAL
 
         public DataTable getLSChinhSua()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM LSCHINHSUA", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MACS, MANV, LANCS, MAPHONG, MALUONG, HOTEN, FORMAT(NGAYSINH, 'dd/MM/yyyy') 'NGAYSINH', GIOITINH, DANTOC, CMND_CCCD, NOICAP, CHUCVU, MALOAINV, LOAIHD, THOIGIAN, FORMAT(NGAYKY, 'dd/MM/yyyy') 'NGAYKY',  FORMAT(NGAYHETHAN, 'dd/MM/yyyy') 'NGAYHETHAN', SDT, HOCVAN, GHICHU, NGAYCHINHSUA FROM LSCHINHSUA", connection);
             DataTable dtLSCHINHSUA = new DataTable();
             da.Fill(dtLSCHINHSUA);
             return dtLSCHINHSUA;
