@@ -118,6 +118,7 @@
                         FontSize="15"
                         FontWeight="SemiBold"
                         Margin="10,16,0,62"
+                        Click="btnQuenMK_Click"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center" Height="22">
                     <Button.Template>

@@ -1,5 +1,6 @@
 ﻿using BUS;
 using DTO;
+using QuanLyNhanVien.MessageBox;
 using QuanLyNhanVien.WindowView;
 using System;
 using System.Collections.Generic;
@@ -86,7 +87,7 @@ namespace QuanLyNhanVien.MVVM.View.HeThongSubView
         {
             busLSChinhSua.XoaLSChinhSua(dtoLSChinhSua.Macs);
             DataGridLoad();
-            MessageBox.Show("Xóa lịch sử chỉnh sửa lần " + dtoLSChinhSua.Lancs.ToString() + " của nhân viên có mã nhân viên " + dtoLSChinhSua.Hoten + " thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            bool? Result = new MessageBoxCustom("Xóa lịch sử chỉnh sửa lần " + dtoLSChinhSua.Lancs.ToString() + " của nhân viên có mã nhân viên " + dtoLSChinhSua.Hoten + " thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             ClearBoxes();
         }
 

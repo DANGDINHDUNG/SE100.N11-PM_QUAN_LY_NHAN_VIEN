@@ -34,7 +34,7 @@ namespace QuanLyNhanVien
             dTO_TaiKhoan._MATKHAU = matKhauPwb.Password.ToString();
             if (tk.KiemTraTaiKhoan(dTO_TaiKhoan) == true)
             {
-                TrangChu trangChu = new TrangChu();
+                TrangChu trangChu = new TrangChu(dTO_TaiKhoan);
                 trangChu.Show();
                 this.Hide();
             }
@@ -49,6 +49,12 @@ namespace QuanLyNhanVien
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             App.Current.Shutdown();
+        }
+
+        private void btnQuenMK_Click(object sender, RoutedEventArgs e)
+        {
+            QuenMK quenMK = new QuenMK();
+            quenMK.ShowDialog();   
         }
     }
 }

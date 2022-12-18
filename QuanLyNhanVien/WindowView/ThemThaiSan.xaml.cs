@@ -14,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using QuanLyNhanVien.MessageBox;
 
 namespace QuanLyNhanVien.WindowView
 {
@@ -53,7 +54,7 @@ namespace QuanLyNhanVien.WindowView
                 || troCapTbx.Text == String.Empty)
 
             {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                bool? Result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
             DTO_SOTHAISAN dtoSoThaiSan=new DTO_SOTHAISAN();
@@ -67,13 +68,13 @@ namespace QuanLyNhanVien.WindowView
             if (maTSTbx.Text == string.Empty)
             {
                 busSoThaiSan.ThemSoThaiSan(dtoSoThaiSan);
-                MessageBox.Show("Thêm thai sản thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? Result = new MessageBoxCustom("Thêm thai sản thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             }
             else
             {
                 dtoSoThaiSan.Mats = int.Parse(maTSTbx.Text);
                 busSoThaiSan.SuaSoThaiSan(dtoSoThaiSan);
-                MessageBox.Show("Sửa thai sản thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? Result = new MessageBoxCustom("Sửa thai sản thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             }
             this.Close();
         }

@@ -56,3 +56,27 @@ D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần m�
 D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.dll
 D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.pdb
+D:\Hoc Tap\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\BUS.dll
+D:\Hoc Tap\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\BUS.pdb
+D:\Hoc Tap\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DAL.dll
+D:\Hoc Tap\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DTO.dll
+D:\Hoc Tap\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DAL.pdb
+D:\Hoc Tap\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DAL.dll.config
+D:\Hoc Tap\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DTO.pdb
+D:\Hoc Tap\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\Hoc Tap\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\Hoc Tap\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\Hoc Tap\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.dll
+D:\Hoc Tap\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\BUS.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\BUS.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DAL.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DTO.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DAL.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DAL.dll.config
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DTO.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.pdb

@@ -15,6 +15,8 @@ using DTO;
 using BUS;
 using System.Data;
 using QuanLyNhanVien.MVVM.View.SubView;
+using QuanLyNhanVien.MessageBox;
+using System.Text.RegularExpressions;
 
 namespace QuanLyNhanVien.WindowView
 {
@@ -45,30 +47,23 @@ namespace QuanLyNhanVien.WindowView
 
         private void themSuaBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (phongCbx.Text == String.Empty || tenTbx.Text == String.Empty || ngaySinhTbx.Text == String.Empty
-                || gioiTinhTbx.Text == String.Empty || cccdTbx.Text == String.Empty
-                || maLuongCbx.Text == String.Empty || loaiNVCbx.Text == String.Empty || chucVuTbx.Text == String.Empty
-                || loaiHopDongTbx.Text == String.Empty || thoiGianTbx.Text == String.Empty || ngayKyTbx.Text == String.Empty
-                || ngayHetHanTbx.Text == String.Empty || soDienThoaiTbx.Text == String.Empty || hocVanTbx.Text == String.Empty || danTocCbx.Text == String.Empty)
-            {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+            if (!CheckData())
                 return;
-            }
 
             DTO_NHANVIEN dtoNhanVien = new DTO_NHANVIEN();
             dtoNhanVien.Maphong = busPhongBan.TimKiemMaPhongBan(phongCbx.Text);
             dtoNhanVien.Hoten = tenTbx.Text;
-            dtoNhanVien.Ngaysinh = DateTime.Parse(ngaySinhTbx.Text);
-            dtoNhanVien.Gioitinh = gioiTinhTbx.Text;
+            dtoNhanVien.Ngaysinh = DateTime.Parse(ngaySinhDpk.Text);
+            dtoNhanVien.Gioitinh = gioiTinhCbx.Text;
             dtoNhanVien.Cmnd_cccd = cccdTbx.Text;
             dtoNhanVien.Noicap = noiCapTbx.Text;
             dtoNhanVien.Maluong = maLuongCbx.Text;
             dtoNhanVien.Maloainv = busLoaiNV.TimKiemTheoLoaiNhanVien(loaiNVCbx.Text);
             dtoNhanVien.Chucvu = chucVuTbx.Text;
-            dtoNhanVien.Loaihd = loaiHopDongTbx.Text;
+            dtoNhanVien.Loaihd = loaiHopDongCbx.Text;
             dtoNhanVien.Thoigian = int.Parse(thoiGianTbx.Text);
-            dtoNhanVien.Ngaydangki = DateTime.Parse(ngayKyTbx.Text);
-            dtoNhanVien.Ngayhethan = DateTime.Parse(ngayHetHanTbx.Text);
+            dtoNhanVien.Ngaydangki = DateTime.Parse(ngayKyDpk.Text);
+            dtoNhanVien.Ngayhethan = DateTime.Parse(ngayHetHanDpk.Text);
             dtoNhanVien.Sdt = soDienThoaiTbx.Text;
             dtoNhanVien.Hocvan = hocVanTbx.Text;
             dtoNhanVien.Ghichu = ghiChuTbx.Text;
@@ -77,13 +72,13 @@ namespace QuanLyNhanVien.WindowView
             if (maNVTbx.Text == string.Empty)
             {
                 busNhanVien.ThemNhanVien(dtoNhanVien);
-                MessageBox.Show("Thêm nhân viên thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? Result = new MessageBoxCustom("Thêm nhân viên thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             }
             else
             {
                 dtoNhanVien.Manv = int.Parse(maNVTbx.Text);
                 busNhanVien.SuaNhanVien(dtoNhanVien);
-                MessageBox.Show("Sửa nhân viên thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? Result = new MessageBoxCustom("Sửa nhân viên thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
                 dtoLSChinhSua.Ngaychinhsua = DateTime.Now;
                 busLSChinhSua.ThemLSChinhSua(dtoLSChinhSua);
                 
@@ -98,17 +93,17 @@ namespace QuanLyNhanVien.WindowView
             dtoLSChinhSua.Lancs = busLSChinhSua.TimLanChinhSuaGanNhat(maNVTbx.Text) + 1;
             dtoLSChinhSua.Maphong = busPhongBan.TimKiemMaPhongBan(phongCbx.Text);
             dtoLSChinhSua.Hoten = tenTbx.Text;
-            dtoLSChinhSua.Ngaysinh = DateTime.Parse(ngaySinhTbx.Text);
-            dtoLSChinhSua.Gioitinh = gioiTinhTbx.Text;
+            dtoLSChinhSua.Ngaysinh = DateTime.Parse(ngaySinhDpk.Text);
+            dtoLSChinhSua.Gioitinh = gioiTinhCbx.Text;
             dtoLSChinhSua.Cmnd_cccd = cccdTbx.Text;
             dtoLSChinhSua.Noicap = noiCapTbx.Text;
             dtoLSChinhSua.Maluong = maLuongCbx.Text;
             dtoLSChinhSua.Maloainv = busLoaiNV.TimKiemTheoLoaiNhanVien(loaiNVCbx.Text);
             dtoLSChinhSua.Chucvu = chucVuTbx.Text;
-            dtoLSChinhSua.Loaihd = loaiHopDongTbx.Text;
+            dtoLSChinhSua.Loaihd = loaiHopDongCbx.Text;
             dtoLSChinhSua.Thoigian = int.Parse(thoiGianTbx.Text);
-            dtoLSChinhSua.Ngaydangki = DateTime.Parse(ngayKyTbx.Text);
-            dtoLSChinhSua.Ngayhethan = DateTime.Parse(ngayHetHanTbx.Text);
+            dtoLSChinhSua.Ngaydangki = DateTime.Parse(ngayKyDpk.Text);
+            dtoLSChinhSua.Ngayhethan = DateTime.Parse(ngayHetHanDpk.Text);
             dtoLSChinhSua.Sdt = soDienThoaiTbx.Text;
             dtoLSChinhSua.Hocvan = hocVanTbx.Text;
             dtoLSChinhSua.Ghichu = ghiChuTbx.Text;
@@ -143,6 +138,20 @@ namespace QuanLyNhanVien.WindowView
             {
                 danTocCbx.Items.Add(danToc);
             }
+
+            string[] listGioiTinh = new string[] { "Nam", "Nữ", "Khác" };
+
+            foreach (string gioiTinh in listGioiTinh)
+            {
+                gioiTinhCbx.Items.Add(gioiTinh);
+            }
+
+            string[] listLoaiHD  = new string[] { "Ngắn hạn", "Dài hạn", "Thử việc" };
+
+            foreach (string LoaiHD in listLoaiHD)
+            {
+                loaiHopDongCbx.Items.Add(LoaiHD);
+            }
         }
 
         private void maNVTbx_Loaded(object sender, RoutedEventArgs e)
@@ -151,15 +160,15 @@ namespace QuanLyNhanVien.WindowView
                 return;
             maNVTbx.Text = suaNhanVien.Manv.ToString();
             tenTbx.Text = suaNhanVien.Hoten.ToString();
-            ngaySinhTbx.Text = suaNhanVien.Ngaysinh.ToString("dd/MM/yyyy");
-            gioiTinhTbx.Text = suaNhanVien.Gioitinh.ToString();
+            ngaySinhDpk.Text = suaNhanVien.Ngaysinh.ToString("dd/MM/yyyy");
+            gioiTinhCbx.Text = suaNhanVien.Gioitinh.ToString();
             cccdTbx.Text = suaNhanVien.Cmnd_cccd.ToString();
             noiCapTbx.Text = suaNhanVien.Noicap.ToString();
             chucVuTbx.Text = suaNhanVien.Chucvu.ToString();
-            loaiHopDongTbx.Text = suaNhanVien.Loaihd.ToString();
+            loaiHopDongCbx.Text = suaNhanVien.Loaihd.ToString();
             thoiGianTbx.Text = suaNhanVien.Thoigian.ToString();
-            ngayKyTbx.Text = suaNhanVien.Ngaydangki.ToString("dd/MM/yyyy");
-            ngayHetHanTbx.Text = suaNhanVien.Ngayhethan.ToString("dd/MM/yyyy");
+            ngayKyDpk.Text = suaNhanVien.Ngaydangki.ToString("dd/MM/yyyy");
+            ngayHetHanDpk.Text = suaNhanVien.Ngayhethan.ToString("dd/MM/yyyy");
             soDienThoaiTbx.Text = suaNhanVien.Sdt.ToString();
             hocVanTbx.Text = suaNhanVien.Hocvan.ToString();
             ghiChuTbx.Text = suaNhanVien.Ghichu.ToString();
@@ -169,8 +178,37 @@ namespace QuanLyNhanVien.WindowView
             phongCbx.SelectedItem = busPhongBan.TimKiemTenPhongBanTheoMa(suaNhanVien.Maphong.ToString());
             maLuongCbx.SelectedItem = suaNhanVien.Maluong.ToString();
             GetOldData();
-            //MessageBox.Show(dtoLSChinhSua.Lancs.ToString(), "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
 
+        private void numberTextBoxes_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
+        }
+
+        private void CMND_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
+        }
+
+        public bool CheckData()
+        {
+            if (phongCbx.Text == String.Empty || tenTbx.Text == String.Empty || ngaySinhDpk.Text == String.Empty
+                || gioiTinhCbx.Text == String.Empty || cccdTbx.Text == String.Empty
+                || maLuongCbx.Text == String.Empty || loaiNVCbx.Text == String.Empty || chucVuTbx.Text == String.Empty
+                || loaiHopDongCbx.Text == String.Empty || thoiGianTbx.Text == String.Empty || ngayKyDpk.Text == String.Empty
+                || ngayHetHanDpk.Text == String.Empty || soDienThoaiTbx.Text == String.Empty || hocVanTbx.Text == String.Empty 
+                || danTocCbx.Text == String.Empty )
+            {
+                bool? Result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                return false;
+            }
+
+            if (cccdTbx.Text.Length != 9 && cccdTbx.Text.Length != 12)
+            {
+                bool? result = new MessageBoxCustom("Vui lòng nhập đúng định dạng\n(CMND: 9 chữ số/CCCD: 12 chữ số)", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                return false;
+            }
+            return true;
         }
     }
 }

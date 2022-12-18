@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyNhanVien.MessageBox;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -53,7 +54,7 @@ namespace QuanLyNhanVien.MVVM.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                bool? Result = new MessageBoxCustom(ex.ToString(), MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
 
         }
@@ -72,7 +73,7 @@ namespace QuanLyNhanVien.MVVM.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                bool? Result = new MessageBoxCustom(ex.ToString(), MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
 
         }
@@ -90,7 +91,7 @@ namespace QuanLyNhanVien.MVVM.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                bool? Result = new MessageBoxCustom(ex.ToString(), MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
 
         }

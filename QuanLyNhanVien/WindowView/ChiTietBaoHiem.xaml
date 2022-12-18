@@ -49,7 +49,8 @@
 
 
                 <TextBox x:Name="maBHTbx" Style="{StaticResource InputTextBox}" IsEnabled="False"  Grid.Column="1" Grid.Row="0" Loaded="maBHTbx_Loaded"/>
-                <ComboBox x:Name="maNVCbx" Style="{StaticResource ComboboxStyle}" IsEnabled="False" ItemsSource="{Binding Path=DefaultView}"  Grid.Column="1" Grid.Row="1"/>
+                <ComboBox x:Name="maNVCbx" IsEnabled="False" ItemsSource="{Binding Path=DefaultView}"  Grid.Column="1" Grid.Row="1"
+                          FontSize="17" FontWeight="Normal"/>
                 <TextBox x:Name="ngayCapTbx" Style="{StaticResource InputTextBox}" IsEnabled="False" Grid.Column="1" Grid.Row="2"/>
 
 

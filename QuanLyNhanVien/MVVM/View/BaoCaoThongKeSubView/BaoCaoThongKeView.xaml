@@ -26,7 +26,7 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Grid.Row="0" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" Text="Mã bộ phận" TextAlignment="Right" VerticalAlignment="Center"/>
-                <ComboBox Style="{StaticResource ComboboxStyle}" 
+                <ComboBox FontSize="17" FontWeight="Normal" 
                       Grid.Column="1" Grid.Row="0"
                       Margin="0,20"/>
                 <Button Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="3"

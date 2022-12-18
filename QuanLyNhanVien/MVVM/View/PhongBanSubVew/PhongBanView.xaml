@@ -37,13 +37,11 @@
                 <TextBlock Grid.Row="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" Text="Tên phòng ban" TextAlignment="Right" VerticalAlignment="Center"/>
                 <TextBlock Grid.Row="3" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" Text="Ngày thành lập" TextAlignment="Right" VerticalAlignment="Center"/>
 
-                <ComboBox Style="{StaticResource ComboboxStyle}" Grid.Column="1" Grid.Row="0"/>
-                <TextBox Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="1"/>
-                <TextBox Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="2"/>
-                <DatePicker Grid.Column="1" Grid.Row="3"
-                        FontSize="18"
-                        Height="30"
-                            FontWeight="Normal"/>
+                <ComboBox x:Name="maBoPhanCbx"  FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="0"/>
+                <TextBox x:Name="maPhongBanTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="1"/>
+                <TextBox x:Name="tenPhongBanTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="2"/>
+                <DatePicker x:Name="ngaytlDpk" Grid.Column="1" Grid.Row="3"
+                        FontSize="17" FontWeight="Normal"/>
             </Grid>
         </GroupBox>
         <Grid Grid.Row="1">
@@ -54,21 +52,23 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             
-            <Button Style="{StaticResource WindowButtonTheme}"
-                    Width="170" Height="40">Thêm phòng ban</Button>
-            <Button Grid.Column="1" 
+            <Button x:Name="themBtn" Style="{StaticResource WindowButtonTheme}"
+                    Width="170" Height="40" Click="themBtn_Click">Thêm phòng ban</Button>
+            <Button x:Name="xoaBtn" Grid.Column="1" 
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="170" Height="40">Xóa phòng ban</Button>
-            <Button Grid.Column="2"
+                    Width="170" Height="40" Click="xoaBtn_Click">Xóa phòng ban</Button>
+            <Button x:Name="suaBtn" Grid.Column="2"
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="170" Height="40">Sửa phòng ban</Button>
-            <Button Grid.Column="3"
+                    Width="170" Height="40" Click="suaBtn_Click">Sửa phòng ban</Button>
+            <Button x:Name="lammoiBtn" Grid.Column="3"
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="170" Height="40">Làm mới</Button>
+                    Width="170" Height="40" Click="lammoiBtn_Click">Làm mới</Button>
         </Grid>
 
-        <DataGrid Grid.Row="2"
-                  Margin="10,10,10,20">
+        <DataGrid x:Name="dsPhongBanDtg" Grid.Row="2"
+                  Margin="10,10,10,20"
+                  ItemsSource="{Binding Path=DefaultView}"
+                  IsReadOnly="True" SelectionChanged="dsPhongBanDtg_SelectionChanged">
             
         </DataGrid>
         

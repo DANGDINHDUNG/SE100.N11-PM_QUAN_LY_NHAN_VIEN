@@ -33,7 +33,6 @@
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
-                        <RowDefinition/>
                     </Grid.RowDefinitions>
 
                     <TextBlock Grid.Row="0" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
@@ -41,18 +40,15 @@
                     <TextBlock Grid.Row="1" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
                         Text="Mật khẩu" TextAlignment="Right" VerticalAlignment="Center"/>
                     <TextBlock Grid.Row="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                        Text="Số điện thoại" TextAlignment="Right" VerticalAlignment="Center"/>
-                    <TextBlock Grid.Row="3" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
                         Text="Họ tên" TextAlignment="Right" VerticalAlignment="Center"/>
-                    <TextBlock Grid.Row="4" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                        Text="Quyền hạn" TextAlignment="Right" VerticalAlignment="Center"/>
+                    <TextBlock Grid.Row="3" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
+                        Text="Loại tài khoản" TextAlignment="Right" VerticalAlignment="Center"/>
 
 
                     <TextBox Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="0"/>
                     <TextBox Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="1"/>
                     <TextBox Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="2"/>
                     <TextBox Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="3"/>
-                    <TextBox Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="4"/>
                 </Grid>
 
             </GroupBox>

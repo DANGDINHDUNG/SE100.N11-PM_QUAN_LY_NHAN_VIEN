@@ -39,19 +39,46 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"/>
 
-                <Button Style="{StaticResource WindowButtonTheme}" HorizontalAlignment="Center" VerticalAlignment="Bottom"
-                        Width="150"
-                        Margin="0,0,0,20"
-                        Click="LogOutButton_Click">
-                    <TextBlock FontWeight="SemiBold"
-                               Foreground="White">Đăng xuất</TextBlock>
-                </Button>
+                <StackPanel Orientation="Vertical" 
+                                VerticalAlignment="Bottom"
+                            Margin="0,0,0,20">
+                    <ToggleButton  x:Name="AccountButton" 
+                                      Content=""
+                                      Style="{StaticResource AccountButtonTheme}"
+                                      IsTabStop="False" 
+                                      Focusable="False"/>
+
+                    <Popup IsOpen="{Binding IsChecked, ElementName=AccountButton}"
+                               PlacementTarget="{Binding ElementName=AccountButton}"
+                               Placement="Bottom" 
+                               StaysOpen="False"
+                               AllowsTransparency="True">
+                        <Border CornerRadius="10" 
+                                    Background="#F6F7FA" 
+                                    BorderBrush="Gray" 
+                                    BorderThickness="0.5">
+                            <StackPanel Width="150" Margin="0">
+                                <StackPanel.Resources>
+                                    <Style TargetType="RadioButton" BasedOn="{StaticResource AccountDropDownButtonTheme}"/>
+                                </StackPanel.Resources>
+
+
+                                <RadioButton x:Name="SignUp" 
+                                                 Content="Đăng xuất"
+                                             Click="LogOutButton_Click"/>
+                                <RadioButton Content="Đổi mật khẩu"
+                                             Click="btnDoiMK_Click"/>
+                            </StackPanel>
+                        </Border>
+
+                    </Popup>
+                </StackPanel>
 
                 <Grid Grid.Row="2">
                     <StackPanel Grid.Row="2"
                             Margin="10,0,10,0">
 
-                        <RadioButton Height="40"
+                        <RadioButton x:Name="trangChuRbn" Height="40"
                              FontSize="17"
                              Style="{StaticResource MenuButtonTheme}"
                              IsChecked="True"
@@ -59,28 +86,28 @@
                             <TextBlock Margin="20,0,0,0">Trang Chủ</TextBlock>
                         </RadioButton>
 
-                        <RadioButton Height="40"
+                        <RadioButton x:Name="nhanVienRbn" Height="40"
                              FontSize="17"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding QLNhanVienViewCommand}">
                             <TextBlock Margin="20,0,0,0">Nhân viên</TextBlock>
                         </RadioButton>
 
-                        <RadioButton Height="40"
+                        <RadioButton x:Name="boPhanRbn" Height="40"
                              FontSize="17"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding QLPhongBanViewCommand}">
                             <TextBlock Margin="20,0,0,0">Bộ phận</TextBlock>
                         </RadioButton>
 
-                        <RadioButton Height="40"
+                        <RadioButton x:Name="chamCongRbn" Height="40"
                              FontSize="17"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding QLChamCongViewCommand}">
                             <TextBlock Margin="20,0,0,0">Chấm công</TextBlock>
                         </RadioButton>
 
-                        <RadioButton Height="40"
+                        <RadioButton x:Name="bangLuongRbn" Height="40"
                              FontSize="17"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding QLBangLuongViewCommand}">
@@ -88,26 +115,33 @@
                         </RadioButton>
 
                         
-                        <RadioButton Height="40"
+                        <RadioButton x:Name="baoCaoRbn" Height="40"
                              FontSize="17"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding QLBaoCaoThongKeViewCommand}">
                             <TextBlock Margin="20,0,0,0">Báo cáo thống kê</TextBlock>
                         </RadioButton>
 
-                        <RadioButton Height="40"
+                        <RadioButton x:Name="traCuuRbn" Height="40"
                              FontSize="17"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding TraCuuThongTinViewCommand}">
                             <TextBlock Margin="20,0,0,0">Tra cứu thông tin</TextBlock>
                         </RadioButton>
 
-                        <RadioButton Height="40"
+                        <RadioButton x:Name="heThongRbn" Height="40"
                              FontSize="17"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding QLHeThongViewCommand}">
                             <TextBlock Margin="20,0,0,0">Hệ thống</TextBlock>
                         </RadioButton>
+                        <RadioButton x:Name="thongTinCaNhanRbn" Height="40"
+                             FontSize="17"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding NhanVien_QLThongTinCaNhanCommand}">
+                            <TextBlock Margin="20,0,0,0">Thông tin cá nhân</TextBlock>
+                        </RadioButton>
+                        
 
                         
                     </StackPanel>

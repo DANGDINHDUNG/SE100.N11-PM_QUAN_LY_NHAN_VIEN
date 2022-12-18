@@ -42,7 +42,7 @@ namespace DAL
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("UPDATE PHONGBAN " +
-                "SET MABP='{0}' ,TENPHONG=N'{1}, NGAYTHANHLAP='{2}',GHICHU=N'{3}'" + "WHERE MAPHONG = '{4}'",
+                "SET MABP='{0}' ,TENPHONG=N'{1}', NGAYTHANHLAP='{2}',GHICHU=N'{3}'" + "WHERE MAPHONG = '{4}'",
             phongBan.Mabp,phongBan.Tenphong, phongBan.Ngaythanhlap, phongBan.Ghichu, phongBan.Maphong);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
@@ -129,6 +129,21 @@ namespace DAL
             }
             connection.Close();
             return listPhongBan;
+        }
+        public List<string> TongHopMaPhongBan()
+        {
+            List<string> listMaPhongBan = new List<string>();
+            CheckConnection();
+            string sql = string.Format("SELECT MAPHONG FROM PHONGBAN");
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                listMaPhongBan.Add(sdr[0].ToString());
+            }
+            connection.Close();
+            return listMaPhongBan;
         }
     }
 }

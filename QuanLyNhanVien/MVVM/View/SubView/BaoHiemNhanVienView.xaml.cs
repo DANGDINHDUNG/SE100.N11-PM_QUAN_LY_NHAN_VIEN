@@ -16,6 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using QuanLyNhanVien.MessageBox;
 
 namespace QuanLyNhanVien.MVVM.View.SubView
 {
@@ -56,21 +57,21 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             if (dsThaiSanDtg.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Vui lòng chọn thai sản cần xóa!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? result = new MessageBoxCustom("Vui lòng chọn thai sản cần xóa!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
                 return;
             }
                 
             busSoThaiSan.XoaSoThaiSan(dtoSoThaiSan.Mats);
             DataGridLoad();
-            MessageBox.Show("Xóa thai sản thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
-            
+            bool? Result = new MessageBoxCustom("Xóa thai sản thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+
         }
 
         private void btnSuaThaiSan_Click(object sender, RoutedEventArgs e)
         {
             if (dsThaiSanDtg.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Vui lòng chọn thai sản cần sửa!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? result = new MessageBoxCustom("Vui lòng chọn thai sản cần sửa!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
@@ -96,7 +97,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             if (dsThaiSanDtg.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Vui lòng chọn thai sản cần xem!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? result = new MessageBoxCustom("Vui lòng chọn thai sản cần xem!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
@@ -122,13 +123,13 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             if (dtgBaoHiem.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Vui lòng chọn bảo hiểm cần xóa!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? result = new MessageBoxCustom("Vui lòng chọn bảo hiểm cần xóa!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
             busSoBH.XoaSoBH(dtoSoBH.Mabh);
             DataGridLoad();
-            MessageBox.Show("Xóa bảo hiểm thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            bool? Result = new MessageBoxCustom("Xóa bảo hiểm thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
         }
 
         private void btnThemBaoHiem_Click(object sender, RoutedEventArgs e)
@@ -142,7 +143,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             if (dtgBaoHiem.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Vui lòng chọn bảo hiểm cần sửa!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? result = new MessageBoxCustom("Vui lòng chọn bảo hiểm cần sửa!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
@@ -166,7 +167,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             if (dtgBaoHiem.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Vui lòng chọn bảo hiểm cần xem!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? result = new MessageBoxCustom("Vui lòng chọn bảo hiểm cần xem!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
                 return;
             }
 

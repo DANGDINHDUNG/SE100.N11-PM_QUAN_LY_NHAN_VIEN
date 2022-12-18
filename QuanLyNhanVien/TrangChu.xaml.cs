@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyNhanVien.WindowView;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DTO;
+using System.Windows.Threading;
+using QuanLyNhanVien.Properties;
 
 namespace QuanLyNhanVien
 {
@@ -20,9 +24,17 @@ namespace QuanLyNhanVien
     /// </summary>
     public partial class TrangChu : Window
     {
-        public TrangChu()
+        public TrangChu(DTO_TAIKHOAN dtoTaiKhoan)
         {
             InitializeComponent();
+            AccountButton.Content = dtoTaiKhoan._TENCHUTAIKHOAN;
+            if (dtoTaiKhoan._MALOAITK != 1)
+            {
+                heThongRbn.Visibility = Visibility.Collapsed;
+                //Settings.Visibility = Visibility.Collapsed;
+                //Report.Visibility = Visibility.Collapsed;
+            }
+            //StartClock();
         }
 
         private void MinimizedButton_Click(object sender, RoutedEventArgs e)
@@ -61,5 +73,19 @@ namespace QuanLyNhanVien
             dangNhap.Show();
             this.Close();
         }
+
+        private void btnDoiMK_Click(object sender, RoutedEventArgs e)
+        {
+            DoiMatKhau doiMatKhau = new DoiMatKhau();
+            doiMatKhau.ShowDialog();
+        }
+
+        //private void StartClock()
+        //{
+        //    DispatcherTimer timer = new DispatcherTimer();
+        //    timer.Interval = TimeSpan.FromSeconds(1);
+        //    timer.Tick += TickEvent;
+        //    timer.Start();
+        //}
     }
 }

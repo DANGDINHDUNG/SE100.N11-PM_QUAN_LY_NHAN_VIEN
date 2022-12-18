@@ -17,6 +17,7 @@ namespace QuanLyNhanVien.MVVM.ViewModel
         public RelayCommand QLBaoCaoThongKeViewCommand { get; set; }
         public RelayCommand QLBangLuongViewCommand { get; set; }
         public RelayCommand QLHeThongViewCommand { get; set; }
+        public RelayCommand NhanVien_QLThongTinCaNhanCommand { get; set; }
         //public RelayCommand DiscoverViewCommand { get; set; }
         //public RelayCommand QL_NhanVienViewCommand { get; set; }
 
@@ -29,6 +30,7 @@ namespace QuanLyNhanVien.MVVM.ViewModel
         public QLBaoCaoThongKeViewModel QLBaoCaoThongKeVM { get; set; }
         public QLBangLuongViewModel QLBangLuongVM { get; set; }
         public QLHeThongViewModel QLHeThongVM { get; set; }
+        public NhanVien_QLThongTinCaNhanViewModel NhanVien_QLThongTinCaNhanVM { get; set; }
         //public DiscoverViewModel DiscoverVM { get; set; }
         //public DiscoverViewModel QL_NhanVienVM { get; set; }
 
@@ -54,7 +56,8 @@ namespace QuanLyNhanVien.MVVM.ViewModel
             TraCuuThongTinVM = new TraCuuThongTinViewModel();  
             QLBaoCaoThongKeVM = new QLBaoCaoThongKeViewModel(); 
             QLBangLuongVM = new QLBangLuongViewModel(); 
-            QLHeThongVM = new QLHeThongViewModel(); 
+            QLHeThongVM = new QLHeThongViewModel();
+            NhanVien_QLThongTinCaNhanVM = new NhanVien_QLThongTinCaNhanViewModel(); 
             //DiscoverVM = new DiscoverViewModel();
 
             CurrentView = HomeVM; //Đúng phải là HomeVM
@@ -95,6 +98,10 @@ namespace QuanLyNhanVien.MVVM.ViewModel
             QLHeThongViewCommand = new RelayCommand(o =>
             {
                 CurrentView = QLHeThongVM;
+            });
+            NhanVien_QLThongTinCaNhanCommand = new RelayCommand(o =>
+            {
+                CurrentView = NhanVien_QLThongTinCaNhanVM;
             });
 
 

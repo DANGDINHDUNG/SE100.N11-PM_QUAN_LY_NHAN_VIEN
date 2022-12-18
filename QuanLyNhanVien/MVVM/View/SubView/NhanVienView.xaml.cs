@@ -16,6 +16,11 @@ using System.Windows.Shapes;
 using DTO;
 using BUS;
 using System.Data;
+using QuanLyNhanVien.MessageBox;
+using Microsoft.Win32;
+using OfficeOpenXml.Style;
+using OfficeOpenXml;
+using System.IO;
 
 namespace QuanLyNhanVien.MVVM.View.SubView
 {
@@ -50,7 +55,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             if (dsNhanVienDtg.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Vui lòng chọn nhân viên cần sửa!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? result = new MessageBoxCustom("Vui lòng chọn nhân viên cần sửa!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
@@ -88,17 +93,17 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             if (dsNhanVienDtg.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Vui lòng chọn nhân viên cần xóa!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? Result1 = new MessageBoxCustom("Vui lòng chọn nhân viên cần xóa!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
-            var result = MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Xác nhận", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (result == MessageBoxResult.No)
+            bool? result = new MessageBoxCustom("Bạn có chắc chắn muốn xóa không?", MessageType.Confirmation, MessageButtons.YesNo).ShowDialog();
+            if (!result.Value)
                 return;
 
             busNhanVien.XoaNhanVien(dtoNhanVien.Manv);
             DataGridLoad();
-            MessageBox.Show("Xóa nhân viên thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            bool? Result = new MessageBoxCustom("Xóa nhân viên thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             ClearBoxes();
         }
 
@@ -141,14 +146,105 @@ namespace QuanLyNhanVien.MVVM.View.SubView
             }
         }
 
-        private void chiTietBtn_Click(object sender, RoutedEventArgs e)
+        private void xuatDSBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (dsNhanVienDtg.SelectedItems.Count == 0)
+            string filePath = "";
+
+            SaveFileDialog dialog = new SaveFileDialog();
+
+            dialog.Filter = "Excel |*.xlsx";
+
+            if (dialog.ShowDialog() == true)
             {
-                MessageBox.Show("Vui lòng chọn nhân viên cần xem!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                filePath = dialog.FileName;
+            }
+
+            if (string.IsNullOrEmpty(filePath))
+            {
+                bool? result = new MessageBoxCustom("Đường dẫn không hợp lệ!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
                 return;
             }
-            XemChiTiet();
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            try
+            {
+                using (ExcelPackage p = new ExcelPackage())
+                {
+                    p.Workbook.Properties.Author = "Nhóm13_QLNV";
+                    p.Workbook.Properties.Title = "Danh sách nhân viên";
+                    p.Workbook.Worksheets.Add("Sheet 1");
+
+                    ExcelWorksheet ws = p.Workbook.Worksheets[0];
+                    ws.Name = "Test sheet";
+                    ws.Cells.Style.Font.Size = 14;
+                    ws.Cells.Style.Font.Name = "Consolas";
+
+                    string[] arrColumnHeader = { "Mã nhân viên", "Mã phòng", "Mã lương", "Họ tên", "Ngày sinh",
+                                                "Giới tính", "Dân tộc", "CMND/CCCD", "Nơi cấp", "Chức vụ",
+                                                "Mã loại nhân viên", "Loại hợp đồng", "Thời gian (năm)", "Ngày ký",
+                                                "Ngày hết hạn", "Số điện thoại", "Học vấn", "Ghi chú" };
+
+                    var countColHeader = arrColumnHeader.Count();
+
+                    ws.Cells[1, 1].Value = "Danh sách nhân viên";
+                    ws.Cells[1, 1, 1, countColHeader].Merge = true;
+                    ws.Cells[1, 1, 1, countColHeader].Style.Font.Bold = true;
+                    ws.Cells[1, 1, 1, countColHeader].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+                    int colIndex = 1;
+                    int rowIndex = 2;
+
+                    foreach (var item in arrColumnHeader)
+                    {
+                        var cell = ws.Cells[rowIndex, colIndex];
+
+                        var fill = cell.Style.Fill;
+                        fill.PatternType = ExcelFillStyle.Solid;
+                        fill.BackgroundColor.SetColor(System.Drawing.Color.LightBlue);
+
+                        var border = cell.Style.Border;
+                        border.Bottom.Style = border.Top.Style = border.Left.Style = border.Right.Style = ExcelBorderStyle.Thin;
+
+                        cell.Value = item;
+                        colIndex++;
+                    }
+                    DataTable dt = new DataTable();
+                    dt = busNhanVien.getNhanVien();
+
+                    foreach (DataRow dr in dt.Rows)
+                    {
+                        colIndex = 1;
+                        rowIndex++;
+
+                        ws.Cells[rowIndex, colIndex++].Value = dr["MANV"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["MAPHONG"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["MALUONG"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["HOTEN"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["NGAYSINH"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["GIOITINH"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["DANTOC"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["CMND_CCCD"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["NOICAP"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["CHUCVU"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["MALOAINV"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["LOAIHD"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["THOIGIAN"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["NGAYKY"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["NGAYHETHAN"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["SDT"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["HOCVAN"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["GHICHU"].ToString();
+
+                    }
+
+                    Byte[] bin = p.GetAsByteArray();
+                    File.WriteAllBytes(filePath, bin);
+
+                }
+                bool? result = new MessageBoxCustom("Xuất excel thành công!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+            }
+            catch
+            {
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu file!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+            }
         }
 
         private void locBtn_Click(object sender, RoutedEventArgs e)

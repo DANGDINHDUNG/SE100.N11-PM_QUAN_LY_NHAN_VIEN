@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using QuanLyNhanVien.MessageBox;
 
 namespace QuanLyNhanVien.WindowView
 {
@@ -48,7 +49,7 @@ namespace QuanLyNhanVien.WindowView
         {
             if (ngayCapTbx.Text == String.Empty || noiCapTbx.Text == String.Empty)
             {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                bool? Result = new MessageBoxCustom("Vui lòng thêm thông tin đầy đủ!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
@@ -61,13 +62,13 @@ namespace QuanLyNhanVien.WindowView
             if (maBHTbx.Text == string.Empty)
             {
                 busBaoHiem.ThemSoBH(dtoSoBH);
-                MessageBox.Show("Thêm bảo hiểm thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? Result = new MessageBoxCustom("Thêm bảo hiểm thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             }
             else
             {
                 dtoSoBH.Mabh = int.Parse(maBHTbx.Text);
                 busBaoHiem.SuaSoBH(dtoSoBH);
-                MessageBox.Show("Sửa bảo hiểm thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? Result = new MessageBoxCustom("Sửa bảo hiểm thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             }
             this.Close();
         }
