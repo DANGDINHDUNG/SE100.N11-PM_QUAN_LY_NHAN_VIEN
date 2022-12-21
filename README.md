@@ -34,10 +34,13 @@
       -  Biểu đồ thống kê
       -  Thống kê hiệu suất làm việc của nhân viên, hiệu suất của từng phòng ban
   
-## Công nghệ 
-  - Ngôn ngữ: C#
-  - Database: SqLite
-  - Visual studio
+## Công nghệ và ngôn ngữ
+     - ## Ngôn ngữ:
+          - Ngôn ngữ lập trình: C#
+          - Ngôn ngữ cơ sở dữ liệu sql
+     - ## Công nghệ:
+          - Visual studio 
+          - Microsoft sql server management 18
 
 ## Kiến trúc 
 Phần mềm sử dụng Mô hình 3 layer, 3 tiers là mô hình kết nối đến CSDL thông qua các lớp: DTO, BUS và DAO.
