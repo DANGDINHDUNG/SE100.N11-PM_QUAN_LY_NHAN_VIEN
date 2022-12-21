@@ -14,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using QuanLyNhanVien.MessageBox;
 
 namespace QuanLyNhanVien.WindowView
 {
@@ -53,27 +54,27 @@ namespace QuanLyNhanVien.WindowView
                 || troCapTbx.Text == String.Empty)
 
             {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                bool? Result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
             DTO_SOTHAISAN dtoSoThaiSan=new DTO_SOTHAISAN();
             dtoSoThaiSan.Manv = int.Parse(maNVCbx.SelectedValue.ToString());
-            dtoSoThaiSan.Ngaynghisinh = Convert.ToDateTime(ngayNghiSinhTbx.Text);
-            dtoSoThaiSan.Ngayvesom = Convert.ToDateTime(ngayVeSomTbx.Text);
-            dtoSoThaiSan.Ngaylamtrolai = Convert.ToDateTime(ngayLamTLTbx.Text);
+            dtoSoThaiSan.Ngaynghisinh = DateTime.Parse(ngayNghiSinhTbx.Text);
+            dtoSoThaiSan.Ngayvesom = DateTime.Parse(ngayVeSomTbx.Text);
+            dtoSoThaiSan.Ngaylamtrolai = DateTime.Parse(ngayLamTLTbx.Text);
             dtoSoThaiSan.Trocapcty = int.Parse(troCapTbx.Text);
             dtoSoThaiSan.Ghichu = ghiChuTbx.Text;
 
             if (maTSTbx.Text == string.Empty)
             {
                 busSoThaiSan.ThemSoThaiSan(dtoSoThaiSan);
-                MessageBox.Show("Thêm thai sản thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? Result = new MessageBoxCustom("Thêm thai sản thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             }
             else
             {
                 dtoSoThaiSan.Mats = int.Parse(maTSTbx.Text);
                 busSoThaiSan.SuaSoThaiSan(dtoSoThaiSan);
-                MessageBox.Show("Sửa thai sản thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? Result = new MessageBoxCustom("Sửa thai sản thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             }
             this.Close();
         }
@@ -88,7 +89,7 @@ namespace QuanLyNhanVien.WindowView
             if (checkAdd)
                 return;
             maTSTbx.Text = suaThaiSan.Mats.ToString();
-            maNVCbx.Text = suaThaiSan.Manv.ToString();
+            maNVCbx.SelectedItem = suaThaiSan.Manv.ToString();
 
             ngayNghiSinhTbx.Text = suaThaiSan.Ngaynghisinh.ToString();
             ngayVeSomTbx.Text = suaThaiSan.Ngayvesom.ToString();

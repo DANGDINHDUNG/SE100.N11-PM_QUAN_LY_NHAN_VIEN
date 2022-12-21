@@ -57,7 +57,7 @@
                 
                 <TextBox Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="0" IsEnabled="False"/>
                 <TextBox Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="1"/>
-                <TextBox Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="2"/>
+                <DatePicker FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="2"/>
                 <TextBox Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="3"/>
                 <TextBox Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="4"/>
                 <TextBox Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="5"/>
@@ -76,7 +76,7 @@
                            Text="Ghi chú" TextAlignment="Right" VerticalAlignment="Center"/>
                
                 <TextBox Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="0"/>
-                <TextBox Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="1"/>
+                <DatePicker FontSize="17" FontWeight="Normal" Grid.Column="3" Grid.Row="1"/>
                 <TextBox Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="2"/>
                 <TextBox Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="3"/>
                 <TextBox Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="4"/>

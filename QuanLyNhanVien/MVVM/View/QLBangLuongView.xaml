@@ -26,9 +26,9 @@
             </StackPanel.Resources>
 
             <RadioButton Content="Bảng lương" IsChecked="True" 
-                         Command="{Binding LuongThuViecCommand}"/>
+                         Command="{Binding BangLuongCommand}"/>
             <RadioButton Content="Thay đổi bảng lương"
-                         Command="{Binding KhoiDieuHanhCommand}"/>
+                         Command="{Binding ThayDoiBangluongCommand}"/>
         </StackPanel>
 
         <ContentControl Grid.Row="1"

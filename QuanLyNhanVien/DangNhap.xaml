@@ -88,7 +88,7 @@
                          HorizontalAlignment="Center"
                          VerticalAlignment="Top"
                          Foreground="Black"
-                         FontSize="15">
+                         FontSize="15" KeyDown="Login_KeyDown">
                     <TextBox.Effect>
                         <DropShadowEffect ShadowDepth="4"
                           Direction="330"
@@ -103,7 +103,7 @@
                              VerticalAlignment="Top"
                              HorizontalAlignment="Center"
                              Style="{StaticResource PassWordBoxTheme}"
-                             Padding="15">
+                             Padding="15,15,15,15" KeyDown="Login_KeyDown">
                     <PasswordBox.Effect>
                         <DropShadowEffect ShadowDepth="4"
                           Direction="330"
@@ -118,6 +118,7 @@
                         FontSize="15"
                         FontWeight="SemiBold"
                         Margin="10,16,0,62"
+                        Click="btnQuenMK_Click"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center" Height="22">
                     <Button.Template>

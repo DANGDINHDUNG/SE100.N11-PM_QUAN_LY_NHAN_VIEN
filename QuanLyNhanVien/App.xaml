@@ -9,6 +9,7 @@
              xmlns:bangLuongSubViewModel="clr-namespace:QuanLyNhanVien.MVVM.ViewModel.BangLuongSubViewModel"
              xmlns:heThongSubViewModel="clr-namespace:QuanLyNhanVien.MVVM.ViewModel.HeThongSubViewModel"
              xmlns:baoCaoThongKeViewModel="clr-namespace:QuanLyNhanVien.MVVM.ViewModel.BaoCaoThongKeSubViewModel"
+             xmlns:thongTinCaNhanViewModel="clr-namespace:QuanLyNhanVien.MVVM.ViewModel.NhanVien_ThongTinCaNhanSubViewModel"
              xmlns:view="clr-namespace:QuanLyNhanVien.MVVM.View"
              xmlns:subView="clr-namespace:QuanLyNhanVien.MVVM.View.SubView"
              xmlns:chamCongSubView="clr-namespace:QuanLyNhanVien.MVVM.View.ChamCongSubView"
@@ -16,14 +17,26 @@
              xmlns:bangLuongSubView="clr-namespace:QuanLyNhanVien.MVVM.View.BangLuongSubView"
              xmlns:heThongSubView="clr-namespace:QuanLyNhanVien.MVVM.View.HeThongSubView"
              xmlns:baoCaoThongKeSubView="clr-namespace:QuanLyNhanVien.MVVM.View.BaoCaoThongKeSubView"
-             StartupUri="TrangChu.xaml">
+             xmlns:thongTinCaNhanSubView="clr-namespace:QuanLyNhanVien.MVVM.View.NhanVien_ThongTinCaNhanSubView"
+             StartupUri="DangNhap.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
                 <ResourceDictionary Source="Theme/TextBoxTheme.xaml"/>
                 <ResourceDictionary Source="Theme/ComboBoxTheme.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Green.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <!-- Color -->
+            <SolidColorBrush x:Key="PrimaryHueDarkBrush" Color="#5ad3b5"/>
+
+            <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="#5ad3b5"/>
+
+
 
             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
                 <view:HomeView/>
@@ -40,24 +53,28 @@
             <DataTemplate DataType="{x:Type viewModel:QLChamCongViewModel}">
                 <view:QLChamCongView/>
             </DataTemplate>
-            
+
             <DataTemplate DataType="{x:Type viewModel:TraCuuThongTinViewModel}">
                 <view:TraCuuThongTinView/>
             </DataTemplate>
-            
+
             <DataTemplate DataType="{x:Type viewModel:QLBaoCaoThongKeViewModel}">
                 <view:QLBaoCaoThongKeView/>
             </DataTemplate>
-            
+
             <DataTemplate DataType="{x:Type viewModel:QLBangLuongViewModel}">
                 <view:QLBangLuongView/>
             </DataTemplate>
-            
+
             <DataTemplate DataType="{x:Type viewModel:QLHeThongViewModel}">
                 <view:QLHeThongView/>
             </DataTemplate>
-            
-            
+
+            <DataTemplate DataType="{x:Type viewModel:NhanVien_QLThongTinCaNhanViewModel}">
+                <view:NhanVien_QLThongTinCaNhan/>
+            </DataTemplate>
+
+
 
             <!--Nhan Vien-->
             <DataTemplate DataType="{x:Type subViewModel:NhanVienViewModel}">
@@ -85,16 +102,16 @@
                 <phongBanSubView:BoPhanView/>
             </DataTemplate>
 
-            
+
             <!--Bang Luong-->
             <DataTemplate DataType="{x:Type bangLuongSubViewModel:BangLuongViewModel}">
                 <bangLuongSubView:BangLuongView/>
             </DataTemplate>
-            
+
             <DataTemplate DataType="{x:Type bangLuongSubViewModel:ThayDoiBangLuongViewModel}">
                 <bangLuongSubView:ThayDoiBangLuongView/>
             </DataTemplate>
-            
+
             <!--He Thong-->
             <DataTemplate DataType="{x:Type heThongSubViewModel:TaiKhoanViewModel}">
                 <heThongSubView:TaiKhoanView/>
@@ -105,7 +122,7 @@
             <DataTemplate DataType="{x:Type heThongSubViewModel:LichSuChinhSuaViewModel}">
                 <heThongSubView:LichSuChinhSuaView/>
             </DataTemplate>
-            
+
             <!--Cham Cong-->
             <DataTemplate DataType="{x:Type chamCongSubViewModel:BangChamCongViewModel}">
                 <chamCongSubView:BangChamCongView/>
@@ -116,13 +133,24 @@
             <DataTemplate DataType="{x:Type chamCongSubViewModel:KhenThuongKyLuatViewModel}">
                 <chamCongSubView:KhenThuongKyLuatView/>
             </DataTemplate>
-            
+
             <!--Bao Cao Thong Ke-->
             <DataTemplate DataType="{x:Type baoCaoThongKeViewModel:BaoCaoThongKeViewModel}">
                 <baoCaoThongKeSubView:BaoCaoThongKeView/>
             </DataTemplate>
             <DataTemplate DataType="{x:Type baoCaoThongKeViewModel:BaoCaoNhanSuViewModel}">
                 <baoCaoThongKeSubView:BaoCaoNhanSuView/>
+            </DataTemplate>
+            
+            <!-- Thong Tin Ca Nhan -->
+            <DataTemplate DataType="{x:Type thongTinCaNhanViewModel:ThongTinCaNhanViewModel}">
+                <thongTinCaNhanSubView:ThongTinCaNhanView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type thongTinCaNhanViewModel:BangLuongCaNhanViewModel}">
+                <thongTinCaNhanSubView:BangLuongCaNhanView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type thongTinCaNhanViewModel:BangChamCongCaNhanViewModel}">
+                <thongTinCaNhanSubView:BangChamCongCaNhanView/>
             </DataTemplate>
             
         </ResourceDictionary>

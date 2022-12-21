@@ -32,20 +32,21 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock Grid.Column="2" Grid.RowSpan="2" Margin="10,36,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Phòng" TextAlignment="Right" VerticalAlignment="Top" Height="19"/>
-                <TextBlock Grid.Column="0" Grid.RowSpan="2" Margin="0,36,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Bộ phận" TextAlignment="Right" VerticalAlignment="Top" Height="19"/>
-                <TextBlock Grid.Column="4" Grid.RowSpan="2" Margin="4,36,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Mã nhân viên" TextAlignment="Right" VerticalAlignment="Top" Height="19"/>
+                <TextBlock Grid.Column="2" Grid.RowSpan="2" FontWeight="Normal" FontSize="14" 
+                           Margin="0,0,10,0" Text="Phòng" TextAlignment="Right" VerticalAlignment="Center" Height="19"/>
+                <TextBlock Grid.Column="0" Grid.RowSpan="2" FontWeight="Normal" FontSize="14" 
+                           Margin="0,0,10,0" Text="Bộ phận" TextAlignment="Right" VerticalAlignment="Center" Height="19"/>
+                <TextBlock Grid.Column="4" Grid.RowSpan="2" FontWeight="Normal" FontSize="14" 
+                           Margin="0,0,10,0" Text="Mã nhân viên" TextAlignment="Right" VerticalAlignment="Center" Height="19"/>
 
-                <ComboBox x:Name="phongCbx" Grid.RowSpan="2" Style="{StaticResource ComboboxStyle}" Grid.Column="2" Grid.ColumnSpan="2" Margin="55,0,10,0" IsReadOnly="True"/>
-                <ComboBox x:Name="boPhanCbx" Grid.RowSpan="2" Style="{StaticResource ComboboxStyle}" Grid.Column="1" SelectionChanged="boPhanCbx_SelectionChanged" Margin="0,0,5,0" IsReadOnly="True"/>
-                <TextBox x:Name="maNVTbx" Grid.RowSpan="2" Style="{StaticResource InputTextBox}" Grid.Column="5" Height="32" Margin="3,29,10,0" VerticalAlignment="Top" KeyDown="tenNVTbx_KeyDown"/>
+                <ComboBox x:Name="phongCbx" Grid.RowSpan="2"  FontSize="17" FontWeight="Normal" Grid.Column="3" IsReadOnly="True" VerticalAlignment="Center"/>
+                <ComboBox x:Name="boPhanCbx" Grid.RowSpan="2" FontSize="17" FontWeight="Normal"  Grid.Column="1" SelectionChanged="boPhanCbx_SelectionChanged" IsReadOnly="True" VerticalAlignment="Center"/>
+                <TextBox x:Name="maNVTbx" Grid.RowSpan="2" Style="{StaticResource InputTextBox}" Grid.Column="5"  VerticalAlignment="Center" KeyDown="tenNVTbx_KeyDown"/>
 
                 <Button x:Name="locBtn" Grid.Column="6" Grid.Row="0"
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="NaN" Height="NaN" Click="locBtn_Click" Margin="5,24,5,26" Grid.RowSpan="2">
+                    Width="40" Height="40" Click="locBtn_Click" Grid.RowSpan="2"
+                        HorizontalAlignment="Right">
                     <Image Height="20"
                         Source="/MVVM/View/SubView/icons8-funnel-64.png"/>
                 </Button>
@@ -57,8 +58,8 @@
         <DataGrid x:Name="lsChinhSuaDtg" Grid.Row="1"
                   ItemsSource="{Binding Path=DefaultView}"
                   IsReadOnly="True"
-                  Margin="10,0,10,10" 
-                  SelectionChanged="dsNhanVienDtg_SelectionChanged">
+                  Margin="0,0,0,20" 
+                  SelectionChanged="dsNhanVienDtg_SelectionChanged" MouseDoubleClick="lsChinhSuaDtg_MouseDoubleClick">
         </DataGrid>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>

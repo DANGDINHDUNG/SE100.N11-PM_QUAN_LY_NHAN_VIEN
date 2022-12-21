@@ -1,5 +1,7 @@
 ﻿using BUS;
 using DTO;
+using QuanLyNhanVien.MessageBox;
+using QuanLyNhanVien.WindowView;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -85,7 +87,7 @@ namespace QuanLyNhanVien.MVVM.View.HeThongSubView
         {
             busLSChinhSua.XoaLSChinhSua(dtoLSChinhSua.Macs);
             DataGridLoad();
-            MessageBox.Show("Xóa lịch sử chỉnh sửa lần " + dtoLSChinhSua.Lancs.ToString() + " của nhân viên có mã nhân viên " + dtoLSChinhSua.Hoten + " thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            bool? Result = new MessageBoxCustom("Xóa lịch sử chỉnh sửa lần " + dtoLSChinhSua.Lancs.ToString() + " của nhân viên có mã nhân viên " + dtoLSChinhSua.Hoten + " thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             ClearBoxes();
         }
 
@@ -148,6 +150,36 @@ namespace QuanLyNhanVien.MVVM.View.HeThongSubView
             }
         }
 
-        
+        private void lsChinhSuaDtg_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            DTO_LSCHINHSUA ctChinhSua = new DTO_LSCHINHSUA();
+            DataRowView row = lsChinhSuaDtg.SelectedItem as DataRowView;
+            ChiTietChinhSua chiTietChinhSua = new ChiTietChinhSua();
+
+            ctChinhSua.Manv = int.Parse(row[1].ToString());
+            ctChinhSua.Lancs = int.Parse(row[2].ToString());
+            ctChinhSua.Maphong = row[3].ToString();
+            ctChinhSua.Maluong = row[4].ToString();
+            ctChinhSua.Hoten = row[5].ToString();
+            ctChinhSua.Ngaysinh = DateTime.Parse(row[6].ToString());
+            ctChinhSua.Gioitinh = row[7].ToString();
+            ctChinhSua.Dantoc = row[8].ToString();
+            ctChinhSua.Cmnd_cccd = row[9].ToString();
+            ctChinhSua.Noicap = row[10].ToString();
+            ctChinhSua.Chucvu = row[11].ToString();
+            ctChinhSua.Maloainv = row[12].ToString();
+            ctChinhSua.Loaihd = row[13].ToString();
+            ctChinhSua.Thoigian = int.Parse(row[14].ToString());
+            ctChinhSua.Ngaydangki = DateTime.Parse(row[15].ToString());
+            ctChinhSua.Ngayhethan = DateTime.Parse(row[16].ToString());
+            ctChinhSua.Sdt = row[17].ToString();
+            ctChinhSua.Hocvan = row[18].ToString();
+            ctChinhSua.Ghichu = row[19].ToString();
+            ctChinhSua.Ngaychinhsua = DateTime.Parse(row[20].ToString());
+
+            chiTietChinhSua.ctChinhSua = ctChinhSua;
+            chiTietChinhSua.ShowDialog();
+            DataGridLoad();
+        }
     }
 }

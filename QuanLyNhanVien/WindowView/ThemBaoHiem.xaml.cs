@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using QuanLyNhanVien.MessageBox;
 
 namespace QuanLyNhanVien.WindowView
 {
@@ -47,27 +48,27 @@ namespace QuanLyNhanVien.WindowView
         private void btnThemSua_Click(object sender, RoutedEventArgs e)
         {
             if (ngayCapTbx.Text == String.Empty || noiCapTbx.Text == String.Empty)
-
             {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                bool? Result = new MessageBoxCustom("Vui lòng thêm thông tin đầy đủ!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
+
             DTO_SOBH dtoSoBH = new DTO_SOBH();
             dtoSoBH.Manv = int.Parse(maNVCbx.SelectedValue.ToString());
-            dtoSoBH.Ngaycapso = Convert.ToDateTime(ngayCapTbx.Text);
+            dtoSoBH.Ngaycapso = DateTime.Parse(ngayCapTbx.Text);
             dtoSoBH.Noicapso = noiCapTbx.Text;
             dtoSoBH.Ghichu = ghiChuTbx.Text;
 
             if (maBHTbx.Text == string.Empty)
             {
                 busBaoHiem.ThemSoBH(dtoSoBH);
-                MessageBox.Show("Thêm bảo hiểm thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? Result = new MessageBoxCustom("Thêm bảo hiểm thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             }
             else
             {
                 dtoSoBH.Mabh = int.Parse(maBHTbx.Text);
                 busBaoHiem.SuaSoBH(dtoSoBH);
-                MessageBox.Show("Sửa bảo hiểm thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                bool? Result = new MessageBoxCustom("Sửa bảo hiểm thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             }
             this.Close();
         }
@@ -77,7 +78,7 @@ namespace QuanLyNhanVien.WindowView
             if (checkAdd)
                 return;
             maBHTbx.Text = suaBaoHiem.Mabh.ToString();
-            maNVCbx.Text = suaBaoHiem.Manv.ToString();
+            maNVCbx.SelectedItem = suaBaoHiem.Manv.ToString();
             ngayCapTbx.Text = suaBaoHiem.Ngaycapso.ToString();
             noiCapTbx.Text = suaBaoHiem.Noicapso.ToString();
             ghiChuTbx.Text = suaBaoHiem.Ghichu.ToString();

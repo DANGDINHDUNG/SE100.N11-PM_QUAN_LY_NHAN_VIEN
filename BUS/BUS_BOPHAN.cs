@@ -44,5 +44,9 @@ namespace BUS
         {
             return bophan.TimKiemTheoMaBoPhan(maBP);
         }
+        public List<string> TongHopMaBoPhan()
+        {
+            return bophan.TongHopMaBoPhan();
+        }
     }
 }

@@ -28,7 +28,6 @@ namespace QuanLyNhanVien.WindowView
         public BUS_LOAINHANVIEN busLoaiNV = new BUS_LOAINHANVIEN();
         public BUS_BANGLUONG busBangLuong = new BUS_BANGLUONG();
         public DTO_NHANVIEN ctNhanVien;
-        public bool checkAdd;
 
         public ChiTietNhanVienForm()
         {
@@ -42,19 +41,17 @@ namespace QuanLyNhanVien.WindowView
 
         private void Textblocks_Loaded(object sender, RoutedEventArgs e)
         {
-            //if (checkAdd)
-            //    return;
             maNVTbk.Text = ctNhanVien.Manv.ToString();
             tenTbk.Text = ctNhanVien.Hoten.ToString();
-            ngaySinhTbk.Text = ctNhanVien.Ngaysinh.ToString();
+            ngaySinhTbk.Text = ctNhanVien.Ngaysinh.ToString("dd/MM/yyyy");
             gioiTinhTbk.Text = ctNhanVien.Gioitinh.ToString();
             cccdTbk.Text = ctNhanVien.Cmnd_cccd.ToString();
             noiCapTbk.Text = ctNhanVien.Noicap.ToString();
             chucVuTbk.Text = ctNhanVien.Chucvu.ToString();
             loaiHopDongTbk.Text = ctNhanVien.Loaihd.ToString();
             thoiGianTbk.Text = ctNhanVien.Thoigian.ToString();
-            ngayKyTbk.Text = ctNhanVien.Ngaydangki.ToString();
-            ngayHetHanTbk.Text = ctNhanVien.Ngayhethan.ToString();
+            ngayKyTbk.Text = ctNhanVien.Ngaydangki.ToString("dd/MM/yyyy");
+            ngayHetHanTbk.Text = ctNhanVien.Ngayhethan.ToString("dd/MM/yyyy");
             soDienThoaiTbk.Text = ctNhanVien.Sdt.ToString();
             hocVanTbk.Text = ctNhanVien.Hocvan.ToString();
             ghiChuTbx.Text = ctNhanVien.Ghichu.ToString();

@@ -13,7 +13,7 @@ namespace DAL
 
         public DataTable getBoPhan()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM BOPHAN", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MABP, TENBOPHAN, FORMAT(NGAYTHANHLAP, 'dd/MM/yyyy') 'NGAYTHANHLAP', GHICHU FROM BOPHAN", connection);
             DataTable dtBOPHAN = new DataTable();
             da.Fill(dtBOPHAN);
             return dtBOPHAN;
@@ -41,7 +41,7 @@ namespace DAL
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("UPDATE BOPHAN " +
-                "SET TENBOPHAN=N'{0}, NGAYTHANHLAP='{1}',GHICHU=N'{2}'" + "WHERE MABP = '{3}'",
+                "SET TENBOPHAN=N'{0}', NGAYTHANHLAP='{1}',GHICHU=N'{2}'" + "WHERE MABP = '{3}'",
             boPhan.Tenbophan, boPhan.Ngaythanhlap, boPhan.Ghichu, boPhan.Mabp);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
@@ -109,6 +109,21 @@ namespace DAL
             }
             connection.Close();
             return listTenBoPhan;
+        }
+        public List<string> TongHopMaBoPhan()
+        {
+            List<string> listMaBoPhan = new List<string>();
+            CheckConnection();
+            string sql = string.Format("SELECT MABP FROM BOPHAN");
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                listMaBoPhan.Add(sdr[0].ToString());
+            }
+            connection.Close();
+            return listMaBoPhan;
         }
     }
 }

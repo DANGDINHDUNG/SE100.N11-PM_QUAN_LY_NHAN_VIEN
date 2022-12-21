@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Acer\Source\Repos\DANGDINHDUNG\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\
 QuanLyNhanVien
 none
 false
 DEBUG;TRACE
-C:\Users\Acer\Source\Repos\DANGDINHDUNG\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\App.xaml
-38-308222241
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\App.xaml
+48635069281
 
-741106598151
-20778052670
-DangNhap.xaml;MVVM\View\BangLuongSubView\BangLuongView.xaml;MVVM\View\BangLuongSubView\ThayDoiBangLuongView.xaml;MVVM\View\BaoCaoThongKeSubView\BaoCaoNhanSuView.xaml;MVVM\View\BaoCaoThongKeSubView\BaoCaoThongKeView.xaml;MVVM\View\ChamCongSubView\BangChamCongThuViecView.xaml;MVVM\View\ChamCongSubView\BangChamCongView.xaml;MVVM\View\ChamCongSubView\KhenThuongKyLuatView.xaml;MVVM\View\HeThongSubView\LichSuChinhSuaView.xaml;MVVM\View\HeThongSubView\TaiKhoanView.xaml;MVVM\View\HeThongSubView\ThamSoView.xaml;MVVM\View\HomeView.xaml;MVVM\View\PhongBanSubVew\BoPhanView.xaml;MVVM\View\PhongBanSubVew\PhongBanView.xaml;MVVM\View\QLBangLuongView.xaml;MVVM\View\QLBaoCaoThongKeView.xaml;MVVM\View\QLChamCongView.xaml;MVVM\View\QLHeThongView.xaml;MVVM\View\QLNhanVienView.xaml;MVVM\View\SubView\BaoHiemNhanVienView.xaml;MVVM\View\QLPhongBanView.xaml;MVVM\View\SubView\QLThuViecThoiViecView.xaml;MVVM\View\SubView\XuatDSNhanVienView.xaml;MVVM\View\SubView\NhanVienView.xaml;MVVM\View\TraCuuThongTinView.xaml;Theme\ComboBoxTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;TrangChu.xaml;WindowView\ChamCong.xaml;WindowView\ChamCongThuViec.xaml;WindowView\ChiTietNhanVienForm.xaml;WindowView\HoSoThuViec.xaml;WindowView\ChiTietBaoHiem.xaml;WindowView\ThemBaoHiem.xaml;WindowView\ThemNhanVienForm.xaml;WindowView\ChiTietThaiSan.xaml;WindowView\ThemThaiSan.xaml;
+89-1419233547
+281264322733
+DangNhap.xaml;MessageBox\MessageBoxCustom.xaml;MVVM\View\BangLuongSubView\BangLuongView.xaml;MVVM\View\BangLuongSubView\ThayDoiBangLuongView.xaml;MVVM\View\BaoCaoThongKeSubView\BaoCaoNhanSuView.xaml;MVVM\View\BaoCaoThongKeSubView\BaoCaoThongKeView.xaml;MVVM\View\ChamCongSubView\BangChamCongThuViecView.xaml;MVVM\View\ChamCongSubView\BangChamCongView.xaml;MVVM\View\ChamCongSubView\KhenThuongKyLuatView.xaml;MVVM\View\HeThongSubView\LichSuChinhSuaView.xaml;MVVM\View\HeThongSubView\TaiKhoanView.xaml;MVVM\View\HeThongSubView\ThamSoView.xaml;MVVM\View\HomeView.xaml;MVVM\View\NhanVien_QLThongTinCaNhan.xaml;MVVM\View\NhanVien_ThongTinCaNhanSubView\BangChamCongCaNhanView.xaml;MVVM\View\NhanVien_ThongTinCaNhanSubView\BangLuongCaNhanView.xaml;MVVM\View\NhanVien_ThongTinCaNhanSubView\ThongTinCaNhanView.xaml;MVVM\View\PhongBanSubVew\BoPhanView.xaml;MVVM\View\PhongBanSubVew\PhongBanView.xaml;MVVM\View\QLBangLuongView.xaml;MVVM\View\QLBaoCaoThongKeView.xaml;MVVM\View\QLChamCongView.xaml;MVVM\View\QLHeThongView.xaml;MVVM\View\QLNhanVienView.xaml;MVVM\View\SubView\BaoHiemNhanVienView.xaml;MVVM\View\QLPhongBanView.xaml;MVVM\View\SubView\QLThuViecThoiViecView.xaml;MVVM\View\SubView\XuatDSNhanVienView.xaml;MVVM\View\SubView\NhanVienView.xaml;MVVM\View\TraCuuThongTinView.xaml;QuenMK.xaml;Theme\ComboBoxTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;TrangChu.xaml;WindowView\ChamCong.xaml;WindowView\ChamCongThuViec.xaml;WindowView\ChiTietChinhSua.xaml;WindowView\ChiTietNhanVienForm.xaml;WindowView\DoiMatKhau.xaml;WindowView\HoSoThuViec.xaml;WindowView\ChiTietBaoHiem.xaml;WindowView\LyDoNghiViec.xaml;WindowView\ThemBaoHiem.xaml;WindowView\ThemNhanVienForm.xaml;WindowView\ChiTietThaiSan.xaml;WindowView\ThemThaiSan.xaml;WindowView\XemLichSuChinhSua.xaml;
 
-False
+True
 

@@ -10,12 +10,13 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
+            <RowDefinition Height="50" />
             <RowDefinition/>
         </Grid.RowDefinitions>
 
         <GroupBox Header="Quản lý nhân viên thử việc"
                       BorderThickness="0"
-                      FontSize="17"
+                      FontSize="17" Grid.RowSpan="2"
                       FontWeight="SemiBold">
             <Grid>
                 <Grid.RowDefinitions>
@@ -54,7 +55,7 @@
                     
                 </Grid>
                 <Grid Grid.Row="1">
-                    <DataGrid Margin="10,10,10,20">
+                    <DataGrid Margin="10,10,10,0">
 
                     </DataGrid>
                 </Grid>
@@ -62,17 +63,17 @@
         </GroupBox>
 
         <GroupBox Header="Quản lý nhân viên thôi việc"
-                  Grid.Row="1"
+                  Grid.Row="2"
                       BorderThickness="0"
                       FontSize="17"
                       FontWeight="SemiBold">
             <Grid>
-                <Grid.RowDefinitions>
+                <!--<Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
                     <RowDefinition/>
-                </Grid.RowDefinitions>
+                </Grid.RowDefinitions>-->
                 
-                <Grid>
+                <!--<Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
@@ -91,11 +92,13 @@
                     Style="{StaticResource WindowButtonTheme}"
                     Width="200" Height="40">Xem chi tiết</Button>
                     
-                </Grid>
+                </Grid>-->
 
                 <Grid Grid.Row="1">
-                    <DataGrid Margin="10,10,10,20">
-                        
+                    <DataGrid x:Name="nvThoiViecDtg" Margin="10,0,10,20"
+                              ItemsSource="{Binding Path=DefaultView}"
+                              IsReadOnly="True">
+                    
                     </DataGrid>
                 </Grid>
             </Grid>

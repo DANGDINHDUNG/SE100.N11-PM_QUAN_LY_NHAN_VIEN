@@ -16,6 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using QuanLyNhanVien.MessageBox;
 
 namespace QuanLyNhanVien.MVVM.View.SubView
 {
@@ -54,15 +55,25 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
         private void btnXoaThaiSan_Click(object sender, RoutedEventArgs e)
         {
+            if (dsThaiSanDtg.SelectedItems.Count == 0)
+            {
+                bool? result = new MessageBoxCustom("Vui lòng chọn thai sản cần xóa!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                return;
+            }
+                
             busSoThaiSan.XoaSoThaiSan(dtoSoThaiSan.Mats);
             DataGridLoad();
-            MessageBox.Show("Xóa thai sản thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
-            
+            bool? Result = new MessageBoxCustom("Xóa thai sản thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+
         }
 
         private void btnSuaThaiSan_Click(object sender, RoutedEventArgs e)
         {
-            if (dsThaiSanDtg.SelectedItems.Count == 0) return;
+            if (dsThaiSanDtg.SelectedItems.Count == 0)
+            {
+                bool? result = new MessageBoxCustom("Vui lòng chọn thai sản cần sửa!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                return;
+            }
 
             DTO_SOTHAISAN suaSoThaiSan = new DTO_SOTHAISAN();
             DataRowView row = dsThaiSanDtg.SelectedItem as DataRowView;
@@ -84,7 +95,11 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
         private void btnChiTiet_Click(object sender, RoutedEventArgs e)
         {
-            if (dsThaiSanDtg.SelectedItems.Count == 0) return;
+            if (dsThaiSanDtg.SelectedItems.Count == 0)
+            {
+                bool? result = new MessageBoxCustom("Vui lòng chọn thai sản cần xem!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                return;
+            }
 
             DTO_SOTHAISAN ctSoThaiSan = new DTO_SOTHAISAN();
             DataRowView row = dsThaiSanDtg.SelectedItem as DataRowView;
@@ -106,9 +121,15 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
         private void bthXoaBaoHiem_Click(object sender, RoutedEventArgs e)
         {
+            if (dtgBaoHiem.SelectedItems.Count == 0)
+            {
+                bool? result = new MessageBoxCustom("Vui lòng chọn bảo hiểm cần xóa!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                return;
+            }
+
             busSoBH.XoaSoBH(dtoSoBH.Mabh);
             DataGridLoad();
-            MessageBox.Show("Xóa bảo hiểm thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            bool? Result = new MessageBoxCustom("Xóa bảo hiểm thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
         }
 
         private void btnThemBaoHiem_Click(object sender, RoutedEventArgs e)
@@ -120,7 +141,11 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         }
         private void btn_SuaBaoHiem_Click(object sender, RoutedEventArgs e)
         {
-            if (dtgBaoHiem.SelectedItems.Count == 0) return;
+            if (dtgBaoHiem.SelectedItems.Count == 0)
+            {
+                bool? result = new MessageBoxCustom("Vui lòng chọn bảo hiểm cần sửa!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                return;
+            }
 
             DTO_SOBH suaSoBH = new DTO_SOBH();
             DataRowView row = dtgBaoHiem.SelectedItem as DataRowView;
@@ -140,7 +165,11 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
         private void btn_XemChiTiet_Click(object sender, RoutedEventArgs e)
         {
-            if (dtgBaoHiem.SelectedItems.Count == 0) return;
+            if (dtgBaoHiem.SelectedItems.Count == 0)
+            {
+                bool? result = new MessageBoxCustom("Vui lòng chọn bảo hiểm cần xem!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                return;
+            }
 
             DTO_SOBH ctSoBaoHiem = new DTO_SOBH();
             DataRowView row = dtgBaoHiem.SelectedItem as DataRowView;

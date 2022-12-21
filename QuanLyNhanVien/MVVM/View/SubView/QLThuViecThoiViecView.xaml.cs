@@ -1,4 +1,5 @@
-﻿using QuanLyNhanVien.WindowView;
+﻿using BUS;
+using QuanLyNhanVien.WindowView;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,21 +22,12 @@ namespace QuanLyNhanVien.MVVM.View.SubView
     /// </summary>
     public partial class QLThuViecThoiViecView : UserControl
     {
+        BUS_NVTHOIVIEC busNhanVienThoiViec = new BUS_NVTHOIVIEC();
+
         public QLThuViecThoiViecView()
         {
             InitializeComponent();
-        }
-
-        private void btnThemBaoHiem_Click(object sender, RoutedEventArgs e)
-        {
-            ThemBaoHiem themBaoHiem = new ThemBaoHiem();
-            themBaoHiem.ShowDialog();
-        }
-
-        private void btnThemThaiSan_Click(object sender, RoutedEventArgs e)
-        {
-            ThemThaiSan themThaiSan = new ThemThaiSan();
-            themThaiSan.ShowDialog();
+            DataGridLoad();
         }
 
         private void btnSuaNhanVien_Click(object sender, RoutedEventArgs e)
@@ -48,6 +40,11 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             HoSoThuViec hoSoThuViec = new HoSoThuViec();
             hoSoThuViec.ShowDialog();
+        }
+
+        public void DataGridLoad()
+        {
+            nvThoiViecDtg.DataContext = busNhanVienThoiViec.getNVThoiViec();
         }
     }
 }

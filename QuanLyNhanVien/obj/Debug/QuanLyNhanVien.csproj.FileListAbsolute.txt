@@ -320,3 +320,385 @@ C:\Users\Acer\Source\Repos\DANGDINHDUNG\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNha
 C:\Users\Acer\Source\Repos\DANGDINHDUNG\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.GenerateResource.cache
 C:\Users\Acer\Source\Repos\DANGDINHDUNG\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CoreCompileInputs.cache
 C:\Users\Acer\Source\Repos\DANGDINHDUNG\SE100.N11-PM_QUAN_LY_NHAN_VIEN\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CopyComplete
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe.config
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.pdb
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\BUS.dll
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DTO.dll
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.dll
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignColors.dll
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\System.Data.SqlClient.dll
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DAL.dll
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\BUS.pdb
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DTO.pdb
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.pdb
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.xml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignColors.pdb
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\System.Data.SqlClient.xml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DAL.pdb
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DAL.dll.config
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.AssemblyReference.cache
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.SuggestedBindingRedirects.cache
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\Theme\ComboBoxTheme.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\Theme\MenuButtonTheme.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\DangNhap.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\BangLuongView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\ThayDoiBangLuongView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoNhanSuView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoThongKeView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongThuViecView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\KhenThuongKyLuatView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\LichSuChinhSuaView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\TaiKhoanView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\ThamSoView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HomeView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\BoPhanView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\PhongBanView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLBangLuongView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLBaoCaoThongKeView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLChamCongView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLHeThongView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLNhanVienView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\BaoHiemNhanVienView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLPhongBanView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\QLThuViecThoiViecView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\XuatDSNhanVienView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\NhanVienView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\TraCuuThongTinView.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\TrangChu.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChamCong.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChamCongThuViec.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietNhanVienForm.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\HoSoThuViec.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietBaoHiem.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemBaoHiem.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemNhanVienForm.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietThaiSan.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemThaiSan.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\App.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien_MarkupCompile.cache
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien_MarkupCompile.lref
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\App.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\DangNhap.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\BangLuongView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\ThayDoiBangLuongView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoNhanSuView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoThongKeView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongThuViecView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\KhenThuongKyLuatView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\LichSuChinhSuaView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\TaiKhoanView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\ThamSoView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HomeView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\BoPhanView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\PhongBanView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLBangLuongView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLBaoCaoThongKeView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLChamCongView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLHeThongView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLNhanVienView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\BaoHiemNhanVienView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLPhongBanView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\QLThuViecThoiViecView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\XuatDSNhanVienView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\NhanVienView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\TraCuuThongTinView.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\Theme\TextBoxTheme.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\TrangChu.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChamCong.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChamCongThuViec.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietNhanVienForm.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\HoSoThuViec.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietBaoHiem.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemBaoHiem.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemNhanVienForm.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietThaiSan.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemThaiSan.baml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.g.resources
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Properties.Resources.resources
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.GenerateResource.cache
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CopyComplete
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.exe
+C:\Users\ACER\Dropbox\My PC (LAPTOP-QOR9FTDI)\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe.config
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\BUS.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DTO.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignColors.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\System.Data.SqlClient.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DAL.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\BUS.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DTO.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.xml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.xml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignColors.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\System.Data.SqlClient.xml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DAL.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DAL.dll.config
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.AssemblyReference.cache
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.SuggestedBindingRedirects.cache
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\Theme\ComboBoxTheme.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\Theme\MenuButtonTheme.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\DangNhap.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\BangLuongView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\ThayDoiBangLuongView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoNhanSuView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoThongKeView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongThuViecView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\KhenThuongKyLuatView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\LichSuChinhSuaView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\TaiKhoanView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\ThamSoView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HomeView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\BoPhanView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\PhongBanView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLBangLuongView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLBaoCaoThongKeView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLChamCongView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLHeThongView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLNhanVienView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\BaoHiemNhanVienView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLPhongBanView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\QLThuViecThoiViecView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\XuatDSNhanVienView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\NhanVienView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\TraCuuThongTinView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\TrangChu.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChamCong.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChamCongThuViec.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietNhanVienForm.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\HoSoThuViec.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietBaoHiem.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemBaoHiem.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemNhanVienForm.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietThaiSan.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemThaiSan.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\App.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien_MarkupCompile.cache
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien_MarkupCompile.lref
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\App.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\DangNhap.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\BangLuongView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\ThayDoiBangLuongView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoNhanSuView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoThongKeView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongThuViecView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\KhenThuongKyLuatView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\LichSuChinhSuaView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\TaiKhoanView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\ThamSoView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HomeView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\BoPhanView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\PhongBanView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLBangLuongView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLBaoCaoThongKeView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLChamCongView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLHeThongView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLNhanVienView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\BaoHiemNhanVienView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLPhongBanView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\QLThuViecThoiViecView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\XuatDSNhanVienView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\NhanVienView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\TraCuuThongTinView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\Theme\TextBoxTheme.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\TrangChu.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChamCong.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChamCongThuViec.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietNhanVienForm.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\HoSoThuViec.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietBaoHiem.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemBaoHiem.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemNhanVienForm.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietThaiSan.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemThaiSan.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.g.resources
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Properties.Resources.resources
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.GenerateResource.cache
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CoreCompileInputs.cache
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CopyComplete
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.exe
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietChinhSua.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietChinhSua.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe.config
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\BUS.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DTO.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignColors.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\System.Data.SqlClient.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DAL.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\BUS.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DTO.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.xml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignColors.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\System.Data.SqlClient.xml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DAL.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\DAL.dll.config
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.AssemblyReference.cache
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.SuggestedBindingRedirects.cache
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\Theme\ComboBoxTheme.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\Theme\MenuButtonTheme.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\DangNhap.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\BangLuongView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\ThayDoiBangLuongView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoNhanSuView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoThongKeView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongThuViecView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\KhenThuongKyLuatView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\LichSuChinhSuaView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\TaiKhoanView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\ThamSoView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HomeView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\BoPhanView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\PhongBanView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLBangLuongView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLBaoCaoThongKeView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLChamCongView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLHeThongView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLNhanVienView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\BaoHiemNhanVienView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLPhongBanView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\QLThuViecThoiViecView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\XuatDSNhanVienView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\NhanVienView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\TraCuuThongTinView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\TrangChu.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChamCong.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChamCongThuViec.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietChinhSua.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietNhanVienForm.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\HoSoThuViec.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietBaoHiem.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemBaoHiem.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemNhanVienForm.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietThaiSan.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemThaiSan.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\App.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien_MarkupCompile.cache
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien_MarkupCompile.lref
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\App.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\DangNhap.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\BangLuongView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BangLuongSubView\ThayDoiBangLuongView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoNhanSuView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\BaoCaoThongKeSubView\BaoCaoThongKeView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongThuViecView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\BangChamCongView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\ChamCongSubView\KhenThuongKyLuatView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\LichSuChinhSuaView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\TaiKhoanView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HeThongSubView\ThamSoView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\HomeView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\BoPhanView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\PhongBanSubVew\PhongBanView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLBangLuongView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLBaoCaoThongKeView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLChamCongView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLHeThongView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLNhanVienView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\BaoHiemNhanVienView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\QLPhongBanView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\QLThuViecThoiViecView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\XuatDSNhanVienView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\SubView\NhanVienView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\TraCuuThongTinView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\Theme\TextBoxTheme.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\TrangChu.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChamCong.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChamCongThuViec.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietChinhSua.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietNhanVienForm.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\HoSoThuViec.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietBaoHiem.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemBaoHiem.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemNhanVienForm.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ChiTietThaiSan.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\ThemThaiSan.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.g.resources
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Properties.Resources.resources
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.GenerateResource.cache
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CoreCompileInputs.cache
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CopyComplete
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.exe
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.pdb
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MessageBox\MessageBoxCustom.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MessageBox\MessageBoxCustom.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuenMK.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuenMK.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\DoiMatKhau.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\DoiMatKhau.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MessageBox\MessageBoxCustom.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MessageBox\MessageBoxCustom.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuenMK.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\DoiMatKhau.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\QuenMK.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\DoiMatKhau.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\EPPlus.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\EPPlus.Interfaces.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\EPPlus.System.Drawing.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\EPPlus.xml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\EPPlus.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\EPPlus.Interfaces.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\EPPlus.System.Drawing.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\EPPlus.xml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\NhanVien_QLThongTinCaNhan.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\NhanVien_ThongTinCaNhanSubView\BangLuongCaNhanView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\NhanVien_ThongTinCaNhanSubView\ThongTinCaNhanView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\NhanVien_QLThongTinCaNhan.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\NhanVien_ThongTinCaNhanSubView\BangLuongCaNhanView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\NhanVien_ThongTinCaNhanSubView\ThongTinCaNhanView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\XemLichSuChinhSua.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\XemLichSuChinhSua.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\NhanVien_ThongTinCaNhanSubView\BangChamCongCaNhanView.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\NhanVien_ThongTinCaNhanSubView\BangChamCongCaNhanView.baml
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\LyDoNghiViec.g.cs
+C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\LyDoNghiViec.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\NhanVien_QLThongTinCaNhan.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\NhanVien_ThongTinCaNhanSubView\BangChamCongCaNhanView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\NhanVien_ThongTinCaNhanSubView\BangLuongCaNhanView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\NhanVien_ThongTinCaNhanSubView\ThongTinCaNhanView.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\LyDoNghiViec.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\XemLichSuChinhSua.g.cs
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\NhanVien_QLThongTinCaNhan.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\NhanVien_ThongTinCaNhanSubView\BangChamCongCaNhanView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\NhanVien_ThongTinCaNhanSubView\BangLuongCaNhanView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\MVVM\View\NhanVien_ThongTinCaNhanSubView\ThongTinCaNhanView.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\LyDoNghiViec.baml
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\QuanLyNhanVien\obj\Debug\WindowView\XemLichSuChinhSua.baml

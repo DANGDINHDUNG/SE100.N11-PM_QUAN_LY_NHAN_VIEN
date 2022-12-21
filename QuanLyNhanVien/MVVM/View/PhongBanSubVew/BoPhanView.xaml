@@ -36,12 +36,10 @@
                 <TextBlock Grid.Row="1" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" Text="Tên bộ phận" TextAlignment="Right" VerticalAlignment="Center"/>
                 <TextBlock Grid.Row="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" Text="Ngày thành lập" TextAlignment="Right" VerticalAlignment="Center"/>
 
-                <TextBox Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="0"/>
-                <TextBox Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="1"/>
-                <DatePicker Grid.Column="1" Grid.Row="2"
-                        FontSize="18"
-                        Height="30"
-                            FontWeight="Normal"/>
+                <TextBox x:Name="mabpTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="0"/>
+                <TextBox x:Name="tenbpTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="1"/>
+                <DatePicker x:Name="ngaytlDpk" Grid.Column="1" Grid.Row="2"
+                        FontSize="17" FontWeight="Normal"/>
             </Grid>
         </GroupBox>
         <Grid Grid.Row="1">
@@ -52,21 +50,24 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <Button Style="{StaticResource WindowButtonTheme}"
-                    Width="170" Height="40">Thêm bộ phận</Button>
-            <Button Grid.Column="1" 
+            <Button x:Name="themBtn" Style="{StaticResource WindowButtonTheme}"
+                    Width="170" Height="40" Click="themBtn_Click">Thêm bộ phận</Button>
+            <Button x:Name="xoaBtn" Grid.Column="1" 
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="170" Height="40">Xóa bộ phận</Button>
-            <Button Grid.Column="2"
+                    Width="170" Height="40" Click="xoaBtn_Click">Xóa bộ phận</Button>
+            <Button x:Name="suaBtn" Grid.Column="2"
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="170" Height="40">Sửa bộ phận</Button>
-            <Button Grid.Column="3"
+                    Width="170" Height="40" Click="suaBtn_Click">Sửa bộ phận</Button>
+            <Button x:Name="lamMoiBtn" Grid.Column="3"
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="170" Height="40">Làm mới</Button>
+                    Width="170" Height="40" Click="lamMoiBtn_Click">Làm mới</Button>
         </Grid>
 
-        <DataGrid Grid.Row="2"
-                  Margin="10,10,10,20">
+        <DataGrid x:Name="dsBoPhanDtg" Grid.Row="2"
+                  Margin="10,10,10,20" 
+                  ItemsSource="{Binding Path=DefaultView}"
+                  IsReadOnly="True" 
+                  SelectionChanged="dsBoPhanDtg_SelectionChanged">
 
         </DataGrid>
 

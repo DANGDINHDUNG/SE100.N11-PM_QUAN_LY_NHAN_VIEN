@@ -22,7 +22,7 @@ namespace DAL
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("INSERT INTO BANGLUONG VALUES ('{0}', '{1}','{2}','{3}',N'{4}')"
+            string sql = string.Format("INSERT INTO BANGLUONG VALUES ('{0}', '{1}', '{2}', '{3}', N'{4}')"
                 , bangLuong.Maluong, bangLuong.Lcb, bangLuong.Phucapchucvu, bangLuong.Phucapkhac,bangLuong.Ghichu);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
@@ -55,7 +55,7 @@ namespace DAL
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("DELETE FROM BANGLUONG WHERE MAUONG = '{0}'", maluong);
+            string sql = string.Format("DELETE FROM BANGLUONG WHERE MALUONG = '{0}'", maluong);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;
