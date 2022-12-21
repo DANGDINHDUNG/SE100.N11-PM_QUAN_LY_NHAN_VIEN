@@ -39,4 +39,7 @@
   - Database: SqLite
   - Visual studio
 
+## Kiến trúc 
+Phần mềm sử dụng Mô hình 3 layer, 3 tiers là mô hình kết nối đến CSDL thông qua các lớp: DTO, BUS và DAO.
+
   
