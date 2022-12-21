@@ -5,11 +5,11 @@
 ## Chức năng ứng dụng:
 
 - ## Quản lý công ty:
-      -  Quản lý thông tin nhân viên
-      -  Quản lý thông tin phòng ban
-      -  Quản lý tài khoản
-      -  Báo cáo, thống kê danh sách nhân viên theo từng yêu cầu
-      -  Thống kê khen thưởng, kỷ luật
+     -  Quản lý thông tin nhân viên
+     -  Quản lý thông tin phòng ban
+     -  Quản lý tài khoản
+     -  Báo cáo, thống kê danh sách nhân viên theo từng yêu cầu
+     -  Thống kê khen thưởng, kỷ luật
  - ## Quản lý thông tin người dùng:
       -  Đăng nhập
       -  Đăng ký
