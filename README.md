@@ -27,12 +27,12 @@
    -  Thêm, sửa danh sách nhân viên khen thưởng
    -  Thêm, sửa danh sách nhân viên kỷ luật
   - ## Quản lý báo cáo,thống kê:
-   -  Danh sách nhân viên theo phòng ban
-   -  Danh sách nhân viên theo trình độ chuyên môn
-   -  Danh sách nhân viên theo chức vụ
-   -  In danh sách nhân viên theo từng yêu cầu
-   -  Biểu đồ thống kê
-   -  Thống kê hiệu suất làm việc của nhân viên, hiệu suất của từng phòng ban
+      -  Danh sách nhân viên theo phòng ban
+      -  Danh sách nhân viên theo trình độ chuyên môn
+      -  Danh sách nhân viên theo chức vụ
+      -  In danh sách nhân viên theo từng yêu cầu
+      -  Biểu đồ thống kê
+      -  Thống kê hiệu suất làm việc của nhân viên, hiệu suất của từng phòng ban
   
 ## Công nghệ 
   - Ngôn ngữ: C#
