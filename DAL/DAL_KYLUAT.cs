@@ -60,5 +60,21 @@ namespace DAL
             else return false;
             connection.Close();
         }
+
+        public List<string> TongHopMaKyLuat()
+        {
+            List<string> listMaKyLuat = new List<string>();
+            CheckConnection();
+            string sql = string.Format("SELECT MAKL FROM KYLUAT");
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                listMaKyLuat.Add(sdr[0].ToString());
+            }
+            connection.Close();
+            return listMaKyLuat;
+        }
     }
 }

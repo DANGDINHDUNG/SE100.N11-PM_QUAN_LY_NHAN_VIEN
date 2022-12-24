@@ -1,5 +1,6 @@
 ﻿using BUS;
 using DTO;
+using QuanLyNhanVien.MessageBox;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,20 +26,20 @@ namespace QuanLyNhanVien
         public DangNhap()
         {
             InitializeComponent();
+            taiKhoanTbx.Focus();
         }
 
         private void btnDangNhap_Click(object sender, RoutedEventArgs e)
         {
-            DTO_TAIKHOAN dTO_TaiKhoan = new DTO_TAIKHOAN();
-            dTO_TaiKhoan._TENDANGNHAP = taiKhoanTbx.Text.ToString();
-            dTO_TaiKhoan._MATKHAU = matKhauPwb.Password.ToString();
-            if (tk.KiemTraTaiKhoan(dTO_TaiKhoan) == true)
+            Login();
+        }
+
+        private void Login_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
             {
-                TrangChu trangChu = new TrangChu(dTO_TaiKhoan);
-                trangChu.Show();
-                this.Hide();
+                Login();
             }
-              
         }
 
         private void MinimizedButton_Click(object sender, RoutedEventArgs e)
@@ -55,6 +56,36 @@ namespace QuanLyNhanVien
         {
             QuenMK quenMK = new QuenMK();
             quenMK.ShowDialog();   
+        }
+
+        public void Login()
+        {
+            DTO_TAIKHOAN dTO_TaiKhoan = new DTO_TAIKHOAN();
+            dTO_TaiKhoan._TENDANGNHAP = taiKhoanTbx.Text.ToString();
+            dTO_TaiKhoan._MATKHAU = matKhauPwb.Password.ToString();
+
+            if (tk.KiemTraTonTai(dTO_TaiKhoan._TENDANGNHAP))
+            {
+                if (tk.KiemTraTaiKhoan(dTO_TaiKhoan))
+                {
+                    
+                    TrangChu trangChu = new TrangChu(dTO_TaiKhoan);
+                    //bool? result = new MessageBoxCustom("Đăng nhập thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                    trangChu.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    bool? result = new MessageBoxCustom("Sai mật khẩu, vui lòng thử lại.", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                    return;
+                }
+            }
+            else
+            {
+                bool? result = new MessageBoxCustom("Tài khoản không tồn tại.", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                return;
+            }
+            
         }
     }
 }

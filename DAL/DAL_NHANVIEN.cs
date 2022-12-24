@@ -126,5 +126,83 @@ namespace DAL
             connection.Close();
             return listMaNhanVien;
         }
+
+        public string TimTenNVTheoMa(string maNV)
+        {
+            string tenNV = string.Empty;
+            CheckConnection();
+            string sql = string.Format("SELECT HOTEN FROM NHANVIEN WHERE MANV = '{0}'", maNV);
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                tenNV = sdr["HOTEN"].ToString();
+            }
+            connection.Close();
+            return tenNV;
+        }
+
+        public int TimMaNVTheoTen(string tenNV)
+        {
+            int maNV = 0;
+            CheckConnection();
+            string sql = string.Format("SELECT MANV FROM NHANVIEN WHERE HOTEN = N'{0}'", tenNV);
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                maNV = int.Parse(sdr["MANV"].ToString());
+            }
+            connection.Close();
+            return maNV;
+        }
+
+        public string GetMaLuong(string maNV)
+        {
+            string maLuong = string.Empty;
+            CheckConnection();
+            string sql = string.Format("SELECT MALUONG FROM NHANVIEN WHERE MANV = N'{0}'", maNV);
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                maLuong = sdr["MALUONG"].ToString();
+            }
+            connection.Close();
+            return maLuong;
+        }
+
+        public bool SuaMaLuongNhanVien(string maNV, string maLuong)
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("UPDATE NHANVIEN SET MALUONG = '{0}' WHERE MANV = '{1}'", maLuong, maNV);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            if (cmd.ExecuteNonQuery() > 0)
+                return true;
+            else return false;
+            connection.Close();
+        }
+
+        public int SoLuongNhanVienVaoLam (int thang,int nam)
+        {
+            int n = 0;
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("select * from NHANVIEN Where month(NGAYKY)='{0}' AND year (NGAYKY) ='{1}'", thang, nam);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read() == true)
+            {
+                n++;
+            }
+            if (!reader.IsClosed)
+                reader.Close();
+            connection.Close();
+            return n;
+        }
     }
 }

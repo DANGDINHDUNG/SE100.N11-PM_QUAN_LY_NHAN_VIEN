@@ -55,7 +55,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             if (dsNhanVienDtg.SelectedItems.Count == 0)
             {
-                bool? result = new MessageBoxCustom("Vui lòng chọn nhân viên cần sửa!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Vui lòng chọn nhân viên cần sửa!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
@@ -93,13 +93,23 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             if (dsNhanVienDtg.SelectedItems.Count == 0)
             {
-                bool? Result1 = new MessageBoxCustom("Vui lòng chọn nhân viên cần xóa!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? Result1 = new MessageBoxCustom("Vui lòng chọn nhân viên cần xóa!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
-            bool? result = new MessageBoxCustom("Bạn có chắc chắn muốn xóa không?", MessageType.Confirmation, MessageButtons.YesNo).ShowDialog();
+            bool? result = new MessageBoxCustom("Xác nhận cho nhân viên nghỉ việc?", MessageType.Confirmation, MessageButtons.YesNo).ShowDialog();
             if (!result.Value)
                 return;
+
+            DataRowView row = dsNhanVienDtg.SelectedItem as DataRowView;
+            DTO_NVTHOIVIEC dtoNVThoiViec = new DTO_NVTHOIVIEC();
+            dtoNVThoiViec.Manv = int.Parse(row[0].ToString());
+            dtoNVThoiViec.Hoten = row[3].ToString();
+            dtoNVThoiViec.Cmnd_cccd = row[7].ToString();
+
+            LyDoNghiViec lyDoNghiViec = new LyDoNghiViec();
+            lyDoNghiViec.dtoNVThoiViec = dtoNVThoiViec;
+            lyDoNghiViec.ShowDialog();
 
             busNhanVien.XoaNhanVien(dtoNhanVien.Manv);
             DataGridLoad();
@@ -161,7 +171,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
             if (string.IsNullOrEmpty(filePath))
             {
-                bool? result = new MessageBoxCustom("Đường dẫn không hợp lệ!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Đường dẫn không hợp lệ!", MessageType.Error, MessageButtons.Ok).ShowDialog();
                 return;
             }
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
@@ -239,11 +249,11 @@ namespace QuanLyNhanVien.MVVM.View.SubView
                     File.WriteAllBytes(filePath, bin);
 
                 }
-                bool? result = new MessageBoxCustom("Xuất excel thành công!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Xuất excel thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             }
             catch
             {
-                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu file!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu file!", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
         }
 

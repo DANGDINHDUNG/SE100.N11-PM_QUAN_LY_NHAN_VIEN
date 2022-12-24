@@ -57,7 +57,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             if (dsThaiSanDtg.SelectedItems.Count == 0)
             {
-                bool? result = new MessageBoxCustom("Vui lòng chọn thai sản cần xóa!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Vui lòng chọn thai sản cần xóa!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
                 
@@ -71,7 +71,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             if (dsThaiSanDtg.SelectedItems.Count == 0)
             {
-                bool? result = new MessageBoxCustom("Vui lòng chọn thai sản cần sửa!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Vui lòng chọn thai sản cần sửa!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
@@ -97,7 +97,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             if (dsThaiSanDtg.SelectedItems.Count == 0)
             {
-                bool? result = new MessageBoxCustom("Vui lòng chọn thai sản cần xem!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Vui lòng chọn thai sản cần xem!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
@@ -123,7 +123,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             if (dtgBaoHiem.SelectedItems.Count == 0)
             {
-                bool? result = new MessageBoxCustom("Vui lòng chọn bảo hiểm cần xóa!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Vui lòng chọn bảo hiểm cần xóa!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
@@ -143,7 +143,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             if (dtgBaoHiem.SelectedItems.Count == 0)
             {
-                bool? result = new MessageBoxCustom("Vui lòng chọn bảo hiểm cần sửa!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Vui lòng chọn bảo hiểm cần sửa!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
@@ -167,7 +167,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             if (dtgBaoHiem.SelectedItems.Count == 0)
             {
-                bool? result = new MessageBoxCustom("Vui lòng chọn bảo hiểm cần xem!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Vui lòng chọn bảo hiểm cần xem!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
 

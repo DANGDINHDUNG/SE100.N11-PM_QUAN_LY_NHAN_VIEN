@@ -44,10 +44,13 @@
     <Compile Include="DAL_BANGCHAMCONG.cs" />
     <Compile Include="DAL_BANGCHAMCONGTHUVIEC.cs" />
     <Compile Include="DAL_BANGLUONG.cs" />
+    <Compile Include="DAL_BANGTINHLUONG.cs" />
+    <Compile Include="DAL_BAOCAOLUONG.cs" />
     <Compile Include="DAL_BOPHAN.cs" />
     <Compile Include="DAL_HOSOTHUVIEC.cs" />
     <Compile Include="DAL_KHENTHUONG.cs" />
     <Compile Include="DAL_KYLUAT.cs" />
+    <Compile Include="DAL_LICHSUVANGMAT.cs" />
     <Compile Include="DAL_LOAINHANVIEN.cs" />
     <Compile Include="DAL_LSCHINHSUA.cs" />
     <Compile Include="DAL_NHANVIEN.cs" />

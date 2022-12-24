@@ -2,6 +2,8 @@
 using DAL;
 using DTO;
 using System.Data;
+using System.Collections.Generic;
+
 namespace BUS
 {
     public class BUS_KHENTHUONG
@@ -28,5 +30,9 @@ namespace BUS
             return khenthuong.XoaKhenThuong(makt);
         }
 
+        public List<string> TongHopMaKhenThuong()
+        {
+            return khenthuong.TongHopMaKhenThuong();
+        }
     }
 }

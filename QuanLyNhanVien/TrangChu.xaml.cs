@@ -31,6 +31,7 @@ namespace QuanLyNhanVien
             if (dtoTaiKhoan._MALOAITK != 1)
             {
                 heThongRbn.Visibility = Visibility.Collapsed;
+                //thongTinCaNhanRbn.Visibility = Visibility.Collapsed;
                 //Settings.Visibility = Visibility.Collapsed;
                 //Report.Visibility = Visibility.Collapsed;
             }

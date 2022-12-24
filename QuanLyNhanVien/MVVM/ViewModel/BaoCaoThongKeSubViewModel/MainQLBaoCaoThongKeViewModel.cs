@@ -11,14 +11,14 @@ namespace QuanLyNhanVien.MVVM.ViewModel.BaoCaoThongKeSubViewModel
     class MainQLBaoCaoThongKeViewModel : ObservableObject
     {
         public RelayCommand BaoCaoThongKeCommand { get; set; }
-
+        public RelayCommand BaoCaoNhanSuCommand { get; set; }
 
         //public RelayCommand SettingRoomStatusesViewCommand { get; set; }
         //public RelayCommand SettingRoomTypesViewCommand { get; set; }
         //public RelayCommand SettingRulesViewCommand { get; set; }
 
         public BaoCaoThongKeViewModel BaoCaoThongKeVM { get; set; }
-
+        public BaoCaoNhanSuViewModel BaoCaoNhanSuVM { get; set; }
 
         //public SettingRoomStatusesViewModel SettingRoomStatusesVM { get; set; }
         //public SettingRoomTypesViewModel SettingRoomTypesVM { get; set; }
@@ -39,13 +39,21 @@ namespace QuanLyNhanVien.MVVM.ViewModel.BaoCaoThongKeSubViewModel
         public MainQLBaoCaoThongKeViewModel()
         {
             BaoCaoThongKeVM = new BaoCaoThongKeViewModel();
-
+            
+           
 
             CurrentView = BaoCaoThongKeVM;
 
             BaoCaoThongKeCommand = new RelayCommand(o =>
             {
                 CurrentView = BaoCaoThongKeVM;
+            });
+
+            BaoCaoNhanSuVM = new BaoCaoNhanSuViewModel();
+
+            BaoCaoNhanSuCommand = new RelayCommand(o =>
+            {
+                CurrentView = BaoCaoNhanSuVM;
             });
 
         }

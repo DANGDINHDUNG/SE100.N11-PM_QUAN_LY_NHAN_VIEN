@@ -81,10 +81,20 @@ namespace QuanLyNhanVien.WindowView
                 bool? Result = new MessageBoxCustom("Sửa nhân viên thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
                 dtoLSChinhSua.Ngaychinhsua = DateTime.Now;
                 busLSChinhSua.ThemLSChinhSua(dtoLSChinhSua);
-                
+                if (maLuongCbx.Text != suaNhanVien.Maluong)
+                {
+                    DTO_THAYDOIBANGLUONG dtoThayDoiBangLuong = new DTO_THAYDOIBANGLUONG();
+                    BUS_THAYDOIBANGLUONG busThayDoiBangLuong = new BUS_THAYDOIBANGLUONG();
+
+                    dtoThayDoiBangLuong.Manv = int.Parse(maNVTbx.Text);
+                    dtoThayDoiBangLuong.Maluong = suaNhanVien.Maluong;
+                    dtoThayDoiBangLuong.Maluongmoi = maLuongCbx.Text;
+                    dtoThayDoiBangLuong.Ngaysua = DateTime.Now;
+
+                    busThayDoiBangLuong.ThemThayDoiBangLuong(dtoThayDoiBangLuong);
+                }
             }
             this.Close();
-
         }
 
         public void GetOldData()
@@ -205,7 +215,13 @@ namespace QuanLyNhanVien.WindowView
 
             if (cccdTbx.Text.Length != 9 && cccdTbx.Text.Length != 12)
             {
-                bool? result = new MessageBoxCustom("Vui lòng nhập đúng định dạng\n(CMND: 9 chữ số/CCCD: 12 chữ số)", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Vui lòng nhập đúng định dạng\n(CMND: 9 chữ số/CCCD: 12 chữ số)", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                return false;
+            }
+
+            if (soDienThoaiTbx.Text.Length != 10)
+            {
+                bool? result = new MessageBoxCustom("Vui lòng nhập đúng định dạng số điện thoại 10 số", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return false;
             }
             return true;

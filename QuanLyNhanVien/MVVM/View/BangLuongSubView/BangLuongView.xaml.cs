@@ -61,7 +61,7 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
         {
             if (maLuongTbx.Text == String.Empty || luongCBTbx.Text == String.Empty || phuCapTbx.Text == String.Empty || phuCapKhacTbx.Text == String.Empty)
             {
-                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
             bool checkExist = false;
@@ -84,13 +84,13 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
                 dtoBangLuong.Phucapkhac = double.Parse(phuCapKhacTbx.Text);
                 dtoBangLuong.Ghichu = ghiChuTbx.Text;
                 busBangLuong.ThemBangLuong(dtoBangLuong);
-                bool? result = new MessageBoxCustom("Thêm lương thành công!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Thêm lương thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
                 DataGridLoad();
                 ClearBoxes();
             }
             else
             {
-                bool? result = new MessageBoxCustom("Mã lương đã tồn tại!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Mã lương đã tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
             }
         }
 
@@ -99,7 +99,7 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
             bool? result;
             if (luongDtg.SelectedItems.Count == 0)
             {
-                result = new MessageBoxCustom("Vui lòng chọn lương cần xóa!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                result = new MessageBoxCustom("Vui lòng chọn lương cần xóa!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
@@ -109,7 +109,7 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
 
             busBangLuong.XoaBangLuong(dtoBangLuong.Maluong);
             DataGridLoad();
-            result = new MessageBoxCustom("Xóa lương thành công!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+            result = new MessageBoxCustom("Xóa lương thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             ClearBoxes();
         }
 
@@ -117,7 +117,7 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
         {
             if (maLuongTbx.Text == String.Empty || luongCBTbx.Text == String.Empty || double.Parse(luongCBTbx.Text) <= 0 || phuCapTbx.Text == String.Empty || double.Parse(phuCapTbx.Text) <= 0 || phuCapKhacTbx.Text == String.Empty || double.Parse(phuCapKhacTbx.Text) <= 0)
             {
-                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
@@ -141,13 +141,13 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
                 dtoBangLuong.Phucapkhac = double.Parse(phuCapKhacTbx.Text);
                 dtoBangLuong.Ghichu = ghiChuTbx.Text;
                 busBangLuong.SuaBangLuong(dtoBangLuong);
-                bool? result = new MessageBoxCustom("Sửa lương thành công!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Sửa lương thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
                 DataGridLoad();
                 ClearBoxes();
             }
             else
             {
-                bool? result = new MessageBoxCustom("Mã lương không tồn tại!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Mã lương không tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
             }
         }
 

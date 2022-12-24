@@ -28,7 +28,6 @@ namespace QuanLyNhanVien.WindowView
         public BUS_LOAINHANVIEN busLoaiNV = new BUS_LOAINHANVIEN();
         public BUS_BANGLUONG busBangLuong = new BUS_BANGLUONG();
         public DTO_NHANVIEN ctNhanVien;
-        public bool checkAdd;
 
         public ChiTietNhanVienForm()
         {
@@ -42,8 +41,6 @@ namespace QuanLyNhanVien.WindowView
 
         private void Textblocks_Loaded(object sender, RoutedEventArgs e)
         {
-            //if (checkAdd)
-            //    return;
             maNVTbk.Text = ctNhanVien.Manv.ToString();
             tenTbk.Text = ctNhanVien.Hoten.ToString();
             ngaySinhTbk.Text = ctNhanVien.Ngaysinh.ToString("dd/MM/yyyy");

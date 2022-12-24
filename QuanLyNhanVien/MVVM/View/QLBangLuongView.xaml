@@ -29,6 +29,9 @@
                          Command="{Binding BangLuongCommand}"/>
             <RadioButton Content="Thay đổi bảng lương"
                          Command="{Binding ThayDoiBangluongCommand}"/>
+            <RadioButton Content="Bảng tính lương"
+                         Command="{Binding BangTinhLuongCommand}"/>
+            
         </StackPanel>
 
         <ContentControl Grid.Row="1"

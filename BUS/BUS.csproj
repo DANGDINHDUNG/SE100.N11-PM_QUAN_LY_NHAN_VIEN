@@ -44,10 +44,13 @@
     <Compile Include="BUS_BANGCHAMCONG.cs" />
     <Compile Include="BUS_BANGCHAMCONGTHUVIEC.cs" />
     <Compile Include="BUS_BANGLUONG.cs" />
+    <Compile Include="BUS_BANGTINHLUONG.cs" />
+    <Compile Include="BUS_BAOCAOLUONG.cs" />
     <Compile Include="BUS_BOPHAN.cs" />
     <Compile Include="BUS_HOSOTHUVIEC.cs" />
     <Compile Include="BUS_KHENTHUONG.cs" />
     <Compile Include="BUS_KYLUAT.cs" />
+    <Compile Include="BUS_LICHSUVANGMAT.cs" />
     <Compile Include="BUS_LOAINHANVIEN.cs" />
     <Compile Include="BUS_LSCHINHSUA.cs" />
     <Compile Include="BUS_NHANVIEN.cs" />

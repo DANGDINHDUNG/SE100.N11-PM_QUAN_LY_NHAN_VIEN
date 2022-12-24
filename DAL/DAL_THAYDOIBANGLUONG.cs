@@ -43,7 +43,7 @@ namespace DAL
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("UPDATE THAYDOIBANGLUONG " +
-                "SET NGAYSUA='{0}, LYDO=N'{1}'" + "WHERE MANV = '{2}' AND MALUONG='{3}' AND MALUONGMOI='{4}' ",
+                "SET NGAYSUA='{0}', LYDO=N'{1}' " + "WHERE MANV = '{2}' AND MALUONG='{3}' AND MALUONGMOI='{4}' ",
             tdbl.Ngaysua, tdbl.Lydo,tdbl.Manv, tdbl.Maluong, tdbl.Maluongmoi);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
@@ -62,6 +62,28 @@ namespace DAL
                 return true;
             else return false;
             connection.Close();
+        }
+
+        public bool KiemTraTonTaiThayDoiBangLuong(DTO_THAYDOIBANGLUONG tdbl)
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("SELECT * FROM THAYDOIBANGLUONG " +
+                "WHERE MANV = '{0}' AND MALUONG='{1}' AND MALUONGMOI='{2}' ",
+            tdbl.Manv, tdbl.Maluong, tdbl.Maluongmoi);
+            
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read() == true)
+            {
+                if (!reader.IsClosed)
+                    reader.Close();
+                return true;
+
+            }
+            if (!reader.IsClosed)
+                reader.Close();
+            return false;
         }
     }
 }

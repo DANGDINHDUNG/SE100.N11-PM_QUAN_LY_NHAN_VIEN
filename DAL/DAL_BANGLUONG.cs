@@ -1,11 +1,9 @@
 ﻿using DTO;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
+
 namespace DAL
 {
     public class DAL_BANGLUONG : KetNoi
@@ -23,7 +21,7 @@ namespace DAL
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("INSERT INTO BANGLUONG VALUES ('{0}', '{1}', '{2}', '{3}', N'{4}')"
-                , bangLuong.Maluong, bangLuong.Lcb, bangLuong.Phucapchucvu, bangLuong.Phucapkhac,bangLuong.Ghichu);
+                , bangLuong.Maluong, bangLuong.Lcb, bangLuong.Phucapchucvu, bangLuong.Phucapkhac, bangLuong.Ghichu);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;
@@ -77,6 +75,32 @@ namespace DAL
             }
             connection.Close();
             return listMaLuong;
+        }
+
+        public DTO_BANGLUONG GetChiTietLuong(string maluong)
+        {
+            DTO_BANGLUONG dtoBangLuong = new DTO_BANGLUONG();
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("SELECT * FROM BANGLUONG WHERE MALUONG='{0}'", maluong);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read() == true)
+            {
+                dtoBangLuong.Maluong = maluong;
+                dtoBangLuong.Lcb = Convert.ToDouble(reader[1].ToString());
+                dtoBangLuong.Phucapchucvu = Convert.ToDouble(reader[2].ToString());
+                dtoBangLuong.Phucapkhac = Convert.ToDouble(reader[3].ToString());
+                if (!reader.IsClosed)
+                    reader.Close();
+                return dtoBangLuong;
+            }
+            else
+            {
+                if (!reader.IsClosed)
+                    reader.Close();
+                return dtoBangLuong;
+            }
         }
     }
 }

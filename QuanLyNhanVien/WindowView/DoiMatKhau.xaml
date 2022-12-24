@@ -85,7 +85,7 @@
                         Text="Đổi mật khẩu"/>
                 </TextBlock>
 
-                <TextBox Grid.Column="1" Grid.Row="1"
+                <TextBox x:Name="tenDangNhapTbx" Grid.Column="1" Grid.Row="1"
                          Style="{StaticResource InputTextBox}"
                          FontSize="20">
                     <TextBox.Effect>
@@ -98,7 +98,7 @@
 
                 </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="1"
+                <TextBox x:Name="tenTaiKhoanTbx" Grid.Row="2" Grid.Column="1"
                              Style="{StaticResource InputTextBox}">
                     <TextBox.Effect>
                         <DropShadowEffect ShadowDepth="4"
@@ -109,7 +109,7 @@
                     </TextBox.Effect>
                 </TextBox>
 
-                <TextBox Grid.Row="3" Grid.Column="1"
+                <TextBox x:Name="matKhauTbx" Grid.Row="3" Grid.Column="1"
                              Style="{StaticResource InputTextBox}">
                     <TextBox.Effect>
                         <DropShadowEffect ShadowDepth="4"
@@ -120,7 +120,7 @@
                     </TextBox.Effect>
                 </TextBox>
                 
-                <TextBox Grid.Row="4" Grid.Column="1"
+                <TextBox x:Name="matKhauMoiTbx" Grid.Row="4" Grid.Column="1"
                              Style="{StaticResource InputTextBox}">
                     <TextBox.Effect>
                         <DropShadowEffect ShadowDepth="4"
@@ -134,7 +134,7 @@
                 
 
 
-                <Button Grid.Row="5"
+                <Button x:Name="xacNhanBtn" Grid.Row="5"
                         Width="200" Height="50"
                         FontSize="17"
                         Content="Đổi mật khẩu"
@@ -144,7 +144,7 @@
                         VerticalAlignment="Center"
                         HorizontalAlignment="Right"
                         
-                        Style="{StaticResource WindowButtonTheme}">
+                        Style="{StaticResource WindowButtonTheme}" Click="xacNhanBtn_Click">
 
                 </Button>
             </Grid>

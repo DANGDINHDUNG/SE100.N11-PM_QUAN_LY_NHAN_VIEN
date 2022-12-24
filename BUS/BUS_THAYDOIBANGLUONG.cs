@@ -28,5 +28,9 @@ namespace BUS
             return tdbangluong.XoaThayDoiBangLuong(manv,maluong,maluongmoi);
         }
 
+        public bool KiemTraTonTaiThayDoiBangLuong(DTO_THAYDOIBANGLUONG tdbl)
+        {
+            return tdbangluong.KiemTraTonTaiThayDoiBangLuong(tdbl);
+        }
     }
 }

@@ -66,7 +66,7 @@ namespace QuanLyNhanVien.MVVM.View.PhongBanSubVew
         {
             if (maBoPhanCbx.Text == String.Empty || tenPhongBanTbx.Text == String.Empty || ngaytlDpk.Text == String.Empty || maPhongBanTbx.Text == String.Empty)
             {
-                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
             bool flat = true;
@@ -87,13 +87,13 @@ namespace QuanLyNhanVien.MVVM.View.PhongBanSubVew
                 dtoPhongBan1.Tenphong = tenPhongBanTbx.Text;
                 dtoPhongBan1.Ngaythanhlap = DateTime.Parse(ngaytlDpk.Text);
                 busPhongBan.ThemPhongBan(dtoPhongBan1);
-                bool? result = new MessageBoxCustom("Thêm phòng ban thành công!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Thêm phòng ban thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
                 DataGridLoad();
                 ClearBoxes();
             }
             else
             {
-                bool? result = new MessageBoxCustom("Mã phòng ban đã tồn tại!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Mã phòng ban đã tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
             }
         }
 
@@ -102,7 +102,7 @@ namespace QuanLyNhanVien.MVVM.View.PhongBanSubVew
             bool? result;
             if (dsPhongBanDtg.SelectedItems.Count == 0)
             {
-                result = new MessageBoxCustom("Vui lòng chọn phòng ban cần xóa!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                result = new MessageBoxCustom("Vui lòng chọn phòng ban cần xóa!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
 
@@ -112,7 +112,7 @@ namespace QuanLyNhanVien.MVVM.View.PhongBanSubVew
 
             busPhongBan.XoaPhongBan(dtoPhongBan.Maphong);
             DataGridLoad();
-            result = new MessageBoxCustom("Xóa phòng ban thành công!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+            result = new MessageBoxCustom("Xóa phòng ban thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             ClearBoxes();
         }
 
@@ -120,7 +120,7 @@ namespace QuanLyNhanVien.MVVM.View.PhongBanSubVew
         {
             if (maBoPhanCbx.SelectedIndex == -1 || tenPhongBanTbx.Text == String.Empty || ngaytlDpk.Text == String.Empty || maPhongBanTbx.Text == String.Empty)
             {
-                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
 
                 return;
             }
@@ -142,13 +142,13 @@ namespace QuanLyNhanVien.MVVM.View.PhongBanSubVew
                 dtoPhongBan2.Tenphong = tenPhongBanTbx.Text;
                 dtoPhongBan2.Ngaythanhlap = DateTime.Parse(ngaytlDpk.Text);
                 busPhongBan.SuaPhongBan(dtoPhongBan2);
-                bool? result = new MessageBoxCustom("Sửa phòng ban thành công!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Sửa phòng ban thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
                 DataGridLoad();
                 ClearBoxes();
             }
             else
             {
-                bool? result = new MessageBoxCustom("Phòng ban không tồn tại!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Phòng ban không tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
             }
         }
 

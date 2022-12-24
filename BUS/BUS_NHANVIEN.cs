@@ -40,5 +40,29 @@ namespace BUS
             return nhanvien.TongHopMaNhanVien();
         }
 
+        public string TimTenNVTheoMa(string maNV)
+        {
+            return nhanvien.TimTenNVTheoMa(maNV);
+        }
+
+        public int TimMaNVTheoTen(string tenNV)
+        {
+            return nhanvien.TimMaNVTheoTen(tenNV);
+        }
+
+        public string GetMaLuong(string maNV)
+        {
+            return nhanvien.GetMaLuong(maNV);
+        }
+
+        public bool SuaMaLuongNhanVien(string maNV, string maLuong)
+        {
+            return nhanvien.SuaMaLuongNhanVien(maNV, maLuong);
+        }
+        
+        public int SoLuongNhanVienVaoLam(int thang,int nam )
+        {
+            return nhanvien.SoLuongNhanVienVaoLam(thang, nam);
+        }
     }
 }

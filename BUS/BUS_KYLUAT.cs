@@ -2,6 +2,8 @@
 using DAL;
 using DTO;
 using System.Data;
+using System.Collections.Generic;
+
 namespace BUS
 {
     public class BUS_KYLUAT
@@ -28,5 +30,9 @@ namespace BUS
             return kyluat.XoaKyLuat(makl);
         }
 
+        public List<string> TongHopMaKyLuat()
+        {
+            return kyluat.TongHopMaKyLuat();
+        }
     }
 }

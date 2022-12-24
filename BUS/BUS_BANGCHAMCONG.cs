@@ -28,5 +28,9 @@ namespace BUS
             return bangchamcong.XoaBangChamCong(manvtv, thang, nam);
         }
 
+        public DTO_BANGCHAMCONG getBangChamCongTheoNhanVien(string maNV, int thang, int nam)
+        {
+            return bangchamcong.getBangChamCongTheoNhanVien(maNV, thang, nam);
+        }
     }
 }
