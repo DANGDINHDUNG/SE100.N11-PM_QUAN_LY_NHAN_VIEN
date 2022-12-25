@@ -77,5 +77,23 @@ MANVTV INT IDENTITY(1,1) PRIMARY KEY,
             else return false;
             connection.Close();
         }
+
+        public int SoLuongNhanVienThuViec(int thang, int nam)
+        {
+            int n = 0;
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("select * from HOSOTHUVIEC Where month(NGAYTV)='{0}' AND year (NGAYTV) ='{1}'", thang, nam);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read() == true)
+            {
+                n++;
+            }
+            if (!reader.IsClosed)
+                reader.Close();
+            connection.Close();
+            return n;
+        }
     }
 }

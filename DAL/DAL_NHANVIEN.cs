@@ -186,5 +186,23 @@ namespace DAL
             else return false;
             connection.Close();
         }
+
+        public int SoLuongNhanVienVaoLam (int thang,int nam)
+        {
+            int n = 0;
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("select * from NHANVIEN Where month(NGAYKY)='{0}' AND year (NGAYKY) ='{1}'", thang, nam);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read() == true)
+            {
+                n++;
+            }
+            if (!reader.IsClosed)
+                reader.Close();
+            connection.Close();
+            return n;
+        }
     }
 }

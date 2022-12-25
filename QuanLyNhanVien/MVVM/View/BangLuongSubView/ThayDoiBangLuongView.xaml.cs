@@ -67,7 +67,7 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
             tenNVTbx.Text = "";
             maLuongCbx.Text = "";
             maLuongMoiCbx.Text = "";
-            ngaySuaDpk.Text = "";
+            ngaySuaDpk.Text = DateTime.Now.ToString();
             lyDoTbx.Text = "";
         }
 

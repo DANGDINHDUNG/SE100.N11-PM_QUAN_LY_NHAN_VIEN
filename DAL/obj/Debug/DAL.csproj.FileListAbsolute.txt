@@ -61,3 +61,21 @@ C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.cs
 C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.dll
 C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.pdb
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\bin\Debug\DAL.dll
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\bin\Debug\DAL.pdb
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\bin\Debug\DTO.dll
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\bin\Debug\DTO.pdb
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.dll
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.pdb
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\bin\Debug\DAL.dll
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\bin\Debug\DAL.pdb
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\bin\Debug\DTO.dll
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\bin\Debug\DTO.pdb
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.dll
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.pdb

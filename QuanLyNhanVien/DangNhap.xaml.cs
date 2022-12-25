@@ -26,6 +26,7 @@ namespace QuanLyNhanVien
         public DangNhap()
         {
             InitializeComponent();
+            taiKhoanTbx.Focus();
         }
 
         private void btnDangNhap_Click(object sender, RoutedEventArgs e)
@@ -69,7 +70,7 @@ namespace QuanLyNhanVien
                 {
                     
                     TrangChu trangChu = new TrangChu(dTO_TaiKhoan);
-                    bool? result = new MessageBoxCustom("Đăng nhập thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                    //bool? result = new MessageBoxCustom("Đăng nhập thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
                     trangChu.Show();
                     this.Hide();
                 }

@@ -6,26 +6,31 @@ namespace BUS
 {
     public class BUS_NVTHOIVIEC
     {
-        DAL_NVTHOIVIEC bophan = new DAL_NVTHOIVIEC();
+        DAL_NVTHOIVIEC nvthoiviec = new DAL_NVTHOIVIEC();
 
         public DataTable getNVThoiViec()
         {
-            return bophan.getNVThoiViec();
+            return nvthoiviec.getNVThoiViec();
         }
 
         public bool ThemNVThoiViec(DTO_NVTHOIVIEC nvtv)
         {
-            return bophan.ThemNVThoiViec(nvtv);
+            return nvthoiviec.ThemNVThoiViec(nvtv);
         }
 
         public bool SuaNVThoiViec(DTO_NVTHOIVIEC nvtv)
         {
-            return bophan.SuaNVThoiViec(nvtv);
+            return nvthoiviec.SuaNVThoiViec(nvtv);
         }
 
         public bool XoaNVThoiViec(int manv)
         {
-            return bophan.XoaNVThoiViec(manv);
+            return nvthoiviec.XoaNVThoiViec(manv);
+        }
+
+        public int SoLuongNhanVienNghiViec(int thang, int nam)
+        {
+            return nvthoiviec.SoLuongNhanVienNghiViec(thang, nam);
         }
 
     }

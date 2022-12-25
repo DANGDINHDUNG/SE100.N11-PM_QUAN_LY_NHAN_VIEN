@@ -40,5 +40,10 @@ namespace BUS
         {
             return taikhoan.KiemTraTonTai(tenDangNhap);
         }
+
+        public bool LayMatKhau(DTO_TAIKHOAN tk)
+        {
+            return taikhoan.LayMatKhau(tk);
+        }
     }
 }

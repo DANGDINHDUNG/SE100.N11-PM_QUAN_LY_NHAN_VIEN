@@ -62,5 +62,23 @@ LYDO NVARCHAR(50)
             else return false;
             connection.Close();
         }
+
+        public int SoLuongNhanVienNghiViec(int thang, int nam)
+        {
+            int n = 0;
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("select * from NVTHOIVIEC Where month(NGAYTHOIVIEC)='{0}' AND year (NGAYTHOIVIEC) ='{1}'", thang, nam);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read() == true)
+            {
+                n++;
+            }
+            if (!reader.IsClosed)
+                reader.Close();
+            connection.Close();
+            return n;
+        }
     }
 }

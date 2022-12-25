@@ -28,12 +28,27 @@ namespace QuanLyNhanVien
         {
             InitializeComponent();
             AccountButton.Content = dtoTaiKhoan._TENCHUTAIKHOAN;
-            if (dtoTaiKhoan._MALOAITK != 1)
+            if (dtoTaiKhoan._MALOAITK == 1)
             {
-                heThongRbn.Visibility = Visibility.Collapsed;
+                thongTinCaNhanRbn.Visibility = Visibility.Collapsed;
                 //thongTinCaNhanRbn.Visibility = Visibility.Collapsed;
                 //Settings.Visibility = Visibility.Collapsed;
                 //Report.Visibility = Visibility.Collapsed;
+            }
+            else if (dtoTaiKhoan._MALOAITK == 2)
+            {
+                heThongRbn.Visibility = Visibility.Collapsed;
+                thongTinCaNhanRbn.Visibility = Visibility.Collapsed;
+            }
+            else if (dtoTaiKhoan._MALOAITK == 3)
+            {
+                bangLuongRbn.Visibility = Visibility.Collapsed;
+                baoCaoRbn.Visibility = Visibility.Collapsed;
+                boPhanRbn.Visibility = Visibility.Collapsed;
+                chamCongRbn.Visibility = Visibility.Collapsed;
+                heThongRbn.Visibility = Visibility.Collapsed;
+                nhanVienRbn.Visibility = Visibility.Collapsed;
+                traCuuRbn.Visibility= Visibility.Collapsed;          
             }
             //StartClock();
         }

@@ -58,6 +58,11 @@ namespace BUS
         public bool SuaMaLuongNhanVien(string maNV, string maLuong)
         {
             return nhanvien.SuaMaLuongNhanVien(maNV, maLuong);
-        }  
+        }
+        
+        public int SoLuongNhanVienVaoLam(int thang,int nam )
+        {
+            return nhanvien.SoLuongNhanVienVaoLam(thang, nam);
+        }
     }
 }

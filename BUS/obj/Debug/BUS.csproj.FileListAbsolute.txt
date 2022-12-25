@@ -80,3 +80,27 @@ C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.cs
 C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.dll
 C:\Users\dell\Downloads\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.pdb
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\BUS.dll
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\BUS.pdb
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DAL.dll
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DTO.dll
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DAL.pdb
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DAL.dll.config
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DTO.pdb
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.dll
+D:\Tài liệu\PTPM\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.pdb
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\BUS.dll
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\BUS.pdb
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DAL.dll
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DTO.dll
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DAL.pdb
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DAL.dll.config
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\bin\Debug\DTO.pdb
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.dll
+D:\Tài liệu\PTPM\test\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\BUS\obj\Debug\BUS.pdb

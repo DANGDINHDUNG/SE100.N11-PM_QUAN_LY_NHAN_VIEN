@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:QuanLyNhanVien"
              xmlns:viewModel="clr-namespace:QuanLyNhanVien.MVVM.ViewModel"
+             xmlns:c="clr-namespace:QuanLyNhanVien.Theme"
              xmlns:subViewModel="clr-namespace:QuanLyNhanVien.MVVM.ViewModel.SubViewModel"
              xmlns:chamCongSubViewModel="clr-namespace:QuanLyNhanVien.MVVM.ViewModel.ChamCongSubViewModel"
              xmlns:phongBanSubViewModel="clr-namespace:QuanLyNhanVien.MVVM.ViewModel.PhongBanSubViewModel"
@@ -112,6 +113,11 @@
                 <bangLuongSubView:ThayDoiBangLuongView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type bangLuongSubViewModel:BangTinhLuongViewModel}">
+                <bangLuongSubView:BangTinhLuongView/>
+            </DataTemplate>
+
+            
             <!--He Thong-->
             <DataTemplate DataType="{x:Type heThongSubViewModel:TaiKhoanViewModel}">
                 <heThongSubView:TaiKhoanView/>

@@ -68,7 +68,7 @@
                 <TextBlock Grid.Row="9" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
                            Text="Ghi chú" TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
 
-                <TextBox x:Name="maNVTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" IsReadOnly="True" Loaded="maNVTbx_Loaded" VerticalAlignment="Center" Height="32" />
+                <TextBox x:Name="maNVTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" IsEnabled="False" Loaded="maNVTbx_Loaded" VerticalAlignment="Center" Height="32" />
                 <ComboBox x:Name="phongCbx" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="1" ItemsSource="{Binding Path=DefaultView}" Height="32"/>
                 <TextBox x:Name="tenTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="1" Margin="0,44,0,44" Grid.RowSpan="3"/>
                 <DatePicker x:Name="ngaySinhDpk" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="3" Height="32"/>

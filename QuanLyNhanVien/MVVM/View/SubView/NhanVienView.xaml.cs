@@ -100,18 +100,16 @@ namespace QuanLyNhanVien.MVVM.View.SubView
             bool? result = new MessageBoxCustom("Xác nhận cho nhân viên nghỉ việc?", MessageType.Confirmation, MessageButtons.YesNo).ShowDialog();
             if (!result.Value)
                 return;
-            else
-            {
-                DataRowView row = dsNhanVienDtg.SelectedItem as DataRowView;
-                DTO_NVTHOIVIEC dtoNVThoiViec = new DTO_NVTHOIVIEC();
-                dtoNVThoiViec.Manv = int.Parse(row[0].ToString());
-                dtoNVThoiViec.Hoten = row[3].ToString();
-                dtoNVThoiViec.Cmnd_cccd = row[7].ToString();
 
-                LyDoNghiViec lyDoNghiViec = new LyDoNghiViec();
-                lyDoNghiViec.dtoNVThoiViec = dtoNVThoiViec;
-                lyDoNghiViec.ShowDialog();
-            }
+            DataRowView row = dsNhanVienDtg.SelectedItem as DataRowView;
+            DTO_NVTHOIVIEC dtoNVThoiViec = new DTO_NVTHOIVIEC();
+            dtoNVThoiViec.Manv = int.Parse(row[0].ToString());
+            dtoNVThoiViec.Hoten = row[3].ToString();
+            dtoNVThoiViec.Cmnd_cccd = row[7].ToString();
+
+            LyDoNghiViec lyDoNghiViec = new LyDoNghiViec();
+            lyDoNghiViec.dtoNVThoiViec = dtoNVThoiViec;
+            lyDoNghiViec.ShowDialog();
 
             busNhanVien.XoaNhanVien(dtoNhanVien.Manv);
             DataGridLoad();

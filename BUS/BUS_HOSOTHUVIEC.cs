@@ -28,5 +28,10 @@ namespace BUS
             return hosothuviec.XoaHoSoThuViec(manvtv);
         }
 
+        public int SoLuongNhanVienThuViec(int thang, int nam)
+        {
+            return hosothuviec.SoLuongNhanVienThuViec(thang, nam);
+        }
+
     }
 }

@@ -44,10 +44,13 @@
     <Compile Include="DTO_BANGCHAMCONG.cs" />
     <Compile Include="DTO_BANGCHAMCONGTHUVIEC.cs" />
     <Compile Include="DTO_BANGLUONG.cs" />
+    <Compile Include="DTO_BANGTINHLUONG.cs" />
+    <Compile Include="DTO_BAOCAOLUONG.cs" />
     <Compile Include="DTO_BOPHAN.cs" />
     <Compile Include="DTO_HOSOTHUVIEC.cs" />
     <Compile Include="DTO_KHENTHUONG.cs" />
     <Compile Include="DTO_KYLUAT.cs" />
+    <Compile Include="DTO_LICHSUVANGMAT.cs" />
     <Compile Include="DTO_LOAINHANVIEN.cs" />
     <Compile Include="DTO_NHANVIEN.cs" />
     <Compile Include="DTO_NVTHOIVIEC.cs" />

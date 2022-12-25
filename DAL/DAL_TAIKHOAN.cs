@@ -128,7 +128,6 @@ namespace DAL
                 if (!reader.IsClosed)
                     reader.Close();
                 return true;
-
             }
             if (!reader.IsClosed)
                 reader.Close();
@@ -144,6 +143,31 @@ namespace DAL
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read() == true)
             {
+                if (!reader.IsClosed)
+                    reader.Close();
+                return true;
+
+            }
+            if (!reader.IsClosed)
+                reader.Close();
+            return false;
+
+        }
+
+        public bool LayMatKhau(DTO_TAIKHOAN tk)
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("SELECT * FROM TAIKHOAN WHERE MATK='{0}' ", tk._MATK);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read() == true)
+            {
+
+                Hash256 h = new Hash256();
+                SHA256 sha256Hash = SHA256.Create();
+                string hash = h.GetHash(sha256Hash,reader[4].ToString());
+                tk._MATKHAU = hash;
                 if (!reader.IsClosed)
                     reader.Close();
                 return true;
