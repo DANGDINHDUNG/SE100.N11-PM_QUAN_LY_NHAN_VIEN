@@ -1,5 +1,5 @@
 # SE100.N11 - Phương pháp phát triển phần mềm hướng đối tượng
-## Giảng viên hướng dẫn: Huỳnh Hồ Thị Mộng Trinh
+### Giảng viên hướng dẫn: Huỳnh Hồ Thị Mộng Trinh
 
 ## Phần mềm quản lý nhân viên
 Ứng dụng dùng để quản lý nhân sự lao động của doanh nghiệp
