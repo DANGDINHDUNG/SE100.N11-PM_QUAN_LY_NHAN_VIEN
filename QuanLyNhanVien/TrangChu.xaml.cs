@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 using DTO;
 using System.Windows.Threading;
 using QuanLyNhanVien.Properties;
+using BUS;
 
 namespace QuanLyNhanVien
 {
@@ -24,8 +25,14 @@ namespace QuanLyNhanVien
     /// </summary>
     public partial class TrangChu : Window
     {
+        public BUS_PHANLOAITK busPhanLoaiTK = new BUS_PHANLOAITK();
+        private string maNV = string.Empty;
+
+        public string MaNV { get => maNV; set => maNV = value; }
+
         public TrangChu(DTO_TAIKHOAN dtoTaiKhoan)
         {
+            MaNV = dtoTaiKhoan._TENDANGNHAP;
             InitializeComponent();
             AccountButton.Content = dtoTaiKhoan._TENCHUTAIKHOAN;
             if (dtoTaiKhoan._MALOAITK == 1)
@@ -50,6 +57,11 @@ namespace QuanLyNhanVien
                 nhanVienRbn.Visibility = Visibility.Collapsed;
                 traCuuRbn.Visibility= Visibility.Collapsed;          
             }
+
+            tenNVTbk.Text = dtoTaiKhoan._TENCHUTAIKHOAN;
+            loaiTaiKhoanTbk.Text = "Nhân viên";
+            Timer.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            //loaiTaiKhoanTbk.Text = dtoTaiKhoan._MALOAITK;
             //StartClock();
         }
 

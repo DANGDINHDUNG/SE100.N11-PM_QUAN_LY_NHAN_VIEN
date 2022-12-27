@@ -10,9 +10,9 @@ namespace BUS
     {
         DAL_LICHSUVANGMAT lichsuvangmat = new DAL_LICHSUVANGMAT();
 
-        public DataTable getLichSuVangMat()
+        public DataTable getLichSuVangMat(string maNV)
         {
-            return lichsuvangmat.getLichSuVangMat();
+            return lichsuvangmat.getLichSuVangMat(maNV);
         }
 
         public bool ThemLichSuVangMat(DTO_LICHSUVANGMAT bp)
@@ -28,6 +28,11 @@ namespace BUS
         public bool XoaLichSuVangMat(int manv)
         {
             return lichsuvangmat.XoaLichSuVangMat(manv);
+        }
+
+        public int DemSoNgayNghiTrongThang(int maNV, int thang, int nam)
+        {
+            return lichsuvangmat.DemSoNgayNghiTrongThang(maNV, thang, nam);
         }
     }
 }

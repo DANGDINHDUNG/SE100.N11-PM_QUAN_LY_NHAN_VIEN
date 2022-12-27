@@ -42,7 +42,7 @@ LYDO NVARCHAR(50)
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("UPDATE NVTHOIVIEC " +
-                "SET HOTEN=N'{0}, CMND_CCCD='{1}',NGAYTHOIVIEC='{2}',LYDO='{3}' " +
+                "SET HOTEN=N'{0}', CMND_CCCD='{1}',NGAYTHOIVIEC='{2}',LYDO='{3}' " +
                 "WHERE MANV = '{4}'", nvThoiViec.Hoten, nvThoiViec.Cmnd_cccd, nvThoiViec.Ngaythoiviec,nvThoiViec.Lydo,nvThoiViec.Manv);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)

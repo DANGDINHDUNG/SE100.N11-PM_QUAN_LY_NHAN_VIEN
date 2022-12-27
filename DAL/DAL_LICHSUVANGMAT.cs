@@ -14,9 +14,9 @@ namespace DAL
 	NGAYNGHI DATETIME,
 	PRIMARY KEY (MANV, NGAYNGHI),
 	GHICHU NVARCHAR(50)*/
-        public DataTable getLichSuVangMat()
+        public DataTable getLichSuVangMat(string maNV)
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV, FORMAT(NGAYNGHI, 'dd/MM/yyyy') 'NGAYNGHI', GHICHU FROM LICHSUVANGMAT", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV, FORMAT(NGAYNGHI, 'dd/MM/yyyy') 'NGAYNGHI', GHICHU FROM LICHSUVANGMAT WHERE MANV = '" + maNV + "'", connection);
             DataTable dtLICHSUVANGMAT = new DataTable();
             da.Fill(dtLICHSUVANGMAT);
             return dtLICHSUVANGMAT;
@@ -57,6 +57,22 @@ namespace DAL
                 return true;
             else return false;
             connection.Close();
+        }
+
+        public int DemSoNgayNghiTrongThang(int maNV, int thang, int nam)
+        {
+            int soNgayNghi = 0;
+            CheckConnection();
+            string sql = string.Format("SELECT COUNT(NGAYNGHI) 'SONGAYNGHI' FROM LICHSUVANGMAT WHERE MANV = '{0}' AND MONTH(NGAYNGHI) = '{1}' AND YEAR(NGAYNGHI) = '{2}'", maNV.ToString(), thang.ToString(), nam.ToString());
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                soNgayNghi = int.Parse(sdr["SONGAYNGHI"].ToString());
+            }
+            connection.Close();
+            return soNgayNghi;
         }
     }
 }

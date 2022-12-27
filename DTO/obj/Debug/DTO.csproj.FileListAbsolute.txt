@@ -28,3 +28,9 @@ D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần m�
 D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DTO\obj\Debug\DTO.dll
 D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\New folder\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DTO\obj\Debug\DTO.pdb
+D:\Tài liệu\PTPM\test\ver3\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DTO\bin\Debug\DTO.dll
+D:\Tài liệu\PTPM\test\ver3\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DTO\bin\Debug\DTO.pdb
+D:\Tài liệu\PTPM\test\ver3\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\Tài liệu\PTPM\test\ver3\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Tài liệu\PTPM\test\ver3\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DTO\obj\Debug\DTO.dll
+D:\Tài liệu\PTPM\test\ver3\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DTO\obj\Debug\DTO.pdb

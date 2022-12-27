@@ -213,12 +213,12 @@
 
                         <TextBlock Grid.Column="0" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
                                    Text="Nhân viên:" TextAlignment="Right" VerticalAlignment="Center"/>
-                        <TextBlock Grid.Column="1" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                                   Text="Hiển thị tên nhân viên" TextAlignment="Right" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="tenNVTbk" Grid.Column="1" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
+                                   Text="Hiển thị tên nhân viên" TextAlignment="Left" VerticalAlignment="Center"/>
                         <TextBlock Grid.Column="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
                                    Text="Quyền hạn:" TextAlignment="Right" VerticalAlignment="Center"/>
-                        <TextBlock Grid.Column="3" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                                   Text="Hiển thị loại tài khoản" TextAlignment="Right" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="loaiTaiKhoanTbk" Grid.Column="3" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
+                                   Text="Hiển thị loại tài khoản" TextAlignment="Left" VerticalAlignment="Center"/>
                         
                         
                         <TextBlock x:Name="Timer" 

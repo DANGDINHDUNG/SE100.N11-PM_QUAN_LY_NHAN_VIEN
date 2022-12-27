@@ -1,5 +1,9 @@
-﻿using System;
+﻿using BUS;
+using DTO;
+using QuanLyNhanVien.MessageBox;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +24,55 @@ namespace QuanLyNhanVien.MVVM.View.HeThongSubView
     /// </summary>
     public partial class ThamSoView : UserControl
     {
+        BUS_THAMSO bUS_THAMSO = new BUS_THAMSO();
+        
         public ThamSoView()
         {
             InitializeComponent();
+            DataGridLoad();
+        }
+
+        public void DataGridLoad()
+        {
+            thamSoDtg.DataContext = bUS_THAMSO.getThamSo();
+        }
+
+        private void thamSoDtg_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (thamSoDtg.SelectedItems.Count == 0) return;
+            DataRowView row = thamSoDtg.SelectedItem as DataRowView;
+
+            if (row == null)
+            {
+                ClearBoxes();
+                return;
+            }
+            maTSTbx.Text = row[0].ToString();
+            tenTSTbx.Text = row[1].ToString();
+            giaTriTbx.Text = row[2].ToString();
+        }
+
+        public void ClearBoxes()
+        {
+            maTSTbx.Text = tenTSTbx.Text = giaTriTbx.Text = "";
+        }
+
+        private void suaBtn_Click(object sender, RoutedEventArgs e)
+        {
+            bool? show;
+            if (maTSTbx.Text=="")
+            {
+                show = new MessageBoxCustom("Vui lòng chọn tham số muốn sửa!", MessageType.Error, MessageButtons.Ok).ShowDialog();
+                return;
+            }
+            DTO_THAMSO dTO_THAMSO = new DTO_THAMSO();
+            dTO_THAMSO.Mats = maTSTbx.Text;
+            dTO_THAMSO.Tents= tenTSTbx.Text;
+            dTO_THAMSO.Giatri = Convert.ToDouble(giaTriTbx.Text);
+            bUS_THAMSO.SuaThamSo(dTO_THAMSO);
+            show = new MessageBoxCustom("Sửa thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+            DataGridLoad();
+            ClearBoxes();
         }
     }
 }

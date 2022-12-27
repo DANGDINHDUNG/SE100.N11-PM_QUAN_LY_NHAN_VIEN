@@ -28,5 +28,9 @@ namespace BUS
             return bangchamcongthuviec.XoaBangChamCongThuViec(manvtv,thang,nam);
         }
 
+        public DataTable getBangChamCongThuViecTheoThang(string thang, string nam)
+        {
+            return bangchamcongthuviec.getBangChamCongThuViecTheoThang(thang, nam);
+        }
     }
 }

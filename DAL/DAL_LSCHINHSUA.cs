@@ -18,6 +18,7 @@ namespace DAL
             da.Fill(dtLSCHINHSUA);
             return dtLSCHINHSUA;
         }
+
         public bool ThemLSChinhSua(DTO_LSCHINHSUA ls)
         {
             if (connection.State != ConnectionState.Open)
@@ -135,6 +136,14 @@ namespace DAL
             }
             connection.Close();
             return lanCS;
+        }
+
+        public DataTable getLSChinhSuaCuaTungNhanVien(string maNV)
+        {
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MACS, MANV, LANCS, MAPHONG, MALUONG, HOTEN, FORMAT(NGAYSINH, 'dd/MM/yyyy') 'NGAYSINH', GIOITINH, DANTOC, CMND_CCCD, NOICAP, CHUCVU, MALOAINV, LOAIHD, THOIGIAN, FORMAT(NGAYKY, 'dd/MM/yyyy') 'NGAYKY',  FORMAT(NGAYHETHAN, 'dd/MM/yyyy') 'NGAYHETHAN', SDT, HOCVAN, GHICHU, NGAYCHINHSUA FROM LSCHINHSUA WHERE MANV = '" + maNV + "'", connection);
+            DataTable dtLSCHINHSUA = new DataTable();
+            da.Fill(dtLSCHINHSUA);
+            return dtLSCHINHSUA;
         }
     }
 }

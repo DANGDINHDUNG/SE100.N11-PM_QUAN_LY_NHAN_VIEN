@@ -1,6 +1,8 @@
 ﻿using BUS;
 using DTO;
+using MaterialDesignThemes.Wpf;
 using QuanLyNhanVien.MessageBox;
+using QuanLyNhanVien.MVVM.View.NhanVien_ThongTinCaNhanSubView;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +25,7 @@ namespace QuanLyNhanVien
     public partial class DangNhap : Window
     {
         BUS_TAIKHOAN tk = new BUS_TAIKHOAN();
+        BUS_NHANVIENHIENTAI busNhanVienHienTai = new BUS_NHANVIENHIENTAI();
         public DangNhap()
         {
             InitializeComponent();
@@ -73,6 +76,17 @@ namespace QuanLyNhanVien
                     //bool? result = new MessageBoxCustom("Đăng nhập thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
                     trangChu.Show();
                     this.Hide();
+
+                    if (dTO_TaiKhoan._TENDANGNHAP == "admin" || dTO_TaiKhoan._TENDANGNHAP == "manager")
+                    {
+                        return;
+                    }
+
+                    DTO_NHANVIENHIENTAI dtoNhanVienHienTai = new DTO_NHANVIENHIENTAI();
+                    dtoNhanVienHienTai.Manv = int.Parse(dTO_TaiKhoan._TENDANGNHAP);
+
+                    busNhanVienHienTai.XoaNhanVienHienTai();
+                    busNhanVienHienTai.ThemNhanVienHienTai(dtoNhanVienHienTai);
                 }
                 else
                 {

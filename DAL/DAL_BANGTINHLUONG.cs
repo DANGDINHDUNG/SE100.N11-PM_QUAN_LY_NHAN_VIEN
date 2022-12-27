@@ -41,7 +41,7 @@ namespace DAL
                 connection.Open();
             string sql = string.Format("UPDATE BANGTINHLUONG " +
                 "SET LUONG='{0}' ,GHICHU=N'{1}'" + "WHERE MANV = '{2}' AND THANG = '{3}' AND NAM = '{4}' ",
-            bangTinhLuong.Ghichu, bangTinhLuong.Thang, bangTinhLuong.Nam);
+            bangTinhLuong.Luong, bangTinhLuong.Ghichu, bangTinhLuong.Manv, bangTinhLuong.Thang, bangTinhLuong.Nam);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;
@@ -59,6 +59,14 @@ namespace DAL
                 return true;
             else return false;
             connection.Close();
+        }
+
+        public DataTable getBangTinhLuongTheoThang(string thang, string nam)
+        {
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM BANGTINHLUONG WHERE THANG ='" + thang + "' AND NAM ='" + nam + "'", connection);
+            DataTable dtBANGTINHLUONG = new DataTable();
+            da.Fill(dtBANGTINHLUONG);
+            return dtBANGTINHLUONG;
         }
     }
 }

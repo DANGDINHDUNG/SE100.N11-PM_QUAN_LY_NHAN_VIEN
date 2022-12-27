@@ -122,7 +122,7 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
             dtoThayDoiBangLuong.Ngaysua = DateTime.Today;
             dtoThayDoiBangLuong.Lydo = lyDoTbx.Text;
 
-            if (busThayDoiBangLuong.KiemTraTonTaiThayDoiBangLuong(dtoThayDoiBangLuong))
+            if (busThayDoiBangLuong.KiemTraTonTaiThayDoiBangLuong(dtoThayDoiBangLuong.Manv.ToString(), dtoThayDoiBangLuong.Maluong, dtoThayDoiBangLuong.Maluongmoi))
             {
                 busThayDoiBangLuong.SuaThayDoiBangLuong(dtoThayDoiBangLuong);
             }

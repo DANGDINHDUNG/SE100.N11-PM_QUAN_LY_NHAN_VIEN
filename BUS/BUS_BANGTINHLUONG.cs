@@ -29,5 +29,10 @@ namespace BUS
         {
             return bangluong.XoaBangTinhLuong(manv,thang,nam);
         }
+
+        public DataTable getBangTinhLuongTheoThang(string thang, string nam)
+        {
+            return bangluong.getBangTinhLuongTheoThang(thang, nam);
+        }
     }
 }

@@ -158,6 +158,9 @@
             <DataTemplate DataType="{x:Type thongTinCaNhanViewModel:BangChamCongCaNhanViewModel}">
                 <thongTinCaNhanSubView:BangChamCongCaNhanView/>
             </DataTemplate>
+            <DataTemplate DataType="{x:Type thongTinCaNhanViewModel:ChamCongViewModel}">
+                <thongTinCaNhanSubView:ChamCongView/>
+            </DataTemplate>
             
         </ResourceDictionary>
     </Application.Resources>

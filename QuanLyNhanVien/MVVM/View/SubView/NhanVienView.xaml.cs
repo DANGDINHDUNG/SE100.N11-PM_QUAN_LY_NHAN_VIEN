@@ -43,8 +43,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
         private void themBtn_Click(object sender, RoutedEventArgs e)
         {
-            ThemNhanVienForm themNhanVienForm = new ThemNhanVienForm();
-            themNhanVienForm.checkAdd = true;
+            ThemNhanVienForm themNhanVienForm = new ThemNhanVienForm(true);
             themNhanVienForm.ShowDialog();
             
             DataGridLoad();
@@ -61,8 +60,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
             DTO_NHANVIEN suaNhanVien = new DTO_NHANVIEN();
             DataRowView row = dsNhanVienDtg.SelectedItem as DataRowView;
-            ThemNhanVienForm themNhanVienForm = new ThemNhanVienForm();
-            themNhanVienForm.checkAdd = false;
+            ThemNhanVienForm themNhanVienForm = new ThemNhanVienForm(false);
 
             suaNhanVien.Manv = int.Parse(row[0].ToString());
             suaNhanVien.Maphong = row[1].ToString();

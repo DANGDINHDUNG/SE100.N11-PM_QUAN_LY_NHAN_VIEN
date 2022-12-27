@@ -32,42 +32,48 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Grid.Row="0" Margin="0,0,10,0" FontWeight="Normal" FontSize="17" Text="Mã bộ phận" TextAlignment="Right" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="0" Margin="0,0,10,0" FontWeight="Normal" FontSize="17" Text="Thông Tin" TextAlignment="Right" VerticalAlignment="Center"/>
 
-                <TextBox Style="{StaticResource SearchBoxTheme2}" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3"/>
+                <TextBox x:Name="timkiemTbx" Style="{StaticResource SearchBoxTheme2}" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" PreviewTextInput="timkiemTbx_PreviewTextInput"/>
 
-                <RadioButton Grid.Row="1"
+                <RadioButton x:Name="manvRdBtn"
+                             Grid.Row="1"
                              Grid.Column="1"
                              IsChecked="True"
                              HorizontalAlignment="Center"
                              VerticalAlignment="Center"
                              FontSize="17">Mã nhân viên</RadioButton>
                 
-                <RadioButton Grid.Row="1"
+                <RadioButton x:Name="hotenRdBtn"
+                             Grid.Row="1"
                              Grid.Column="2"
                              HorizontalAlignment="Center"
                              VerticalAlignment="Center"
                              FontSize="17">Họ và tên</RadioButton>
                 
-                <RadioButton Grid.Row="1"
+                <RadioButton x:Name="sdtRdBtn"
+                             Grid.Row="1"
                              Grid.Column="3"
                              HorizontalAlignment="Center"
                              VerticalAlignment="Center"
                              FontSize="17">Số điện thoại</RadioButton>
 
-                <Button Grid.Row="2" Grid.ColumnSpan="2" 
+                <Button x:Name="timkiemBtn" Grid.Row="2" Grid.ColumnSpan="2" 
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="170" Height="40">Tìm kiếm</Button>
+                    Width="170" Height="40" Click="timkiemBtn_Click">Tìm kiếm</Button>
 
-                <Button Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="3"
+                <Button x:Name="lamMoiBtn" Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="3"
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="170" Height="40">Thoát</Button>
+                    Width="170" Height="40" Click="lamMoiBtn_Click">Làm mới</Button>
 
                
             </Grid>
         </GroupBox>
         <DataGrid Grid.Row="1"
-                  Margin="10,10,10,20">
+                  Margin="10,10,10,20"
+                  IsReadOnly="True"
+                  ItemsSource="{Binding Path=DefaultView}"
+                  x:Name="dsTimKiemThongTinDtg">
 
         </DataGrid>
     </Grid>

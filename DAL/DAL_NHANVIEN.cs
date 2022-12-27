@@ -111,6 +111,23 @@ namespace DAL
             da.Fill(dtNHANVIEN);
             return dtNHANVIEN;
         }
+
+        public List<string> TongHopMaNhanVienTheoGioiTinh(string gioiTinh)
+        {
+            List<string> listMaNhanVien = new List<string>();
+            CheckConnection();
+            string sql = string.Format("SELECT MANV FROM NHANVIEN WHERE GIOITINH = N'" + gioiTinh + "'");
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                listMaNhanVien.Add(sdr[0].ToString());
+            }
+            connection.Close();
+            return listMaNhanVien;
+        }
+
         public List<string> TongHopMaNhanVien()
         {
             List<string> listMaNhanVien = new List<string>();
@@ -203,6 +220,69 @@ namespace DAL
                 reader.Close();
             connection.Close();
             return n;
+        }
+
+        public DTO_NHANVIEN GetChiTietNhanVienTheoMa(string maNV)
+        {
+            DTO_NHANVIEN dtoNhanVien = new DTO_NHANVIEN();
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("SELECT * FROM NHANVIEN WHERE MANV='" + maNV + "'");
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read() == true)
+            {
+                dtoNhanVien.Manv = int.Parse(maNV);
+                dtoNhanVien.Maphong = reader[1].ToString();
+                dtoNhanVien.Maluong = reader[2].ToString();
+                dtoNhanVien.Hoten = reader[3].ToString();
+                dtoNhanVien.Ngaysinh = DateTime.Parse(reader[4].ToString());
+                dtoNhanVien.Gioitinh = reader[5].ToString();
+                dtoNhanVien.Dantoc = reader[6].ToString();
+                dtoNhanVien.Cmnd_cccd = reader[7].ToString();
+                dtoNhanVien.Noicap = reader[8].ToString();
+                dtoNhanVien.Chucvu = reader[9].ToString();
+                dtoNhanVien.Maloainv = reader[10].ToString();
+                dtoNhanVien.Loaihd = reader[11].ToString();
+                dtoNhanVien.Thoigian = int.Parse(reader[12].ToString());
+                dtoNhanVien.Ngaydangki = DateTime.Parse(reader[13].ToString());
+                dtoNhanVien.Ngayhethan = DateTime.Parse(reader[14].ToString());
+                dtoNhanVien.Sdt = reader[15].ToString();
+                dtoNhanVien.Hocvan = reader[16].ToString();
+                dtoNhanVien.Ghichu = reader[17].ToString();
+
+                if (!reader.IsClosed)
+                    reader.Close();
+                return dtoNhanVien;
+            }
+            else
+            {
+                if (!reader.IsClosed)
+                    reader.Close();
+                return dtoNhanVien;
+            }
+        }
+
+        public DataTable TimKiemNVTheoMa(string manv)
+        {
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE MANV LIKE '%" + manv + "%'", connection);
+            DataTable dtNHANVIEN = new DataTable();
+            da.Fill(dtNHANVIEN);
+            return dtNHANVIEN;
+        }
+        public DataTable TimKiemNVTheoTen(string ten)
+        {
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE dbo.fChuyenCoDauThanhKhongDau(HOTEN) LIKE N'%" + ten + "%'", connection);
+            DataTable dtNHANVIEN = new DataTable();
+            da.Fill(dtNHANVIEN);
+            return dtNHANVIEN;
+        }
+        public DataTable TimKiemNVTheoSDT(string sdt)
+        {
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE SDT LIKE '%" + sdt + "%'", connection);
+            DataTable dtNHANVIEN = new DataTable();
+            da.Fill(dtNHANVIEN);
+            return dtNHANVIEN;
         }
     }
 }

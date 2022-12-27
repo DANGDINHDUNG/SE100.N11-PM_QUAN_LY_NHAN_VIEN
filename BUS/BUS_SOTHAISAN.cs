@@ -6,26 +6,36 @@ namespace BUS
 {
     public class BUS_SOTHAISAN
     {
-        DAL_SOTHAISAN bophan = new DAL_SOTHAISAN();
+        DAL_SOTHAISAN thaisan = new DAL_SOTHAISAN();
 
         public DataTable getSoThaiSan()
         {
-            return bophan.getSoThaiSan();
+            return thaisan.getSoThaiSan();
         }
 
         public bool ThemSoThaiSan(DTO_SOTHAISAN sts)
         {
-            return bophan.ThemSoThaiSan(sts);
+            return thaisan.ThemSoThaiSan(sts);
         }
 
         public bool SuaSoThaiSan(DTO_SOTHAISAN sts)
         {
-            return bophan.SuaSoThaiSan(sts);
+            return thaisan.SuaSoThaiSan(sts);
         }
 
         public bool XoaSoThaiSan(int masts)
         {
-            return bophan.XoaSoThaiSan(masts);
+            return thaisan.XoaSoThaiSan(masts);
+        }
+
+        public bool KiemTraTonTai(string maNV)
+        {
+            return thaisan.KiemTraTonTai(maNV);
+        }
+
+        public DateTime TimNgayLamTroLai(string maNV)
+        { 
+            return thaisan.TimNgayLamTroLai(maNV); 
         }
 
     }

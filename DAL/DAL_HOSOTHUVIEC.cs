@@ -52,8 +52,8 @@ MANVTV INT IDENTITY(1,1) PRIMARY KEY,
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("UPDATE HOSOTHUVIEC " +
-                "SET HOTEN=N'{0}, NGAYSINH='{1}',GIOITINH=N'{2}',CMND_CCCD='{3}'" +
-               ",NOICAP=N'{4}',VITRITHUVIEC=N'{5},NGAYTV='{6}',SOTHANGTV='{7}'," +
+                "SET HOTEN=N'{0}', NGAYSINH='{1}',GIOITINH=N'{2}',CMND_CCCD='{3}'" +
+               ",NOICAP=N'{4}',VITRITHUVIEC=N'{5}',NGAYTV='{6}',SOTHANGTV='{7}'," +
                "SDT='{8}',HOCVAN='{9}',GHICHU='{10}' " + "WHERE MANVTV = '{11}'",
               hoSoThuViec.Hoten, hoSoThuViec.Ngaysinh, hoSoThuViec.Gioitinh, hoSoThuViec.Cmnd_cccd,
                 hoSoThuViec.Noicap, hoSoThuViec.Vitrithuviec, hoSoThuViec.Ngaytv, 
@@ -94,6 +94,22 @@ MANVTV INT IDENTITY(1,1) PRIMARY KEY,
                 reader.Close();
             connection.Close();
             return n;
+        }
+
+        public List<string> TongHopMaNhanVien()
+        {
+            List<string> listMaNhanVien = new List<string>();
+            CheckConnection();
+            string sql = string.Format("SELECT MANVTV FROM HOSOTHUVIEC");
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                listMaNhanVien.Add(sdr[0].ToString());
+            }
+            connection.Close();
+            return listMaNhanVien;
         }
     }
 }

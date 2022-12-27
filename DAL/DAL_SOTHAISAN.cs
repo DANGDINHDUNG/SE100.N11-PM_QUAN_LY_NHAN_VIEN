@@ -66,5 +66,41 @@ namespace DAL
             else return false;
             connection.Close();
         }
+
+        public bool KiemTraTonTai(string maNV)
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("SELECT * FROM SOTHAISAN WHERE MANV='{0}' ", maNV);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read() == true)
+            {
+                if (!reader.IsClosed)
+                    reader.Close();
+                return true;
+
+            }
+            if (!reader.IsClosed)
+                reader.Close();
+            return false;
+
+        }
+
+        public DateTime TimNgayLamTroLai(string maNV)
+        {
+            DateTime ngayLamTroLai = new DateTime();
+            CheckConnection();
+            string sql = string.Format("SELECT TOP 1 NGAYLAMTROLAI FROM SOTHAISAN WHERE MANV = '{0}'", maNV);
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                ngayLamTroLai = DateTime.Parse(sdr["NGAYLAMTROLAI"].ToString());
+            }
+            connection.Close();
+            return ngayLamTroLai;
+        }
     }
 }

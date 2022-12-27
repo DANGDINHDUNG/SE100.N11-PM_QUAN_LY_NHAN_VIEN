@@ -50,16 +50,19 @@
     <Compile Include="BUS_HOSOTHUVIEC.cs" />
     <Compile Include="BUS_KHENTHUONG.cs" />
     <Compile Include="BUS_KYLUAT.cs" />
+    <Compile Include="BUS_LICHSUCHAMCONG.cs" />
     <Compile Include="BUS_LICHSUVANGMAT.cs" />
     <Compile Include="BUS_LOAINHANVIEN.cs" />
     <Compile Include="BUS_LSCHINHSUA.cs" />
     <Compile Include="BUS_NHANVIEN.cs" />
+    <Compile Include="BUS_NHANVIENHIENTAI.cs" />
     <Compile Include="BUS_NVTHOIVIEC.cs" />
     <Compile Include="BUS_PHANLOAITK.cs" />
     <Compile Include="BUS_PHONGBAN.cs" />
     <Compile Include="BUS_SOBH.cs" />
     <Compile Include="BUS_SOTHAISAN.cs" />
     <Compile Include="BUS_TAIKHOAN.cs" />
+    <Compile Include="BUS_THAMSO.cs" />
     <Compile Include="BUS_THAYDOIBANGLUONG.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

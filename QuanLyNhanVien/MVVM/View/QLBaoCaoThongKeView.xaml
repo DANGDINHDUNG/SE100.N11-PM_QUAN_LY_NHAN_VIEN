@@ -24,8 +24,6 @@
                        BasedOn="{StaticResource SettingOptionsButton}"/>
             </StackPanel.Resources>
 
-            <RadioButton Content="Báo cáo lương" IsChecked="True" 
-                         Command="{Binding BaoCaoThongKeCommand}"/>
             <RadioButton Content="Báo cáo nhân sự"
                          Command="{Binding BaoCaoNhanSuCommand}"/>
         </StackPanel>

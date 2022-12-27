@@ -40,8 +40,7 @@ namespace DAL
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("UPDATE KHENTHUONG " +
-                "SET TIEN='{0}, LYDO=N'{1}'" + "WHERE MAKT = '{4}'",
-            khenThuong.Tien, khenThuong.Lydo, khenThuong.Makt);
+                "SET TIEN='{0}', LYDO=N'{1}'" + "WHERE MAKT = '{2}'", khenThuong.Tien, khenThuong.Lydo, khenThuong.Makt);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;

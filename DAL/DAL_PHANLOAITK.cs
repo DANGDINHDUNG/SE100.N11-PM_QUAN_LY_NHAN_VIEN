@@ -17,6 +17,7 @@ namespace DAL
             da.Fill(dtPHANLOAITK);
             return dtPHANLOAITK;
         }
+
         public bool ThemPhanLoaiTK(DTO_PHANLOAITK pltk)
         {
             if (connection.State != ConnectionState.Open)
@@ -33,7 +34,7 @@ namespace DAL
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("UPDATE PHANLOAITAIKHOAN SET TENLOAITAIKHOAN=N'{0}, QUYENHAN=N'{1}' WHERE MALOAITK = '{2}'", pltk.TENLOAITK, pltk.QUYENHAN, pltk.MALOAITK);
+            string sql = string.Format("UPDATE PHANLOAITAIKHOAN SET TENLOAITAIKHOAN=N'{0}', QUYENHAN=N'{1}' WHERE MALOAITK = '{2}'", pltk.TENLOAITK, pltk.QUYENHAN, pltk.MALOAITK);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;
