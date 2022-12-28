@@ -113,5 +113,24 @@ namespace DAL
             return tiLePhat;
         }
 
+        public double Get_soThangNghiSinh()
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            double soThangNghiSinh = 0;
+            string sql = string.Format("SELECT GIATRI FROM THAMSO WHERE MATHAMSO= 'TS05'");
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read() == true)
+            {
+                soThangNghiSinh = Convert.ToDouble(reader[0].ToString());
+
+            }
+            if (!reader.IsClosed)
+                reader.Close();
+            connection.Close();
+            return soThangNghiSinh;
+        }
+
     }
 }

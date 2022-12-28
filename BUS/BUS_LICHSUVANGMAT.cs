@@ -34,5 +34,10 @@ namespace BUS
         {
             return lichsuvangmat.DemSoNgayNghiTrongThang(maNV, thang, nam);
         }
+
+        public bool KiemTraTonTaiNhanVien(string maNV)
+        {
+            return lichsuvangmat.KiemTraTonTaiNhanVien(maNV);
+        }
     }
 }

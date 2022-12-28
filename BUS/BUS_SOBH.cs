@@ -28,5 +28,14 @@ namespace BUS
             return sobh.XoaSoBH(mabh);
         }
 
+        public bool KiemTraTonTaiNhanVien(string maNV)
+        {
+            return sobh.KiemTraTonTaiNhanVien(maNV);
+        }
+
+        public bool SuaGhiChu(string ghiChu, string maNV)
+        {
+            return sobh.SuaGhiChu(ghiChu, maNV);
+        }
     }
 }

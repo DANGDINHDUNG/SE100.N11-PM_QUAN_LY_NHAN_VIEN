@@ -90,7 +90,7 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
             }
             else
             {
-                bool? result = new MessageBoxCustom("Mã lương đã tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Mã lương đã tồn tại!", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
         }
 
@@ -147,7 +147,7 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
             }
             else
             {
-                bool? result = new MessageBoxCustom("Mã lương không tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Mã lương không tồn tại!", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
         }
 

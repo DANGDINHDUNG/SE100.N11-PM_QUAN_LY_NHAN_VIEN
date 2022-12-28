@@ -35,9 +35,9 @@
                 </Grid.RowDefinitions>
 
                 <TextBlock Grid.Row="1" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Mã khen thưởng" TextAlignment="Right" VerticalAlignment="Center"/>
+                           Text="Mã thưởng" TextAlignment="Right" VerticalAlignment="Center"/>
                 <TextBlock Grid.Row="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Tiền khen thưởng" TextAlignment="Right" VerticalAlignment="Center"/>
+                           Text="Tiền thưởng" TextAlignment="Right" VerticalAlignment="Center"/>
                 <TextBlock Grid.Row="3" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
                            Text="Lý do" TextAlignment="Right" VerticalAlignment="Center"/>
                 

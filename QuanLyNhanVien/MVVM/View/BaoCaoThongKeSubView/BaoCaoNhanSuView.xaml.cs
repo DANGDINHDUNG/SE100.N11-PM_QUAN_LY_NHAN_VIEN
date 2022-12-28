@@ -72,8 +72,8 @@ namespace QuanLyNhanVien.MVVM.View.BaoCaoThongKeSubView
 
         private void set_default()
         {
-            thangCbx.Text = "1";
-            namCbx.Text = "2023";
+            thangCbx.Text = DateTime.Now.Month.ToString();
+            namCbx.Text = DateTime.Now.Year.ToString();
             int n = busNV.SoLuongNhanVienVaoLam(1, 2023);
             nv.Values = new ChartValues<int> { n };
             SeriesCollection.Add(nv);

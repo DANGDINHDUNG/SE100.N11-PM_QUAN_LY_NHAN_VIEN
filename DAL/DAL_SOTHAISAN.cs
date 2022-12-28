@@ -102,5 +102,18 @@ namespace DAL
             connection.Close();
             return ngayLamTroLai;
         }
+
+        public bool SuaGhiChu(string ghiChu, string maNV)
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("UPDATE SOTHAISAN " +
+                "SET GHICHU=N'{0}' WHERE MANV = '{1}'", ghiChu, maNV);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            if (cmd.ExecuteNonQuery() > 0)
+                return true;
+            else return false;
+            connection.Close();
+        }
     }
 }

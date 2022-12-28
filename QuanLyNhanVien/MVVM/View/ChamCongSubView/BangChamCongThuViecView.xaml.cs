@@ -217,12 +217,18 @@ namespace QuanLyNhanVien.MVVM.View.ChamCongSubView
         {
             if (e.Key == Key.Enter)
             {
-                if (thangCbx.Text == "" || namTbx.Text == "")
+                if (namTbx.Text == "")
                 {
-                    bool? result = new MessageBoxCustom("Vui lòng chọn tháng và năm!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                    bool? result = new MessageBoxCustom("Vui lòng nhập năm!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                     return;
                 }
+                if (thangCbx.Text == "")
+                {
+                    bangCongThuViecDtg.DataContext = busBangChamCongThuViec.getBangChamCongThuViecTheoThang("", namTbx.Text);
 
+                    return;
+
+                }
                 bangCongThuViecDtg.DataContext = busBangChamCongThuViec.getBangChamCongThuViecTheoThang(thangCbx.SelectedValue.ToString(), namTbx.Text);
             }
         }

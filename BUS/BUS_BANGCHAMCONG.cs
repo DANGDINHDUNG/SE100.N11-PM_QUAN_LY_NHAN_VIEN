@@ -52,5 +52,15 @@ namespace BUS
         {
             return bangchamcong.getBangChamCongNhanVienTheoThang(maNV, thang, nam);
         }
+
+        public bool KiemTraTonTaiNhanVien(string maNV)
+        {
+            return bangchamcong.KiemTraTonTaiNhanVien(maNV);
+        }
+
+        public bool SuaGhiChu(string ghiChu, string maNV)
+        {
+            return bangchamcong.SuaGhiChu(ghiChu, maNV);
+        }
     }
 }

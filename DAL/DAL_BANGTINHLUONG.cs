@@ -63,10 +63,49 @@ namespace DAL
 
         public DataTable getBangTinhLuongTheoThang(string thang, string nam)
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM BANGTINHLUONG WHERE THANG ='" + thang + "' AND NAM ='" + nam + "'", connection);
+            SqlDataAdapter da = new SqlDataAdapter();
+            if (thang == "")
+            {
+                da = new SqlDataAdapter("SELECT * FROM BANGTINHLUONG WHERE NAM ='" + nam + "'", connection);
+            }    
+            else
+            {
+                da = new SqlDataAdapter("SELECT * FROM BANGTINHLUONG WHERE THANG ='" + thang + "' AND NAM ='" + nam + "'", connection);
+            }
             DataTable dtBANGTINHLUONG = new DataTable();
             da.Fill(dtBANGTINHLUONG);
             return dtBANGTINHLUONG;
+        }
+
+        public bool KiemTraTonTaiNhanVien(string maNV)
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("SELECT * FROM BANGTINHLUONG WHERE MANV='{0}'", maNV);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read() == true)
+            {
+                if (!reader.IsClosed)
+                    reader.Close();
+                return true;
+            }
+            if (!reader.IsClosed)
+                reader.Close();
+            return false;
+        }
+
+        public bool SuaGhiChu(string ghiChu, string maNV)
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("UPDATE BANGTINHLUONG " +
+                "SET GHICHU=N'{0}' WHERE MANV = '{1}'", ghiChu, maNV);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            if (cmd.ExecuteNonQuery() > 0)
+                return true;
+            else return false;
+            connection.Close();
         }
     }
 }

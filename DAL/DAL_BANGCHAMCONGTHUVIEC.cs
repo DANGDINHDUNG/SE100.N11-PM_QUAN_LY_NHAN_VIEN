@@ -75,10 +75,19 @@ namespace DAL
 
         public DataTable getBangChamCongThuViecTheoThang(string thang, string nam)
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM BANGCHAMCONGTHUVIEC WHERE THANG ='" + thang + "' AND NAM ='" + nam + "'", connection);            
+            SqlDataAdapter da = new SqlDataAdapter();
+            if (thang == "")
+            {
+                da = new SqlDataAdapter("SELECT * FROM BANGCHAMCONGTHUVIEC WHERE NAM ='" + nam + "'", connection);
+            }
+            else
+            {
+                da = new SqlDataAdapter("SELECT * FROM BANGCHAMCONGTHUVIEC WHERE THANG ='" + thang + "' AND NAM ='" + nam + "'", connection);
+            }
             DataTable dtBANGCHAMCONGTHUVIEC = new DataTable();
             da.Fill(dtBANGCHAMCONGTHUVIEC);
             return dtBANGCHAMCONGTHUVIEC;
+            
         }
     }
 }

@@ -186,12 +186,41 @@ namespace DAL
                 if (!reader.IsClosed)
                     reader.Close();
                 return true;
-
             }
             if (!reader.IsClosed)
                 reader.Close();
             return false;
+        }
 
+        public bool KiemTraTonTaiNhanVien(string maNV)
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("SELECT * FROM BANGCHAMCONG WHERE MANV='{0}'", maNV);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read() == true)
+            {
+                if (!reader.IsClosed)
+                    reader.Close();
+                return true;
+            }
+            if (!reader.IsClosed)
+                reader.Close();
+            return false;
+        }
+
+        public bool SuaGhiChu(string ghiChu, string maNV)
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("UPDATE BANGCHAMCONG " +
+                "SET GHICHU=N'{0}' WHERE MANV = '{1}'", ghiChu, maNV);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            if (cmd.ExecuteNonQuery() > 0)
+                return true;
+            else return false;
+            connection.Close();
         }
     }
 }

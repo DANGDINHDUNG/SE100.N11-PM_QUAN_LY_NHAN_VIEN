@@ -46,12 +46,17 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
         {
             if (e.Key == Key.Enter)
             {
-                if (thangCbx.Text == "" || namTbx.Text == "")
+                if (namTbx.Text == "")
                 {
-                    bool? result = new MessageBoxCustom("Vui lòng chọn tháng và năm!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                    bool? result = new MessageBoxCustom("Vui lòng nhập năm!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                     return;
                 }
+                if (thangCbx.Text == "")
+                {
+                    bangLuongDtg.DataContext = busBangTinhLuong.getBangTinhLuongTheoThang("", namTbx.Text);
+                    return;
 
+                }
                 bangLuongDtg.DataContext = busBangTinhLuong.getBangTinhLuongTheoThang(thangCbx.SelectedValue.ToString(), namTbx.Text);
             }
         }

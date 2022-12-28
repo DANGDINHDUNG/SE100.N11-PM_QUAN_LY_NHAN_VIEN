@@ -80,7 +80,7 @@ namespace QuanLyNhanVien.MVVM.View.NhanVien_ThongTinCaNhanSubView
         private void chinhSuaBtn_Click(object sender, RoutedEventArgs e)
         {
             DTO_NHANVIEN suaNhanVien = new DTO_NHANVIEN();
-            ThemNhanVienForm themNhanVienForm = new ThemNhanVienForm(false);
+            ThemNhanVienForm themNhanVienForm = new ThemNhanVienForm(3);
 
             suaNhanVien.Manv = int.Parse(maNVTbk.Text);
             suaNhanVien.Maphong = phongTbk.Text;

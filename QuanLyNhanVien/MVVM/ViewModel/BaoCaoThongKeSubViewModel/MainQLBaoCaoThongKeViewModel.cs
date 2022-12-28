@@ -38,18 +38,13 @@ namespace QuanLyNhanVien.MVVM.ViewModel.BaoCaoThongKeSubViewModel
 
         public MainQLBaoCaoThongKeViewModel()
         {
-            BaoCaoThongKeVM = new BaoCaoThongKeViewModel();
             
+            BaoCaoNhanSuVM = new BaoCaoNhanSuViewModel();
            
 
-            CurrentView = BaoCaoThongKeVM;
+            CurrentView = BaoCaoNhanSuVM;
 
-            BaoCaoThongKeCommand = new RelayCommand(o =>
-            {
-                CurrentView = BaoCaoThongKeVM;
-            });
 
-            BaoCaoNhanSuVM = new BaoCaoNhanSuViewModel();
 
             BaoCaoNhanSuCommand = new RelayCommand(o =>
             {

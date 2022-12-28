@@ -74,5 +74,23 @@ namespace DAL
             connection.Close();
             return soNgayNghi;
         }
+
+        public bool KiemTraTonTaiNhanVien(string maNV)
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("SELECT * FROM LICHSUVANGMAT WHERE MANV='{0}'", maNV);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read() == true)
+            {
+                if (!reader.IsClosed)
+                    reader.Close();
+                return true;
+            }
+            if (!reader.IsClosed)
+                reader.Close();
+            return false;
+        }
     }
 }

@@ -32,6 +32,13 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         public BUS_NHANVIEN busNhanVien = new BUS_NHANVIEN();
         public DTO_NHANVIEN dtoNhanVien = new DTO_NHANVIEN();
         public BUS_PHONGBAN busPhongBan = new BUS_PHONGBAN();
+        public BUS_LSCHINHSUA busLSChinhSua = new BUS_LSCHINHSUA();
+        public BUS_BANGCHAMCONG busBangChamCong = new BUS_BANGCHAMCONG();
+        public BUS_LICHSUVANGMAT busLichSuVangMat = new BUS_LICHSUVANGMAT();
+        public BUS_LICHSUCHAMCONG busLSChamCong = new BUS_LICHSUCHAMCONG();
+        public BUS_BANGTINHLUONG busBangTinhLuong = new BUS_BANGTINHLUONG();
+        public BUS_SOTHAISAN busSoThaiSan = new BUS_SOTHAISAN();
+        public BUS_SOBH busSoBH = new BUS_SOBH();
         public BUS_BOPHAN busBoPhan = new BUS_BOPHAN();
 
         public NhanVienView()
@@ -43,7 +50,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
         private void themBtn_Click(object sender, RoutedEventArgs e)
         {
-            ThemNhanVienForm themNhanVienForm = new ThemNhanVienForm(true);
+            ThemNhanVienForm themNhanVienForm = new ThemNhanVienForm(1);
             themNhanVienForm.ShowDialog();
             
             DataGridLoad();
@@ -60,7 +67,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
             DTO_NHANVIEN suaNhanVien = new DTO_NHANVIEN();
             DataRowView row = dsNhanVienDtg.SelectedItem as DataRowView;
-            ThemNhanVienForm themNhanVienForm = new ThemNhanVienForm(false);
+            ThemNhanVienForm themNhanVienForm = new ThemNhanVienForm(2);
 
             suaNhanVien.Manv = int.Parse(row[0].ToString());
             suaNhanVien.Maphong = row[1].ToString();
@@ -110,6 +117,42 @@ namespace QuanLyNhanVien.MVVM.View.SubView
             lyDoNghiViec.ShowDialog();
 
             busNhanVien.XoaNhanVien(dtoNhanVien.Manv);
+
+            if (busLSChinhSua.KiemTraTonTaiNhanVien(dtoNhanVien.Manv.ToString()))
+            {
+                busLSChinhSua.SuaGhiChu("Đã nghỉ việc" ,dtoNhanVien.Manv.ToString());
+            }
+
+            if (busBangChamCong.KiemTraTonTaiNhanVien(dtoNhanVien.Manv.ToString()))
+            {
+                busBangChamCong.SuaGhiChu("Đã nghỉ việc", dtoNhanVien.Manv.ToString());
+            }
+
+            if (busLichSuVangMat.KiemTraTonTaiNhanVien(dtoNhanVien.Manv.ToString()))
+            {
+                busLichSuVangMat.XoaLichSuVangMat(dtoNhanVien.Manv);
+            }
+
+            if (busLSChamCong.KiemTraTonTai(dtoNhanVien.Manv.ToString()))
+            {
+                busLSChamCong.XoaLichSuChamCong(dtoNhanVien.Manv);
+            }
+
+            if (busBangTinhLuong.KiemTraTonTaiNhanVien(dtoNhanVien.Manv.ToString()))
+            {
+                busBangTinhLuong.SuaGhiChu("Đã nghỉ việc", dtoNhanVien.Manv.ToString());
+            }
+
+            if (busSoThaiSan.KiemTraTonTai(dtoNhanVien.Manv.ToString()))
+            {
+                busSoThaiSan.SuaGhiChu("Đã nghỉ việc", dtoNhanVien.Manv.ToString());
+            }
+
+            if (busSoBH.KiemTraTonTaiNhanVien(dtoNhanVien.Manv.ToString()))
+            {
+                busSoBH.SuaGhiChu("Đã nghỉ việc", dtoNhanVien.Manv.ToString());
+            }
+
             DataGridLoad();
             bool? Result = new MessageBoxCustom("Xóa nhân viên thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             ClearBoxes();
@@ -358,5 +401,12 @@ namespace QuanLyNhanVien.MVVM.View.SubView
             DataGridLoad();
         }
 
+        private void quanLyNhanVien_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                LocNhanVien();
+            }
+        }
     }
 }

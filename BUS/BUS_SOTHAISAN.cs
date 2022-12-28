@@ -38,5 +38,9 @@ namespace BUS
             return thaisan.TimNgayLamTroLai(maNV); 
         }
 
+        public bool SuaGhiChu(string ghiChu, string maNV)
+        {
+            return thaisan.SuaGhiChu(ghiChu, maNV);
+        }
     }
 }

@@ -34,7 +34,7 @@
 
                 <Button x:Name="timKiemBtn" Grid.Column="4" 
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="170" Height="40" Click="timKiemBtn_Click">Tìm kiếm</Button>
+                    Width="170" Height="40" Click="timKiemBtn_Click">Báo cáo</Button>
             </Grid>
         </GroupBox>
         <Grid Grid.Row="1" Background="WhiteSmoke">

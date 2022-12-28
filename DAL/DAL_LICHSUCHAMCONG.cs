@@ -45,8 +45,8 @@ CREATE TABLE LICHSUCHAMCONG
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("UPDATE LICHSUCHAMCONG " +
-                "SET MANV='{0}',NGAYCHAMCONGGANNHAT ='{1}',GHICHU = '{2}'" + "WHERE MALSCHAMCONG = '{3}'",
-            lichSuChamCong.Manv, lichSuChamCong.Ngaychamconggannhat, lichSuChamCong.Ghichu,lichSuChamCong.Malschamcong);
+                "SET NGAYCHAMCONGGANNHAT ='{0}',GHICHU = '{1}'" + "WHERE MANV = '{2}'",
+            lichSuChamCong.Ngaychamconggannhat, lichSuChamCong.Ghichu,lichSuChamCong.Manv);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;

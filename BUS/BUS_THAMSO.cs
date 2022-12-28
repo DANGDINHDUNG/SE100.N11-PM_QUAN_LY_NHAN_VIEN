@@ -42,5 +42,10 @@ namespace BUS
         {
             return thamso.Get_tienLamthem();
         }
+        public double Get_soThangNghiSinh()
+        {
+            return thamso.Get_soThangNghiSinh();
+        }
+
     }
 }

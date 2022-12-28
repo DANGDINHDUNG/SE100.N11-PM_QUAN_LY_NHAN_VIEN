@@ -38,6 +38,7 @@ namespace QuanLyNhanVien
             if (dtoTaiKhoan._MALOAITK == 1)
             {
                 thongTinCaNhanRbn.Visibility = Visibility.Collapsed;
+                loaiTaiKhoanTbk.Text = "Quản trị hệ thống";
                 //thongTinCaNhanRbn.Visibility = Visibility.Collapsed;
                 //Settings.Visibility = Visibility.Collapsed;
                 //Report.Visibility = Visibility.Collapsed;
@@ -46,6 +47,7 @@ namespace QuanLyNhanVien
             {
                 heThongRbn.Visibility = Visibility.Collapsed;
                 thongTinCaNhanRbn.Visibility = Visibility.Collapsed;
+                loaiTaiKhoanTbk.Text = "Quản lý nhân viên";
             }
             else if (dtoTaiKhoan._MALOAITK == 3)
             {
@@ -55,11 +57,12 @@ namespace QuanLyNhanVien
                 chamCongRbn.Visibility = Visibility.Collapsed;
                 heThongRbn.Visibility = Visibility.Collapsed;
                 nhanVienRbn.Visibility = Visibility.Collapsed;
-                traCuuRbn.Visibility= Visibility.Collapsed;          
+                traCuuRbn.Visibility= Visibility.Collapsed;
+                loaiTaiKhoanTbk.Text = "Nhân viên";
             }
 
             tenNVTbk.Text = dtoTaiKhoan._TENCHUTAIKHOAN;
-            loaiTaiKhoanTbk.Text = "Nhân viên";
+            
             Timer.Text = DateTime.Now.ToString("dd/MM/yyyy");
             //loaiTaiKhoanTbk.Text = dtoTaiKhoan._MALOAITK;
             //StartClock();

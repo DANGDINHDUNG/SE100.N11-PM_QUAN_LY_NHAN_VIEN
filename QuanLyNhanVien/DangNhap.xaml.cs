@@ -90,13 +90,13 @@ namespace QuanLyNhanVien
                 }
                 else
                 {
-                    bool? result = new MessageBoxCustom("Sai mật khẩu, vui lòng thử lại.", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                    bool? result = new MessageBoxCustom("Sai mật khẩu, vui lòng thử lại.", MessageType.Error, MessageButtons.Ok).ShowDialog();
                     return;
                 }
             }
             else
             {
-                bool? result = new MessageBoxCustom("Tài khoản không tồn tại.", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Tài khoản không tồn tại.", MessageType.Error, MessageButtons.Ok).ShowDialog();
                 return;
             }
             

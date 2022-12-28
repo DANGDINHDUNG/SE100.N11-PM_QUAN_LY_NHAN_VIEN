@@ -33,25 +33,28 @@ namespace QuanLyNhanVien.MVVM.View.NhanVien_ThongTinCaNhanSubView
         {
             InitializeComponent();
             maNV = busNhanVienHienTai.getNhanVienHienTai();
-            thuTbx.Text = GetNgayTiengViet(DateTime.Now.DayOfWeek.ToString());
-            if (busSoThaiSan.KiemTraTonTai(maNV) && (busSoThaiSan.TimNgayLamTroLai(maNV) > busLichSuChamCong.TimLanCuoiChamCongTheoMa(maNV)))
-            {
-                ngayChamCongGanNhatTbx.Text = busSoThaiSan.TimNgayLamTroLai(maNV).ToString("dd/MM/yyyy");
-            }
-            else
-            {
-                ngayChamCongGanNhatTbx.Text = busLichSuChamCong.TimLanCuoiChamCongTheoMa(maNV).ToString("dd/MM/yyyy");
-            }
             
-            thoiGianTbx.Text = DateTime.Today.ToString("dd/MM/yyyy");
             DataGridLoad();
         }
 
         public void DataGridLoad()
         {
-            ngayNghiDtg.DataContext = busLichSuVangMat.getLichSuVangMat(maNV);
+            thuTbx.Text = GetNgayTiengViet(DateTime.Now.DayOfWeek.ToString());
+            if (busSoThaiSan.KiemTraTonTai(maNV) && (busSoThaiSan.TimNgayLamTroLai(maNV) > busLichSuChamCong.TimLanCuoiChamCongTheoMa(maNV)))
+            {
+                ngayChamCongGanNhatTbx.Text = busSoThaiSan.TimNgayLamTroLai(maNV).ToString("dd/MM/yyyy");
+            }
+            else if (!busLichSuChamCong.KiemTraTonTai(maNV))
+            {
+                ngayChamCongGanNhatTbx.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            }
+            else
+            {
+                ngayChamCongGanNhatTbx.Text = busLichSuChamCong.TimLanCuoiChamCongTheoMa(maNV).ToString("dd/MM/yyyy");
+            }
 
-            
+            thoiGianTbx.Text = DateTime.Today.ToString("dd/MM/yyyy");
+            ngayNghiDtg.DataContext = busLichSuVangMat.getLichSuVangMat(maNV);
         }
 
         public string GetNgayTiengViet(string day)
@@ -90,11 +93,14 @@ namespace QuanLyNhanVien.MVVM.View.NhanVien_ThongTinCaNhanSubView
                 dtoLichSuChamCong.Ngaychamconggannhat = DateTime.Now;
                 busLichSuChamCong.ThemLichSuChamCong(dtoLichSuChamCong);
             }
-            else
+            else if (busLichSuChamCong.TimLanCuoiChamCongTheoMa(maNV).Date == DateTime.Now.Date)
             {
-                //string ngayLamGanNhat = string.Empty;
-                
+                bool? result = new MessageBoxCustom("Hôm nay đã chấm công", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                return;
 
+            }
+            else
+            {            
                 TimeSpan time = DateTime.Parse(thoiGianTbx.Text) - DateTime.Parse(ngayChamCongGanNhatTbx.Text);
                 
                 for (int i = 1; i < time.Days; i++)
@@ -111,8 +117,6 @@ namespace QuanLyNhanVien.MVVM.View.NhanVien_ThongTinCaNhanSubView
                         lichSuVangMat.Ngaynghi = DateTime.Now.Date.AddDays(-i);
 
                         busLichSuVangMat.ThemLichSuVangMat(lichSuVangMat);
-                        //bool? result = new MessageBoxCustom(DateTime.Now.Date.AddDays(-i).ToString(), MessageType.Success, MessageButtons.Ok).ShowDialog();
-
                     }
                 }
 
@@ -120,19 +124,8 @@ namespace QuanLyNhanVien.MVVM.View.NhanVien_ThongTinCaNhanSubView
                 dtoLichSuChamCong.Ngaychamconggannhat = DateTime.Now;
                 busLichSuChamCong.SuaLichSuChamCong(dtoLichSuChamCong);
 
-                //else
-                //{
-                //    ngayLamGanNhat = (DateTime.Now.Date.AddDays(-1)).ToString("dd/MM/yyyy");
-                //}
-                //int homQua = DateTime.Now.Day - 1;
-                //string ngayLamGanNhat = homQua.ToString() + "/" + DateTime.Now.Month.ToString() + "/" + DateTime.Now.Year.ToString();
-                //if (busLichSuChamCong.KiemTraChamCong(maNV, ngayLamGanNhat))
-                //{
-
-                //}
-
+                bool? result = new MessageBoxCustom("Chấm công thành công", MessageType.Success, MessageButtons.Ok).ShowDialog();
             }
-
             DataGridLoad();
         }
     }
