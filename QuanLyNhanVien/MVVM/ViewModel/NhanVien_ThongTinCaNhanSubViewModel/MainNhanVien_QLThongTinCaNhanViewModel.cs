@@ -13,10 +13,12 @@ namespace QuanLyNhanVien.MVVM.ViewModel.NhanVien_ThongTinCaNhanSubViewModel
         public RelayCommand ThongTinCaNhanCommand { get; set; }
         public RelayCommand BangLuongCaNhanCommand { get; set; }
         public RelayCommand BangChamCongCaNhanCommand { get; set; }
+        public RelayCommand ChamCongCommand { get; set; }
 
         public ThongTinCaNhanViewModel ThongTinCaNhanVM { get; set; }
         public BangLuongCaNhanViewModel BangLuongCaNhanVM { get; set; }
         public BangChamCongCaNhanViewModel BangChamCongCaNhanVM { get; set; }
+        public ChamCongViewModel ChamCongVM { get; set; }
 
         private object _currentView;
 
@@ -35,6 +37,7 @@ namespace QuanLyNhanVien.MVVM.ViewModel.NhanVien_ThongTinCaNhanSubViewModel
             ThongTinCaNhanVM = new ThongTinCaNhanViewModel();
             BangLuongCaNhanVM = new BangLuongCaNhanViewModel();
             BangChamCongCaNhanVM = new BangChamCongCaNhanViewModel();
+            ChamCongVM = new ChamCongViewModel();
 
             CurrentView = ThongTinCaNhanVM;
 
@@ -51,6 +54,11 @@ namespace QuanLyNhanVien.MVVM.ViewModel.NhanVien_ThongTinCaNhanSubViewModel
             BangChamCongCaNhanCommand = new RelayCommand(o =>
             {
                 CurrentView = BangChamCongCaNhanVM;
+            });
+
+            ChamCongCommand = new RelayCommand(o =>
+            {
+                CurrentView = ChamCongVM;
             });
 
 

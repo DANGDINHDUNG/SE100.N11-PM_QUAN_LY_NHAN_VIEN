@@ -42,7 +42,7 @@ LYDO NVARCHAR(50)
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("UPDATE NVTHOIVIEC " +
-                "SET HOTEN=N'{0}, CMND_CCCD='{1}',NGAYTHOIVIEC='{2}',LYDO='{3}' " +
+                "SET HOTEN=N'{0}', CMND_CCCD='{1}',NGAYTHOIVIEC='{2}',LYDO='{3}' " +
                 "WHERE MANV = '{4}'", nvThoiViec.Hoten, nvThoiViec.Cmnd_cccd, nvThoiViec.Ngaythoiviec,nvThoiViec.Lydo,nvThoiViec.Manv);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
@@ -61,6 +61,24 @@ LYDO NVARCHAR(50)
                 return true;
             else return false;
             connection.Close();
+        }
+
+        public int SoLuongNhanVienNghiViec(int thang, int nam)
+        {
+            int n = 0;
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("select * from NVTHOIVIEC Where month(NGAYTHOIVIEC)='{0}' AND year (NGAYTHOIVIEC) ='{1}'", thang, nam);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read() == true)
+            {
+                n++;
+            }
+            if (!reader.IsClosed)
+                reader.Close();
+            connection.Close();
+            return n;
         }
     }
 }

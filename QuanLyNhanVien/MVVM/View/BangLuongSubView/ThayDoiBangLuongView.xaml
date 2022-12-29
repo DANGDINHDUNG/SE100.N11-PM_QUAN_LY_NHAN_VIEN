@@ -51,10 +51,10 @@
                 <TextBox x:Name="tenNVTbx" Style="{StaticResource InputTextBox}" 
                      Grid.Column="1" Grid.Row="1" Margin="0,0,10,0" IsEnabled="False"/>
                 <DatePicker x:Name="ngaySuaDpk" FontSize="17" FontWeight="Normal" 
-                     Grid.Column="1" Grid.Row="2" Margin="0,0,10,0"/>
+                     Grid.Column="1" Grid.Row="2" Margin="0,0,10,0" IsEnabled="False"/>
                 
                 <ComboBox x:Name="maLuongCbx" FontSize="17" FontWeight="Normal" 
-                     Grid.Column="3" Grid.Row="0" Loaded="Comboboxes_Loaded"/>
+                     Grid.Column="3" Grid.Row="0" Loaded="Comboboxes_Loaded" IsEnabled="False"/>
                 <ComboBox x:Name="maLuongMoiCbx" FontSize="17" FontWeight="Normal"
                      Grid.Column="3" Grid.Row="1"/>
                 <TextBox x:Name="lyDoTbx" Style="{StaticResource InputTextBox}" 
@@ -67,14 +67,11 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
-                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
             <Button x:Name="thayDoiBtn" Style="{StaticResource WindowButtonTheme}"
                     Width="150" Height="40" Click="thayDoiBtn_Click">Thay đổi</Button>
-            <Button x:Name="xoaBtn" Grid.Column="1" 
-                    Style="{StaticResource WindowButtonTheme}"
-                    Width="150" Height="40" Click="xoaBtn_Click">Xóa lương</Button>
+            
             <Button x:Name="lamMoiBtn" Grid.Column="2" 
                     Style="{StaticResource WindowButtonTheme}"
                     Width="150" Height="40" Click="lamMoiBtn_Click">Làm mới</Button>

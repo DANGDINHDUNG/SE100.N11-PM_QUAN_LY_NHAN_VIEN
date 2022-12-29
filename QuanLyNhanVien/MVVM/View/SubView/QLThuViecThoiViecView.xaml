@@ -36,28 +36,28 @@
                     FontWeight="Normal"
                     Style="{StaticResource WindowButtonTheme}"
                     Width="150" Height="40"
-                            x:Name="btnThemNhanVien"
-                            Click="btnThemNhanVien_Click">Thêm nhân viên</Button>
-                    <Button Grid.Column="1" 
+                            x:Name="themNhanVienBtn"
+                            Click="themNhanVienBtn_Click">Thêm nhân viên</Button>
+                    <Button x:Name="xoaBtn" Grid.Column="1" 
                     FontWeight="Normal"
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="150" Height="40">Xóa nhân viên</Button>
+                    Width="150" Height="40" Click="xoaBtn_Click">Xóa nhân viên</Button>
                     <Button Grid.Column="2"
                     FontWeight="Normal"
-                            x:Name="btnSuaNhanVien"
-                            Click="btnSuaNhanVien_Click"
+                            x:Name="suaNhanVienBtn"
+                            Click="suaNhanVienBtn_Click"
                     Style="{StaticResource WindowButtonTheme}"
                     Width="150" Height="40">Sửa nhân viên</Button>
-                    <Button Grid.Column="3"
+                    <Button x:Name="xemChiTietBtn" Grid.Column="3"
                     FontWeight="Normal"
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="150" Height="40">Xem chi tiết</Button>
+                    Width="150" Height="40" Click="chiTietBtn_Click">Xem chi tiết</Button>
                     
                 </Grid>
                 <Grid Grid.Row="1">
-                    <DataGrid Margin="10,10,10,0">
-
-                    </DataGrid>
+                    <DataGrid x:Name="thuViecDtg" Margin="10,10,10,0"
+                              ItemsSource="{Binding Path=DefaultView}"
+                              IsReadOnly="True" MouseDoubleClick="thuViecDtg_MouseDoubleClick"/>
                 </Grid>
             </Grid>
         </GroupBox>

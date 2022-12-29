@@ -35,5 +35,9 @@ namespace BUS
             return bangluong.TongHopMaLuong();
         }
 
+        public DTO_BANGLUONG GetChiTietLuong(string maluong)
+        {
+            return bangluong.GetChiTietLuong(maluong);
+        }
     }
 }

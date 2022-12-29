@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BUS;
+using QuanLyNhanVien.MessageBox;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +21,11 @@ namespace QuanLyNhanVien.WindowView
     /// </summary>
     public partial class XemLichSuChinhSua : Window
     {
+        BUS_LSCHINHSUA busLichSuChinhSua = new BUS_LSCHINHSUA();
+        private string maNV;
+
+        public string MaNV { get => maNV; set => maNV = value; }
+
         public XemLichSuChinhSua()
         {
             InitializeComponent();
@@ -27,6 +34,11 @@ namespace QuanLyNhanVien.WindowView
         private void thoatBtn_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void lsChinhSuaDtg_Loaded(object sender, RoutedEventArgs e)
+        {
+            lsChinhSuaDtg.DataContext = busLichSuChinhSua.getLSChinhSuaCuaTungNhanVien(MaNV);
         }
     }
 }

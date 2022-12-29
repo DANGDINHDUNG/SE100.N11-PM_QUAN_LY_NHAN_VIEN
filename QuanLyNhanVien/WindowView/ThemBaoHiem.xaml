@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuanLyNhanVien"
+        xmlns:c="clr-namespace:QuanLyNhanVien.Theme"
         mc:Ignorable="d"
         Title="DangNhap" Height="300" Width="600"
         ResizeMode="NoResize"
@@ -50,7 +51,8 @@
 
                 <TextBox x:Name="maBHTbx" Style="{StaticResource InputTextBox}" IsEnabled="False"  Grid.Column="1" Grid.Row="0" Loaded="maBHTbx_Loaded"/>
                 <ComboBox x:Name="maNVCbx" FontSize="17" FontWeight="Normal" ItemsSource="{Binding Path=DefaultView}"  Grid.Column="1" Grid.Row="1"/>
-                <DatePicker x:Name="ngayCapTbx" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="2"/>
+                <DatePicker x:Name="ngayCapTbx" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="2"
+                            c:DatePickerDateFormat.DateFormat="dd/MM/yyyy" Text="dd/MM/yyyy" IsEnabled="False"/>
 
 
                 <TextBlock Grid.Row="0" Grid.Column="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 

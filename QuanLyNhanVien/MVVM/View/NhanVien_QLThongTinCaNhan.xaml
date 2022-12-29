@@ -30,6 +30,8 @@
                          Command="{Binding BangLuongCaNhanCommand}"/>
             <RadioButton Content="Bảng chấm công cá nhân" 
                          Command="{Binding BangChamCongCaNhanCommand}"/>
+            <RadioButton Content="Chấm Công" 
+                         Command="{Binding ChamCongCommand}"/>
             
         </StackPanel>
 

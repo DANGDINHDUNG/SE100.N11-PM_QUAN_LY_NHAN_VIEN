@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuanLyNhanVien"
+        xmlns:c="clr-namespace:QuanLyNhanVien.Theme"
         mc:Ignorable="d"
         Title="DangNhap" Height="600" Width="600"
         ResizeMode="NoResize"
@@ -68,14 +69,17 @@
                 <TextBlock Grid.Row="9" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
                            Text="Ghi chú" TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
 
-                <TextBox x:Name="maNVTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" IsReadOnly="True" Loaded="maNVTbx_Loaded" VerticalAlignment="Center" Height="32" />
+                <TextBox x:Name="maNVTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" IsEnabled="False" Loaded="maNVTbx_Loaded" VerticalAlignment="Center" Height="32" />
                 <ComboBox x:Name="phongCbx" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="1" ItemsSource="{Binding Path=DefaultView}" Height="32"/>
                 <TextBox x:Name="tenTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="1" Margin="0,44,0,44" Grid.RowSpan="3"/>
-                <DatePicker x:Name="ngaySinhDpk" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="3" Height="32"/>
-                <TextBox x:Name="cccdTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="3" Margin="0,44,0,0" Grid.RowSpan="2" PreviewTextInput="CMND_PreviewTextInput"/>
+                <DatePicker x:Name="ngaySinhDpk" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="3" Height="32"
+                            c:DatePickerDateFormat.DateFormat="dd/MM/yyyy" Text="dd/MM/yyyy" SelectedDateChanged="ngaySinhDpk_SelectedDateChanged"/>
+                <TextBox x:Name="cccdTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="3" Margin="0,44,0,0" Grid.RowSpan="2" PreviewTextInput="numberTextBoxes_PreviewTextInput"/>
                 <TextBox x:Name="noiCapTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="5" Margin="0,0,0,44" Grid.RowSpan="2"/>
-                <DatePicker x:Name="ngayKyDpk" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="6" Height="32"/>
-                <DatePicker x:Name="ngayHetHanDpk" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="7" Height="31"/>
+                <DatePicker x:Name="ngayKyDpk" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="6" Height="32" IsEnabled="False" 
+                            c:DatePickerDateFormat.DateFormat="dd/MM/yyyy" Text="dd/MM/yyyy"/>
+                <DatePicker x:Name="ngayHetHanDpk" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="7" Height="31" IsEnabled="False" 
+                            c:DatePickerDateFormat.DateFormat="dd/MM/yyyy" Text="dd/MM/yyyy"/>
                 <ComboBox x:Name="maLuongCbx" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="8" ItemsSource="{Binding Path=DefaultView}" Height="32"/>
 
 
@@ -102,8 +106,8 @@
                 <ComboBox x:Name="danTocCbx" FontSize="17" FontWeight="Normal" Grid.Column="3" Grid.Row="3" ItemsSource="{Binding Path=DefaultView}" Height="32"/>
                 <TextBox x:Name="soDienThoaiTbx" Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="3" Margin="0,44,0,0" Grid.RowSpan="2" PreviewTextInput="numberTextBoxes_PreviewTextInput"/>
                 <TextBox x:Name="hocVanTbx" Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="5" Margin="0,0,0,44" Grid.RowSpan="2"/>
-                <ComboBox x:Name="loaiHopDongCbx" FontSize="17" FontWeight="Normal" Grid.Column="3" Grid.Row="6" ItemsSource="{Binding Path=DefaultView}" Height="32"/>
-                <TextBox x:Name="thoiGianTbx" Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="7" Margin="0,0,50,0" PreviewTextInput="numberTextBoxes_PreviewTextInput"/>
+                <ComboBox x:Name="loaiHopDongCbx" FontSize="17" FontWeight="Normal" Grid.Column="3" Grid.Row="6" ItemsSource="{Binding Path=DefaultView}" Height="32" SelectionChanged="loaiHopDongCbx_SelectionChanged"/>
+                <TextBox x:Name="thoiGianTbx" Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="7" Margin="0,0,50,0" PreviewTextInput="numberTextBoxes_PreviewTextInput" TextChanged="thoiGianTbx_TextChanged"/>
                 <TextBlock Grid.Column="3" Grid.Row="7" Margin="140,0,10,0" FontWeight="Normal" FontSize="14" 
                            Text="Năm" TextAlignment="Right" VerticalAlignment="Center" Height="19"/>
                 <TextBox x:Name="ghiChuTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="9" Margin="0,6,10,6" Grid.ColumnSpan="3"/>
@@ -128,8 +132,8 @@
                     Width="150" Height="40">Hủy</Button>
                 <Button x:Name="themSuaBtn" Grid.Column="3"
                         Grid.ColumnSpan="2"
-                    Style="{StaticResource WindowButtonTheme}"
-                    Width="150" Height="40" Click="themSuaBtn_Click">Thêm/Sửa</Button>
+                        Style="{StaticResource WindowButtonTheme}"
+                        Width="150" Height="40" Click="themSuaBtn_Click"></Button>
             </Grid>
         </Grid>
     </Border>

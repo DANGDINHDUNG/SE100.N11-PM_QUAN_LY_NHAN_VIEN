@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuanLyNhanVien"
         mc:Ignorable="d"
-        Title="TrangChu" Height="680" Width="1024"
+        Title="TrangChu" Height="800" Width="1200"
         ResizeMode="NoResize"
         WindowStyle="None"
         Background="Transparent" 
@@ -22,7 +22,7 @@
             x:Name="MainBorder">
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="230" />
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
@@ -44,6 +44,7 @@
                             Margin="0,0,0,20">
                     <ToggleButton  x:Name="AccountButton" 
                                       Content=""
+                                      Width="214"
                                       Style="{StaticResource AccountButtonTheme}"
                                       IsTabStop="False" 
                                       Focusable="False"/>
@@ -57,7 +58,7 @@
                                     Background="#F6F7FA" 
                                     BorderBrush="Gray" 
                                     BorderThickness="0.5">
-                            <StackPanel Width="150" Margin="0">
+                            <StackPanel Width="214" Margin="0">
                                 <StackPanel.Resources>
                                     <Style TargetType="RadioButton" BasedOn="{StaticResource AccountDropDownButtonTheme}"/>
                                 </StackPanel.Resources>
@@ -213,12 +214,12 @@
 
                         <TextBlock Grid.Column="0" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
                                    Text="Nhân viên:" TextAlignment="Right" VerticalAlignment="Center"/>
-                        <TextBlock Grid.Column="1" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                                   Text="Hiển thị tên nhân viên" TextAlignment="Right" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="tenNVTbk" Grid.Column="1" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
+                                   Text="Hiển thị tên nhân viên" TextAlignment="Left" VerticalAlignment="Center"/>
                         <TextBlock Grid.Column="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
                                    Text="Quyền hạn:" TextAlignment="Right" VerticalAlignment="Center"/>
-                        <TextBlock Grid.Column="3" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                                   Text="Hiển thị loại tài khoản" TextAlignment="Right" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="loaiTaiKhoanTbk" Grid.Column="3" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
+                                   Text="Hiển thị loại tài khoản" TextAlignment="Left" VerticalAlignment="Center"/>
                         
                         
                         <TextBlock x:Name="Timer" 

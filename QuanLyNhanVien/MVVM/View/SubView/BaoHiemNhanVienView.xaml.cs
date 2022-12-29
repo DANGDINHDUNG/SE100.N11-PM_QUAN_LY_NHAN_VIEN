@@ -37,8 +37,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
         private void btnThemThaiSan_Click(object sender, RoutedEventArgs e)
         {
-            ThemThaiSan thaiSan = new ThemThaiSan();
-            thaiSan.checkAdd = true;
+            ThemThaiSan thaiSan = new ThemThaiSan(true);
             thaiSan.ShowDialog();
             DataGridLoad();
         }
@@ -77,8 +76,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
             DTO_SOTHAISAN suaSoThaiSan = new DTO_SOTHAISAN();
             DataRowView row = dsThaiSanDtg.SelectedItem as DataRowView;
-            ThemThaiSan themThaiSan = new ThemThaiSan();
-            themThaiSan.checkAdd = false;
+            ThemThaiSan themThaiSan = new ThemThaiSan(false);
 
             suaSoThaiSan.Mats = int.Parse(row[0].ToString());
             suaSoThaiSan.Manv = int.Parse(row[1].ToString());
@@ -134,8 +132,8 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
         private void btnThemBaoHiem_Click(object sender, RoutedEventArgs e)
         {
-            ThemBaoHiem themBaoHiem = new ThemBaoHiem();
-            themBaoHiem.checkAdd = true;
+            ThemBaoHiem themBaoHiem = new ThemBaoHiem(true);
+
             themBaoHiem.ShowDialog();
             DataGridLoad();
         }
@@ -149,8 +147,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
             DTO_SOBH suaSoBH = new DTO_SOBH();
             DataRowView row = dtgBaoHiem.SelectedItem as DataRowView;
-            ThemBaoHiem themBaoHiem = new ThemBaoHiem();
-            themBaoHiem.checkAdd = false;
+            ThemBaoHiem themBaoHiem = new ThemBaoHiem(false);
 
             suaSoBH.Mabh = int.Parse(row[0].ToString());
             suaSoBH.Manv = int.Parse(row[1].ToString());

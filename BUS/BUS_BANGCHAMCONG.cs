@@ -28,5 +28,39 @@ namespace BUS
             return bangchamcong.XoaBangChamCong(manvtv, thang, nam);
         }
 
+        public DTO_BANGCHAMCONG getBangChamCongTheoNhanVien(string maNV, int thang, int nam)
+        {
+            return bangchamcong.getBangChamCongTheoNhanVien(maNV, thang, nam);
+        }
+
+        public bool KiemTraTonTai(string maNV, string thang, string nam)
+        {
+            return bangchamcong.KiemTraTonTai(maNV, thang, nam);
+        }
+
+        public DataTable getBangChiTietChamCongTheoNhanVien(string maNV, string thang, string nam)
+        {
+            return bangchamcong.getBangChiTietChamCongTheoNhanVien(maNV, thang, nam);
+        }
+
+        public string GetMaLuongTheoThang(string maNV, string thang, string nam)
+        {
+            return bangchamcong.GetMaLuongTheoThang(maNV, thang, nam);
+        }
+
+        public DTO_BANGCHAMCONG getBangChamCongNhanVienTheoThang(string maNV, int thang, int nam)
+        {
+            return bangchamcong.getBangChamCongNhanVienTheoThang(maNV, thang, nam);
+        }
+
+        public bool KiemTraTonTaiNhanVien(string maNV)
+        {
+            return bangchamcong.KiemTraTonTaiNhanVien(maNV);
+        }
+
+        public bool SuaGhiChu(string ghiChu, string maNV)
+        {
+            return bangchamcong.SuaGhiChu(ghiChu, maNV);
+        }
     }
 }

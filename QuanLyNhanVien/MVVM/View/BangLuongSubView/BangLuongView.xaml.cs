@@ -58,40 +58,48 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
         }
 
         private void themBtn_Click(object sender, RoutedEventArgs e)
-        {
-            if (maLuongTbx.Text == String.Empty || luongCBTbx.Text == String.Empty || phuCapTbx.Text == String.Empty || phuCapKhacTbx.Text == String.Empty)
+        { 
+            try
             {
-                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-                return;
-            }
-            bool checkExist = false;
-            List<string> list = busBangLuong.TongHopMaLuong();
-
-            foreach (string s in list)
-            {
-                if (s == maLuongTbx.Text)
+                if (maLuongTbx.Text == String.Empty || luongCBTbx.Text == String.Empty || phuCapTbx.Text == String.Empty || phuCapKhacTbx.Text == String.Empty)
                 {
-                    checkExist = true;
-                    break;
+                    bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                    return;
+                }
+                bool checkExist = false;
+                List<string> list = busBangLuong.TongHopMaLuong();
+
+                foreach (string s in list)
+                {
+                    if (s == maLuongTbx.Text)
+                    {
+                        checkExist = true;
+                        break;
+                    }
+                }
+
+                if (!checkExist)
+                {
+                    dtoBangLuong.Maluong = maLuongTbx.Text;
+                    dtoBangLuong.Lcb = double.Parse(luongCBTbx.Text);
+                    dtoBangLuong.Phucapchucvu = double.Parse(phuCapTbx.Text);
+                    dtoBangLuong.Phucapkhac = double.Parse(phuCapKhacTbx.Text);
+                    dtoBangLuong.Ghichu = ghiChuTbx.Text;
+                    busBangLuong.ThemBangLuong(dtoBangLuong);
+                    bool? result = new MessageBoxCustom("Thêm lương thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                    DataGridLoad();
+                    ClearBoxes();
+                }
+                else
+                {
+                    bool? result = new MessageBoxCustom("Mã lương đã tồn tại!", MessageType.Error, MessageButtons.Ok).ShowDialog();
                 }
             }
+            catch
+            {
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
+            }
 
-            if (!checkExist)
-            {
-                dtoBangLuong.Maluong = maLuongTbx.Text;
-                dtoBangLuong.Lcb = double.Parse(luongCBTbx.Text);
-                dtoBangLuong.Phucapchucvu = double.Parse(phuCapTbx.Text);
-                dtoBangLuong.Phucapkhac = double.Parse(phuCapKhacTbx.Text);
-                dtoBangLuong.Ghichu = ghiChuTbx.Text;
-                busBangLuong.ThemBangLuong(dtoBangLuong);
-                bool? result = new MessageBoxCustom("Thêm lương thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
-                DataGridLoad();
-                ClearBoxes();
-            }
-            else
-            {
-                bool? result = new MessageBoxCustom("Mã lương đã tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-            }
         }
 
         private void xoaBtn_Click(object sender, RoutedEventArgs e)
@@ -115,39 +123,46 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
 
         private void suaBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (maLuongTbx.Text == String.Empty || luongCBTbx.Text == String.Empty || double.Parse(luongCBTbx.Text) <= 0 || phuCapTbx.Text == String.Empty || double.Parse(phuCapTbx.Text) <= 0 || phuCapKhacTbx.Text == String.Empty || double.Parse(phuCapKhacTbx.Text) <= 0)
+            try
             {
-                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-                return;
-            }
-
-            bool checkExist = false;
-            List<string> list = busBangLuong.TongHopMaLuong();
-
-            foreach (string s in list)
-            {
-                if (s == maLuongTbx.Text)
+                if (maLuongTbx.Text == String.Empty || luongCBTbx.Text == String.Empty || double.Parse(luongCBTbx.Text) <= 0 || phuCapTbx.Text == String.Empty || double.Parse(phuCapTbx.Text) <= 0 || phuCapKhacTbx.Text == String.Empty || double.Parse(phuCapKhacTbx.Text) <= 0)
                 {
-                    checkExist = true;
-                    break;
+                    bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                    return;
+                }
+
+                bool checkExist = false;
+                List<string> list = busBangLuong.TongHopMaLuong();
+
+                foreach (string s in list)
+                {
+                    if (s == maLuongTbx.Text)
+                    {
+                        checkExist = true;
+                        break;
+                    }
+                }
+
+                if (checkExist)
+                {
+                    dtoBangLuong.Maluong = maLuongTbx.Text;
+                    dtoBangLuong.Lcb = double.Parse(luongCBTbx.Text);
+                    dtoBangLuong.Phucapchucvu = double.Parse(phuCapTbx.Text);
+                    dtoBangLuong.Phucapkhac = double.Parse(phuCapKhacTbx.Text);
+                    dtoBangLuong.Ghichu = ghiChuTbx.Text;
+                    busBangLuong.SuaBangLuong(dtoBangLuong);
+                    bool? result = new MessageBoxCustom("Sửa lương thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                    DataGridLoad();
+                    ClearBoxes();
+                }
+                else
+                {
+                    bool? result = new MessageBoxCustom("Mã lương không tồn tại!", MessageType.Error, MessageButtons.Ok).ShowDialog();
                 }
             }
-
-            if (checkExist)
+            catch
             {
-                dtoBangLuong.Maluong = maLuongTbx.Text;
-                dtoBangLuong.Lcb = double.Parse(luongCBTbx.Text);
-                dtoBangLuong.Phucapchucvu = double.Parse(phuCapTbx.Text);
-                dtoBangLuong.Phucapkhac = double.Parse(phuCapKhacTbx.Text);
-                dtoBangLuong.Ghichu = ghiChuTbx.Text;
-                busBangLuong.SuaBangLuong(dtoBangLuong);
-                bool? result = new MessageBoxCustom("Sửa lương thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
-                DataGridLoad();
-                ClearBoxes();
-            }
-            else
-            {
-                bool? result = new MessageBoxCustom("Mã lương không tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
         }
 

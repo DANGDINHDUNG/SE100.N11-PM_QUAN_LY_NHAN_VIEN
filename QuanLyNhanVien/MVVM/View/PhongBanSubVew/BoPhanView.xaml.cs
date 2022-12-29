@@ -58,36 +58,44 @@ namespace QuanLyNhanVien.MVVM.View.PhongBanSubVew
 
         private void themBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (mabpTbx.Text == String.Empty || tenbpTbx.Text == String.Empty || ngaytlDpk.Text == String.Empty)
+            try
             {
-                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-                return;
-            }
-            bool flat = true;
-            List<string> list = busBoPhan.TongHopMaBoPhan();
-            foreach (string s in list)
-            {
-                if (s == mabpTbx.Text)
+                if (mabpTbx.Text == String.Empty || tenbpTbx.Text == String.Empty || ngaytlDpk.Text == String.Empty)
                 {
-                    flat = false;
-                    break;
+                    bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                    return;
+                }
+                bool flat = true;
+                List<string> list = busBoPhan.TongHopMaBoPhan();
+                foreach (string s in list)
+                {
+                    if (s == mabpTbx.Text)
+                    {
+                        flat = false;
+                        break;
+                    }
+                }
+                if (flat)
+                {
+                    DTO_BOPHAN dtoBoPhan1 = new DTO_BOPHAN();
+                    dtoBoPhan1.Mabp = mabpTbx.Text;
+                    dtoBoPhan1.Tenbophan = tenbpTbx.Text;
+                    dtoBoPhan1.Ngaythanhlap = DateTime.Parse(ngaytlDpk.Text);
+                    busBoPhan.ThemBoPhan(dtoBoPhan1);
+                    bool? result = new MessageBoxCustom("Thêm bộ phận thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                    DataGridLoad();
+                    ClearBoxes();
+                }
+                else
+                {
+                    bool? result = new MessageBoxCustom("Mã bộ phận đã tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 }
             }
-            if (flat)
+            catch
             {
-                DTO_BOPHAN dtoBoPhan1 = new DTO_BOPHAN();
-                dtoBoPhan1.Mabp = mabpTbx.Text;
-                dtoBoPhan1.Tenbophan = tenbpTbx.Text;
-                dtoBoPhan1.Ngaythanhlap = DateTime.Parse(ngaytlDpk.Text);
-                busBoPhan.ThemBoPhan(dtoBoPhan1);
-                bool? result = new MessageBoxCustom("Thêm bộ phận thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
-                DataGridLoad();
-                ClearBoxes();
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
-            else
-            {
-                bool? result = new MessageBoxCustom("Mã bộ phận đã tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-            }
+            
         }
 
         private void xoaBtn_Click(object sender, RoutedEventArgs e)
@@ -111,37 +119,43 @@ namespace QuanLyNhanVien.MVVM.View.PhongBanSubVew
 
         private void suaBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (mabpTbx.Text == String.Empty || tenbpTbx.Text == String.Empty || ngaytlDpk.Text == String.Empty)
+            try 
             {
-                bool? show = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-                return;
-            }
-            bool flat2 = true;
-            List<string> list = busBoPhan.TongHopMaBoPhan();
-            foreach (string s in list)
-            {
-                if (s == mabpTbx.Text)
+                if (mabpTbx.Text == String.Empty || tenbpTbx.Text == String.Empty || ngaytlDpk.Text == String.Empty)
                 {
-                    flat2 = false;
-                    break;
+                    bool? show = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                    return;
+                }
+                bool flat2 = true;
+                List<string> list = busBoPhan.TongHopMaBoPhan();
+                foreach (string s in list)
+                {
+                    if (s == mabpTbx.Text)
+                    {
+                        flat2 = false;
+                        break;
+                    }
+                }
+                if (!flat2)
+                {
+                    DTO_BOPHAN dtoBoPhan2 = new DTO_BOPHAN();
+                    dtoBoPhan2.Mabp = mabpTbx.Text;
+                    dtoBoPhan2.Tenbophan = tenbpTbx.Text;
+                    dtoBoPhan2.Ngaythanhlap = DateTime.Parse(ngaytlDpk.Text);
+                    busBoPhan.SuaBoPhan(dtoBoPhan2);
+                    bool? show = new MessageBoxCustom("Sửa bộ phận thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                    DataGridLoad();
+                    ClearBoxes();
+                }
+                else
+                {
+                    bool? show = new MessageBoxCustom("Bộ phận không tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 }
             }
-            if (!flat2)
+            catch
             {
-                DTO_BOPHAN dtoBoPhan2 = new DTO_BOPHAN();
-                dtoBoPhan2.Mabp = mabpTbx.Text;
-                dtoBoPhan2.Tenbophan = tenbpTbx.Text;
-                dtoBoPhan2.Ngaythanhlap = DateTime.Parse(ngaytlDpk.Text);
-                busBoPhan.SuaBoPhan(dtoBoPhan2);
-                bool? show = new MessageBoxCustom("Sửa bộ phận thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
-                DataGridLoad();
-                ClearBoxes();
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
-            else
-            {
-                bool? show = new MessageBoxCustom("Bộ phận không tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-            }
-
         }
 
         public void ClearBoxes()
@@ -154,6 +168,14 @@ namespace QuanLyNhanVien.MVVM.View.PhongBanSubVew
         {
             ClearBoxes();
             DataGridLoad();
+        }
+
+        private void ngaytlDpk_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ngaytlDpk.SelectedDate > DateTime.Now)
+            {
+                bool? show = new MessageBoxCustom("Không thể chọn ngày thành lập trong tương lai!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+            }
         }
     }
 }

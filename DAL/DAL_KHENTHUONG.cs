@@ -40,8 +40,7 @@ namespace DAL
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("UPDATE KHENTHUONG " +
-                "SET TIEN='{0}, LYDO=N'{1}'" + "WHERE MAKT = '{4}'",
-            khenThuong.Tien, khenThuong.Lydo, khenThuong.Makt);
+                "SET TIEN='{0}', LYDO=N'{1}'" + "WHERE MAKT = '{2}'", khenThuong.Tien, khenThuong.Lydo, khenThuong.Makt);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
                 return true;
@@ -59,6 +58,22 @@ namespace DAL
                 return true;
             else return false;
             connection.Close();
+        }
+
+        public List<string> TongHopMaKhenThuong()
+        {
+            List<string> listMaKhenThuong = new List<string>();
+            CheckConnection();
+            string sql = string.Format("SELECT MAKT FROM KHENTHUONG");
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                listMaKhenThuong.Add(sdr[0].ToString());
+            }
+            connection.Close();
+            return listMaKhenThuong;
         }
     }
 }

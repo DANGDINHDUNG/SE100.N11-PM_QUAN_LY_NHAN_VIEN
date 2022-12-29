@@ -32,12 +32,35 @@ namespace QuanLyNhanVien.WindowView
         public BUS_LSCHINHSUA busLSChinhSua = new BUS_LSCHINHSUA();
         public DTO_NHANVIEN suaNhanVien;
         public DTO_LSCHINHSUA dtoLSChinhSua = new DTO_LSCHINHSUA();
-        public bool checkAdd;
+        public int flag;
 
-        public ThemNhanVienForm()
+        public ThemNhanVienForm(int CheckAdd)
         {
             InitializeComponent();
-            ComboBoxes_Loaded();    
+            ComboBoxes_Loaded();
+            flag = CheckAdd;
+
+            if (flag == 1)
+            {
+                themSuaBtn.Content = "Thêm";
+                ngayKyDpk.SelectedDate = DateTime.Now;
+            }
+            else if (flag == 2)
+            {
+                themSuaBtn.Content = "Sửa";
+                tenTbx.IsEnabled = false;
+            }
+            else if (flag == 3)
+            {
+                thoiGianTbx.IsEnabled = false;
+                loaiHopDongCbx.IsEnabled = false;
+                maLuongCbx.IsEnabled = false;
+                chucVuTbx.IsEnabled = false;
+                loaiNVCbx.IsEnabled = false;
+                phongCbx.IsEnabled = false;
+                tenTbx.IsEnabled = false;
+                themSuaBtn.Content = "Sửa";
+            }
         }
 
         private void huyBtn_Click(object sender, RoutedEventArgs e)
@@ -156,7 +179,7 @@ namespace QuanLyNhanVien.WindowView
                 gioiTinhCbx.Items.Add(gioiTinh);
             }
 
-            string[] listLoaiHD  = new string[] { "Ngắn hạn", "Dài hạn", "Thử việc" };
+            string[] listLoaiHD  = new string[] { "Ngắn hạn", "Dài hạn" };
 
             foreach (string LoaiHD in listLoaiHD)
             {
@@ -166,7 +189,7 @@ namespace QuanLyNhanVien.WindowView
 
         private void maNVTbx_Loaded(object sender, RoutedEventArgs e)
         {
-            if (checkAdd)
+            if (flag == 1)
                 return;
             maNVTbx.Text = suaNhanVien.Manv.ToString();
             tenTbx.Text = suaNhanVien.Hoten.ToString();
@@ -191,11 +214,6 @@ namespace QuanLyNhanVien.WindowView
         }
 
         private void numberTextBoxes_PreviewTextInput(object sender, TextCompositionEventArgs e)
-        {
-            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
-        }
-
-        private void CMND_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
         }
@@ -225,6 +243,65 @@ namespace QuanLyNhanVien.WindowView
                 return false;
             }
             return true;
+        }
+
+        private void thoiGianTbx_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (thoiGianTbx.Text != "")
+            {
+                if (int.Parse(thoiGianTbx.Text) > 1)
+                {
+                    loaiHopDongCbx.Text = "Dài hạn";
+                }
+            }
+
+            if (thoiGianTbx.Text == "1")
+            {
+                loaiHopDongCbx.Text = "Ngắn hạn";
+            }
+
+            if (thoiGianTbx.Text == "")
+            {
+                ngayHetHanDpk.Text = "";
+                return;
+            }
+
+            if (ngayKyDpk.Text == "")
+            {
+                ngayHetHanDpk.Text = "";
+                return;
+            }
+
+            if (thoiGianTbx.Text.Length > 2)
+            {
+                bool? Result = new MessageBoxCustom("Số năm quá lớn!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                thoiGianTbx.Text = "";
+                return;
+            }
+
+            ngayHetHanDpk.SelectedDate = ngayKyDpk.SelectedDate.Value.Date.AddYears(int.Parse(thoiGianTbx.Text));
+        }
+
+        private void ngaySinhDpk_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ngaySinhDpk.SelectedDate > DateTime.Now.Date.AddYears(-18))
+            {
+                bool? Result = new MessageBoxCustom("Chưa đủ tuổi vào làm (ít nhất 18 tuổi).", MessageType.Error, MessageButtons.Ok).ShowDialog();
+                ngaySinhDpk.Text = "";
+                return;
+            }
+        }
+
+        private void loaiHopDongCbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (loaiHopDongCbx.SelectedValue.ToString() == "Ngắn hạn")
+            {
+                thoiGianTbx.Text = "1";
+            }
+            else
+            {
+                thoiGianTbx.Text = "";
+            }
         }
     }
 }

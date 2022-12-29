@@ -12,6 +12,7 @@ namespace QuanLyNhanVien.MVVM.ViewModel.BangLuongSubViewModel
     {
         public RelayCommand BangLuongCommand { get; set; }
         public RelayCommand ThayDoiBangluongCommand { get; set; }
+        public RelayCommand BangTinhLuongCommand { get; set; }
 
         //public RelayCommand SettingRoomStatusesViewCommand { get; set; }
         //public RelayCommand SettingRoomTypesViewCommand { get; set; }
@@ -19,6 +20,7 @@ namespace QuanLyNhanVien.MVVM.ViewModel.BangLuongSubViewModel
 
         public BangLuongViewModel BangLuongVM { get; set; }
         public ThayDoiBangLuongViewModel ThayDoiBangLuongVM { get; set; }
+        public BangTinhLuongViewModel BangTinhLuongVM { get; set; }
 
         //public SettingRoomStatusesViewModel SettingRoomStatusesVM { get; set; }
         //public SettingRoomTypesViewModel SettingRoomTypesVM { get; set; }
@@ -40,6 +42,7 @@ namespace QuanLyNhanVien.MVVM.ViewModel.BangLuongSubViewModel
         {
             BangLuongVM = new BangLuongViewModel();
             ThayDoiBangLuongVM = new ThayDoiBangLuongViewModel();
+            BangTinhLuongVM = new BangTinhLuongViewModel();
 
             CurrentView = BangLuongVM;
 
@@ -51,6 +54,11 @@ namespace QuanLyNhanVien.MVVM.ViewModel.BangLuongSubViewModel
             ThayDoiBangluongCommand = new RelayCommand(o =>
             {
                 CurrentView = ThayDoiBangLuongVM;
+            });
+
+            BangTinhLuongCommand = new RelayCommand(o =>
+            {
+                CurrentView = BangTinhLuongVM;
             });
 
 

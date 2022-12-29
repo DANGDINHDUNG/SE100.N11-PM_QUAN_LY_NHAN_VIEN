@@ -40,7 +40,7 @@ namespace DAL
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("UPDATE KYLUAT " +
-                "SET TIEN='{0}, LYDO=N'{1}'" + "WHERE MAKL = '{4}'",
+                "SET TIEN='{0}', LYDO=N'{1}'" + "WHERE MAKL = '{2}'",
             kyLuat.Tien, kyLuat.Lydo, kyLuat.Makl);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)
@@ -59,6 +59,22 @@ namespace DAL
                 return true;
             else return false;
             connection.Close();
+        }
+
+        public List<string> TongHopMaKyLuat()
+        {
+            List<string> listMaKyLuat = new List<string>();
+            CheckConnection();
+            string sql = string.Format("SELECT MAKL FROM KYLUAT");
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                listMaKyLuat.Add(sdr[0].ToString());
+            }
+            connection.Close();
+            return listMaKyLuat;
         }
     }
 }

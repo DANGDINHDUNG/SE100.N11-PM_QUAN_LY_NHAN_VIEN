@@ -40,7 +40,7 @@ namespace DAL
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("UPDATE LOAINHANVIEN " +
-                "SET TENLOAINV=N'{0}, MUCLUONGCOBAN='{1}'" + "WHERE MALOAINV = '{2}'",
+                "SET TENLOAINV=N'{0}', MUCLUONGCOBAN='{1}'" + "WHERE MALOAINV = '{2}'",
             loaiNhanVien.Tenloainv, loaiNhanVien.Mucluongcoban, loaiNhanVien.Maloainv);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)

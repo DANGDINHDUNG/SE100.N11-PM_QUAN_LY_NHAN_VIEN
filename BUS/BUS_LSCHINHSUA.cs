@@ -32,5 +32,20 @@ namespace BUS
         {
             return lsChinhSua.TimLanChinhSuaGanNhat(maNV);
         }
+
+        public DataTable getLSChinhSuaCuaTungNhanVien(string maNV)
+        {
+            return lsChinhSua.getLSChinhSuaCuaTungNhanVien(maNV);
+        }
+
+        public bool KiemTraTonTaiNhanVien(string maNV)
+        {
+            return lsChinhSua.KiemTraTonTaiNhanVien(maNV);
+        }
+
+        public bool SuaGhiChu(string ghiChu, string maNV)
+        {
+            return lsChinhSua.SuaGhiChu(ghiChu, maNV);
+        }
     }
 }

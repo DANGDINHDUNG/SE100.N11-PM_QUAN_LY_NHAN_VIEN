@@ -2,6 +2,8 @@
 using DAL;
 using DTO;
 using System.Data;
+using System.Collections.Generic;
+
 namespace BUS
 {
     public class BUS_HOSOTHUVIEC
@@ -28,5 +30,14 @@ namespace BUS
             return hosothuviec.XoaHoSoThuViec(manvtv);
         }
 
+        public int SoLuongNhanVienThuViec(int thang, int nam)
+        {
+            return hosothuviec.SoLuongNhanVienThuViec(thang, nam);
+        }
+
+        public List<string> TongHopMaNhanVien()
+        {
+            return hosothuviec.TongHopMaNhanVien();
+        }
     }
 }

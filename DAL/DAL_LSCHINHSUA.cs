@@ -18,6 +18,7 @@ namespace DAL
             da.Fill(dtLSCHINHSUA);
             return dtLSCHINHSUA;
         }
+
         public bool ThemLSChinhSua(DTO_LSCHINHSUA ls)
         {
             if (connection.State != ConnectionState.Open)
@@ -135,6 +136,45 @@ namespace DAL
             }
             connection.Close();
             return lanCS;
+        }
+
+        public DataTable getLSChinhSuaCuaTungNhanVien(string maNV)
+        {
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MACS, MANV, LANCS, MAPHONG, MALUONG, HOTEN, FORMAT(NGAYSINH, 'dd/MM/yyyy') 'NGAYSINH', GIOITINH, DANTOC, CMND_CCCD, NOICAP, CHUCVU, MALOAINV, LOAIHD, THOIGIAN, FORMAT(NGAYKY, 'dd/MM/yyyy') 'NGAYKY',  FORMAT(NGAYHETHAN, 'dd/MM/yyyy') 'NGAYHETHAN', SDT, HOCVAN, GHICHU, NGAYCHINHSUA FROM LSCHINHSUA WHERE MANV = '" + maNV + "'", connection);
+            DataTable dtLSCHINHSUA = new DataTable();
+            da.Fill(dtLSCHINHSUA);
+            return dtLSCHINHSUA;
+        }
+
+        public bool KiemTraTonTaiNhanVien(string maNV)
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("SELECT * FROM LSCHINHSUA WHERE MANV='{0}'", maNV);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read() == true)
+            {
+                if (!reader.IsClosed)
+                    reader.Close();
+                return true;
+            }
+            if (!reader.IsClosed)
+                reader.Close();
+            return false;
+        }
+
+        public bool SuaGhiChu(string ghiChu, string maNV)
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("UPDATE LSCHINHSUA " +
+                "SET GHICHU=N'{0}' WHERE MANV = '{1}'", ghiChu, maNV);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            if (cmd.ExecuteNonQuery() > 0)
+                return true;
+            else return false;
+            connection.Close();
         }
     }
 }

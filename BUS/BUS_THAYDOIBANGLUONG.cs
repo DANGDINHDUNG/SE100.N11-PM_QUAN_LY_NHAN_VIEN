@@ -12,6 +12,10 @@ namespace BUS
         {
             return tdbangluong.getThayDoiBangLuong();
         }
+        public DataTable getThayDoiBangLuongCaNhan(string manv)
+        {
+            return tdbangluong.getThayDoiBangLuongCaNhan(manv);
+        }
 
         public bool ThemThayDoiBangLuong(DTO_THAYDOIBANGLUONG bp)
         {
@@ -28,9 +32,14 @@ namespace BUS
             return tdbangluong.XoaThayDoiBangLuong(manv,maluong,maluongmoi);
         }
 
-        public bool KiemTraTonTaiThayDoiBangLuong(DTO_THAYDOIBANGLUONG tdbl)
+        public bool KiemTraTonTaiThayDoiBangLuong(string maNV, string maLuong, string maLuongMoi)
         {
-            return tdbangluong.KiemTraTonTaiThayDoiBangLuong(tdbl);
+            return tdbangluong.KiemTraTonTaiThayDoiBangLuong(maNV, maLuong, maLuongMoi);
+        }
+
+        public string TimMaLuongNVThangNay(string maNV, string thang, string nam)
+        {
+            return tdbangluong.TimMaLuongNVThangNay(maNV, thang, nam);
         }
     }
 }

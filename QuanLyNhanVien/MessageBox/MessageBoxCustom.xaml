@@ -1,4 +1,4 @@
-﻿<Window x:Class="QuanLyNhanVien.MessageBox.MessageBoxCustom"
+﻿<Window x:Name="messageBox" x:Class="QuanLyNhanVien.MessageBox.MessageBoxCustom"
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -19,7 +19,7 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         TextElement.FontSize="10"
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
-        FontFamily="{DynamicResource MaterialDesignFont}">
+        FontFamily="{DynamicResource MaterialDesignFont}" KeyDown="messageBox_KeyDown">
     <Border CornerRadius="20">
         <Grid>
             <Grid.ColumnDefinitions>

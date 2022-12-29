@@ -93,6 +93,7 @@
       <DependentUpon>MessageBoxCustom.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\ViewModel\BangLuongSubViewModel\BangLuongViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\BangLuongSubViewModel\BangTinhLuongViewModel.cs" />
     <Compile Include="MVVM\ViewModel\BangLuongSubViewModel\ThayDoiBangLuongViewModel.cs" />
     <Compile Include="MVVM\ViewModel\BaoCaoThongKeSubViewModel\BaoCaoNhanSuViewModel.cs" />
     <Compile Include="MVVM\ViewModel\BaoCaoThongKeSubViewModel\MainQLBaoCaoThongKeViewModel.cs" />
@@ -101,11 +102,15 @@
     <Compile Include="MVVM\ViewModel\NhanVien_QLThongTinCaNhanViewModel.cs" />
     <Compile Include="MVVM\ViewModel\NhanVien_ThongTinCaNhanSubViewModel\BangChamCongCaNhanViewModel.cs" />
     <Compile Include="MVVM\ViewModel\NhanVien_ThongTinCaNhanSubViewModel\BangLuongCaNhanViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\NhanVien_ThongTinCaNhanSubViewModel\ChamCongViewModel.cs" />
     <Compile Include="MVVM\ViewModel\NhanVien_ThongTinCaNhanSubViewModel\MainNhanVien_QLThongTinCaNhanViewModel.cs" />
     <Compile Include="MVVM\ViewModel\NhanVien_ThongTinCaNhanSubViewModel\ThongTinCaNhanViewModel.cs" />
     <Compile Include="MVVM\ViewModel\QLBaoCaoThongKeViewModel.cs" />
     <Compile Include="MVVM\View\BangLuongSubView\BangLuongView.xaml.cs">
       <DependentUpon>BangLuongView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\BangLuongSubView\BangTinhLuongView.xaml.cs">
+      <DependentUpon>BangTinhLuongView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\BangLuongSubView\ThayDoiBangLuongView.xaml.cs">
       <DependentUpon>ThayDoiBangLuongView.xaml</DependentUpon>
@@ -128,6 +133,9 @@
     <Compile Include="MVVM\View\NhanVien_ThongTinCaNhanSubView\BangLuongCaNhanView.xaml.cs">
       <DependentUpon>BangLuongCaNhanView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MVVM\View\NhanVien_ThongTinCaNhanSubView\ChamCongView.xaml.cs">
+      <DependentUpon>ChamCongView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVM\View\NhanVien_ThongTinCaNhanSubView\ThongTinCaNhanView.xaml.cs">
       <DependentUpon>ThongTinCaNhanView.xaml</DependentUpon>
     </Compile>
@@ -137,6 +145,7 @@
     <Compile Include="QuenMK.xaml.cs">
       <DependentUpon>QuenMK.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Theme\DatePickerCalendar.cs" />
     <Compile Include="WindowView\ChamCong.xaml.cs">
       <DependentUpon>ChamCong.xaml</DependentUpon>
     </Compile>
@@ -146,11 +155,20 @@
     <Compile Include="WindowView\ChiTietChinhSua.xaml.cs">
       <DependentUpon>ChiTietChinhSua.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowView\ChiTietHoSoThuViec.xaml.cs">
+      <DependentUpon>ChiTietHoSoThuViec.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowView\ChiTietNhanVienForm.xaml.cs">
       <DependentUpon>ChiTietNhanVienForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowView\DanhSachKhenThuong.xaml.cs">
+      <DependentUpon>DanhSachKhenThuong.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowView\DoiMatKhau.xaml.cs">
       <DependentUpon>DoiMatKhau.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowView\DSChonNhanVien.xaml.cs">
+      <DependentUpon>DSChonNhanVien.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowView\HoSoThuViec.xaml.cs">
       <DependentUpon>HoSoThuViec.xaml</DependentUpon>
@@ -185,6 +203,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MVVM\View\BangLuongSubView\BangLuongView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\BangLuongSubView\BangTinhLuongView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -237,6 +259,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MVVM\View\NhanVien_ThongTinCaNhanSubView\BangLuongCaNhanView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\NhanVien_ThongTinCaNhanSubView\ChamCongView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -420,11 +446,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="WindowView\ChiTietHoSoThuViec.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowView\ChiTietNhanVienForm.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="WindowView\DanhSachKhenThuong.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="WindowView\DoiMatKhau.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowView\DSChonNhanVien.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -64,13 +64,13 @@ namespace DAL
             connection.Close();
         }
 
-        public bool KiemTraTonTaiThayDoiBangLuong(DTO_THAYDOIBANGLUONG tdbl)
+        public bool KiemTraTonTaiThayDoiBangLuong(string maNV, string maLuong, string maLuongMoi)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("SELECT * FROM THAYDOIBANGLUONG " +
                 "WHERE MANV = '{0}' AND MALUONG='{1}' AND MALUONGMOI='{2}' ",
-            tdbl.Manv, tdbl.Maluong, tdbl.Maluongmoi);
+            maNV, maLuong, maLuongMoi);
             
             SqlCommand cmd = new SqlCommand(sql, connection);
             SqlDataReader reader = cmd.ExecuteReader();
@@ -84,6 +84,38 @@ namespace DAL
             if (!reader.IsClosed)
                 reader.Close();
             return false;
+        }
+
+        public DataTable getThayDoiBangLuongCaNhan(string manv)
+        { 
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM THAYDOIBANGLUONG WHERE MANV = N'" + manv + "'", connection);
+            DataTable dtBANGLUONGCANHAN = new DataTable();
+            da.Fill(dtBANGLUONGCANHAN);
+            return dtBANGLUONGCANHAN;
+        }
+
+        public string TimMaLuongNVThangNay(string maNV, string thang, string nam)
+        {
+            string maLuong = string.Empty;
+            string ngayDauCuaThang, ngayDauThangsau;
+            ngayDauCuaThang = "01/" + thang + "/" + nam;
+            if (thang == "12")
+            {
+                ngayDauThangsau = "01/01/" + (int.Parse(nam + 1)).ToString();
+            }
+            else ngayDauThangsau = "01/" + (int.Parse(thang + 1)).ToString() + "/" + (int.Parse(nam + 1)).ToString();
+
+            CheckConnection();
+            string sql = string.Format("SELECT TOP 1 NGAYSUA, MALUONG FROM THAYDOIBANGLUONG WHERE MANV = '{0}' AND NGAYSUA < '{1}' AND NGAYSUA >= '{3}' ORDER BY NGAYSUA DESC", maNV, ngayDauCuaThang, ngayDauThangsau);
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                maLuong = sdr["MALUONG"].ToString();
+            }
+            connection.Close();
+            return maLuong;
         }
     }
 }

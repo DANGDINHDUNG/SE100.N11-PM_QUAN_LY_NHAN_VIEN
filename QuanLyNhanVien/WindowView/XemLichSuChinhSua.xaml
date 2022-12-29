@@ -25,8 +25,10 @@
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center">Lịch sử chỉnh sửa</TextBlock>
 
-            <DataGrid Grid.Row="1"
-                      Margin="10,10,10,10">
+            <DataGrid x:Name="lsChinhSuaDtg" Grid.Row="1"
+                      ItemsSource="{Binding Path=DefaultView}"
+                      IsReadOnly="True"
+                      Margin="10,10,10,10" Loaded="lsChinhSuaDtg_Loaded">
                 
             </DataGrid>
 

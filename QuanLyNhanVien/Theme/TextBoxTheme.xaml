@@ -97,6 +97,7 @@
                     <Border Name="Bd"
                             CornerRadius="10"
                             Background="White"
+                            Padding="15"
                             Width="400" Height="50"
                             SnapsToDevicePixels="true">
                         <Grid>
@@ -107,7 +108,7 @@
                             <TextBlock Text="Mật khẩu"
                                            VerticalAlignment="Center"
                                            HorizontalAlignment="Left"
-                                           Margin="15,0,0,0"
+                                           TextAlignment="Justify"
                                            FontSize="15"
                                            Foreground="DarkGray"
                                            Visibility="Collapsed"

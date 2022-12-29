@@ -20,6 +20,7 @@ namespace QuanLyNhanVien.MVVM.View
     /// </summary>
     public partial class NhanVien_QLThongTinCaNhan : UserControl
     {
+        public string test;
         public NhanVien_QLThongTinCaNhan()
         {
             InitializeComponent();

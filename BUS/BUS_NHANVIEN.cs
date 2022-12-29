@@ -35,6 +35,11 @@ namespace BUS
             return nhanvien.TongHopNhanVienTheoPhong(maPhong, ten);
         }
 
+        public List<string> TongHopMaNhanVienTheoGioiTinh(string gioiTinh)
+        {
+            return nhanvien.TongHopMaNhanVienTheoGioiTinh(gioiTinh);
+        }
+
         public List<string> TongHopMaNhanVien()
         {
             return nhanvien.TongHopMaNhanVien();
@@ -58,6 +63,38 @@ namespace BUS
         public bool SuaMaLuongNhanVien(string maNV, string maLuong)
         {
             return nhanvien.SuaMaLuongNhanVien(maNV, maLuong);
-        }  
+        }
+        
+        public int SoLuongNhanVienVaoLam(int thang,int nam )
+        {
+            return nhanvien.SoLuongNhanVienVaoLam(thang, nam);
+        }
+
+        public DTO_NHANVIEN GetChiTietNhanVienTheoMa(string maNV)
+        {
+            return nhanvien.GetChiTietNhanVienTheoMa(maNV);
+        }
+        public DataTable TimKiemNhanVienTheoMa(string manv)
+        {
+            return nhanvien.TimKiemNVTheoMa(manv);
+        }
+        public DataTable TimKiemNhanVienTheoTen(string ten)
+        {
+            return nhanvien.TimKiemNVTheoTen(ten);
+        }
+        public DataTable TimKiemNhanVienTheoSDT(string sdt)
+        {
+            return nhanvien.TimKiemNVTheoSDT(sdt);
+        }
+
+        public int TimNamDauTienNVVaoLam()
+        {
+            return nhanvien.TimNamDauTienNVVaoLam();
+        }
+
+        public int TimNamGanNhatNVVaoLam()
+        {
+            return nhanvien.TimNamGanNhatNVVaoLam();
+        }
     }
 }

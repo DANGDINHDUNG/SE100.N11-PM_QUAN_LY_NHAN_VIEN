@@ -40,7 +40,14 @@ namespace QuanLyNhanVien.MessageBox
                     }
                     break;
                 case MessageType.Warning:
-                    txtTitle.Text = "Warning";
+                    {
+                        string defaultColor = "#FFD700";
+                        Color bkColor = (Color)ColorConverter.ConvertFromString(defaultColor);
+                        changeBackgroundThemeColor(bkColor);
+                        changeBackgroundThemeColor(Colors.Gold);
+                        txtTitle.Text = "Warning";
+                    }
+                    
                     break;
                 case MessageType.Error:
                     {
@@ -106,6 +113,15 @@ namespace QuanLyNhanVien.MessageBox
         {
             this.DialogResult = false;
             this.Close();
+        }
+
+        private void messageBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                this.DialogResult = true;
+                this.Close();
+            }
         }
     }
     public enum MessageType

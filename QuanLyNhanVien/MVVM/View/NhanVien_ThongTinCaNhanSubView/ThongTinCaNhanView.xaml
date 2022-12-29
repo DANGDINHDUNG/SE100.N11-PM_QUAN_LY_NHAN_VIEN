@@ -48,55 +48,73 @@
                            Text="CMND_CCCD" TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
                 <TextBlock Grid.Row="5" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
                            Text="Nơi cấp" TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
-                
-                <TextBox    IsEnabled="false" x:Name="maNVTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" IsReadOnly="True" VerticalAlignment="Center" Height="32" />
-                <ComboBox   IsEnabled="false" x:Name="phongCbx" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="1" ItemsSource="{Binding Path=DefaultView}" Height="32"/>
-                <TextBox    IsEnabled="false" x:Name="tenTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="2" />
-                <DatePicker IsEnabled="false" x:Name="ngaySinhDpk" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="3" Height="32"/>
-                <TextBox    IsEnabled="false" x:Name="cccdTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="4" />
-                <TextBox    IsEnabled="false" x:Name="noiCapTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="5" />
+
+                <TextBlock x:Name="maNVTbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="1"
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19" Loaded="maNVTbk_Loaded"/>
+                <TextBlock x:Name="phongTbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="1" Grid.Row="1" 
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
+                <TextBlock x:Name="tenTbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="1" Grid.Row="2"
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
+                <TextBlock x:Name="ngaySinhTbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="1" Grid.Row="3"
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
+                <TextBlock x:Name="cccdTbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="1" Grid.Row="4"
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
+                <TextBlock x:Name="noiCapTbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="1" Grid.Row="5"
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
 
                 <!-- Line 2 -->
                 <TextBlock Grid.Column="2" Grid.Row="0" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Ngày ký" TextAlignment="Right" VerticalAlignment="Center" Height="18"/>
+                           Text="Ngày ký" TextAlignment="Left" VerticalAlignment="Center" Height="18"/>
                 <TextBlock Grid.Column="2" Grid.Row="1" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Ngày hết hạn" TextAlignment="Right" VerticalAlignment="Center" Height="19"/>
+                           Text="Ngày hết hạn" TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
                 <TextBlock Grid.Column="2" Grid.Row="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Mã lương" TextAlignment="Right" VerticalAlignment="Center" Height="18"/>
+                           Text="Mã lương" TextAlignment="Left" VerticalAlignment="Center" Height="18"/>
                 <TextBlock Grid.Column="2" Grid.Row="3" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Chức vụ" TextAlignment="Right" VerticalAlignment="Center" Height="19"/>
+                           Text="Chức vụ" TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
                 <TextBlock Grid.Column="2" Grid.Row="4" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
                            Text="Loại nhân viên" TextAlignment="Right" VerticalAlignment="Center" Height="18"/>
                 <TextBlock  Grid.Column="2" Grid.Row="5" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Giới tính" TextAlignment="Right" VerticalAlignment="Center" Height="19"/>
+                           Text="Giới tính" TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
 
-                <DatePicker IsEnabled="false" x:Name="ngayKyDpk" FontSize="17" FontWeight="Normal" Grid.Column="3" Grid.Row="0" />
-                <DatePicker IsEnabled="false" x:Name="ngayHetHanDpk" FontSize="17" FontWeight="Normal" Grid.Column="3" Grid.Row="1" Height="32"/>
-                <ComboBox   IsEnabled="false" x:Name="maLuongCbx" FontSize="17" FontWeight="Normal" Grid.Column="3" Grid.Row="2" ItemsSource="{Binding Path=DefaultView}" Height="32"/>
-                <TextBox    IsEnabled="false" x:Name="chucVuTbx" Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="3"/>
-                <ComboBox   IsEnabled="false" x:Name="loaiNVCbx" FontSize="17" FontWeight="Normal" Grid.Column="3" Grid.Row="4" Height="32"/>
-                <ComboBox   IsEnabled="false" x:Name="gioiTinhCbx" FontSize="17" FontWeight="Normal" Grid.Column="3" Grid.Row="5" Height="32"/>
+                <TextBlock x:Name="ngayKyTbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="3"
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
+                <TextBlock x:Name="ngayHetHanTbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="3" Grid.Row="1" 
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
+                <TextBlock x:Name="maLuongTbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="3" Grid.Row="2"
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
+                <TextBlock x:Name="chucVuTbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="3" Grid.Row="3"
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
+                <TextBlock x:Name="loaiNVCbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="3" Grid.Row="4"
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
+                <TextBlock x:Name="gioiTinhTbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="3" Grid.Row="5"
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
 
                 <!-- Line 3 -->
                 <TextBlock Grid.Row="0" Grid.Column="4" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Dân tộc" TextAlignment="Right" VerticalAlignment="Center" Height="18"/>
+                           Text="Dân tộc" TextAlignment="Left" VerticalAlignment="Center" Height="18"/>
                 <TextBlock Grid.Row="1" Grid.Column="4" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Số điện thoại" TextAlignment="Right" VerticalAlignment="Center" Height="19"/>
+                           Text="Số điện thoại" TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
                 <TextBlock Grid.Row="2" Grid.Column="4" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Học vấn" TextAlignment="Right" VerticalAlignment="Center" Height="19"/>
+                           Text="Học vấn" TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
                 <TextBlock Grid.Row="3" Grid.Column="4" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Loại hợp đồng" TextAlignment="Right" VerticalAlignment="Center" Height="18"/>
+                           Text="Loại hợp đồng" TextAlignment="Left" VerticalAlignment="Center" Height="18"/>
                 <TextBlock Grid.Row="4" Grid.Column="4" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
-                           Text="Thời gian" TextAlignment="Right" VerticalAlignment="Center" Height="19"/>
+                           Text="Thời gian" TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
                 <TextBlock Grid.Column="4" Grid.Row="5" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" 
                            Text="Ghi chú" TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
 
-                <ComboBox IsEnabled="false" x:Name="danTocCbx" FontSize="17" FontWeight="Normal" Grid.Column="5" Grid.Row="0" ItemsSource="{Binding Path=DefaultView}" Height="32"/>
-                <TextBox  IsEnabled="false" x:Name="soDienThoaiTbx" Style="{StaticResource InputTextBox}" Grid.Column="5" Grid.Row="1"/>
-                <TextBox  IsEnabled="false" x:Name="hocVanTbx" Style="{StaticResource InputTextBox}" Grid.Column="5" Grid.Row="2"/>
-                <ComboBox IsEnabled="false" x:Name="loaiHopDongCbx" FontSize="17" FontWeight="Normal" Grid.Column="5" Grid.Row="3" ItemsSource="{Binding Path=DefaultView}" Height="32"/>
-                <TextBox IsEnabled="false" x:Name="thoiGianTbx" Style="{StaticResource InputTextBox}" Grid.Column="5" Grid.Row="4" Margin="0,0,50,0"/>
-                <TextBlock Grid.Column="5" Grid.Row="4" Margin="120,0,10,0" FontWeight="Normal" FontSize="14" 
+                <TextBlock x:Name="danTocTbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="5"
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
+                <TextBlock x:Name="soDienThoaiTbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="5" Grid.Row="1" 
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
+                <TextBlock x:Name="hocVanTbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="5" Grid.Row="2"
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
+                <TextBlock x:Name="loaiHopDongTbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="5" Grid.Row="3"
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
+                <TextBlock x:Name="thoiGianTbk" Margin="0,0,10,0" FontWeight="SemiBold" FontSize="14" Grid.Column="5" Grid.Row="4"
+                           TextAlignment="Left" VerticalAlignment="Center" Height="19"/>
+                
+                <TextBlock Grid.Column="5" Grid.Row="4" Margin="70,0,10,0" FontWeight="Normal" FontSize="14" 
                            Text="Năm" TextAlignment="Right" VerticalAlignment="Center" Height="19"/>
                 <TextBox IsEnabled="false" x:Name="ghiChuTbx" Style="{StaticResource InputTextBox}" Grid.Column="5" Grid.Row="9" />
 
@@ -119,11 +137,7 @@
                         Grid.ColumnSpan="2"
                         x:Name="chinhSuaBtn"
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="150" Height="40">Chỉnh sửa</Button>
-            <Button x:Name="luuBtn" Grid.Column="3"
-                        Grid.ColumnSpan="2"
-                    Style="{StaticResource WindowButtonTheme}"
-                    Width="150" Height="40" >Lưu</Button>
+                    Width="150" Height="40" Click="chinhSuaBtn_Click">Chỉnh sửa</Button>
             <Button x:Name="lichSuBtn" Grid.Column="5" Grid.ColumnSpan="2"
                     Click="lichSuBtn_Click"
                     Style="{StaticResource WindowButtonTheme}"

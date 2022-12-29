@@ -29,21 +29,24 @@
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Column="0" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" Text="Tháng" TextAlignment="Right" VerticalAlignment="Center"/>
                 <TextBlock Grid.Column="2" Margin="0,0,10,0" FontWeight="Normal" FontSize="14" Text="Năm" TextAlignment="Right" VerticalAlignment="Center"/>
-                <ComboBox FontSize="17" FontWeight="Normal" Grid.Column="1"/>
-                <ComboBox FontSize="17" FontWeight="Normal" Grid.Column="3"/>
+                <ComboBox x:Name="thangCbx" FontSize="17" FontWeight="Normal" Grid.Column="1"/>
+                <ComboBox x:Name="namCbx" FontSize="17" FontWeight="Normal" Grid.Column="3"/>
 
-                <Button Grid.Column="4" 
+                <Button x:Name="timKiemBtn" Grid.Column="4" 
                     Style="{StaticResource WindowButtonTheme}"
-                    Width="170" Height="40">Tìm kiếm</Button>
+                    Width="170" Height="40" Click="timKiemBtn_Click">Báo cáo</Button>
             </Grid>
         </GroupBox>
-        <lvc:CartesianChart Series="{Binding SeriesCollection}" LegendLocation="Left" Margin="10,10,10,0" Grid.Row="1" Grid.ColumnSpan="2">
-            <lvc:CartesianChart.AxisX>
-                <lvc:Axis Title="Loại phòng" Labels="{Binding Lables}"></lvc:Axis>
-            </lvc:CartesianChart.AxisX>
-            <lvc:CartesianChart.AxisY>
-                <lvc:Axis Title="Doanh thu" LabelFormatter="{Binding Formatter}"></lvc:Axis>
-            </lvc:CartesianChart.AxisY>
-        </lvc:CartesianChart>
+        <Grid Grid.Row="1" Background="WhiteSmoke">
+            <lvc:CartesianChart Series="{Binding SeriesCollection}" LegendLocation="Left" Margin="10,10,10,0" Grid.Row="1" Grid.ColumnSpan="2">
+                <lvc:CartesianChart.AxisX>
+                    <lvc:Axis Title="Loại nhân viên" Labels="{Binding Lables}"></lvc:Axis>
+                </lvc:CartesianChart.AxisX>
+                <lvc:CartesianChart.AxisY>
+                    <lvc:Axis Title="Số lượng" LabelFormatter="{Binding Formatter}"></lvc:Axis>
+                </lvc:CartesianChart.AxisY>
+            </lvc:CartesianChart>
+
+        </Grid>
     </Grid>
 </UserControl>
