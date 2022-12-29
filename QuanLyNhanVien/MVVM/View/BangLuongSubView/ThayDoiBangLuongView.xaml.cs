@@ -109,47 +109,45 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
 
         private void thayDoiBtn_Click(object sender, RoutedEventArgs e)
         {
-            bool? Result;
-            if (maNVCbx.Text == String.Empty || maLuongCbx.Text == String.Empty || maLuongMoiCbx.Text == String.Empty || ngaySuaDpk.Text == String.Empty)
+            try
             {
-                Result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-                return;
+                bool? Result;
+                if (maNVCbx.Text == String.Empty || maLuongCbx.Text == String.Empty || maLuongMoiCbx.Text == String.Empty || ngaySuaDpk.Text == String.Empty)
+                {
+                    Result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                    return;
+                }
+
+                if (maLuongCbx.Text == maLuongMoiCbx.Text)
+                {
+                    Result = new MessageBoxCustom("Mã lương mới khác với mã cũ.", MessageType.Error, MessageButtons.Ok).ShowDialog();
+                    return;
+                }
+
+                dtoThayDoiBangLuong.Manv = int.Parse(maNVCbx.Text);
+                dtoThayDoiBangLuong.Maluong = maLuongCbx.Text;
+                dtoThayDoiBangLuong.Maluongmoi = maLuongMoiCbx.Text;
+                dtoThayDoiBangLuong.Ngaysua = DateTime.Today;
+                dtoThayDoiBangLuong.Lydo = lyDoTbx.Text;
+
+                if (busThayDoiBangLuong.KiemTraTonTaiThayDoiBangLuong(dtoThayDoiBangLuong.Manv.ToString(), dtoThayDoiBangLuong.Maluong, dtoThayDoiBangLuong.Maluongmoi))
+                {
+                    busThayDoiBangLuong.SuaThayDoiBangLuong(dtoThayDoiBangLuong);
+                }
+                else
+                {
+                    busThayDoiBangLuong.ThemThayDoiBangLuong(dtoThayDoiBangLuong);
+                }
+
+                busNhanVien.SuaMaLuongNhanVien(maNVCbx.Text, maLuongMoiCbx.Text);
+                DataGridLoad();
+                Result = new MessageBoxCustom("Sửa bảng lương thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                ClearBoxes();
             }
-
-            dtoThayDoiBangLuong.Manv = int.Parse(maNVCbx.Text);
-            dtoThayDoiBangLuong.Maluong = maLuongCbx.Text;
-            dtoThayDoiBangLuong.Maluongmoi = maLuongMoiCbx.Text;
-            dtoThayDoiBangLuong.Ngaysua = DateTime.Today;
-            dtoThayDoiBangLuong.Lydo = lyDoTbx.Text;
-
-            if (busThayDoiBangLuong.KiemTraTonTaiThayDoiBangLuong(dtoThayDoiBangLuong.Manv.ToString(), dtoThayDoiBangLuong.Maluong, dtoThayDoiBangLuong.Maluongmoi))
+            catch
             {
-                busThayDoiBangLuong.SuaThayDoiBangLuong(dtoThayDoiBangLuong);
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
-            else
-            {
-                busThayDoiBangLuong.ThemThayDoiBangLuong(dtoThayDoiBangLuong);
-            }
-
-            busNhanVien.SuaMaLuongNhanVien(maNVCbx.Text, maLuongMoiCbx.Text);
-            DataGridLoad();
-            Result = new MessageBoxCustom("Sửa bảng lương thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
-            ClearBoxes();
-        }
-
-        private void xoaBtn_Click(object sender, RoutedEventArgs e)
-        {
-            bool? Result;
-            if (thayDoiBangLuongDtg.SelectedItems.Count == 0)
-            {
-                Result = new MessageBoxCustom("Vui lòng chọn thay đổi cần xóa!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-                return;
-            }
-
-            busThayDoiBangLuong.XoaThayDoiBangLuong(int.Parse(maNVCbx.Text), maLuongCbx.Text, maLuongMoiCbx.Text);
-            DataGridLoad();
-            Result = new MessageBoxCustom("Xóa thay đổi thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
-            ClearBoxes();
         }
     }
 }

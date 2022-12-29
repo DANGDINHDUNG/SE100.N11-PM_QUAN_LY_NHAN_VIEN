@@ -86,5 +86,15 @@ namespace BUS
         {
             return nhanvien.TimKiemNVTheoSDT(sdt);
         }
+
+        public int TimNamDauTienNVVaoLam()
+        {
+            return nhanvien.TimNamDauTienNVVaoLam();
+        }
+
+        public int TimNamGanNhatNVVaoLam()
+        {
+            return nhanvien.TimNamGanNhatNVVaoLam();
+        }
     }
 }

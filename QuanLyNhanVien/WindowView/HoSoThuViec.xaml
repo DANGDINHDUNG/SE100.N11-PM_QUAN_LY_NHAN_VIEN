@@ -59,7 +59,7 @@
                 <TextBox x:Name="maNVTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="0" IsEnabled="False" Loaded="maNVTbx_Loaded"/>
                 <TextBox x:Name="tenTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="1"/>
                 <DatePicker x:Name="ngaySinhDpk" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="2"
-                            c:DatePickerDateFormat.DateFormat="dd/MM/yyyy" Text="dd/MM/yyyy"/>
+                            c:DatePickerDateFormat.DateFormat="dd/MM/yyyy" Text="dd/MM/yyyy" SelectedDateChanged="ngaySinhDpk_SelectedDateChanged"/>
                 <ComboBox x:Name="gioiTinhCbx" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="3" Height="31"/>
                 <TextBox x:Name="cccdTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="4" PreviewTextInput="numberTextBoxes_PreviewTextInput"/>
                 <TextBox x:Name="noiCapTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="5"/>
@@ -78,7 +78,7 @@
                            Text="Ghi chú" TextAlignment="Right" VerticalAlignment="Center"/>
                
                 <TextBox x:Name="viTriTbx" Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="0"/>
-                <DatePicker x:Name="ngayBatDauDpk" FontSize="17" FontWeight="Normal" Grid.Column="3" Grid.Row="1"/>
+                <DatePicker x:Name="ngayBatDauDpk" FontSize="17" FontWeight="Normal" Grid.Column="3" Grid.Row="1" SelectedDateChanged="ngayBatDauDpk_SelectedDateChanged"/>
                 <TextBox x:Name="soThangTbx" Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="2" PreviewTextInput="numberTextBoxes_PreviewTextInput"/>
                 <TextBox x:Name="sdtTbx" Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="3" PreviewTextInput="numberTextBoxes_PreviewTextInput"/>
                 <TextBox x:Name="hocVanTbx" Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="4"/>

@@ -59,35 +59,43 @@ namespace QuanLyNhanVien.WindowView
 
         private void themSuaBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (!CheckData())
-                return;
+            try
+            {
+                if (!CheckData())
+                    return;
 
-            DTO_HOSOTHUVIEC dtoHoSoThuViec = new DTO_HOSOTHUVIEC();
+                DTO_HOSOTHUVIEC dtoHoSoThuViec = new DTO_HOSOTHUVIEC();
+
+                dtoHoSoThuViec.Hoten = tenTbx.Text;
+                dtoHoSoThuViec.Ngaysinh = DateTime.Parse(ngaySinhDpk.Text);
+                dtoHoSoThuViec.Gioitinh = gioiTinhCbx.Text;
+                dtoHoSoThuViec.Cmnd_cccd = cccdTbx.Text;
+                dtoHoSoThuViec.Noicap = noiCapTbx.Text;
+                dtoHoSoThuViec.Vitrithuviec = viTriTbx.Text;
+                dtoHoSoThuViec.Ngaytv = DateTime.Parse(ngayBatDauDpk.Text);
+                dtoHoSoThuViec.Sothangtv = int.Parse(soThangTbx.Text);
+                dtoHoSoThuViec.Sdt = sdtTbx.Text;
+                dtoHoSoThuViec.Hocvan = hocVanTbx.Text;
+                dtoHoSoThuViec.Ghichu = ghiChuTbx.Text;
+
+                if (maNVTbx.Text == string.Empty)
+                {
+                    busHoSoThuViec.ThemHoSoThuViec(dtoHoSoThuViec);
+                    bool? Result = new MessageBoxCustom("Thêm nhân viên thử việc thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                }
+                else
+                {
+                    dtoHoSoThuViec.Manvtv = int.Parse(maNVTbx.Text);
+                    busHoSoThuViec.SuaHoSoThuViec(dtoHoSoThuViec);
+                    bool? Result = new MessageBoxCustom("Sửa nhân viên thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                }
+                this.Close();
+            }
+            catch
+            {
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
+            }
             
-            dtoHoSoThuViec.Hoten = tenTbx.Text;          
-            dtoHoSoThuViec.Ngaysinh = DateTime.Parse(ngaySinhDpk.Text);
-            dtoHoSoThuViec.Gioitinh = gioiTinhCbx.Text;
-            dtoHoSoThuViec.Cmnd_cccd = cccdTbx.Text;
-            dtoHoSoThuViec.Noicap = noiCapTbx.Text;
-            dtoHoSoThuViec.Vitrithuviec = viTriTbx.Text;
-            dtoHoSoThuViec.Ngaytv = DateTime.Parse(ngayBatDauDpk.Text);
-            dtoHoSoThuViec.Sothangtv = int.Parse(soThangTbx.Text);
-            dtoHoSoThuViec.Sdt = sdtTbx.Text;
-            dtoHoSoThuViec.Hocvan = hocVanTbx.Text;
-            dtoHoSoThuViec.Ghichu = ghiChuTbx.Text;
-
-            if (maNVTbx.Text == string.Empty)
-            {
-                busHoSoThuViec.ThemHoSoThuViec(dtoHoSoThuViec);
-                bool? Result = new MessageBoxCustom("Thêm nhân viên thử việc thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
-            }
-            else
-            {
-                dtoHoSoThuViec.Manvtv = int.Parse(maNVTbx.Text);
-                busHoSoThuViec.SuaHoSoThuViec(dtoHoSoThuViec);
-                bool? Result = new MessageBoxCustom("Sửa nhân viên thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
-            }
-            this.Close();
         }
 
         public bool CheckData()
@@ -139,6 +147,26 @@ namespace QuanLyNhanVien.WindowView
         private void numberTextBoxes_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
+        }
+
+        private void ngaySinhDpk_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ngaySinhDpk.SelectedDate > DateTime.Now.Date.AddYears(-18))
+            {
+                bool? Result = new MessageBoxCustom("Chưa đủ tuổi vào làm (ít nhất 18 tuổi).", MessageType.Error, MessageButtons.Ok).ShowDialog();
+                ngaySinhDpk.Text = "";
+                return;
+            }
+        }
+
+        private void ngayBatDauDpk_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ngayBatDauDpk.SelectedDate < DateTime.Now)
+            {
+                bool? Result = new MessageBoxCustom("Không thể chọn ngày trong quá khứ.", MessageType.Error, MessageButtons.Ok).ShowDialog();
+                ngayBatDauDpk.Text = "";
+                return;
+            }
         }
     }
 }

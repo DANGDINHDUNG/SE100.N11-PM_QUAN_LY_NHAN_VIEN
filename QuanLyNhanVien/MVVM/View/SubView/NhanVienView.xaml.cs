@@ -31,6 +31,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
     {
         public BUS_NHANVIEN busNhanVien = new BUS_NHANVIEN();
         public DTO_NHANVIEN dtoNhanVien = new DTO_NHANVIEN();
+        public BUS_TAIKHOAN busTaiKhoan = new BUS_TAIKHOAN();
         public BUS_PHONGBAN busPhongBan = new BUS_PHONGBAN();
         public BUS_LSCHINHSUA busLSChinhSua = new BUS_LSCHINHSUA();
         public BUS_BANGCHAMCONG busBangChamCong = new BUS_BANGCHAMCONG();
@@ -117,6 +118,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
             lyDoNghiViec.ShowDialog();
 
             busNhanVien.XoaNhanVien(dtoNhanVien.Manv);
+            busTaiKhoan.XoaTaiKhoan(dtoNhanVien.Manv);
 
             if (busLSChinhSua.KiemTraTonTaiNhanVien(dtoNhanVien.Manv.ToString()))
             {

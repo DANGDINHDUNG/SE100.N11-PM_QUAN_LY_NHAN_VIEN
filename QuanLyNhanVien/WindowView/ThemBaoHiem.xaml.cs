@@ -49,30 +49,38 @@ namespace QuanLyNhanVien.WindowView
 
         private void btnThemSua_Click(object sender, RoutedEventArgs e)
         {
-            if (ngayCapTbx.Text == String.Empty || noiCapTbx.Text == String.Empty)
+            try 
             {
-                bool? Result = new MessageBoxCustom("Vui lòng thêm thông tin đầy đủ!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-                return;
-            }
+                if (ngayCapTbx.Text == String.Empty || noiCapTbx.Text == String.Empty)
+                {
+                    bool? Result = new MessageBoxCustom("Vui lòng thêm thông tin đầy đủ!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                    return;
+                }
 
-            DTO_SOBH dtoSoBH = new DTO_SOBH();
-            dtoSoBH.Manv = int.Parse(maNVCbx.SelectedValue.ToString());
-            dtoSoBH.Ngaycapso = DateTime.Parse(ngayCapTbx.Text);
-            dtoSoBH.Noicapso = noiCapTbx.Text;
-            dtoSoBH.Ghichu = ghiChuTbx.Text;
+                DTO_SOBH dtoSoBH = new DTO_SOBH();
+                dtoSoBH.Manv = int.Parse(maNVCbx.SelectedValue.ToString());
+                dtoSoBH.Ngaycapso = DateTime.Parse(ngayCapTbx.Text);
+                dtoSoBH.Noicapso = noiCapTbx.Text;
+                dtoSoBH.Ghichu = ghiChuTbx.Text;
 
-            if (maBHTbx.Text == string.Empty)
-            {
-                busBaoHiem.ThemSoBH(dtoSoBH);
-                bool? Result = new MessageBoxCustom("Thêm bảo hiểm thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                if (maBHTbx.Text == string.Empty)
+                {
+                    busBaoHiem.ThemSoBH(dtoSoBH);
+                    bool? Result = new MessageBoxCustom("Thêm bảo hiểm thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                }
+                else
+                {
+                    dtoSoBH.Mabh = int.Parse(maBHTbx.Text);
+                    busBaoHiem.SuaSoBH(dtoSoBH);
+                    bool? Result = new MessageBoxCustom("Sửa bảo hiểm thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                }
+                this.Close();
             }
-            else
+            catch
             {
-                dtoSoBH.Mabh = int.Parse(maBHTbx.Text);
-                busBaoHiem.SuaSoBH(dtoSoBH);
-                bool? Result = new MessageBoxCustom("Sửa bảo hiểm thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
-            this.Close();
+            
         }
 
         private void maBHTbx_Loaded(object sender, RoutedEventArgs e)

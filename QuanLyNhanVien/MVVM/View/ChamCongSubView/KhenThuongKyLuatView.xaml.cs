@@ -45,37 +45,45 @@ namespace QuanLyNhanVien.MVVM.View.ChamCongSubView
 
         private void themKTbtn_Click(object sender, RoutedEventArgs e)
         {
-            if (tienKTTxb.Text == String.Empty || lydoKLTxb.Text == String.Empty)
+            try
             {
-                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-                return;
-            }
-            bool flat = true;
-            List<string> list = busKhenThuong.TongHopMaKhenThuong();
-            foreach (string s in list)
-            {
-                if (s == maKTTxb.Text)
+                if (tienKTTbx.Text == String.Empty || lyDoKTTbx.Text == String.Empty)
                 {
-                    flat = false;
-                    break;
+                    bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                    return;
+                }
+                bool flat = true;
+                List<string> list = busKhenThuong.TongHopMaKhenThuong();
+                foreach (string s in list)
+                {
+                    if (s == maKTTbx.Text)
+                    {
+                        flat = false;
+                        break;
+                    }
+                }
+                if (flat)
+                {
+                    string a = list[list.Count - 1];
+                    DTO_KHENTHUONG dtoKhenThuong1 = new DTO_KHENTHUONG();
+                    dtoKhenThuong1.Makt = int.Parse(a) + 1;
+                    dtoKhenThuong1.Tien = int.Parse(tienKTTbx.Text);
+                    dtoKhenThuong1.Lydo = lyDoKTTbx.Text;
+                    busKhenThuong.ThemKhenThuong(dtoKhenThuong1);
+                    bool? result = new MessageBoxCustom("Thêm khen thưởng thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                    DataGridLoad();
+                    ClearBoxesKT();
+                }
+                else
+                {
+                    bool? result = new MessageBoxCustom("Mã khen thưởng đã tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 }
             }
-            if (flat)
+            catch
             {
-                string a = list[list.Count - 1];
-                DTO_KHENTHUONG dtoKhenThuong1 = new DTO_KHENTHUONG();
-                dtoKhenThuong1.Makt = int.Parse(a) + 1;
-                dtoKhenThuong1.Tien = int.Parse(tienKTTxb.Text);
-                dtoKhenThuong1.Lydo = lydoKLTxb.Text;
-                busKhenThuong.ThemKhenThuong(dtoKhenThuong1);
-                bool? result = new MessageBoxCustom("Thêm khen thưởng thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
-                DataGridLoad();
-                ClearBoxesKT();
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
-            else
-            {
-                bool? result = new MessageBoxCustom("Mã khen thưởng đã tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-            }
+
         }
 
         private void xoaKTbtn_Click(object sender, RoutedEventArgs e)
@@ -99,36 +107,44 @@ namespace QuanLyNhanVien.MVVM.View.ChamCongSubView
 
         private void suaKTbtn_Click(object sender, RoutedEventArgs e)
         {
-            if (maKTTxb.Text == String.Empty || tienKTTxb.Text == String.Empty || lydoKLTxb.Text == String.Empty)
+            try
             {
-                bool? show = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-                return;
-            }
-            bool flat2 = true;
-            List<string> list = busKhenThuong.TongHopMaKhenThuong();
-            foreach (string s in list)
-            {
-                if (s == maKTTxb.Text)
+                if (maKTTbx.Text == String.Empty || tienKTTbx.Text == String.Empty || lyDoKTTbx.Text == String.Empty)
                 {
-                    flat2 = false;
-                    break;
+                    bool? show = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                    return;
+                }
+                bool flat2 = true;
+                List<string> list = busKhenThuong.TongHopMaKhenThuong();
+                foreach (string s in list)
+                {
+                    if (s == maKTTbx.Text)
+                    {
+                        flat2 = false;
+                        break;
+                    }
+                }
+                if (!flat2)
+                {
+                    DTO_KHENTHUONG dtoKhenThuong2 = new DTO_KHENTHUONG();
+                    dtoKhenThuong2.Makt = int.Parse(maKTTbx.Text);
+                    dtoKhenThuong2.Tien = double.Parse(tienKTTbx.Text);
+                    dtoKhenThuong2.Lydo = lyDoKTTbx.Text;
+                    busKhenThuong.SuaKhenThuong(dtoKhenThuong2);
+                    bool? show = new MessageBoxCustom("Sửa khen thưởng thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                    DataGridLoad();
+                    ClearBoxesKT();
+                }
+                else
+                {
+                    bool? show = new MessageBoxCustom("Khen thưởng không tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 }
             }
-            if (!flat2)
+            catch
             {
-                DTO_KHENTHUONG dtoKhenThuong2 = new DTO_KHENTHUONG();
-                dtoKhenThuong2.Makt = int.Parse(maKTTxb.Text);
-                dtoKhenThuong2.Tien = double.Parse(tienKTTxb.Text);
-                dtoKhenThuong2.Lydo = lydoKLTxb.Text;
-                busKhenThuong.SuaKhenThuong(dtoKhenThuong2);
-                bool? show = new MessageBoxCustom("Sửa khen thưởng thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
-                DataGridLoad();
-                ClearBoxesKT();
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
-            else
-            {
-                bool? show = new MessageBoxCustom("Khen thưởng không tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-            }
+
         }
 
         private void dsKhenThuongdtg_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -143,9 +159,9 @@ namespace QuanLyNhanVien.MVVM.View.ChamCongSubView
             }
 
             dtoKhenThuong.Makt = int.Parse(row[0].ToString());
-            maKTTxb.Text = dtoKhenThuong.Makt.ToString();
-            tienKTTxb.Text = row[1].ToString();
-            lydoKLTxb.Text = row[2].ToString();
+            maKTTbx.Text = dtoKhenThuong.Makt.ToString();
+            tienKTTbx.Text = row[1].ToString();
+            lyDoKTTbx.Text = row[2].ToString();
         }
         public void DataGridLoad()
         {
@@ -154,16 +170,16 @@ namespace QuanLyNhanVien.MVVM.View.ChamCongSubView
         }
         public void ClearBoxesKT()
         {
-            maKTTxb.Text = "";
-            tienKTTxb.Text = "";
-            lydoKLTxb.Text = "";
+            maKTTbx.Text = "";
+            tienKTTbx.Text = "";
+            lyDoKTTbx.Text = "";
         }
 
         public void ClearBoxesKL()
         {
             maKLTbx.Text = "";
             tienKLTbx.Text = "";
-            lydoKLTbx.Text = "";
+            lyDoKLTbx.Text = "";
         }
         private void moiKLBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -173,37 +189,45 @@ namespace QuanLyNhanVien.MVVM.View.ChamCongSubView
 
         private void themKLBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (tienKLTbx.Text == String.Empty || lydoKLTxb.Text == String.Empty)
+            try
             {
-                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-                return;
-            }
-            bool flat = true;
-            List<string> list = busKyLuat.TongHopMaKyLuat();
-            foreach (string s in list)
-            {
-                if (s == maKLTbx.Text)
+                if (tienKLTbx.Text == String.Empty || lyDoKLTbx.Text == String.Empty)
                 {
-                    flat = false;
-                    break;
+                    bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                    return;
+                }
+                bool flat = true;
+                List<string> list = busKyLuat.TongHopMaKyLuat();
+                foreach (string s in list)
+                {
+                    if (s == maKLTbx.Text)
+                    {
+                        flat = false;
+                        break;
+                    }
+                }
+                if (flat)
+                {
+                    string a = list[list.Count - 1];
+                    DTO_KYLUAT dtoKyLuat1 = new DTO_KYLUAT();
+                    dtoKyLuat1.Makl = int.Parse(a) + 1;
+                    dtoKyLuat1.Tien = int.Parse(tienKLTbx.Text);
+                    dtoKyLuat1.Lydo = lyDoKLTbx.Text;
+                    busKyLuat.ThemKyLuat(dtoKyLuat1);
+                    bool? result = new MessageBoxCustom("Thêm kỷ luật thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                    DataGridLoad();
+                    ClearBoxesKL();
+                }
+                else
+                {
+                    bool? result = new MessageBoxCustom("Mã kỷ luật đã tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 }
             }
-            if (flat)
+            catch
             {
-                string a = list[list.Count - 1];
-                DTO_KYLUAT dtoKyLuat1 = new DTO_KYLUAT();
-                dtoKyLuat1.Makl = int.Parse(a) + 1;
-                dtoKyLuat1.Tien = int.Parse(tienKLTbx.Text);
-                dtoKyLuat1.Lydo = lydoKLTxb.Text;
-                busKyLuat.ThemKyLuat(dtoKyLuat1);
-                bool? result = new MessageBoxCustom("Thêm kỷ luật thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
-                DataGridLoad();
-                ClearBoxesKL();
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
-            else
-            {
-                bool? result = new MessageBoxCustom("Mã kỷ luật đã tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-            }
+
         }
 
         private void xoaKLBtn_Click(object sender, RoutedEventArgs e)
@@ -227,36 +251,44 @@ namespace QuanLyNhanVien.MVVM.View.ChamCongSubView
 
         private void suaKLBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (maKLTbx.Text == String.Empty || tienKLTbx.Text == String.Empty || lydoKLTbx.Text == String.Empty)
+            try
             {
-                bool? show = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-                return;
-            }
-            bool flat2 = true;
-            List<string> list = busKyLuat.TongHopMaKyLuat();
-            foreach (string s in list)
-            {
-                if (s == maKLTbx.Text)
+                if (maKLTbx.Text == String.Empty || tienKLTbx.Text == String.Empty || lyDoKLTbx.Text == String.Empty)
                 {
-                    flat2 = false;
-                    break;
+                    bool? show = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                    return;
+                }
+                bool flat2 = true;
+                List<string> list = busKyLuat.TongHopMaKyLuat();
+                foreach (string s in list)
+                {
+                    if (s == maKLTbx.Text)
+                    {
+                        flat2 = false;
+                        break;
+                    }
+                }
+                if (!flat2)
+                {
+                    DTO_KYLUAT dtoKyLuat2 = new DTO_KYLUAT();
+                    dtoKyLuat2.Makl = int.Parse(maKLTbx.Text);
+                    dtoKyLuat2.Tien = double.Parse(tienKLTbx.Text);
+                    dtoKyLuat2.Lydo = lyDoKLTbx.Text;
+                    busKyLuat.SuaKyLuat(dtoKyLuat2);
+                    bool? show = new MessageBoxCustom("Sửa kỷ luật thành công", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                    DataGridLoad();
+                    ClearBoxesKT();
+                }
+                else
+                {
+                    bool? show = new MessageBoxCustom("Kỷ luật không tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 }
             }
-            if (!flat2)
+            catch
             {
-                DTO_KYLUAT dtoKyLuat2 = new DTO_KYLUAT();
-                dtoKyLuat2.Makl = int.Parse(maKTTxb.Text);
-                dtoKyLuat2.Tien = double.Parse(tienKTTxb.Text);
-                dtoKyLuat2.Lydo = lydoKLTxb.Text;
-                busKyLuat.SuaKyLuat(dtoKyLuat2);
-                bool? show = new MessageBoxCustom("Sửa kỷ luật thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
-                DataGridLoad();
-                ClearBoxesKT();
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
-            else
-            {
-                bool? show = new MessageBoxCustom("Kỷ luật không tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-            }
+
         }
 
         private void dsKyLuatDtg_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -273,7 +305,7 @@ namespace QuanLyNhanVien.MVVM.View.ChamCongSubView
             dtoKyLuat.Makl = int.Parse(row[0].ToString());
             maKLTbx.Text = dtoKyLuat.Makl.ToString();
             tienKLTbx.Text = row[1].ToString();
-            lydoKLTbx.Text = row[2].ToString();
+            lyDoKLTbx.Text = row[2].ToString();
         }
     }
 }

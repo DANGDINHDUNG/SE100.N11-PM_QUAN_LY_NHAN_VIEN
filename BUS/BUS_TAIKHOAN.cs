@@ -23,9 +23,9 @@ namespace BUS
             return taikhoan.SuaTaiKhoan(tk);
         }
 
-        public bool XoaTaiKhoan(int matk)
+        public bool XoaTaiKhoan(int tenDangNhap)
         {
-            return taikhoan.XoaTaiKhoan(matk);
+            return taikhoan.XoaTaiKhoan(tenDangNhap);
         }
 
         public bool KiemTraTaiKhoan(DTO_TAIKHOAN tk)

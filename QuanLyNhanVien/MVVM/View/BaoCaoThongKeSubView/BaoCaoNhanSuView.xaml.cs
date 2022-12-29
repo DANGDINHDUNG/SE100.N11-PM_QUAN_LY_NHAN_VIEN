@@ -43,10 +43,23 @@ namespace QuanLyNhanVien.MVVM.View.BaoCaoThongKeSubView
             {
                 thangCbx.Items.Add(i);
             }
-            for (int i=1990;i<=2100;i++)
+
+            if (busNV.TimNamDauTienNVVaoLam() < 2000)
             {
-                namCbx.Items.Add(i);
+                for (int i = busNV.TimNamDauTienNVVaoLam(); i <= (busNV.TimNamGanNhatNVVaoLam() + 20); i++)
+                {
+                    namCbx.Items.Add(i);
+                }
             }
+            else
+            {
+                for (int i = 2000; i <= (busNV.TimNamGanNhatNVVaoLam() + 20); i++)
+                {
+                    namCbx.Items.Add(i);
+                }
+            }
+
+            
         }
         ColumnSeries nvtv = new ColumnSeries()
         {

@@ -31,16 +31,14 @@ namespace QuanLyNhanVien.MVVM.View.ChamCongSubView
     public partial class BangChamCongThuViecView : UserControl
     {
         BUS_BANGCHAMCONGTHUVIEC busBangChamCongThuViec = new BUS_BANGCHAMCONGTHUVIEC();
+        BUS_NHANVIEN busNhanVien = new BUS_NHANVIEN();
 
         public BangChamCongThuViecView()
         {
             InitializeComponent();
-            DataGridLoad();
+            CbxesLoaded();
+            bangCongThuViecDtg.DataContext = busBangChamCongThuViec.getBangChamCongThuViecTheoThang(thangCbx.SelectedValue.ToString(), namCbx.Text);
 
-            for (int i = 1; i <= 12; i++)
-            {
-                thangCbx.Items.Add(i.ToString());
-            }
         }
 
         private void numberBoxes_PreviewTextInput(object sender, TextCompositionEventArgs e)
@@ -157,9 +155,9 @@ namespace QuanLyNhanVien.MVVM.View.ChamCongSubView
                         colIndex++;
                     }
                     DataTable dt = new DataTable();
-                    if (thangCbx.Text != "" && namTbx.Text != "")
+                    if (thangCbx.Text != "" && namCbx.Text != "")
                     {
-                        dt = busBangChamCongThuViec.getBangChamCongThuViecTheoThang(thangCbx.SelectedValue.ToString(), namTbx.Text);
+                        dt = busBangChamCongThuViec.getBangChamCongThuViecTheoThang(thangCbx.SelectedValue.ToString(), namCbx.Text);
                     }
                     else
                     {
@@ -209,7 +207,7 @@ namespace QuanLyNhanVien.MVVM.View.ChamCongSubView
         public void ResetData()
         {
             thangCbx.Text = "";
-            namTbx.Text = "";
+            namCbx.Text = "";
             DataGridLoad();
         }
 
@@ -217,20 +215,45 @@ namespace QuanLyNhanVien.MVVM.View.ChamCongSubView
         {
             if (e.Key == Key.Enter)
             {
-                if (namTbx.Text == "")
+                if (namCbx.Text == "")
                 {
                     bool? result = new MessageBoxCustom("Vui lòng nhập năm!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                     return;
                 }
                 if (thangCbx.Text == "")
                 {
-                    bangCongThuViecDtg.DataContext = busBangChamCongThuViec.getBangChamCongThuViecTheoThang("", namTbx.Text);
+                    bangCongThuViecDtg.DataContext = busBangChamCongThuViec.getBangChamCongThuViecTheoThang("", namCbx.Text);
 
                     return;
 
                 }
-                bangCongThuViecDtg.DataContext = busBangChamCongThuViec.getBangChamCongThuViecTheoThang(thangCbx.SelectedValue.ToString(), namTbx.Text);
+                bangCongThuViecDtg.DataContext = busBangChamCongThuViec.getBangChamCongThuViecTheoThang(thangCbx.SelectedValue.ToString(), namCbx.Text);
             }
+        }
+
+        public void CbxesLoaded()
+        {
+            for (int i = 1; i <= 12; i++)
+            {
+                thangCbx.Items.Add(i);
+            }
+
+            if (busNhanVien.TimNamDauTienNVVaoLam() < 2000)
+            {
+                for (int i = busNhanVien.TimNamDauTienNVVaoLam(); i <= (busNhanVien.TimNamGanNhatNVVaoLam() + 20); i++)
+                {
+                    namCbx.Items.Add(i);
+                }
+            }
+            else
+            {
+                for (int i = 2000; i <= (busNhanVien.TimNamGanNhatNVVaoLam() + 20); i++)
+                {
+                    namCbx.Items.Add(i);
+                }
+            }
+            thangCbx.Text = DateTime.Now.Month.ToString();
+            namCbx.Text = DateTime.Now.Year.ToString();
         }
     }
 }

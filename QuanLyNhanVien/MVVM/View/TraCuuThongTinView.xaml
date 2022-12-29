@@ -34,7 +34,7 @@
 
                 <TextBlock Grid.Row="0" Margin="0,0,10,0" FontWeight="Normal" FontSize="17" Text="Thông Tin" TextAlignment="Right" VerticalAlignment="Center"/>
 
-                <TextBox x:Name="timkiemTbx" Style="{StaticResource SearchBoxTheme2}" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" PreviewTextInput="timkiemTbx_PreviewTextInput"/>
+                <TextBox x:Name="timkiemTbx" Style="{StaticResource SearchBoxTheme2}" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" PreviewTextInput="timkiemTbx_PreviewTextInput" KeyDown="timkiemTbx_KeyDown"/>
 
                 <RadioButton x:Name="manvRdBtn"
                              Grid.Row="1"

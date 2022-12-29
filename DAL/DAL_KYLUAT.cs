@@ -40,7 +40,7 @@ namespace DAL
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("UPDATE KYLUAT " +
-                "SET TIEN='{0}', LYDO=N'{1}'" + "WHERE MAKL = '{4}'",
+                "SET TIEN='{0}', LYDO=N'{1}'" + "WHERE MAKL = '{2}'",
             kyLuat.Tien, kyLuat.Lydo, kyLuat.Makl);
             SqlCommand cmd = new SqlCommand(sql, connection);
             if (cmd.ExecuteNonQuery() > 0)

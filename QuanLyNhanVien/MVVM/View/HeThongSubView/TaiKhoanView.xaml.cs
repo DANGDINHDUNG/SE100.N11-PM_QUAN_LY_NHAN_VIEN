@@ -129,7 +129,7 @@ namespace QuanLyNhanVien.MVVM.View.HeThongSubView
 
             if (taiKhoanDtg.SelectedItems.Count == 0)
             {
-                show = new MessageBoxCustom("Chọn tài khoản muốn xóa!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                show = new MessageBoxCustom("Chọn tài khoản muốn xóa!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
 

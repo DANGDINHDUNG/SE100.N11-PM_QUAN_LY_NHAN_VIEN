@@ -45,7 +45,7 @@
 
                     <TextBox x:Name="maTSTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="0" IsEnabled="False"/>
                     <TextBox x:Name="tenTSTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="1" IsEnabled="False"/>
-                    <TextBox x:Name="giaTriTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="2" />
+                    <TextBox x:Name="giaTriTbx" Style="{StaticResource InputTextBox}" Grid.Column="1" Grid.Row="2" PreviewTextInput="giaTriTbx_PreviewTextInput" />
 
                 </Grid>
 

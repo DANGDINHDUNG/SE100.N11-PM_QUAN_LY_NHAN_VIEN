@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -59,20 +60,33 @@ namespace QuanLyNhanVien.MVVM.View.HeThongSubView
 
         private void suaBtn_Click(object sender, RoutedEventArgs e)
         {
-            bool? show;
-            if (maTSTbx.Text=="")
+            try
             {
-                show = new MessageBoxCustom("Vui lòng chọn tham số muốn sửa!", MessageType.Error, MessageButtons.Ok).ShowDialog();
-                return;
+                bool? show;
+                if (maTSTbx.Text == "")
+                {
+                    show = new MessageBoxCustom("Vui lòng chọn tham số muốn sửa!", MessageType.Error, MessageButtons.Ok).ShowDialog();
+                    return;
+                }
+                DTO_THAMSO dTO_THAMSO = new DTO_THAMSO();
+                dTO_THAMSO.Mats = maTSTbx.Text;
+                dTO_THAMSO.Tents = tenTSTbx.Text;
+                dTO_THAMSO.Giatri = Convert.ToDouble(giaTriTbx.Text);
+                bUS_THAMSO.SuaThamSo(dTO_THAMSO);
+                show = new MessageBoxCustom("Sửa thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                DataGridLoad();
+                ClearBoxes();
             }
-            DTO_THAMSO dTO_THAMSO = new DTO_THAMSO();
-            dTO_THAMSO.Mats = maTSTbx.Text;
-            dTO_THAMSO.Tents= tenTSTbx.Text;
-            dTO_THAMSO.Giatri = Convert.ToDouble(giaTriTbx.Text);
-            bUS_THAMSO.SuaThamSo(dTO_THAMSO);
-            show = new MessageBoxCustom("Sửa thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
-            DataGridLoad();
-            ClearBoxes();
+            catch
+            {
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
+            }
+
+        }
+
+        private void giaTriTbx_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
         }
     }
 }

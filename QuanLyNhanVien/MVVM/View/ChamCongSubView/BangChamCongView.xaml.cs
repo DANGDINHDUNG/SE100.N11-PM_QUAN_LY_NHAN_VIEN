@@ -329,33 +329,47 @@ namespace QuanLyNhanVien.MVVM.View.ChamCongSubView
 
         public void CheckVaTinhLuong()
         {
-            if (soNgayCongTbx.Text == "" && soGioLamThemTbx.Text == "" && phuCapTbx.Text == "" && phuCapKhacTbx.Text == "" && luongCBTbx.Text == "" && khenThuongTbx.Text == "" && kyLuatTbx.Text == "")
+            try
             {
-                tongTienTbk.Text = "0";
+                if (soNgayCongTbx.Text == "" && soGioLamThemTbx.Text == "" && phuCapTbx.Text == "" && phuCapKhacTbx.Text == "" && luongCBTbx.Text == "" && khenThuongTbx.Text == "" && kyLuatTbx.Text == "" )
+                {
+                    tongTienTbk.Text = "0";
+                }
+                else
+                {
+                    SetDefaultValue(soNgayCongTbx);
+                    SetDefaultValue(soGioLamThemTbx);
+                    SetDefaultValue(phuCapTbx);
+                    SetDefaultValue(phuCapKhacTbx);
+                    SetDefaultValue(luongCBTbx);
+                    SetDefaultValue(khenThuongTbx);
+                    SetDefaultValue(kyLuatTbx);
+                    SetDefaultValue(soNgayNghiTbx);
+
+                    if (soNgayCongTbx.Text == "0")
+                    {
+                        tongTienTbk.Text = (double.Parse(phuCapTbx.Text) + double.Parse(phuCapKhacTbx.Text) + double.Parse(luongCBTbx.Text) + double.Parse(khenThuongTbx.Text) - double.Parse(kyLuatTbx.Text)).ToString();
+                        return;
+                    }
+
+                    double soNgayNghiKoLuong = busThamSo.Get_soNgayLamToiDa() - double.Parse(soNgayCongTbx.Text);
+                    double tienPhat = ((busThamSo.Get_tiLePhat() * double.Parse(luongCBTbx.Text)) * soNgayNghiKoLuong) + double.Parse(kyLuatTbx.Text);
+
+                    double luongTheoSoNgayCong = ((double.Parse(luongCBTbx.Text) / busThamSo.Get_soNgayLamToiDa()) * int.Parse(soNgayCongTbx.Text));
+                    double luongLamThem = (int.Parse(soGioLamThemTbx.Text) * busThamSo.Get_tienLamthem());
+                    double luongPhuCap = double.Parse(phuCapTbx.Text) + double.Parse(phuCapKhacTbx.Text);
+                    double tienThuong = luongTheoSoNgayCong + luongPhuCap + luongLamThem + double.Parse(khenThuongTbx.Text);
+
+                    //bool? result = new MessageBoxCustom(tienThuong.ToString(), MessageType.Error, MessageButtons.Ok).ShowDialog();
+
+                    tongTienTbk.Text = (tienThuong - tienPhat).ToString("#.##");
+                }
             }
-            else
+            catch
             {
-                SetDefaultValue(soNgayCongTbx);
-                SetDefaultValue(soGioLamThemTbx);
-                SetDefaultValue(phuCapTbx);
-                SetDefaultValue(phuCapKhacTbx);
-                SetDefaultValue(luongCBTbx);
-                SetDefaultValue(khenThuongTbx);
-                SetDefaultValue(kyLuatTbx);
-                SetDefaultValue(soNgayNghiTbx);
-
-                double soNgayNghiKoLuong = busThamSo.Get_soNgayLamToiDa() - double.Parse(soNgayCongTbx.Text);
-                double tienPhat = ((busThamSo.Get_tiLePhat() * double.Parse(luongCBTbx.Text)) * soNgayNghiKoLuong) + double.Parse(kyLuatTbx.Text);
-                
-                double luongTheoSoNgayCong = ((double.Parse(luongCBTbx.Text) / busThamSo.Get_soNgayLamToiDa()) * int.Parse(soNgayCongTbx.Text));
-                double luongLamThem = (int.Parse(soGioLamThemTbx.Text) * busThamSo.Get_tienLamthem());
-                double luongPhuCap = double.Parse(phuCapTbx.Text) + double.Parse(phuCapKhacTbx.Text);
-                double tienThuong = luongTheoSoNgayCong + luongPhuCap + luongLamThem + double.Parse(khenThuongTbx.Text);
-
-                //bool? result = new MessageBoxCustom(tienThuong.ToString(), MessageType.Error, MessageButtons.Ok).ShowDialog();
-
-                tongTienTbk.Text = (tienThuong - tienPhat).ToString("#.##");
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi tính! Vui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
+            
         }
 
         public void SetDefaultValue(TextBox tbx)

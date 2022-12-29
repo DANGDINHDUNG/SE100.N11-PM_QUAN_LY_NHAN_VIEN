@@ -160,6 +160,38 @@ namespace DAL
             return tenNV;
         }
 
+        public int TimNamDauTienNVVaoLam()
+        {
+            int nam = 1990;
+            CheckConnection();
+            string sql = string.Format("SELECT TOP 1 YEAR(NGAYKY) 'NGAYKYSOMNHAT' FROM NHANVIEN ORDER BY NGAYKY ASC");
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                nam = int.Parse(sdr["NGAYKYSOMNHAT"].ToString());
+            }
+            connection.Close();
+            return nam;
+        }
+
+        public int TimNamGanNhatNVVaoLam()
+        {
+            int nam = 1990;
+            CheckConnection();
+            string sql = string.Format("SELECT TOP 1 YEAR(NGAYKY) 'NGAYKYGANNHAT' FROM NHANVIEN ORDER BY NGAYKY DESC");
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                nam = int.Parse(sdr["NGAYKYGANNHAT"].ToString());
+            }
+            connection.Close();
+            return nam;
+        }
+
         public int TimMaNVTheoTen(string tenNV)
         {
             int maNV = 0;

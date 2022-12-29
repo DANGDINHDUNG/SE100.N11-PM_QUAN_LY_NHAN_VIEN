@@ -179,7 +179,7 @@ namespace QuanLyNhanVien.WindowView
                 gioiTinhCbx.Items.Add(gioiTinh);
             }
 
-            string[] listLoaiHD  = new string[] { "Ngắn hạn", "Dài hạn", "Thử việc" };
+            string[] listLoaiHD  = new string[] { "Ngắn hạn", "Dài hạn" };
 
             foreach (string LoaiHD in listLoaiHD)
             {
@@ -247,6 +247,19 @@ namespace QuanLyNhanVien.WindowView
 
         private void thoiGianTbx_TextChanged(object sender, TextChangedEventArgs e)
         {
+            if (thoiGianTbx.Text != "")
+            {
+                if (int.Parse(thoiGianTbx.Text) > 1)
+                {
+                    loaiHopDongCbx.Text = "Dài hạn";
+                }
+            }
+
+            if (thoiGianTbx.Text == "1")
+            {
+                loaiHopDongCbx.Text = "Ngắn hạn";
+            }
+
             if (thoiGianTbx.Text == "")
             {
                 ngayHetHanDpk.Text = "";
@@ -256,6 +269,13 @@ namespace QuanLyNhanVien.WindowView
             if (ngayKyDpk.Text == "")
             {
                 ngayHetHanDpk.Text = "";
+                return;
+            }
+
+            if (thoiGianTbx.Text.Length > 2)
+            {
+                bool? Result = new MessageBoxCustom("Số năm quá lớn!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                thoiGianTbx.Text = "";
                 return;
             }
 
@@ -269,6 +289,18 @@ namespace QuanLyNhanVien.WindowView
                 bool? Result = new MessageBoxCustom("Chưa đủ tuổi vào làm (ít nhất 18 tuổi).", MessageType.Error, MessageButtons.Ok).ShowDialog();
                 ngaySinhDpk.Text = "";
                 return;
+            }
+        }
+
+        private void loaiHopDongCbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (loaiHopDongCbx.SelectedValue.ToString() == "Ngắn hạn")
+            {
+                thoiGianTbx.Text = "1";
+            }
+            else
+            {
+                thoiGianTbx.Text = "";
             }
         }
     }

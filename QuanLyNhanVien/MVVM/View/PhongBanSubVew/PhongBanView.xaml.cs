@@ -64,37 +64,45 @@ namespace QuanLyNhanVien.MVVM.View.PhongBanSubVew
 
         private void themBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (maBoPhanCbx.Text == String.Empty || tenPhongBanTbx.Text == String.Empty || ngaytlDpk.Text == String.Empty || maPhongBanTbx.Text == String.Empty)
+            try
             {
-                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-                return;
-            }
-            bool flat = true;
-            List<string> list = busPhongBan.TongHopMaPhongBan();
-            foreach (string s in list)
-            {
-                if (s == maPhongBanTbx.Text)
+                if (maBoPhanCbx.Text == String.Empty || tenPhongBanTbx.Text == String.Empty || ngaytlDpk.Text == String.Empty || maPhongBanTbx.Text == String.Empty)
                 {
-                    flat = false;
-                    break;
+                    bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                    return;
+                }
+                bool flat = true;
+                List<string> list = busPhongBan.TongHopMaPhongBan();
+                foreach (string s in list)
+                {
+                    if (s == maPhongBanTbx.Text)
+                    {
+                        flat = false;
+                        break;
+                    }
+                }
+                if (flat)
+                {
+                    DTO_PHONGBAN dtoPhongBan1 = new DTO_PHONGBAN();
+                    dtoPhongBan1.Mabp = maBoPhanCbx.SelectedValue.ToString();
+                    dtoPhongBan1.Maphong = maPhongBanTbx.Text;
+                    dtoPhongBan1.Tenphong = tenPhongBanTbx.Text;
+                    dtoPhongBan1.Ngaythanhlap = DateTime.Parse(ngaytlDpk.Text);
+                    busPhongBan.ThemPhongBan(dtoPhongBan1);
+                    bool? result = new MessageBoxCustom("Thêm phòng ban thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                    DataGridLoad();
+                    ClearBoxes();
+                }
+                else
+                {
+                    bool? result = new MessageBoxCustom("Mã phòng ban đã tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 }
             }
-            if (flat)
+            catch
             {
-                DTO_PHONGBAN dtoPhongBan1 = new DTO_PHONGBAN();
-                dtoPhongBan1.Mabp = maBoPhanCbx.SelectedValue.ToString();
-                dtoPhongBan1.Maphong = maPhongBanTbx.Text;
-                dtoPhongBan1.Tenphong = tenPhongBanTbx.Text;
-                dtoPhongBan1.Ngaythanhlap = DateTime.Parse(ngaytlDpk.Text);
-                busPhongBan.ThemPhongBan(dtoPhongBan1);
-                bool? result = new MessageBoxCustom("Thêm phòng ban thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
-                DataGridLoad();
-                ClearBoxes();
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
-            else
-            {
-                bool? result = new MessageBoxCustom("Mã phòng ban đã tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-            }
+            
         }
 
         private void xoaBtn_Click(object sender, RoutedEventArgs e)
@@ -118,38 +126,45 @@ namespace QuanLyNhanVien.MVVM.View.PhongBanSubVew
 
         private void suaBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (maBoPhanCbx.SelectedIndex == -1 || tenPhongBanTbx.Text == String.Empty || ngaytlDpk.Text == String.Empty || maPhongBanTbx.Text == String.Empty)
+            try
             {
-                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-
-                return;
-            }
-            bool flat2 = true;
-            List<string> list = busPhongBan.TongHopMaPhongBan();
-            foreach (string s in list)
-            {
-                if (s == maPhongBanTbx.Text)
+                if (maBoPhanCbx.SelectedIndex == -1 || tenPhongBanTbx.Text == String.Empty || ngaytlDpk.Text == String.Empty || maPhongBanTbx.Text == String.Empty)
                 {
-                    flat2 = false;
-                    break;
+                    bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+
+                    return;
+                }
+                bool flat2 = true;
+                List<string> list = busPhongBan.TongHopMaPhongBan();
+                foreach (string s in list)
+                {
+                    if (s == maPhongBanTbx.Text)
+                    {
+                        flat2 = false;
+                        break;
+                    }
+                }
+                if (!flat2)
+                {
+                    DTO_PHONGBAN dtoPhongBan2 = new DTO_PHONGBAN();
+                    dtoPhongBan2.Maphong = maPhongBanTbx.Text;
+                    dtoPhongBan2.Mabp = maBoPhanCbx.SelectedValue.ToString();
+                    dtoPhongBan2.Tenphong = tenPhongBanTbx.Text;
+                    dtoPhongBan2.Ngaythanhlap = DateTime.Parse(ngaytlDpk.Text);
+                    busPhongBan.SuaPhongBan(dtoPhongBan2);
+                    bool? result = new MessageBoxCustom("Sửa phòng ban thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                    DataGridLoad();
+                    ClearBoxes();
+                }
+                else
+                {
+                    bool? result = new MessageBoxCustom("Phòng ban không tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 }
             }
-            if (!flat2)
+            catch
             {
-                DTO_PHONGBAN dtoPhongBan2 = new DTO_PHONGBAN();
-                dtoPhongBan2.Maphong = maPhongBanTbx.Text;
-                dtoPhongBan2.Mabp = maBoPhanCbx.SelectedValue.ToString();
-                dtoPhongBan2.Tenphong = tenPhongBanTbx.Text;
-                dtoPhongBan2.Ngaythanhlap = DateTime.Parse(ngaytlDpk.Text);
-                busPhongBan.SuaPhongBan(dtoPhongBan2);
-                bool? result = new MessageBoxCustom("Sửa phòng ban thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
-                DataGridLoad();
-                ClearBoxes();
-            }
-            else
-            {
-                bool? result = new MessageBoxCustom("Phòng ban không tồn tại!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-            }
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
+            } 
         }
 
         private void lammoiBtn_Click(object sender, RoutedEventArgs e)
@@ -176,6 +191,14 @@ namespace QuanLyNhanVien.MVVM.View.PhongBanSubVew
                 maBoPhanCbx.Items.Add(maBoPhan);
             }
 
+        }
+
+        private void ngaytlDpk_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ngaytlDpk.SelectedDate > DateTime.Now)
+            {
+                bool? show = new MessageBoxCustom("Không thể chọn ngày thành lập trong tương lai!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+            }
         }
     }
 }

@@ -106,7 +106,7 @@
                 <ComboBox x:Name="danTocCbx" FontSize="17" FontWeight="Normal" Grid.Column="3" Grid.Row="3" ItemsSource="{Binding Path=DefaultView}" Height="32"/>
                 <TextBox x:Name="soDienThoaiTbx" Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="3" Margin="0,44,0,0" Grid.RowSpan="2" PreviewTextInput="numberTextBoxes_PreviewTextInput"/>
                 <TextBox x:Name="hocVanTbx" Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="5" Margin="0,0,0,44" Grid.RowSpan="2"/>
-                <ComboBox x:Name="loaiHopDongCbx" FontSize="17" FontWeight="Normal" Grid.Column="3" Grid.Row="6" ItemsSource="{Binding Path=DefaultView}" Height="32"/>
+                <ComboBox x:Name="loaiHopDongCbx" FontSize="17" FontWeight="Normal" Grid.Column="3" Grid.Row="6" ItemsSource="{Binding Path=DefaultView}" Height="32" SelectionChanged="loaiHopDongCbx_SelectionChanged"/>
                 <TextBox x:Name="thoiGianTbx" Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="7" Margin="0,0,50,0" PreviewTextInput="numberTextBoxes_PreviewTextInput" TextChanged="thoiGianTbx_TextChanged"/>
                 <TextBlock Grid.Column="3" Grid.Row="7" Margin="140,0,10,0" FontWeight="Normal" FontSize="14" 
                            Text="Năm" TextAlignment="Right" VerticalAlignment="Center" Height="19"/>

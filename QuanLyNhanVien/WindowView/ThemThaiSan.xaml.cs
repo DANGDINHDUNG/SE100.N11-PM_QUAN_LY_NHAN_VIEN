@@ -15,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using QuanLyNhanVien.MessageBox;
+using System.Text.RegularExpressions;
 
 namespace QuanLyNhanVien.WindowView
 {
@@ -48,45 +49,52 @@ namespace QuanLyNhanVien.WindowView
             {
                 maNVCbx.Items.Add(maNV);
             }
+
+            foreach (var maNV in busNhanVien.TongHopMaNhanVienTheoGioiTinh("Khác"))
+            {
+                maNVCbx.Items.Add(maNV);
+            }
         }
 
         private void btnThem_Click(object sender, RoutedEventArgs e)
         {
-            if (ngayNghiSinhDpk.Text == String.Empty || ngayVeSomDpk.Text == String.Empty || ngayLamTLDpk.Text == String.Empty
+            try
+            {
+                if (ngayNghiSinhDpk.Text == String.Empty || ngayVeSomDpk.Text == String.Empty || ngayLamTLDpk.Text == String.Empty
                 || troCapTbx.Text == String.Empty)
 
-            {
-                bool? Result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-                return;
-            }
-            DTO_SOTHAISAN dtoSoThaiSan=new DTO_SOTHAISAN();
-            dtoSoThaiSan.Manv = int.Parse(maNVCbx.SelectedValue.ToString());
-            dtoSoThaiSan.Ngaynghisinh = DateTime.Parse(ngayNghiSinhDpk.Text);
-            dtoSoThaiSan.Ngayvesom = DateTime.Parse(ngayVeSomDpk.Text);
-            dtoSoThaiSan.Ngaylamtrolai = DateTime.Parse(ngayLamTLDpk.Text);
-            dtoSoThaiSan.Trocapcty = int.Parse(troCapTbx.Text);
-            dtoSoThaiSan.Ghichu = ghiChuTbx.Text;
+                {
+                    bool? Result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                    return;
+                }
+                DTO_SOTHAISAN dtoSoThaiSan = new DTO_SOTHAISAN();
+                dtoSoThaiSan.Manv = int.Parse(maNVCbx.SelectedValue.ToString());
+                dtoSoThaiSan.Ngaynghisinh = DateTime.Parse(ngayNghiSinhDpk.Text);
+                dtoSoThaiSan.Ngayvesom = DateTime.Parse(ngayVeSomDpk.Text);
+                dtoSoThaiSan.Ngaylamtrolai = DateTime.Parse(ngayLamTLDpk.Text);
+                dtoSoThaiSan.Trocapcty = int.Parse(troCapTbx.Text);
+                dtoSoThaiSan.Ghichu = ghiChuTbx.Text;
 
-            if (maTSTbx.Text == string.Empty)
-            {
-                busSoThaiSan.ThemSoThaiSan(dtoSoThaiSan);
-                bool? Result = new MessageBoxCustom("Thêm thai sản thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                if (maTSTbx.Text == string.Empty)
+                {
+                    busSoThaiSan.ThemSoThaiSan(dtoSoThaiSan);
+                    bool? Result = new MessageBoxCustom("Thêm thai sản thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                }
+                else
+                {
+                    dtoSoThaiSan.Mats = int.Parse(maTSTbx.Text);
+                    busSoThaiSan.SuaSoThaiSan(dtoSoThaiSan);
+                    bool? Result = new MessageBoxCustom("Sửa thai sản thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                }
+                this.Close();
             }
-            else
+            catch
             {
-                dtoSoThaiSan.Mats = int.Parse(maTSTbx.Text);
-                busSoThaiSan.SuaSoThaiSan(dtoSoThaiSan);
-                bool? Result = new MessageBoxCustom("Sửa thai sản thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
-            this.Close();
         }
+
         private void maTSTbx_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-
-        }
-
-        private void maTSTbx_Loaded_1(object sender, RoutedEventArgs e)
         {
             if (checkAdd)
                 return;
@@ -102,7 +110,13 @@ namespace QuanLyNhanVien.WindowView
 
         private void ngayNghiSinhDpk_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (maNVCbx.Text == "")
+            {
+                bool? Result = new MessageBoxCustom("Vui lòng chọn nhân viên.", MessageType.Error, MessageButtons.Ok).ShowDialog();
+                return;
+            }
             DTO_NHANVIEN dtoNhanVien = busNhanVien.GetChiTietNhanVienTheoMa(maNVCbx.Text);
+            
             if (ngayNghiSinhDpk.SelectedDate.Value.Date.AddMonths(-6) < dtoNhanVien.Ngaydangki)
             {
                 bool? Result = new MessageBoxCustom("Không thể nghỉ sinh khi chưa vào làm.", MessageType.Error, MessageButtons.Ok).ShowDialog();
@@ -129,6 +143,11 @@ namespace QuanLyNhanVien.WindowView
 
                 return;
             }
+        }
+
+        private void troCapTbx_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
         }
     }
 }

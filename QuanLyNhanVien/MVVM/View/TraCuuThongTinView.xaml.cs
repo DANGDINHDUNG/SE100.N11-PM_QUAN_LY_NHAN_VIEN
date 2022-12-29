@@ -38,24 +38,7 @@ namespace QuanLyNhanVien.MVVM.View
 
         private void timkiemBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (timkiemTbx.Text == String.Empty)
-            {
-                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
-                DataGridLoad();
-                return;
-            }    
-            if (manvRdBtn.IsChecked == true)
-            {
-                dsTimKiemThongTinDtg.DataContext = busNhanVien.TimKiemNhanVienTheoMa(timkiemTbx.Text);
-            }
-            if (hotenRdBtn.IsChecked == true)
-            {
-                dsTimKiemThongTinDtg.DataContext = busNhanVien.TimKiemNhanVienTheoTen(timkiemTbx.Text);
-            }
-            if (sdtRdBtn.IsChecked == true)
-            {
-                dsTimKiemThongTinDtg.DataContext = busNhanVien.TimKiemNhanVienTheoSDT(timkiemTbx.Text);
-            }
+            Loc();
         }
 
         private void timkiemTbx_PreviewTextInput(object sender, TextCompositionEventArgs e)
@@ -78,6 +61,36 @@ namespace QuanLyNhanVien.MVVM.View
         {
             timkiemTbx.Text = "";
             DataGridLoad();
+        }
+
+        private void timkiemTbx_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Loc();
+            }    
+        }
+
+        public void Loc()
+        {
+            if (timkiemTbx.Text == String.Empty)
+            {
+                bool? result = new MessageBoxCustom("Vui lòng điền đầy đủ thông tin!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                DataGridLoad();
+                return;
+            }
+            if (manvRdBtn.IsChecked == true)
+            {
+                dsTimKiemThongTinDtg.DataContext = busNhanVien.TimKiemNhanVienTheoMa(timkiemTbx.Text);
+            }
+            if (hotenRdBtn.IsChecked == true)
+            {
+                dsTimKiemThongTinDtg.DataContext = busNhanVien.TimKiemNhanVienTheoTen(timkiemTbx.Text);
+            }
+            if (sdtRdBtn.IsChecked == true)
+            {
+                dsTimKiemThongTinDtg.DataContext = busNhanVien.TimKiemNhanVienTheoSDT(timkiemTbx.Text);
+            }
         }
     }
 }

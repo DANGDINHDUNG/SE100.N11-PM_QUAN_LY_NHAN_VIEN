@@ -36,7 +36,8 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                        Text="Năm" TextAlignment="Right" VerticalAlignment="Center"/>
 
                 <ComboBox x:Name="thangCbx" FontSize="17" FontWeight="Normal" Grid.Column="1" Grid.Row="0"/>
-                <TextBox x:Name="namTbx" Style="{StaticResource InputTextBox}" Grid.Column="3" Grid.Row="0" FontSize="17" PreviewTextInput="numberBoxes_PreviewTextInput"/>
+                <ComboBox x:Name="namCbx" FontSize="17" FontWeight="Normal" Grid.Column="3" Grid.Row="0"/>
+                
 
 
                 <Button x:Name="lamMoiBtn" Grid.Column="4"

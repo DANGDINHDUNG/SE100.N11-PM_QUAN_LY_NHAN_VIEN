@@ -64,7 +64,7 @@ namespace QuanLyNhanVien
         public void Login()
         {
             DTO_TAIKHOAN dTO_TaiKhoan = new DTO_TAIKHOAN();
-            dTO_TaiKhoan._TENDANGNHAP = taiKhoanTbx.Text.ToString();
+            dTO_TaiKhoan._TENDANGNHAP = taiKhoanTbx.Text.ToString().Replace(" ","");
             dTO_TaiKhoan._MATKHAU = matKhauPwb.Password.ToString();
 
             if (tk.KiemTraTonTai(dTO_TaiKhoan._TENDANGNHAP))
@@ -77,12 +77,13 @@ namespace QuanLyNhanVien
                     trangChu.Show();
                     this.Hide();
 
-                    if (dTO_TaiKhoan._TENDANGNHAP == "admin" || dTO_TaiKhoan._TENDANGNHAP == "manager")
+                    if (dTO_TaiKhoan._TENDANGNHAP.ToLower() == "admin" || dTO_TaiKhoan._TENDANGNHAP.ToLower() == "manager")
                     {
                         return;
                     }
 
                     DTO_NHANVIENHIENTAI dtoNhanVienHienTai = new DTO_NHANVIENHIENTAI();
+
                     dtoNhanVienHienTai.Manv = int.Parse(dTO_TaiKhoan._TENDANGNHAP);
 
                     busNhanVienHienTai.XoaNhanVienHienTai();

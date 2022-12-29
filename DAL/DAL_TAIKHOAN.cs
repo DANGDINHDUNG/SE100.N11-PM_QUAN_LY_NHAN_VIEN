@@ -66,11 +66,11 @@ namespace DAL
             connection.Close();
         }
 
-        public bool XoaTaiKhoan(int matk)
+        public bool XoaTaiKhoan(int tenDangNhap)
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("DELETE FROM TAIKHOAN WHERE MATK = '{0}'", matk);
+            string sql = string.Format("DELETE FROM TAIKHOAN WHERE TENDANGNHAP = '{0}'", tenDangNhap);
             SqlCommand cmd = new SqlCommand(sql, connection);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read() == true)
