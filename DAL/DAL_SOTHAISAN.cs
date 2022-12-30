@@ -13,7 +13,7 @@ namespace DAL
 
         public DataTable getSoThaiSan()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM SOTHAISAN", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MATS 'Mã sổ thai sản', MANV 'Mã nhân viên',NGAYVESOM 'Ngày về sớm',NGAYNGHISINH 'Ngày nghỉ sinh',NGAYLAMTROLAI 'Ngày làm trở lại',TROCAPCTY 'Trợ cấp công ty',GHICHU 'Ghi chú' FROM SOTHAISAN", connection);
             DataTable dtSOTHAISAN = new DataTable();
             da.Fill(dtSOTHAISAN);
             return dtSOTHAISAN;

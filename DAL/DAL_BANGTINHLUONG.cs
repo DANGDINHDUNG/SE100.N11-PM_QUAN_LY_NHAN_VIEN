@@ -18,7 +18,7 @@ namespace DAL
 	GHICHU NVARCHAR(80)*/
         public DataTable getBangTinhLuong()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM BANGTINHLUONG", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV 'Mã nhân viên', LUONG 'Lương', THANG 'Tháng', NAM 'Năm', GHICHU 'Ghi chú' FROM BANGTINHLUONG", connection);
             DataTable dtBANGTINHLUONG = new DataTable();
             da.Fill(dtBANGTINHLUONG);
             return dtBANGTINHLUONG;
@@ -66,11 +66,11 @@ namespace DAL
             SqlDataAdapter da = new SqlDataAdapter();
             if (thang == "")
             {
-                da = new SqlDataAdapter("SELECT * FROM BANGTINHLUONG WHERE NAM ='" + nam + "'", connection);
+                da = new SqlDataAdapter("SELECT MANV 'Mã nhân viên', LUONG 'Lương', THANG 'Tháng', NAM 'Năm', GHICHU 'Ghi chú' FROM BANGTINHLUONG WHERE NAM ='" + nam + "'", connection);
             }    
             else
             {
-                da = new SqlDataAdapter("SELECT * FROM BANGTINHLUONG WHERE THANG ='" + thang + "' AND NAM ='" + nam + "'", connection);
+                da = new SqlDataAdapter("SELECT MANV 'Mã nhân viên', LUONG 'Lương', THANG 'Tháng', NAM 'Năm', GHICHU 'Ghi chú' FROM BANGTINHLUONG WHERE THANG ='" + thang + "' AND NAM ='" + nam + "'", connection);
             }
             DataTable dtBANGTINHLUONG = new DataTable();
             da.Fill(dtBANGTINHLUONG);

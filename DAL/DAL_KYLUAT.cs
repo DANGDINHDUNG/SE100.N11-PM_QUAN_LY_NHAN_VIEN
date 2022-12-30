@@ -13,7 +13,7 @@ namespace DAL
 
         public DataTable getKyLuat()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM KYLUAT", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MAKL 'Mã kỷ luật', TIEN 'Tiền', LYDO 'Lý do' FROM KYLUAT", connection);
             DataTable dtKYLUAT = new DataTable();
             da.Fill(dtKYLUAT);
             return dtKYLUAT;

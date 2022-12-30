@@ -13,7 +13,7 @@ namespace DAL
 
         public DataTable getSoBH()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM SOBH", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MABH 'Mã bảo hiểm', MANV 'Mã nhân viên', NGAYCAPSO 'Ngày cấp sổ', NOICAPSO 'Nơi cấp sổ', GHICHU 'Ghi chú' FROM SOBH", connection);
             DataTable dtSOBH = new DataTable();
             da.Fill(dtSOBH);
             return dtSOBH;

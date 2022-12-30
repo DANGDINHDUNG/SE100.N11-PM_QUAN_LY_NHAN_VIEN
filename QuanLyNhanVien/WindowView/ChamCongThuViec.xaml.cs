@@ -55,31 +55,39 @@ namespace QuanLyNhanVien.WindowView
 
         private void themSuaBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (!CheckData())
-                return;
-
-            DTO_BANGCHAMCONGTHUVIEC dtoChamCongThuViec = new DTO_BANGCHAMCONGTHUVIEC();
-
-            dtoChamCongThuViec.Manvtv = int.Parse(maNVCbx.Text);
-            dtoChamCongThuViec.Thang = int.Parse(thangCbx.Text);
-            dtoChamCongThuViec.Nam = int.Parse(namTbx.Text);
-            dtoChamCongThuViec.Luongtv = double.Parse(luongTVTbx.Text);
-            dtoChamCongThuViec.Songaycong = int.Parse(soNgayCongTbx.Text);
-            dtoChamCongThuViec.Songaynghi = int.Parse(soNgayNghiTbx.Text);
-            dtoChamCongThuViec.Sogiolamthem = int.Parse(soGioLamThemTbx.Text);
-            dtoChamCongThuViec.Ghichu = ghiChuTbx.Text;
-
-            if (maNVCbx.IsEnabled == true)
+            try
             {
-                busChamCongThuViec.ThemBangChamCongThuViec(dtoChamCongThuViec);
-                bool? Result = new MessageBoxCustom("Thêm bảng chấm công thử việc thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                if (!CheckData())
+                    return;
+
+                DTO_BANGCHAMCONGTHUVIEC dtoChamCongThuViec = new DTO_BANGCHAMCONGTHUVIEC();
+
+                dtoChamCongThuViec.Manvtv = int.Parse(maNVCbx.Text);
+                dtoChamCongThuViec.Thang = int.Parse(thangCbx.Text);
+                dtoChamCongThuViec.Nam = int.Parse(namTbx.Text);
+                dtoChamCongThuViec.Luongtv = double.Parse(luongTVTbx.Text);
+                dtoChamCongThuViec.Songaycong = int.Parse(soNgayCongTbx.Text);
+                dtoChamCongThuViec.Songaynghi = int.Parse(soNgayNghiTbx.Text);
+                dtoChamCongThuViec.Sogiolamthem = int.Parse(soGioLamThemTbx.Text);
+                dtoChamCongThuViec.Ghichu = ghiChuTbx.Text;
+
+                if (maNVCbx.IsEnabled == true)
+                {
+                    busChamCongThuViec.ThemBangChamCongThuViec(dtoChamCongThuViec);
+                    bool? Result = new MessageBoxCustom("Thêm bảng chấm công thử việc thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                }
+                else
+                {
+                    busChamCongThuViec.SuaBangChamCongThuViec(dtoChamCongThuViec);
+                    bool? Result = new MessageBoxCustom("Sửa nhân viên thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                }
+                this.Close();
             }
-            else
+            catch
             {
-                busChamCongThuViec.SuaBangChamCongThuViec(dtoChamCongThuViec);
-                bool? Result = new MessageBoxCustom("Sửa nhân viên thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
-            this.Close();
+            
         }
 
         public bool CheckData()

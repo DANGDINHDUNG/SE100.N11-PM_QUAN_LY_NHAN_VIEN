@@ -13,7 +13,7 @@ namespace DAL
 
         public DataTable getPhongBan()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT MAPHONG, MABP, TENPHONG, FORMAT(NGAYTHANHLAP, 'dd/MM/yyyy') 'NGAYTHANHLAP', GHICHU FROM PHONGBAN", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MAPHONG 'Mã phòng', MABP 'Mã bộ phận', TENPHONG 'Tên phòng', FORMAT(NGAYTHANHLAP, 'dd/MM/yyyy') 'Ngày thành lập', GHICHU 'Ghi chú' FROM PHONGBAN", connection);
             DataTable dtPHONGBAN = new DataTable();
             da.Fill(dtPHONGBAN);
             return dtPHONGBAN;

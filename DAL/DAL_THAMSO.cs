@@ -13,7 +13,7 @@ namespace DAL
     {
         public DataTable getThamSo()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM THAMSO", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MATHAMSO 'Mã tham số', TENTHAMSO 'Tên tham số', GIATRI 'Giá trị' FROM THAMSO", connection);
             DataTable dtTHAMSO = new DataTable();
             da.Fill(dtTHAMSO);
             return dtTHAMSO;

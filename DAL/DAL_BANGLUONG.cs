@@ -11,7 +11,7 @@ namespace DAL
 
         public DataTable getBangLuong()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM BANGLUONG", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MALUONG 'Mã lương', LCB 'Lương cơ bản', PHUCAPCHUCVU 'Phụ cấp chức vụ', PHUCAPKHAC 'Phụ cấp khác', GHICHU 'Ghi chú' FROM BANGLUONG", connection);
             DataTable dtBANGLUONG = new DataTable();
             da.Fill(dtBANGLUONG);
             return dtBANGLUONG;

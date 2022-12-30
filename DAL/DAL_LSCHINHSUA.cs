@@ -13,7 +13,7 @@ namespace DAL
 
         public DataTable getLSChinhSua()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT MACS, MANV, LANCS, MAPHONG, MALUONG, HOTEN, FORMAT(NGAYSINH, 'dd/MM/yyyy') 'NGAYSINH', GIOITINH, DANTOC, CMND_CCCD, NOICAP, CHUCVU, MALOAINV, LOAIHD, THOIGIAN, FORMAT(NGAYKY, 'dd/MM/yyyy') 'NGAYKY',  FORMAT(NGAYHETHAN, 'dd/MM/yyyy') 'NGAYHETHAN', SDT, HOCVAN, GHICHU, NGAYCHINHSUA FROM LSCHINHSUA", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MACS 'Mã chỉnh sửa', MANV 'Mã nhân viên', LANCS 'Lần chỉnh sửa', MAPHONG 'Mã phòng', MALUONG 'Mã lương', HOTEN 'Họ tên', FORMAT(NGAYSINH, 'dd/MM/yyyy') 'Ngày sinh', GIOITINH 'Giới tính', DANTOC 'Dân tộc', CMND_CCCD 'CMND-CCCD', NOICAP 'Nơi cấp', CHUCVU 'Chức vụ', MALOAINV 'Mã loại nhân viên', LOAIHD 'Loại hợp đồng', THOIGIAN 'Thời gian', FORMAT(NGAYKY, 'dd/MM/yyyy') 'Ngày ký',  FORMAT(NGAYHETHAN, 'dd/MM/yyyy') 'Ngày hết hạn', SDT 'Số điện thoại', HOCVAN 'Học vấn', GHICHU 'Ghi chú', NGAYCHINHSUA 'Ngày chỉnh sửa' FROM LSCHINHSUA", connection);
             DataTable dtLSCHINHSUA = new DataTable();
             da.Fill(dtLSCHINHSUA);
             return dtLSCHINHSUA;

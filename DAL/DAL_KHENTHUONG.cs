@@ -13,7 +13,7 @@ namespace DAL
 
         public DataTable getKhenThuong()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM KHENTHUONG", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MAKT 'Mã khen thưởng', TIEN 'Tiền', LYDO 'Lý do' FROM KHENTHUONG", connection);
             DataTable dtKHENTHUONG = new DataTable();
             da.Fill(dtKHENTHUONG);
             return dtKHENTHUONG;

@@ -16,7 +16,7 @@ namespace DAL
 	GHICHU NVARCHAR(50)*/
         public DataTable getLichSuVangMat(string maNV)
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV, FORMAT(NGAYNGHI, 'dd/MM/yyyy') 'NGAYNGHI', GHICHU FROM LICHSUVANGMAT WHERE MANV = '" + maNV + "'", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV 'Mã nhân viên', FORMAT(NGAYNGHI, 'dd/MM/yyyy') 'Ngày nghỉ', GHICHU 'Ghi chú' FROM LICHSUVANGMAT WHERE MANV = '" + maNV + "'", connection);
             DataTable dtLICHSUVANGMAT = new DataTable();
             da.Fill(dtLICHSUVANGMAT);
             return dtLICHSUVANGMAT;

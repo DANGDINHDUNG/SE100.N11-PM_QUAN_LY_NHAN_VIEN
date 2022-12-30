@@ -112,7 +112,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         {
             if (thuViecDtg.SelectedItems.Count == 0)
             {
-                bool? result = new MessageBoxCustom("Vui lòng chọn nhân viên cần sửa!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
+                bool? result = new MessageBoxCustom("Vui lòng chọn nhân viên cần xem!", MessageType.Warning, MessageButtons.Ok).ShowDialog();
                 return;
             }
 

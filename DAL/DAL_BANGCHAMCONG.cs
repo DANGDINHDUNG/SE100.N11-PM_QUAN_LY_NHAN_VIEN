@@ -14,7 +14,7 @@ namespace DAL
 
         public DataTable getBangChamCong()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT BANGCHAMCONG.MANV, HOTEN, THANG, NAM, BANGCHAMCONG.MALUONG, TIENKHENTHUONG, TIENKYLUAT, SONGAYCONG, SONGAYNGHI, SOGIOLAMTHEM, BANGCHAMCONG.GHICHU FROM BANGCHAMCONG, NHANVIEN WHERE BANGCHAMCONG.MANV = NHANVIEN.MANV", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT BANGCHAMCONG.MANV 'Mã nhân viên', HOTEN 'Họ tên', THANG 'Tháng', NAM 'Năm', BANGCHAMCONG.MALUONG 'Mã lương', TIENKHENTHUONG 'Tiền khen thưởng', TIENKYLUAT 'Tiền kỷ luật', SONGAYCONG 'Số ngày công', SONGAYNGHI 'Số ngày nghỉ', SOGIOLAMTHEM 'Số giờ làm thêm', BANGCHAMCONG.GHICHU 'Ghi chú' FROM BANGCHAMCONG, NHANVIEN WHERE BANGCHAMCONG.MANV = NHANVIEN.MANV", connection);
             DataTable dtBANGCHAMCONG = new DataTable();
             da.Fill(dtBANGCHAMCONG);
             return dtBANGCHAMCONG;
@@ -108,16 +108,14 @@ namespace DAL
             DataTable dtBANGCHAMCONG = new DataTable();
             if (thang == "" && nam == "")
             {
-                SqlDataAdapter da = new SqlDataAdapter("SELECT LUONG, BANGCHAMCONG.THANG, BANGCHAMCONG.NAM, BANGCHAMCONG.MALUONG, TIENKHENTHUONG, "
-                + "TIENKYLUAT, SONGAYCONG, SONGAYNGHI, SOGIOLAMTHEM, BANGCHAMCONG.GHICHU FROM BANGCHAMCONG, BANGTINHLUONG "
+                SqlDataAdapter da = new SqlDataAdapter("SELECT LUONG 'Lương', BANGCHAMCONG.THANG 'Tháng', BANGCHAMCONG.NAM 'Năm', BANGCHAMCONG.MALUONG 'Mã lương', TIENKHENTHUONG 'Tiền khen thưởng', TIENKYLUAT 'Tiền kỷ luật', SONGAYCONG 'Số ngày công', SONGAYNGHI 'Số ngày nghỉ', SOGIOLAMTHEM 'Số giờ làm thêm', BANGCHAMCONG.GHICHU 'Ghi chú' FROM BANGCHAMCONG, BANGTINHLUONG "
                 + "WHERE BANGCHAMCONG.MANV = '" + maNV + "'", connection);
                 //DataTable dtBANGCHAMCONG = new DataTable();
                 da.Fill(dtBANGCHAMCONG);
             }
             else
             {
-                SqlDataAdapter da = new SqlDataAdapter("SELECT LUONG, BANGCHAMCONG.THANG, BANGCHAMCONG.NAM, BANGCHAMCONG.MALUONG, TIENKHENTHUONG, "
-                + "TIENKYLUAT, SONGAYCONG, SONGAYNGHI, SOGIOLAMTHEM, BANGCHAMCONG.GHICHU FROM BANGCHAMCONG, BANGTINHLUONG "
+                SqlDataAdapter da = new SqlDataAdapter("SELECT LUONG 'Lương', BANGCHAMCONG.THANG 'Tháng', BANGCHAMCONG.NAM 'Năm', BANGCHAMCONG.MALUONG 'Mã lương', TIENKHENTHUONG 'Tiền khen thưởng', TIENKYLUAT 'Tiền kỷ luật', SONGAYCONG 'Số ngày công', SONGAYNGHI 'Số ngày nghỉ', SOGIOLAMTHEM 'Số giờ làm thêm', BANGCHAMCONG.GHICHU 'Ghi chú' FROM BANGCHAMCONG, BANGTINHLUONG "
                 + "WHERE BANGCHAMCONG.MANV = '" + maNV + "' AND BANGCHAMCONG.THANG = '" + thang + "' AND BANGCHAMCONG.NAM = '" + nam + "'", connection);
                 //DataTable dtBANGCHAMCONG = new DataTable();
                 da.Fill(dtBANGCHAMCONG);
@@ -130,8 +128,7 @@ namespace DAL
             DTO_BANGCHAMCONG dtoBangChamCong = new DTO_BANGCHAMCONG();
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("SELECT LUONG, BANGCHAMCONG.THANG, BANGCHAMCONG.NAM, BANGCHAMCONG.MALUONG, TIENKHENTHUONG, "
-                + "TIENKYLUAT, SONGAYCONG, SONGAYNGHI, SOGIOLAMTHEM FROM BANGCHAMCONG, BANGTINHLUONG "
+            string sql = string.Format("SELECT LUONG 'Lương', BANGCHAMCONG.THANG 'Tháng', BANGCHAMCONG.NAM 'Năm', BANGCHAMCONG.MALUONG 'Mã lương', TIENKHENTHUONG 'Tiền khen thưởng', TIENKYLUAT 'Tiền kỷ luật', SONGAYCONG 'Số ngày công', SONGAYNGHI 'Số ngày nghỉ', SOGIOLAMTHEM 'Số giờ làm thêm' FROM BANGCHAMCONG, BANGTINHLUONG "
                 + "WHERE BANGCHAMCONG.MANV = '" + maNV + "' AND BANGCHAMCONG.THANG = '" + thang + "' AND BANGCHAMCONG.NAM = '" + nam + "'");
             SqlCommand cmd = new SqlCommand(sql, connection);
             SqlDataReader reader = cmd.ExecuteReader();

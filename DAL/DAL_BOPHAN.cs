@@ -10,10 +10,9 @@ namespace DAL
 {
     public class DAL_BOPHAN : KetNoi
     {
-
         public DataTable getBoPhan()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT MABP, TENBOPHAN, FORMAT(NGAYTHANHLAP, 'dd/MM/yyyy') 'NGAYTHANHLAP', GHICHU FROM BOPHAN", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MABP 'Mã bộ phận', TENBOPHAN 'Tên bộ phận', FORMAT(NGAYTHANHLAP, 'dd/MM/yyyy') 'Ngày thành lập', GHICHU 'Ghi chú' FROM BOPHAN", connection);
             DataTable dtBOPHAN = new DataTable();
             da.Fill(dtBOPHAN);
             return dtBOPHAN;

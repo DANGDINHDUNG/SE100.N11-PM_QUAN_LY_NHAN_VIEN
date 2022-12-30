@@ -15,7 +15,7 @@ namespace DAL
 
         public DataTable getNhanVien()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV, MAPHONG, MALUONG, HOTEN, FORMAT(NGAYSINH, 'dd/MM/yyyy') 'NGAYSINH', GIOITINH, DANTOC, CMND_CCCD, NOICAP, CHUCVU, MALOAINV, LOAIHD, THOIGIAN, FORMAT(NGAYKY, 'dd/MM/yyyy') 'NGAYKY',  FORMAT(NGAYHETHAN, 'dd/MM/yyyy') 'NGAYHETHAN', SDT, HOCVAN, GHICHU FROM NHANVIEN", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV 'Mã nhân viên', MAPHONG 'Mã phòng', MALUONG 'Mã lương', HOTEN 'Họ tên', FORMAT(NGAYSINH, 'dd/MM/yyyy') 'Ngày sinh', GIOITINH 'Giới tính', DANTOC 'Dân tộc', CMND_CCCD 'CMND-CCCD', NOICAP 'Nơi cấp', CHUCVU 'Chức vụ', MALOAINV 'Mã loại nhân viên', LOAIHD 'Loại hợp đồng', THOIGIAN 'Thời gian hợp đồng', FORMAT(NGAYKY, 'dd/MM/yyyy') 'Ngày ký hợp đồng',  FORMAT(NGAYHETHAN, 'dd/MM/yyyy') 'Ngày hết hạn', SDT 'Số điện thoại', HOCVAN 'Học vấn', GHICHU 'Ghi chú ' FROM NHANVIEN", connection);
             DataTable dtNHANVIEN = new DataTable();
             da.Fill(dtNHANVIEN);
             return dtNHANVIEN;

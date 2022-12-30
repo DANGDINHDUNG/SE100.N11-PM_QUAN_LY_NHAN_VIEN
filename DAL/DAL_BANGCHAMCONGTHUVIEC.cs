@@ -13,7 +13,7 @@ namespace DAL
 
         public DataTable getBangChamCongThuViec()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM BANGCHAMCONGTHUVIEC", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MANVTV 'Mã nhân viên thử việc',THANG 'Tháng',NAM 'Năm',SONGAYCONG 'Số ngày công',SONGAYNGHI 'Số ngày nghỉ',SOGIOLAMTHEM 'Số giờ làm thêm',LUONGTV 'Lương thử việc',GHICHU 'Ghi chú' FROM BANGCHAMCONGTHUVIEC", connection);
             DataTable dtBANGCHAMCONGTHUVIEC = new DataTable();
             da.Fill(dtBANGCHAMCONGTHUVIEC);
             return dtBANGCHAMCONGTHUVIEC;
@@ -78,11 +78,11 @@ namespace DAL
             SqlDataAdapter da = new SqlDataAdapter();
             if (thang == "")
             {
-                da = new SqlDataAdapter("SELECT * FROM BANGCHAMCONGTHUVIEC WHERE NAM ='" + nam + "'", connection);
+                da = new SqlDataAdapter("SELECT MANVTV 'Mã nhân viên thử việc',THANG 'Tháng',NAM 'Năm',SONGAYCONG 'Số ngày công',SONGAYNGHI 'Số ngày nghỉ',SOGIOLAMTHEM 'Số giờ làm thêm',LUONGTV 'Lương thử việc',GHICHU 'Ghi chú' FROM BANGCHAMCONGTHUVIEC WHERE NAM ='" + nam + "'", connection);
             }
             else
             {
-                da = new SqlDataAdapter("SELECT * FROM BANGCHAMCONGTHUVIEC WHERE THANG ='" + thang + "' AND NAM ='" + nam + "'", connection);
+                da = new SqlDataAdapter("SELECT MANVTV 'Mã nhân viên thử việc',THANG 'Tháng',NAM 'Năm',SONGAYCONG 'Số ngày công',SONGAYNGHI 'Số ngày nghỉ',SOGIOLAMTHEM 'Số giờ làm thêm',LUONGTV 'Lương thử việc',GHICHU 'Ghi chú' FROM BANGCHAMCONGTHUVIEC WHERE THANG ='" + thang + "' AND NAM ='" + nam + "'", connection);
             }
             DataTable dtBANGCHAMCONGTHUVIEC = new DataTable();
             da.Fill(dtBANGCHAMCONGTHUVIEC);

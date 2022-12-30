@@ -13,7 +13,7 @@ namespace DAL
     {
         public DataTable getTaiKhoan()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM TAIKHOAN", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MATK 'Mã tài khoản', MALOAITK 'Mã loại tài khoản', TENCHUTAIKHOAN 'Tên chủ tài khoản', TENDANGNHAP 'Tên đăng nhập', MATKHAU 'Mật khẩu mã hóa' FROM TAIKHOAN", connection);
             DataTable dtTAIKHOAN = new DataTable();
             da.Fill(dtTAIKHOAN);
             return dtTAIKHOAN;

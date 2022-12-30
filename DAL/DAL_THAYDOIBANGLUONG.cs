@@ -13,7 +13,7 @@ namespace DAL
 
         public DataTable getThayDoiBangLuong()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM THAYDOIBANGLUONG", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV 'Mã nhân viên', MALUONG 'Mã lương cũ', MALUONGMOI 'Mã lương mới', NGAYSUA 'Ngày sửa', LYDO 'Lý do' FROM THAYDOIBANGLUONG", connection);
             DataTable dtTHAYDOIBANGLUONG = new DataTable();
             da.Fill(dtTHAYDOIBANGLUONG);
             return dtTHAYDOIBANGLUONG;
@@ -88,7 +88,7 @@ namespace DAL
 
         public DataTable getThayDoiBangLuongCaNhan(string manv)
         { 
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM THAYDOIBANGLUONG WHERE MANV = N'" + manv + "'", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV 'Mã nhân viên', MALUONG 'Mã lương cũ', MALUONGMOI 'Mã lương mới', NGAYSUA 'Ngày sửa', LYDO 'Lý do' FROM THAYDOIBANGLUONG WHERE MANV = N'" + manv + "'", connection);
             DataTable dtBANGLUONGCANHAN = new DataTable();
             da.Fill(dtBANGLUONGCANHAN);
             return dtBANGLUONGCANHAN;

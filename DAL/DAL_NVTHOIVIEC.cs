@@ -13,7 +13,7 @@ namespace DAL
 
         public DataTable getNVThoiViec()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM NVTHOIVIEC", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV 'Mã nhân viên',HOTEN 'Họ tên',CMND_CCCD 'CMND-CCCD',NGAYTHOIVIEC 'Ngày thôi việc',LYDO 'Lý do' FROM NVTHOIVIEC", connection);
             DataTable dtNVTHOIVIEC = new DataTable();
             da.Fill(dtNVTHOIVIEC);
             return dtNVTHOIVIEC;
