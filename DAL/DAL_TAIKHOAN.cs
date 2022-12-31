@@ -118,7 +118,7 @@ namespace DAL
         {
             if (connection.State != ConnectionState.Open)
                 connection.Open();
-            string sql = string.Format("SELECT * FROM TAIKHOAN WHERE TENDANGNHAP='{0}' AND TENCHUTAIKHOAN='{1}'", tk._TENDANGNHAP, tk._TENCHUTAIKHOAN);
+            string sql = string.Format("SELECT * FROM TAIKHOAN WHERE TENDANGNHAP='{0}' AND TENCHUTAIKHOAN=N'{1}'", tk._TENDANGNHAP, tk._TENCHUTAIKHOAN);
             SqlCommand cmd = new SqlCommand(sql, connection);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read() == true)

@@ -13,7 +13,7 @@ namespace DAL
 
         public DataTable getThayDoiBangLuong()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV 'Mã nhân viên', MALUONG 'Mã lương cũ', MALUONGMOI 'Mã lương mới', NGAYSUA 'Ngày sửa', LYDO 'Lý do' FROM THAYDOIBANGLUONG", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV 'Mã nhân viên', MALUONG 'Mã lương cũ', MALUONGMOI 'Mã lương mới', FORMAT(NGAYSUA, 'dd/MM/yyyy') 'Ngày sửa', LYDO 'Lý do' FROM THAYDOIBANGLUONG", connection);
             DataTable dtTHAYDOIBANGLUONG = new DataTable();
             da.Fill(dtTHAYDOIBANGLUONG);
             return dtTHAYDOIBANGLUONG;
@@ -64,6 +64,18 @@ namespace DAL
             connection.Close();
         }
 
+        public bool XoaThayDoiBangLuongCuaNhanVien(int manv)
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("DELETE FROM THAYDOIBANGLUONG WHERE MANV = '{0}'", manv);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            if (cmd.ExecuteNonQuery() > 0)
+                return true;
+            else return false;
+            connection.Close();
+        }
+
         public bool KiemTraTonTaiThayDoiBangLuong(string maNV, string maLuong, string maLuongMoi)
         {
             if (connection.State != ConnectionState.Open)
@@ -86,9 +98,31 @@ namespace DAL
             return false;
         }
 
+        public bool KiemTraTonTaiThayDoiBangLuongTheoNhanVien(string maNV)
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("SELECT * FROM THAYDOIBANGLUONG " +
+                "WHERE MANV = '{0}'",
+            maNV);
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read() == true)
+            {
+                if (!reader.IsClosed)
+                    reader.Close();
+                return true;
+
+            }
+            if (!reader.IsClosed)
+                reader.Close();
+            return false;
+        }
+
         public DataTable getThayDoiBangLuongCaNhan(string manv)
         { 
-            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV 'Mã nhân viên', MALUONG 'Mã lương cũ', MALUONGMOI 'Mã lương mới', NGAYSUA 'Ngày sửa', LYDO 'Lý do' FROM THAYDOIBANGLUONG WHERE MANV = N'" + manv + "'", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV 'Mã nhân viên', MALUONG 'Mã lương cũ', MALUONGMOI 'Mã lương mới', FORMAT(NGAYSUA, 'dd/MM/yyyy') 'Ngày sửa', LYDO 'Lý do' FROM THAYDOIBANGLUONG WHERE MANV = N'" + manv + "'", connection);
             DataTable dtBANGLUONGCANHAN = new DataTable();
             da.Fill(dtBANGLUONGCANHAN);
             return dtBANGLUONGCANHAN;

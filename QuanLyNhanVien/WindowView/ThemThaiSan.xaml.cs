@@ -110,34 +110,45 @@ namespace QuanLyNhanVien.WindowView
 
         private void ngayNghiSinhDpk_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (maNVCbx.Text == "")
-            {
-                bool? Result = new MessageBoxCustom("Vui lòng chọn nhân viên.", MessageType.Error, MessageButtons.Ok).ShowDialog();
-                return;
-            }
+            int soThangNghiTruocVaSauSinh = int.Parse(busThamSo.Get_soThangNghiSinh().ToString()) / 2;
             DTO_NHANVIEN dtoNhanVien = busNhanVien.GetChiTietNhanVienTheoMa(maNVCbx.Text);
-            
-            if (ngayNghiSinhDpk.SelectedDate.Value.Date.AddMonths(-6) < dtoNhanVien.Ngaydangki)
-            {
-                bool? Result = new MessageBoxCustom("Không thể nghỉ sinh khi chưa vào làm.", MessageType.Error, MessageButtons.Ok).ShowDialog();
 
-                return;
-            }
-            if (busSoThaiSan.KiemTraTonTai(maNVCbx.Text))
+            if (checkAdd)
             {
-                if (ngayNghiSinhDpk.SelectedDate < busSoThaiSan.TimNgayLamTroLai(maNVCbx.Text))
+                if (maNVCbx.Text == "")
                 {
-                    bool? Result = new MessageBoxCustom("Nhân viên chưa kết thúc đợt nghỉ sinh trước.", MessageType.Error, MessageButtons.Ok).ShowDialog();
-
+                    bool? Result = new MessageBoxCustom("Vui lòng chọn nhân viên.", MessageType.Error, MessageButtons.Ok).ShowDialog();
                     return;
                 }
+
+                if (ngayNghiSinhDpk.Text == "")
+                {
+                    return;
+                }
+
+                if (ngayNghiSinhDpk.SelectedDate.Value.Date.AddMonths(-soThangNghiTruocVaSauSinh) < dtoNhanVien.Ngaydangki)
+                {
+                    bool? Result = new MessageBoxCustom("Không thể nghỉ sinh khi chưa vào làm.", MessageType.Error, MessageButtons.Ok).ShowDialog();
+                    ClearYearDpk();
+                    return;
+                }
+
+                if (busSoThaiSan.KiemTraTonTai(maNVCbx.Text))
+                {
+                    if (ngayNghiSinhDpk.SelectedDate < busSoThaiSan.TimNgayLamTroLai(maNVCbx.Text))
+                    {
+                        bool? Result = new MessageBoxCustom("Nhân viên chưa kết thúc đợt nghỉ sinh trước.", MessageType.Error, MessageButtons.Ok).ShowDialog();
+                        ClearYearDpk();
+                        return;
+                    }
+                }
+                checkAdd = true;
             }
 
-            int soThangNghiTruocVaSauSinh = int.Parse(busThamSo.Get_soThangNghiSinh().ToString()) / 2;
             ngayVeSomDpk.SelectedDate = ngayNghiSinhDpk.SelectedDate.Value.Date.AddMonths(-soThangNghiTruocVaSauSinh);
             ngayLamTLDpk.SelectedDate = ngayNghiSinhDpk.SelectedDate.Value.Date.AddMonths(soThangNghiTruocVaSauSinh);
 
-            if (ngayVeSomDpk.SelectedDate.Value.Date.AddMonths(-6) > dtoNhanVien.Ngayhethan)
+            if (ngayVeSomDpk.SelectedDate.Value.Date.AddMonths(-soThangNghiTruocVaSauSinh) > dtoNhanVien.Ngayhethan)
             {
                 bool? Result = new MessageBoxCustom("Không thể hưởng nghỉ sinh sau khi nghỉ việc.", MessageType.Error, MessageButtons.Ok).ShowDialog();
 
@@ -148,6 +159,13 @@ namespace QuanLyNhanVien.WindowView
         private void troCapTbx_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
+        }
+
+        public void ClearYearDpk()
+        {
+            ngayVeSomDpk.Text = "";
+            ngayNghiSinhDpk.Text = "";
+            ngayLamTLDpk.Text = "";
         }
     }
 }

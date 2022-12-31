@@ -13,7 +13,7 @@ namespace DAL
 
         public DataTable getHoSoThuViec()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT MANVTV 'Mã nhân viên', HOTEN 'Họ tên',NGAYSINH  'Ngày sinh',GIOITINH 'Giới tính',CMND_CCCD 'CMND-CCCD', NOICAP 'Nơi cấp',VITRITHUVIEC 'Vị trí thử việc', NGAYTV 'Ngày thử việc', SOTHANGTV 'Số tháng thử việc', SDT 'Số điện thoại', HOCVAN 'Học vấn', GHICHU 'Ghi chú' FROM HOSOTHUVIEC", connection);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MANVTV 'Mã nhân viên', HOTEN 'Họ tên',FORMAT(NGAYSINH, 'dd/MM/yyyy') 'Ngày sinh',GIOITINH 'Giới tính',CMND_CCCD 'CMND-CCCD', NOICAP 'Nơi cấp',VITRITHUVIEC 'Vị trí thử việc', FORMAT(NGAYTV, 'dd/MM/yyyy') 'Ngày thử việc', SOTHANGTV 'Số tháng thử việc', SDT 'Số điện thoại', HOCVAN 'Học vấn', GHICHU 'Ghi chú' FROM HOSOTHUVIEC", connection);
             DataTable dtHOSOTHUVIEC = new DataTable();
             da.Fill(dtHOSOTHUVIEC);
             return dtHOSOTHUVIEC;

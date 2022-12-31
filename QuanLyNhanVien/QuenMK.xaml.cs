@@ -48,15 +48,15 @@ namespace QuanLyNhanVien
                 dTO_TAIKHOAN._TENCHUTAIKHOAN = tenTaiKhoanTbx.Text.ToString();
                 if (tk.KiemTraTonTai(dTO_TAIKHOAN))
                 {
-                    if (dTO_TAIKHOAN._TENDANGNHAP == "ADMIN")
+                    if (dTO_TAIKHOAN._TENDANGNHAP.ToLower() == "admin")
                     {
                         bool? result1 = new MessageBoxCustom("Không thể đổi mật khẩu tài khoản ADMIN ở đây.", MessageType.Error, MessageButtons.Ok).ShowDialog();
                         return;
                     }
 
-                    if (dTO_TAIKHOAN._TENDANGNHAP == "MANAGER")
+                    if (dTO_TAIKHOAN._TENDANGNHAP.ToLower() == "manager")
                     {
-                        bool? result1 = new MessageBoxCustom("Không thể đổi mật khẩu tài khoản ADMIN ở đây.", MessageType.Error, MessageButtons.Ok).ShowDialog();
+                        bool? result1 = new MessageBoxCustom("Không thể đổi mật khẩu tài khoản MANAGER ở đây.", MessageType.Error, MessageButtons.Ok).ShowDialog();
                         return;
                     }
 

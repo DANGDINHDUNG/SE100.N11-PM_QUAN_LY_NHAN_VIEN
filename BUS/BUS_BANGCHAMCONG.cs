@@ -13,6 +13,11 @@ namespace BUS
             return bangchamcong.getBangChamCong();
         }
 
+        public DataTable xuatBangChamCong()
+        {
+            return bangchamcong.xuatBangChamCong();
+        }
+
         public bool ThemBangChamCong(DTO_BANGCHAMCONG bcc)
         {
             return bangchamcong.ThemBangChamCong(bcc);

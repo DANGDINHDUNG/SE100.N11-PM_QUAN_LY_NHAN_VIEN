@@ -20,6 +20,14 @@ namespace DAL
             return dtBANGCHAMCONG;
         }
 
+        public DataTable xuatBangChamCong()
+        {
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM BANGCHAMCONG, NHANVIEN WHERE BANGCHAMCONG.MANV = NHANVIEN.MANV", connection);
+            DataTable dtBANGCHAMCONG = new DataTable();
+            da.Fill(dtBANGCHAMCONG);
+            return dtBANGCHAMCONG;
+        }
+
         public bool ThemBangChamCong(DTO_BANGCHAMCONG bangChamCong)
         {
             if (connection.State != ConnectionState.Open)
@@ -109,14 +117,14 @@ namespace DAL
             if (thang == "" && nam == "")
             {
                 SqlDataAdapter da = new SqlDataAdapter("SELECT LUONG 'Lương', BANGCHAMCONG.THANG 'Tháng', BANGCHAMCONG.NAM 'Năm', BANGCHAMCONG.MALUONG 'Mã lương', TIENKHENTHUONG 'Tiền khen thưởng', TIENKYLUAT 'Tiền kỷ luật', SONGAYCONG 'Số ngày công', SONGAYNGHI 'Số ngày nghỉ', SOGIOLAMTHEM 'Số giờ làm thêm', BANGCHAMCONG.GHICHU 'Ghi chú' FROM BANGCHAMCONG, BANGTINHLUONG "
-                + "WHERE BANGCHAMCONG.MANV = '" + maNV + "'", connection);
+                + "WHERE BANGCHAMCONG.MANV = '" + maNV + "' AND BANGTINHLUONG.MANV = '" + maNV + "'", connection);
                 //DataTable dtBANGCHAMCONG = new DataTable();
                 da.Fill(dtBANGCHAMCONG);
             }
             else
             {
                 SqlDataAdapter da = new SqlDataAdapter("SELECT LUONG 'Lương', BANGCHAMCONG.THANG 'Tháng', BANGCHAMCONG.NAM 'Năm', BANGCHAMCONG.MALUONG 'Mã lương', TIENKHENTHUONG 'Tiền khen thưởng', TIENKYLUAT 'Tiền kỷ luật', SONGAYCONG 'Số ngày công', SONGAYNGHI 'Số ngày nghỉ', SOGIOLAMTHEM 'Số giờ làm thêm', BANGCHAMCONG.GHICHU 'Ghi chú' FROM BANGCHAMCONG, BANGTINHLUONG "
-                + "WHERE BANGCHAMCONG.MANV = '" + maNV + "' AND BANGCHAMCONG.THANG = '" + thang + "' AND BANGCHAMCONG.NAM = '" + nam + "'", connection);
+                + "WHERE BANGCHAMCONG.MANV = '" + maNV + "' AND BANGCHAMCONG.THANG = '" + thang + "' AND BANGCHAMCONG.NAM = '" + nam + "'AND BANGTINHLUONG.MANV = '" + maNV + "' AND BANGTINHLUONG.THANG = '" + thang + "' AND BANGTINHLUONG.NAM = '" + nam + "'", connection);
                 //DataTable dtBANGCHAMCONG = new DataTable();
                 da.Fill(dtBANGCHAMCONG);
             }
@@ -129,7 +137,7 @@ namespace DAL
             if (connection.State != ConnectionState.Open)
                 connection.Open();
             string sql = string.Format("SELECT LUONG 'Lương', BANGCHAMCONG.THANG 'Tháng', BANGCHAMCONG.NAM 'Năm', BANGCHAMCONG.MALUONG 'Mã lương', TIENKHENTHUONG 'Tiền khen thưởng', TIENKYLUAT 'Tiền kỷ luật', SONGAYCONG 'Số ngày công', SONGAYNGHI 'Số ngày nghỉ', SOGIOLAMTHEM 'Số giờ làm thêm' FROM BANGCHAMCONG, BANGTINHLUONG "
-                + "WHERE BANGCHAMCONG.MANV = '" + maNV + "' AND BANGCHAMCONG.THANG = '" + thang + "' AND BANGCHAMCONG.NAM = '" + nam + "'");
+                + "WHERE BANGCHAMCONG.MANV = '" + maNV + "' AND BANGCHAMCONG.THANG = '" + thang + "' AND BANGCHAMCONG.NAM = '" + nam + "' AND BANGTINHLUONG.MANV = '" + maNV + "' AND BANGTINHLUONG.THANG = '" + thang + "' AND BANGTINHLUONG.NAM = '" + nam + "'");
             SqlCommand cmd = new SqlCommand(sql, connection);
             SqlDataReader reader = cmd.ExecuteReader();
             if (reader.Read() == true)

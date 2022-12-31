@@ -298,10 +298,11 @@ namespace QuanLyNhanVien.WindowView
             {
                 thoiGianTbx.Text = "1";
             }
-            else
+            else if (thoiGianTbx.Text == "1")
             {
                 thoiGianTbx.Text = "";
             }
+            else return;
         }
     }
 }

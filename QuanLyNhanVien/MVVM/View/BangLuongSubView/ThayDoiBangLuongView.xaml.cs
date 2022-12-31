@@ -27,6 +27,8 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
     {
         public DTO_THAYDOIBANGLUONG dtoThayDoiBangLuong = new DTO_THAYDOIBANGLUONG();
         public BUS_THAYDOIBANGLUONG busThayDoiBangLuong = new BUS_THAYDOIBANGLUONG();
+        public DTO_LSCHINHSUA dtoLSChinhSua = new DTO_LSCHINHSUA();
+        public BUS_LSCHINHSUA busLSChinhSua = new BUS_LSCHINHSUA();
         public BUS_NHANVIEN busNhanVien = new BUS_NHANVIEN();
         public BUS_BANGLUONG busBangLuong = new BUS_BANGLUONG();
 
@@ -140,6 +142,10 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
                 }
 
                 busNhanVien.SuaMaLuongNhanVien(maNVCbx.Text, maLuongMoiCbx.Text);
+
+                GetOldData();
+
+                busLSChinhSua.ThemLSChinhSua(dtoLSChinhSua);
                 DataGridLoad();
                 Result = new MessageBoxCustom("Sửa bảng lương thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
                 ClearBoxes();
@@ -148,6 +154,32 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
             {
                 bool? result = new MessageBoxCustom("Đã xảy ra lỗi khi lưu!\nVui lòng kiểm tra lại dữ liệu.", MessageType.Error, MessageButtons.Ok).ShowDialog();
             }
+        }
+
+        public void GetOldData()
+        {
+            DTO_NHANVIEN dtoNhanVien = busNhanVien.GetChiTietNhanVienTheoMa(maNVCbx.Text);
+
+            dtoLSChinhSua.Manv = int.Parse(maNVCbx.Text);
+            dtoLSChinhSua.Ngaychinhsua = DateTime.Now;
+            dtoLSChinhSua.Lancs = busLSChinhSua.TimLanChinhSuaGanNhat(maNVCbx.Text) + 1;
+            dtoLSChinhSua.Maphong = dtoNhanVien.Maphong;
+            dtoLSChinhSua.Hoten = dtoNhanVien.Hoten;
+            dtoLSChinhSua.Ngaysinh = dtoNhanVien.Ngaysinh;
+            dtoLSChinhSua.Gioitinh = dtoNhanVien.Gioitinh;
+            dtoLSChinhSua.Cmnd_cccd = dtoNhanVien.Cmnd_cccd;
+            dtoLSChinhSua.Noicap = dtoNhanVien.Noicap;
+            dtoLSChinhSua.Maluong = maLuongCbx.Text;
+            dtoLSChinhSua.Maloainv = dtoNhanVien.Maloainv;
+            dtoLSChinhSua.Chucvu = dtoNhanVien.Chucvu;
+            dtoLSChinhSua.Loaihd = dtoNhanVien.Loaihd;
+            dtoLSChinhSua.Thoigian = dtoNhanVien.Thoigian;
+            dtoLSChinhSua.Ngaydangki = dtoNhanVien.Ngaydangki;
+            dtoLSChinhSua.Ngayhethan = dtoNhanVien.Ngayhethan;
+            dtoLSChinhSua.Sdt = dtoNhanVien.Sdt;
+            dtoLSChinhSua.Hocvan = dtoNhanVien.Hocvan;
+            dtoLSChinhSua.Ghichu = dtoNhanVien.Ghichu;
+            dtoLSChinhSua.Dantoc = dtoNhanVien.Dantoc;
         }
     }
 }

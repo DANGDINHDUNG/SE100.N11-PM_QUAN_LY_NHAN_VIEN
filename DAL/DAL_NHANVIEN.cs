@@ -21,6 +21,14 @@ namespace DAL
             return dtNHANVIEN;
         }
 
+        public DataTable xuatNhanVien()
+        {
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV, MAPHONG, MALUONG, HOTEN, FORMAT(NGAYSINH, 'dd/MM/yyyy') NGAYSINH, GIOITINH, DANTOC , CMND_CCCD, NOICAP, CHUCVU, MALOAINV, LOAIHD, THOIGIAN, FORMAT(NGAYKY, 'dd/MM/yyyy') NGAYKY,  FORMAT(NGAYHETHAN, 'dd/MM/yyyy') NGAYHETHAN, SDT, HOCVAN, GHICHU FROM NHANVIEN", connection);
+            DataTable dtNHANVIEN = new DataTable();
+            da.Fill(dtNHANVIEN);
+            return dtNHANVIEN;
+        }
+
         public bool ThemNhanVien(DTO_NHANVIEN nhanVien)
         {
             if (connection.State != ConnectionState.Open)

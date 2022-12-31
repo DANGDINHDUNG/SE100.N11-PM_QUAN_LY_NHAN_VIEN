@@ -32,9 +32,19 @@ namespace BUS
             return tdbangluong.XoaThayDoiBangLuong(manv,maluong,maluongmoi);
         }
 
+        public bool XoaThayDoiBangLuongCuaNhanVien(int manv)
+        {
+            return tdbangluong.XoaThayDoiBangLuongCuaNhanVien(manv);
+        }
+
         public bool KiemTraTonTaiThayDoiBangLuong(string maNV, string maLuong, string maLuongMoi)
         {
             return tdbangluong.KiemTraTonTaiThayDoiBangLuong(maNV, maLuong, maLuongMoi);
+        }
+
+        public bool KiemTraTonTaiThayDoiBangLuongTheoNhanVien(string maNV)
+        {
+            return tdbangluong.KiemTraTonTaiThayDoiBangLuongTheoNhanVien(maNV);
         }
 
         public string TimMaLuongNVThangNay(string maNV, string thang, string nam)

@@ -18,6 +18,15 @@ namespace DAL
             da.Fill(dtBANGCHAMCONGTHUVIEC);
             return dtBANGCHAMCONGTHUVIEC;
         }
+
+        public DataTable xuatBangChamCongThuViec()
+        {
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM BANGCHAMCONGTHUVIEC", connection);
+            DataTable dtBANGCHAMCONGTHUVIEC = new DataTable();
+            da.Fill(dtBANGCHAMCONGTHUVIEC);
+            return dtBANGCHAMCONGTHUVIEC;
+        }
+
         public bool ThemBangChamCongThuViec(DTO_BANGCHAMCONGTHUVIEC bangChamCongThuViec)
         {
             if (connection.State != ConnectionState.Open)
@@ -88,6 +97,23 @@ namespace DAL
             da.Fill(dtBANGCHAMCONGTHUVIEC);
             return dtBANGCHAMCONGTHUVIEC;
             
+        }
+
+        public DataTable xuatBangChamCongThuViecTheoThang(string thang, string nam)
+        {
+            SqlDataAdapter da = new SqlDataAdapter();
+            if (thang == "")
+            {
+                da = new SqlDataAdapter("SELECT * FROM BANGCHAMCONGTHUVIEC WHERE NAM ='" + nam + "'", connection);
+            }
+            else
+            {
+                da = new SqlDataAdapter("SELECT * FROM BANGCHAMCONGTHUVIEC WHERE THANG ='" + thang + "' AND NAM ='" + nam + "'", connection);
+            }
+            DataTable dtBANGCHAMCONGTHUVIEC = new DataTable();
+            da.Fill(dtBANGCHAMCONGTHUVIEC);
+            return dtBANGCHAMCONGTHUVIEC;
+
         }
     }
 }

@@ -135,11 +135,11 @@ namespace QuanLyNhanVien.MVVM.View.BangLuongSubView
                         colIndex = 1;
                         rowIndex++;
 
-                        ws.Cells[rowIndex, colIndex++].Value = dr["MANV"].ToString();
-                        ws.Cells[rowIndex, colIndex++].Value = dr["LUONG"].ToString();
-                        ws.Cells[rowIndex, colIndex++].Value = dr["THANG"].ToString();
-                        ws.Cells[rowIndex, colIndex++].Value = dr["NAM"].ToString();
-                        ws.Cells[rowIndex, colIndex++].Value = dr["GHICHU"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["Mã nhân viên"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["Lương"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["Tháng"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["Năm"].ToString();
+                        ws.Cells[rowIndex, colIndex++].Value = dr["Ghi chú"].ToString();
 
                     }
 

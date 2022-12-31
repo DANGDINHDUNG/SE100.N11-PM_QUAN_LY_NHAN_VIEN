@@ -88,3 +88,12 @@ D:\Tài liệu\PTPM\test\ver3\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\
 D:\Tài liệu\PTPM\test\ver3\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Tài liệu\PTPM\test\ver3\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.dll
 D:\Tài liệu\PTPM\test\ver3\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\Đồ án\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\bin\Debug\DAL.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\Đồ án\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\bin\Debug\DAL.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\Đồ án\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\bin\Debug\DTO.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\Đồ án\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\bin\Debug\DTO.pdb
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\Đồ án\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\Đồ án\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\Đồ án\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\Đồ án\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.dll
+D:\UIT\Study process\Năm 3\HK V\SE100 - Phương pháp Phát triển phần mềm hướng đối tượng\Đồ án\SE100.N11-PM_QUAN_LY_NHAN_VIEN-main\DAL\obj\Debug\DAL.pdb

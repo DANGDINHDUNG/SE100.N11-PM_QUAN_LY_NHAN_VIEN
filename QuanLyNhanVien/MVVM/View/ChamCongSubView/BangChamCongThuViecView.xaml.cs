@@ -157,11 +157,11 @@ namespace QuanLyNhanVien.MVVM.View.ChamCongSubView
                     DataTable dt = new DataTable();
                     if (thangCbx.Text != "" && namCbx.Text != "")
                     {
-                        dt = busBangChamCongThuViec.getBangChamCongThuViecTheoThang(thangCbx.SelectedValue.ToString(), namCbx.Text);
+                        dt = busBangChamCongThuViec.xuatBangChamCongThuViecTheoThang(thangCbx.SelectedValue.ToString(), namCbx.Text);
                     }
                     else
                     {
-                        dt = busBangChamCongThuViec.getBangChamCongThuViec();
+                        dt = busBangChamCongThuViec.xuatBangChamCongThuViec();
                     }
 
                     foreach (DataRow dr in dt.Rows)

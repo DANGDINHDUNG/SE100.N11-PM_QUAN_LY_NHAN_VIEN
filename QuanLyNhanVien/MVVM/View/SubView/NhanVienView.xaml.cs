@@ -39,6 +39,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
         public BUS_LICHSUCHAMCONG busLSChamCong = new BUS_LICHSUCHAMCONG();
         public BUS_BANGTINHLUONG busBangTinhLuong = new BUS_BANGTINHLUONG();
         public BUS_SOTHAISAN busSoThaiSan = new BUS_SOTHAISAN();
+        public BUS_THAYDOIBANGLUONG busThayDoiBangLuong = new BUS_THAYDOIBANGLUONG();
         public BUS_SOBH busSoBH = new BUS_SOBH();
         public BUS_BOPHAN busBoPhan = new BUS_BOPHAN();
 
@@ -118,7 +119,6 @@ namespace QuanLyNhanVien.MVVM.View.SubView
             lyDoNghiViec.ShowDialog();
 
             busNhanVien.XoaNhanVien(dtoNhanVien.Manv);
-            busTaiKhoan.XoaTaiKhoan(dtoNhanVien.Manv);
 
             if (busLSChinhSua.KiemTraTonTaiNhanVien(dtoNhanVien.Manv.ToString()))
             {
@@ -155,6 +155,16 @@ namespace QuanLyNhanVien.MVVM.View.SubView
                 busSoBH.SuaGhiChu("Đã nghỉ việc", dtoNhanVien.Manv.ToString());
             }
 
+            if (busThayDoiBangLuong.KiemTraTonTaiThayDoiBangLuongTheoNhanVien(dtoNhanVien.Manv.ToString()))
+            {
+                busThayDoiBangLuong.XoaThayDoiBangLuongCuaNhanVien(dtoNhanVien.Manv);
+            }
+
+            if (busTaiKhoan.KiemTraTonTai(dtoNhanVien.Manv.ToString()))
+            {
+                busTaiKhoan.XoaTaiKhoan(dtoNhanVien.Manv);
+            }
+
             DataGridLoad();
             bool? Result = new MessageBoxCustom("Xóa nhân viên thành công!", MessageType.Success, MessageButtons.Ok).ShowDialog();
             ClearBoxes();
@@ -185,13 +195,17 @@ namespace QuanLyNhanVien.MVVM.View.SubView
 
         private void boPhanCbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (boPhanCbx.SelectedItem == null)
+            phongCbx.Items.Clear();
+
+            if (boPhanCbx.SelectedIndex == -1)
             {
                 DataGridLoad();
+                foreach (var tenPhong in busPhongBan.TongHopPhongBan(""))
+                {
+                    phongCbx.Items.Add(tenPhong);
+                }
                 return;
             }
-
-            phongCbx.Items.Clear();
 
             foreach (var tenPhong in busPhongBan.TongHopPhongBan(busBoPhan.TimKiemTheoTenBoPhan(boPhanCbx.SelectedItem.ToString())))
             {
@@ -260,7 +274,7 @@ namespace QuanLyNhanVien.MVVM.View.SubView
                         colIndex++;
                     }
                     DataTable dt = new DataTable();
-                    dt = busNhanVien.getNhanVien();
+                    dt = busNhanVien.xuatNhanVien();
 
                     foreach (DataRow dr in dt.Rows)
                     {

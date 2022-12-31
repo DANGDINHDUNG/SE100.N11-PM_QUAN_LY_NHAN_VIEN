@@ -15,6 +15,11 @@ namespace BUS
             return nhanvien.getNhanVien();
         }
 
+        public DataTable xuatNhanVien()
+        {
+            return nhanvien.xuatNhanVien();
+        }
+
         public bool ThemNhanVien(DTO_NHANVIEN nv)
         {
             return nhanvien.ThemNhanVien(nv);

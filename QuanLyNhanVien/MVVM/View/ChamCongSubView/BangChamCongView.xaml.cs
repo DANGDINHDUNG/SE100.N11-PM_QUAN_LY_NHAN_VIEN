@@ -294,7 +294,7 @@ namespace QuanLyNhanVien.MVVM.View.ChamCongSubView
                         colIndex++;
                     }
                     DataTable dt = new DataTable();
-                    dt = busBangChamCong.getBangChamCong();
+                    dt = busBangChamCong.xuatBangChamCong();
 
                     foreach (DataRow dr in dt.Rows)
                     {
